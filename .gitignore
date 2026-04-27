@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local runtime data
+*.db
+*.sqlite
+*.sqlite3
+cell_agents.db
+
+# Generated archives and exports
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Roblox binary/project exports
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Generated Roblox spec bytecode/cache
+tools/__pycache__/
+

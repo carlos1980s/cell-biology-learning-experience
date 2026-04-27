@@ -1,0 +1,23 @@
+{
+  "id": "template",
+  "displayName": "Template Organelle",
+  "assemblyLayer": "interior",
+  "recommendedRobloxObject": "Model",
+  "pivotStrategy": "Invisible root Part named PivotRoot, then move with Model:PivotTo().",
+  "biologyRole": "Describe the organelle role in learner-friendly language.",
+  "visualLanguage": {
+    "primaryShape": "Describe the silhouette.",
+    "materials": [],
+    "colors": []
+  },
+  "movement": {
+    "movableAsUnit": true,
+    "usesOrganelleMotion": false
+  },
+  "hotspots": [],
+  "performanceBudget": {
+    "targetPartCount": 0,
+    "notes": "Keep distant detail readable without excessive small parts."
+  }
+}
+
