@@ -1,0 +1,36 @@
+{
+  "schema_version": "phase_08r_studio_assembly_validation_report_v1",
+  "phase": "08R",
+  "review_type": "studio_assembly_validation",
+  "status": "blocked_missing_package_asset_ids",
+  "manifest": "organelles/nucleus/exports/nucleus_phase_08r_roblox_asset_manifest.json",
+  "assembly_script": "tools/assemble_nucleus_phase08r_gene_dynamics_in_studio.py",
+  "validation_script": "tools/validate_nucleus_phase08r_studio_assembly.py",
+  "expected_containers": {
+    "raw_imports": "Workspace.MeshLibrary/Nucleus_Phase08R_RawPackages",
+    "visible_action_layer": "Workspace.Nucleus_Model/GeneDynamics"
+  },
+  "checks": [
+    {
+      "check": "missing_package_asset_ids_fail_assembly",
+      "result": "pass",
+      "evidence": "Assembly script refuses to emit Studio Lua while all four export groups have null package_asset_id."
+    },
+    {
+      "check": "nucleus_model_preservation_guard",
+      "result": "not_run_until_upload",
+      "evidence": "Studio-side Lua requires Workspace.Nucleus_Model and Phase 07R base children before creating GeneDynamics."
+    },
+    {
+      "check": "raw_import_visibility_guard",
+      "result": "not_run_until_upload",
+      "evidence": "Studio validator checks raw package descendants are hidden and non-collidable after assembly."
+    },
+    {
+      "check": "gene_dynamics_container_exists",
+      "result": "blocked",
+      "evidence": "Cannot validate Nucleus_Model/GeneDynamics until Open Cloud package asset IDs are available and loaded in Studio."
+    }
+  ],
+  "next_required_action": "Set ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID, upload Phase 08R packages, then run Studio assembly and play-mode validation."
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "nucleus-scale-entrance-pore-pass/v1",
+  "phase": "scale_entrance_pore_distribution_pass",
+  "decision": "partial_pass_blender_source_ready_studio_package_reupload_required",
+  "date": "2026-05-04",
+  "sourceFilesChanged": [
+    "tools/create_nucleus_roblox_functional_model.py",
+    "src/CellExperience/OrganelleModels/Nucleus.lua",
+    "src/CellExperience/Data/NucleusMeshAssets.lua",
+    "tools/assemble_nucleus_phase07r_packages_in_studio.py"
+  ],
+  "generatedArtifacts": {
+    "blend": "nucleus_roblox_functional_model.blend",
+    "exportManifest": "organelle_projects/04_nucleus/assets/nucleus_export_manifest.json",
+    "componentMap": "organelle_projects/04_nucleus/assets/nucleus_export_component_map.md",
+    "reviewRenders": [
+      "review_renders/nucleus_scale_pore_pass_hero.png",
+      "review_renders/nucleus_scale_pore_pass_board.png",
+      "review_renders/nucleus_scale_pore_pass_focus.png",
+      "review_renders/nucleus_scale_pore_pass_internal_spacing.png"
+    ]
+  },
+  "scaleContract": {
+    "robloxStudsPerBlenderUnit": 35.0,
+    "targetOuterDiameterRobloxStuds": 224.0,
+    "previousTargetOuterDiameterRobloxStuds": 160.0
+  },
+  "geometryAudit": {
+    "triangleCountApprox": 254245,
+    "uniqueNpcRingAssemblies": 48,
+    "entranceWidthStuds": 23.8,
+    "entranceHeightStuds": 28.0,
+    "outerPanelsCutByEntrance": 4,
+    "innerPanelsCutByEntrance": 4,
+    "lumenPanelsCutByEntrance": 4,
+    "hiddenExportGuidesVisible": 0,
+    "chromatinOutsideInnerRadius": false,
+    "nucleolusClearanceToInnerRadiusBlenderUnits": 0.818,
+    "doubleMembraneGapStuds": 7.0
+  },
+  "studioReview": {
+    "bridgeUsed": "legacy_plugin_bridge_after_official_mcp_timeout",
+    "assemblyResult": "phase07r_assembly_ok",
+    "assembledPackageGroupsInserted": 10,
+    "assembledChildren": 11,
+    "studioFinalScale": 0.308,
+    "distributedPoreMarkersAdded": 54,
+    "visualDecision": "source_changes_not_fully_visible_in_studio_until_package_reupload",
+    "notes": "The current Studio package assets still contain the old large mesh cutaway. The assembler now scales the package model and adds distributed pore markers, but the smaller organic entrance requires uploading/importing the regenerated Blender export groups as replacement Roblox packages."
+  },
+  "risks": [
+    "Triangle count remains high for a direct Roblox LOD0 import; export groups should be combined/decimated or LODed before production gameplay.",
+    "Existing Roblox package asset IDs still point at older uploaded meshes, so Studio cannot fully show the new Blender entrance until packages are re-uploaded.",
+    "Official Roblox Studio MCP timed out; legacy bridge worked after stopping the stale bridge process."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "code_pass": true,
+  "score_0_to_100": 86,
+  "major_failures": [],
+  "minor_issues": [
+    {
+      "issue": "Manifest component names are duplicated in build_lysosome.py instead of being loaded from component_manifest.json.",
+      "impact": "Future manifest edits could drift from the builder report and checklist without being detected by the script."
+    },
+    {
+      "issue": "Phase 1 generates one review render, while PROJECT_PIPELINE.md defines review evidence as wide, close component, and export inspection views.",
+      "impact": "Acceptable for the limited Phase 1 socket scaffold, but later phases should expand render generation to the full required evidence set."
+    },
+    {
+      "issue": "The script does not perform an explicit post-build object-name validation against the manifest.",
+      "impact": "The builder report marks manifest_names_used as true based on known created objects rather than a scene inspection pass."
+    },
+    {
+      "issue": "ORGanelle_DIR uses unusual capitalization.",
+      "impact": "This is not a runtime bug, but it slightly reduces readability and consistency with normal Python constant naming."
+    }
+  ],
+  "required_fixes": [
+    "Before Phase 2 completion, load required component names from component_manifest.json or add a manifest validation helper so reports cannot drift from the manifest.",
+    "Before Phase 2 completion, add explicit scene/object validation for exact manifest names that are in scope for the phase.",
+    "Before final Phase 2 approval, generate the pipeline-required render set: wide view, close component view, and export inspection view."
+  ],
+  "approved_to_continue": true
+}

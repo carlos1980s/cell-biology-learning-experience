@@ -1,0 +1,13 @@
+Item,Status,Evidence
+"Installer deployed","pass","v1_teacher_lecture_installed"
+"Runtime created","pass","Workspace.V1TeacherLecture"
+"One active teacher","pass","active_teacher_parts=18"
+"Raw teachers preserved","pass","raw_teacher_count=2"
+"Old station runtime removed","pass","False"
+"No lecture prompts","pass","prompt_count=0"
+"Sounds installed","pass","sound_count=12"
+"Neutral brightness","pass","brightness=1.149999976158142"
+"Local audio generated","pass","12/12 local mp3s available"
+"Roblox audio IDs","pending","0/12 SoundIds filled"
+"Play-mode visual smoke","pass","Computer Use showed teacher near nucleus, speech bubble visible, focused caption visible, and Replay/Next/Restart controls visible."
+"Play-mode full device review","pending","Still needs Android/VR control review and Roblox SoundId playback review after audio upload."

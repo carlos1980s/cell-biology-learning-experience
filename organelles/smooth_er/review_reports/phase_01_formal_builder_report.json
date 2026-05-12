@@ -1,0 +1,93 @@
+{
+  "schema_version": "smooth_er_builder_report_v1",
+  "phase": "phase_01",
+  "phase_id": "phase_01_formal_scaffold",
+  "organelle": "smooth_er",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "SmoothER_RootRig"
+  ],
+  "incomplete_components": [
+    "TubularNetwork",
+    "LipidSynthesis_Zones",
+    "DetoxReaction_Sites",
+    "CalciumStorage_Pockets",
+    "ERTransition_HandoffCues",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "TubularNetwork",
+    "LipidSynthesis_Zones",
+    "DetoxReaction_Sites",
+    "CalciumStorage_Pockets",
+    "ERTransition_HandoffCues",
+    "Interaction_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/review_renders/phase_01_formal_wide_scaffold.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "close_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/review_renders/phase_01_formal_close_socket.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/review_renders/phase_01_formal_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/smooth_er_phase_01_formal_scaffold.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "SmoothER_RootRig",
+    "WholeCell_ContextSocket"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "SmoothER_Phase01_TubeGuide_01",
+    "SmoothER_Phase01_TubeGuide_02",
+    "SmoothER_Phase01_TubeGuide_03",
+    "SmoothER_KeyLight",
+    "Camera_SmoothER_wide_scaffold",
+    "Camera_SmoothER_close_scaffold",
+    "Camera_SmoothER_export_inspection"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 2,
+    "biological_mesh_count": 0,
+    "triangle_count": 0
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated Smooth ER generated from inception.",
+    "Visible biological meshes use generated organic tube/blob meshes, not default primitives."
+  ],
+  "roblox_export_risks": [
+    "Thin tubules require Roblox import scale validation.",
+    "Phase 5 requires package_asset_id values for every export group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

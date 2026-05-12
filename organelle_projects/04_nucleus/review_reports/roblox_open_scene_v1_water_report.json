@@ -1,0 +1,78 @@
+{
+  "phase": "roblox_open_scene_v1_water",
+  "date": "2026-05-07",
+  "goal": "Use the currently open Roblox Studio scene as the V1 baseline and add deterministic Terrain water around the existing main object without rebuilding or reimporting the scene.",
+  "source_files": [
+    "tools/apply_v1_water_to_open_studio_scene.py"
+  ],
+  "changes": [
+    "Added a reusable live-scene tool that detects the current main visible object in Workspace.",
+    "Preserved the existing open scene objects and did not rerun the whole-cell importer or package assembly.",
+    "Cleared Terrain only, then filled a deterministic water volume around the detected main object.",
+    "Applied calm readable water settings: blue-green color, moderate transparency, low reflectance, and small waves.",
+    "Expanded the V1 water volume vertically with nucleus-aware top clearance and created one authoritative hidden V1_WaterSpawn inside the water.",
+    "Disabled other SpawnLocation objects, including the previous MainCellSwimSpawn that could place the character outside water.",
+    "Added ServerScriptService.V1WaterSpawnController to force play-mode characters to V1_WaterSpawn after CharacterAdded.",
+    "Moved V1_WaterSpawn near Workspace.Nucleus_Model, just outside the nucleus surface, instead of leaving it at the broad water-edge position.",
+    "Disabled the previous client-side organic motion script because the vibration/drift read poorly.",
+    "Removed ServerScriptService.V1OrganicMotionServerController.",
+    "Added ServerScriptService.V1BriefOrganicPulseController for brief X/Y/Z movement around each organelle home pivot, with no cumulative drift.",
+    "Upgraded the pulse profile to VisibleBriefPulseV3 because earlier amplitudes were too subtle at whole-cell scale.",
+    "Upgraded the motion profile to VisibleBriefPulseV4_BoundedDrift with slow bounded organelle drift around the nucleus area.",
+    "Added a short edit-mode pulse preview runner and verified motion with a live position delta probe.",
+    "Marked Workspace with SceneVersion=V1 and SceneVersionLabel=OpenScene_Water_V1.",
+    "Created Workspace.V1_SceneMarker with the main object, bounds, and water metadata.",
+    "Created Workspace.V1_SceneWaterVolume as a hidden non-colliding bounds marker so no visible box is added to the scene."
+  ],
+  "live_studio_result": {
+    "selected_root": "Workspace.CellEnvironment_Main",
+    "part_count": 2114,
+    "object_center": "81.0643310546875, 173.1095428466797, 11.33725357055664",
+    "object_size": "297.2520751953125, 151.21908569335938, 226.60958862304688",
+    "water_center": "81.0643310546875, 211.35824584960938, 11.33725357055664",
+    "water_size": "680, 520, 920",
+    "spawn_position": "-18.04034423828125, 240.79306030273438, 70.50384521484375",
+    "spawn_sample": "Water=8",
+    "center_sample": "Water=8",
+    "enabled_spawn_count": 1,
+    "enabled_spawn": "Workspace.V1_WaterSpawn",
+    "spawn_controller": "ServerScriptService.V1WaterSpawnController",
+    "disabled_spawns": [
+      "Workspace.CellEnvironment_Main.MainCellSwimSpawn",
+      "Workspace.SpawnLocation"
+    ],
+    "spawn_height_samples": "Workspace.V1_WaterSpawn center=Water=8, plus4=Water=8, plus8=Water=8",
+    "nucleus_water_samples": "bottom=Water=8, center=Water=8, top=Water=8, top_plus_40=Water=8",
+    "nucleus_spawn_distance": "273.310 studs from nucleus center horizontally; approximately 95 studs outside the broad nucleus surface",
+    "brief_pulse_controller": "ServerScriptService.V1BriefOrganicPulseController",
+    "brief_pulse_scope": "model-level organelles plus Workspace.Nucleus_Model",
+    "brief_pulse_style": "18 Hz oscillation around each base pivot using independent X/Y/Z offsets, slow bounded drift, nucleus clamp, and tiny rotations",
+    "brief_pulse_profile": "VisibleBriefPulseV4_BoundedDrift",
+    "bounded_drift": "Each organelle uses a slow drift Vector3 around its home pivot plus clampAroundNucleus so it cannot exceed its starting nucleus distance plus slack.",
+    "brief_pulse_probe": "VesiclesEndosomes moved 8.2106 studs during live bridge pulse probe, then was restored to the sampled base pivot",
+    "disabled_motion_controller": "StarterPlayer.StarterPlayerScripts.V1OrganicMotionController",
+    "workspace_scene_version": "V1",
+    "workspace_scene_label": "OpenScene_Water_V1",
+    "scene_marker": "Workspace.V1_SceneMarker",
+    "water_bounds_marker": "Workspace.V1_SceneWaterVolume",
+    "water_bounds_marker_visibility": "Transparency=1, CanCollide=false"
+  },
+  "tooling_status": {
+    "legacy_bridge": "pass",
+    "official_roblox_mcp": "blocked; Transport closed",
+    "computer_use_visual_access": "blocked; RobloxStudio get_app_state timed out with Apple event error -10005"
+  },
+  "validation": [
+    "python3 -m py_compile tools/apply_v1_water_to_open_studio_scene.py",
+    "git diff --check -- tools/apply_v1_water_to_open_studio_scene.py",
+    "Live Studio bridge application succeeded.",
+    "Live Studio bridge verification confirmed Workspace V1 attributes and Water material at center and spawn.",
+    "Live Studio bridge verification confirmed V1WaterSpawnController exists and only V1_WaterSpawn is enabled.",
+    "Live Studio bridge verification confirmed V1OrganicMotionController is disabled.",
+    "Live Studio bridge verification confirmed V1OrganicMotionServerController is removed.",
+    "Live Studio bridge verification confirmed V1BriefOrganicPulseController exists, has basePivots, and has Vector3 axis profiles.",
+    "Live Studio bridge verification confirmed VisibleBriefPulseV3 and measured an 8.2106 stud position delta on VesiclesEndosomes during an active pulse probe.",
+    "Live Studio bridge verification confirmed VisibleBriefPulseV4_BoundedDrift includes drift vectors, clampAroundNucleus, V1OrganicMaxNucleusDistance, and V1BoundedDriftClampedModels."
+  ],
+  "next_recommended_phase": "Manually save the currently open Studio place as the V1 place file or publish it as the V1 version after confirming the viewport/play-mode water looks correct."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "peroxisomes_specialist_review_v1",
+  "phase": "phase_03_functional_teaching_layer",
+  "organelle": "peroxisomes",
+  "approved_to_continue": true,
+  "review_type": "visual_organic_quality",
+  "status": "pass_for_phase_scope",
+  "major_failures": []
+}

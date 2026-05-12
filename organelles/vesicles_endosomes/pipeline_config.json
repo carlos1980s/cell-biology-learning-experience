@@ -1,0 +1,44 @@
+{
+  "slug": "vesicles_endosomes",
+  "title_no_space": "VesiclesEndosomes",
+  "root": "VesiclesEndosomes_RootRig",
+  "model_name": "VesiclesEndosomes_Model",
+  "raw_package_name": "VesiclesEndosomes_RawPackages",
+  "collision_proxy": "VesiclesEndosomes_CollisionProxy",
+  "required_components": ["WholeCell_ContextSocket", "VesiclesEndosomes_RootRig", "TransportVesicles", "EarlyEndosome_SortingBody", "LateEndosome_MaturationBody", "CoatedVesicle_Cues", "RabSNARE_TeachingCues", "CargoSorting_Routes", "Interaction_Hotspots"],
+  "guide_points": [[-1.1, -0.25, 0.0], [-0.3, 0.32, 0.08], [0.65, -0.05, -0.04], [1.25, 0.28, 0.04]],
+  "context_scale": [2.3, 1.05, 0.72],
+  "proxy_scale": [1.95, 1.0, 0.52],
+  "world_color": [0.014, 0.018, 0.024],
+  "materials": {
+    "primary": [0.16, 0.72, 0.92, 1.0],
+    "secondary": [0.68, 0.28, 0.92, 1.0],
+    "process": [1.0, 0.62, 0.18, 1.0],
+    "hotspot": [1.0, 0.94, 0.28, 0.74],
+    "socket": [0.18, 0.55, 0.75, 0.15],
+    "collision": [0.2, 0.85, 0.65, 0.14]
+  },
+  "phase2_components": [
+    {"name": "TransportVesicles", "function": "Organic vesicles carrying directional cargo between organelles.", "material": "primary", "kind": "blob_cluster", "count": 9, "scale": [0.15, 0.11, 0.09]},
+    {"name": "EarlyEndosome_SortingBody", "function": "Irregular early endosome sorting body with internal compartment cue.", "material": "secondary", "kind": "blob_cluster", "count": 4, "scale": [0.26, 0.17, 0.13]},
+    {"name": "LateEndosome_MaturationBody", "function": "Larger late endosome maturation body with denser sorting appearance.", "material": "secondary", "kind": "blob_cluster", "count": 3, "scale": [0.3, 0.2, 0.15]},
+    {"name": "CoatedVesicle_Cues", "function": "Coat protein cues on selected vesicles, not random decorative dots.", "material": "process", "kind": "blob_cluster", "count": 12, "scale": [0.055, 0.038, 0.03]}
+  ],
+  "phase3_components": [
+    {"name": "RabSNARE_TeachingCues", "function": "Identity and docking teaching cues for vesicle targeting.", "material": "process", "kind": "blob_cluster", "count": 10, "scale": [0.065, 0.04, 0.032]},
+    {"name": "CargoSorting_Routes", "function": "Directional cargo sorting routes through endosomal maturation.", "material": "primary", "kind": "tube_network", "count": 4, "radius": 0.025},
+    {"name": "Interaction_Hotspots", "function": "Inspectable trafficking and sorting anchors.", "material": "hotspot", "kind": "blob_cluster", "count": 5, "scale": [0.08, 0.04, 0.03]}
+  ],
+  "export_groups": [
+    {"name": "EXPORT_LOD0_TransportVesicles", "roots": ["TransportVesicles"], "target": "VesiclesEndosomes_Model/TransportVesicles", "family": "vesicle_membrane", "bindings": ["vesicles.inspect_transport"]},
+    {"name": "EXPORT_LOD0_EndosomeBodies", "roots": ["EarlyEndosome_SortingBody", "LateEndosome_MaturationBody"], "target": "VesiclesEndosomes_Model/EndosomeBodies", "family": "endosome_body", "bindings": ["vesicles.inspect_sorting"]},
+    {"name": "EXPORT_LOD0_CoatedVesicleCues", "roots": ["CoatedVesicle_Cues"], "target": "VesiclesEndosomes_Model/CoatedVesicleCues", "family": "coat_cues", "bindings": ["vesicles.coat_cues"]},
+    {"name": "EXPORT_LOD0_RabSNARECues", "roots": ["RabSNARE_TeachingCues"], "target": "VesiclesEndosomes_Model/RabSNARECues", "family": "identity_cues", "bindings": ["vesicles.rab_snare"]},
+    {"name": "EXPORT_LOD0_CargoSortingRoutes", "roots": ["CargoSorting_Routes"], "target": "VesiclesEndosomes_Model/CargoSortingRoutes", "family": "cargo_routes", "bindings": ["vesicles.sorting_flow"]},
+    {"name": "EXPORT_ANCHORS_VesiclesEndosomesRuntime", "roots": ["Interaction_Hotspots"], "target": "VesiclesEndosomes_Model/RuntimeAnchors", "family": "runtime_anchors", "bindings": ["vesicles.inspect"]},
+    {"name": "EXPORT_COLLISION_VesiclesEndosomesProxy", "roots": ["VesiclesEndosomes_CollisionProxy"], "target": "VesiclesEndosomes_Model/CollisionProxy", "family": "collision_proxy", "bindings": []}
+  ],
+  "misconceptions_avoided": ["Vesicle flow is directional, not random bubbles.", "Early and late endosomes are sorting/maturation states.", "Rab/SNARE cues indicate targeting and fusion specificity."],
+  "notes": ["Formal organic-gated vesicles/endosomes generated from inception.", "Visible components use generated organic meshes with function metadata."],
+  "roblox_export_risks": ["Small vesicle details may need batching.", "Phase 5 requires real package_asset_id values for every group."]
+}

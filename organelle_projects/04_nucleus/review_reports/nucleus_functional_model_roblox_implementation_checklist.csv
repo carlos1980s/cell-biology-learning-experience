@@ -1,0 +1,10 @@
+item,status,evidence
+python compile,pass,All touched Python tools compile.
+functional FBX exports,pass,12 package-ready FBX files exported from nucleus_roblox_functional_model.blend.
+Open Cloud payload dry run,pass,All 12 payloads validate and source files exist.
+Open Cloud real upload,blocked,ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID are not set.
+functional package asset IDs,blocked,No package_asset_id values exist yet in the functional asset manifest.
+functional Studio assembly,blocked,Assembler correctly refuses to assemble without uploaded package IDs.
+current Studio scene review,partial,Studio still shows older Phase07R package assembly; bad front cap overlays are hidden.
+no visible helper boxes,partial,No new functional imports are visible; existing raw Phase07R package entries remain preserved under MeshLibrary.
+scale contract represented,pass,35 studs per Blender unit and 224-stud target diameter recorded in asset data and manifest.

@@ -1,0 +1,19 @@
+{
+  "schema_version": "phase_08g_animation_review_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "reviewer": "Animation Function Reviewer",
+  "animation_function_pass": true,
+  "roblox_runtime_animation_ready": false,
+  "approved_for_next_phase": true,
+  "evidence": [
+    "NascentRNA_Strand has bevel-depth keyframes for growth.",
+    "MatureMRNA_Cargo has location keyframes from processing region toward the selected pore.",
+    "PoreExport_CheckpointState has a keyed gate_open custom property for runtime mapping."
+  ],
+  "remaining_risks": [
+    "Roblox runtime events must map to the Blender object names and may need Beam/Attachment replacements.",
+    "Phase 08G does not include final Roblox animation controller code."
+  ],
+  "approved_to_continue": true
+}

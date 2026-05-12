@@ -1,0 +1,10 @@
+{
+  "schema_version": "golgi_specialist_review_v1",
+  "phase": "phase_02_first_real_anatomy",
+  "organelle": "golgi",
+  "approved_to_continue": true,
+  "review_type": "visual_organic_quality",
+  "status": "pass_for_phase_scope",
+  "score_0_to_100": 88,
+  "major_failures": []
+}

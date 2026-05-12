@@ -1,0 +1,24 @@
+{
+  "schema_version": "phase_06t_animation_review_v1",
+  "organelle": "nucleus",
+  "phase": "06T",
+  "reviewer": "Animation Function Reviewer",
+  "animation_function_pass": true,
+  "roblox_runtime_animation_ready": false,
+  "approved_for_next_phase": true,
+  "evidence": [
+    "Representative protein, mRNA, and ribosomal-subunit cargo objects include Blender location keyframes on separate transport windows.",
+    "NPC_GatePulse_Controller includes a keyed gate_pulse custom property that can drive gate emphasis during cargo crossing.",
+    "Static duplicate cargo markers along the paths make import/export direction visible in review renders."
+  ],
+  "remaining_risks": [
+    "The current keyframes are source-art timing cues, not a finalized Roblox runtime animation system.",
+    "Path-follow interpolation should be rebuilt as Roblox tweens or spline samples.",
+    "Review-only direction arrows should be toggleable in Roblox."
+  ],
+  "required_fixes_before_export": [
+    "Convert route points into an animation_event_map entry before Roblox import.",
+    "Validate that all animated cargo origins remain stable after mesh export."
+  ],
+  "approved_to_continue": true
+}

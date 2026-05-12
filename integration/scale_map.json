@@ -1,0 +1,26 @@
+{
+  "schema_version": "scale_map_v1",
+  "scale_units": "relative_cell_units",
+  "organelles": {
+    "nucleus": {
+      "target_radius": 2.2,
+      "relative_priority": "dominant"
+    },
+    "mitochondrion": {
+      "target_length": 1.2,
+      "relative_priority": "repeated_medium"
+    },
+    "rough_er": {
+      "target_span": 3.0,
+      "relative_priority": "nucleus_adjacent_network"
+    },
+    "golgi": {
+      "target_span": 1.8,
+      "relative_priority": "medium_stack"
+    },
+    "lysosome": {
+      "target_radius": 0.45,
+      "relative_priority": "small_repeated"
+    }
+  }
+}

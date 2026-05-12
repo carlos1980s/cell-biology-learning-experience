@@ -1,0 +1,116 @@
+{
+  "schema_version": "failure_audit_v1",
+  "audit_date": "2026-05-02",
+  "scope": "nucleus_phase_02_to_phase_03_visual_pipeline",
+  "decision": "phase_03_not_valid_visual_approval",
+  "production_status": "blocked",
+  "summary": "The project rules existed, but the production loop did not enforce them. Phase 02 failed visual validation, Phase 03 was created anyway, and the Phase 03 report contains hard-coded similarity scores rather than independent review evidence.",
+  "invalidated_outputs": [
+    {
+      "path": "organelles/nucleus/review_reports/phase_03_visual_iteration_report.json",
+      "reason": "Similarity scores are hard-coded in the generator script and are not independent visual-review evidence."
+    },
+    {
+      "path": "organelles/nucleus/integration/nucleus_phase_03_visual_sections.blend",
+      "reason": "Useful historical prototype, but not an approved visual baseline for further production."
+    }
+  ],
+  "ignored_gates": [
+    {
+      "path": "organelles/nucleus/integration/review_reports/phase_02_visual_validation_report.json",
+      "evidence_lines": "19-21, 40-53",
+      "finding": "visual_pass was false and approved_for_phase_3_geometry was false, but Phase 03 proceeded."
+    }
+  ],
+  "root_causes": [
+    {
+      "id": "visual_gate_ignored",
+      "severity": "blocking",
+      "finding": "The failed Phase 02 visual review did not stop Phase 03.",
+      "evidence": [
+        "organelles/nucleus/integration/review_reports/phase_02_visual_validation_report.json:19-21",
+        "organelles/nucleus/integration/review_reports/phase_02_visual_validation_report.json:40-53"
+      ]
+    },
+    {
+      "id": "conflicting_reports_unresolved",
+      "severity": "blocking",
+      "finding": "Builder and Roblox design reports allowed Phase 03 despite visual validation failure.",
+      "evidence": [
+        "organelles/nucleus/review_reports/phase_02_builder_report.json:272-314",
+        "organelles/nucleus/integration/review_reports/phase_02_roblox_design_review.json:105-108"
+      ]
+    },
+    {
+      "id": "fake_or_unproven_similarity_scores",
+      "severity": "blocking",
+      "finding": "Phase 03 similarity scores are static values written by the builder script.",
+      "evidence": [
+        "tools/build_nucleus_phase3_visual_iteration.py:339-346",
+        "organelles/nucleus/review_reports/phase_03_visual_iteration_report.json:16-23"
+      ]
+    },
+    {
+      "id": "reference_images_not_used_as_constraints",
+      "severity": "high",
+      "finding": "Reference images were inserted into the Blender scene as panels, but no model-quality review or geometry constraint was derived from them.",
+      "evidence": [
+        "tools/build_nucleus_phase3_visual_iteration.py:269-292",
+        "organelles/nucleus/review_reports/phase_03_visual_iteration_report.json:24-30"
+      ]
+    },
+    {
+      "id": "primitive_based_geometry",
+      "severity": "high",
+      "finding": "Core structures still rely on torus, UV sphere, cylinder, ellipsoid, and latitude/meridian grid construction that reads as geometric.",
+      "evidence": [
+        "tools/build_nucleus_phase3_visual_iteration.py:96-150",
+        "tools/build_nucleus_phase3_visual_iteration.py:169-218",
+        "tools/build_nucleus_phase3_visual_iteration.py:221-251"
+      ]
+    },
+    {
+      "id": "review_role_not_independent",
+      "severity": "high",
+      "finding": "The builder report contained pass/fail assertions and specialist pass summaries, so review was not independent enough to catch the visual drift.",
+      "evidence": [
+        "organelles/nucleus/review_reports/phase_02_builder_report.json:272-304"
+      ]
+    }
+  ],
+  "answers_to_user_questions": {
+    "why_principles_were_not_respected": "The principles were documented but not enforced by a hard validator or a blocking independent visual review. The scripts continued to use primitive-like forms and the pipeline accepted files/reports existing as progress.",
+    "why_review_did_not_happen": "A review artifact existed, but the blocking visual failure was ignored. Phase 03 did not receive an independent visual approval; its own report wrote claimed similarity scores from the generator script.",
+    "why_iteration_stopped_before_matching_baseline": "The iteration loop focused on camera framing and comparison-board layout, not on changing the model until it visually matched the baseline. There was no required live Blender checkpoint or stop condition requiring baseline similarity."
+  },
+  "required_corrections": [
+    "Freeze current Phase 02 and Phase 03 nucleus outputs as failed prototypes.",
+    "Treat phase_03_visual_iteration_report.json as invalid approval evidence.",
+    "Restart with Phase 02R focused only on double envelope and perinuclear lumen.",
+    "Require Blender visual inspection with reference image and model visible in the same scene before any approval.",
+    "Require independent visual review before the next phase.",
+    "Add a phase-advance validator that blocks on failed visual reports, missing reviewer provenance, or hard-coded similarity scores."
+  ],
+  "phase_2r_scope": {
+    "name": "Double Envelope Rebuild",
+    "allowed_components": [
+      "OuterNuclearMembrane_Panels",
+      "InnerNuclearMembrane_Panels",
+      "PerinuclearLumen_Segments"
+    ],
+    "forbidden_until_pass": [
+      "NuclearPore_Complexes",
+      "NuclearPore_GateCores",
+      "NuclearLamina_Lattice",
+      "Nucleoplasm_Volume",
+      "Chromatin_Threads",
+      "Nucleolus_Subregions",
+      "Transport_Cargo",
+      "RoughER_Connection",
+      "Mitosis_Fragments",
+      "Interaction_Hotspots"
+    ],
+    "reference_baseline": "reference_images/nucleus_specs/01_nuclear_envelope.png"
+  },
+  "can_phase_3_continue": false
+}

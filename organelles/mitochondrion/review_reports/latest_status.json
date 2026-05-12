@@ -1,0 +1,14 @@
+{
+  "schema_version": "mitochondrion_latest_status_v1",
+  "organelle": "mitochondrion",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/exports/mitochondrion_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_OuterMembrane, EXPORT_LOD0_InnerMembraneCristae, EXPORT_LOD0_MatrixVolume, EXPORT_LOD0_ATPSignalSites, EXPORT_LOD0_StressCueLayer, EXPORT_ANCHORS_MitochondrionRuntime, EXPORT_COLLISION_MitochondrionProxy"
+  ],
+  "next_allowed_scope": "Upload Mitochondrion Phase 04 packages and record package_asset_id for every group."
+}

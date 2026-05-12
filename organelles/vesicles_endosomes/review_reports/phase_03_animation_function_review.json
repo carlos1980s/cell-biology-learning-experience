@@ -1,0 +1,8 @@
+{
+  "schema_version": "vesicles_endosomes_specialist_review_v1",
+  "phase": "phase_03_functional_teaching_layer",
+  "organelle": "vesicles_endosomes",
+  "approved_to_continue": true,
+  "review_type": "animation_functionality",
+  "status": "pass_for_phase_scope"
+}

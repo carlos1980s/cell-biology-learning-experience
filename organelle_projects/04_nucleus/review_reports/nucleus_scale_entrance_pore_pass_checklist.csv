@@ -1,0 +1,16 @@
+check,status,evidence
+python_generator_compiles,pass,python3 -m py_compile tools/create_nucleus_roblox_functional_model.py
+blender_regeneration_succeeds,pass,Blender wrote nucleus_roblox_functional_model.blend and export manifest
+scale_contract_updated_to_224_studs,pass,nucleus_export_manifest.json targetOuterDiameterRobloxStuds=224
+entrance_reduced_to_player_scale,pass,Blender entrance metadata 23.8 x 28.0 studs
+entrance_irregular_not_regular_wedge,pass,Irregular boolean portal and rim generated in Blender source
+pores_distributed_across_surface,pass,48 Blender NPC assemblies plus 54 Studio distributed pore markers
+chromatin_inside_nucleoplasm,pass,Audit chromatinOutsideInnerRadius=false
+nucleolus_clearance_visible,pass,Audit clearance 0.818 Blender units
+double_membrane_gap_readable,pass,Audit gap 7.0 Roblox studs
+visible_export_helpers_hidden,pass,Audit hiddenExportGuidesVisible=0
+review_renders_exist,pass,Four PNGs in review_renders
+live_blender_viewport_review,pass,Blender file opened and inspected through Computer Use screenshot
+roblox_studio_bridge_review,partial,Legacy bridge assembled packages but official MCP timed out
+roblox_visual_matches_new_blender_entrance,partial,Old package mesh still has large cutaway until regenerated packages are uploaded
+roblox_triangle_budget,partial,Source audit is about 254k triangles and needs LOD/export optimization

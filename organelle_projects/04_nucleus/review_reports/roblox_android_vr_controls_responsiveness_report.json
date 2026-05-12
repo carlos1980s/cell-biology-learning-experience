@@ -1,0 +1,42 @@
+{
+  "phase": "roblox_android_vr_controls_responsiveness",
+  "date": "2026-05-04",
+  "problem": "Desktop Studio controls worked, but Android mobile and Meta Quest VR controls were not responsive enough.",
+  "source_changes": {
+    "src/MainCellExperience/BuildMainCellExperience.lua": [
+      "Added activeGamepads() to read Roblox navigation gamepads and all connected gamepads instead of only Enum.UserInputType.Gamepad1.",
+      "Added Humanoid.MoveDirection as an input source so Roblox default mobile thumbstick and VR/player controls feed the swim controller.",
+      "Reduced gamepad thumbstick deadzone from 0.16/0.18 to 0.08.",
+      "Added TOUCH_INPUT_GAIN = 1.45 and GAMEPAD_INPUT_GAIN = 1.35 for partial stick/thumb movement.",
+      "Increased swim input smoothing response from 8.5/3.1 to 10.5/4.0."
+    ],
+    "src/CellExperience/Gameplay/PlayerBootstrap.lua": [
+      "Applied the same Android/VR input fixes to the shared cytoplasm swimming bootstrap."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "main_cell_builder_applied": true,
+    "studio_edit_mode_confirmed": true,
+    "controller_source_length": 19032,
+    "installed_controller_checks": {
+      "has_active_gamepads": true,
+      "has_navigation_gamepads": true,
+      "has_connected_gamepads": true,
+      "has_humanoid_move_direction": true,
+      "has_touch_gain": true,
+      "has_gamepad_gain": true,
+      "has_low_deadzone": true
+    }
+  },
+  "validation": {
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok"
+  },
+  "remaining_required_device_review": [
+    "Android: confirm left thumb input starts movement immediately at small deflection.",
+    "Android: confirm right-side screen drag still steers the camera while left pad swims.",
+    "Quest: confirm left controller stick swims forward/back/strafe.",
+    "Quest: confirm A/R1 rises and B/L1 sinks, or map alternate Quest buttons if those are not emitted by the headset."
+  ]
+}

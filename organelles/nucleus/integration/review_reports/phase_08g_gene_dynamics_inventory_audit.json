@@ -1,0 +1,194 @@
+{
+  "schema_version": "gene_dynamics_inventory_audit_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "created_on": "2026-05-04",
+  "audit_scope": "Confirm whether the existing cell and nucleus assets can support the first top-down cell function: transcription and mRNA export as the nucleus portion of protein synthesis.",
+  "audit_sources": [
+    "organelles/nucleus/nucleus_action_manifest.json",
+    "organelles/nucleus/component_manifest.json",
+    "organelles/nucleus/parts/*/component_manifest.json",
+    "organelles/nucleus/exports/nucleus_phase_07r_roblox_asset_manifest.json",
+    "organelles/nucleus/review_reports/phase_04c_builder_report.json",
+    "organelles/nucleus/review_reports/phase_05u_builder_report.json",
+    "organelles/nucleus/review_reports/phase_06t_builder_report.json",
+    "organelles/nucleus/review_reports/phase_07r_builder_report.json",
+    "organelles/nucleus/integration/review_reports/phase_04c_biology_review.json",
+    "organelles/nucleus/integration/review_reports/phase_06t_biology_review.json",
+    "organelles/nucleus/integration/review_reports/phase_07r_biology_review.json",
+    "integration/animation_event_map.json",
+    "backend/app/schemas/actions.py",
+    "backend/app/sim/biological_rules.py",
+    "backend/app/sim/reducer.py"
+  ],
+  "decision": "superseded_by_phase_08g_gene_dynamics_candidate_pass",
+  "superseded_by": [
+    "organelles/nucleus/review_reports/phase_08g_builder_report.json",
+    "organelles/nucleus/review_reports/phase_08g_latest_status.json",
+    "organelles/nucleus/integration/review_reports/phase_08g_visual_review.json",
+    "organelles/nucleus/integration/review_reports/phase_08g_biology_review.json",
+    "organelles/nucleus/integration/review_reports/phase_08g_animation_review.json",
+    "organelles/nucleus/integration/review_reports/phase_08g_roblox_review.json",
+    "organelles/nucleus/integration/review_reports/phase_08g_code_structure_review.json"
+  ],
+  "plain_english_confirmation": "This inventory audit originally found the action layer incomplete. Phase 08G has since added the missing GeneDynamics objects, renders, reviews, event map, and backend action handling.",
+  "major_components_confirmed_present": [
+    {
+      "component": "OuterNuclearMembrane_Panels",
+      "evidence": "Exported under EXPORT_LOD0_NucleusEnvelope and Studio assembly status is validated.",
+      "function_relevance": "Nuclear boundary for RNA export."
+    },
+    {
+      "component": "InnerNuclearMembrane_Panels",
+      "evidence": "Exported under EXPORT_LOD0_NucleusEnvelope and Studio assembly status is validated.",
+      "function_relevance": "Inner nuclear boundary and correct double-envelope structure."
+    },
+    {
+      "component": "PerinuclearLumen_Segments",
+      "evidence": "Exported under EXPORT_LOD0_NucleusEnvelope and Studio assembly status is validated.",
+      "function_relevance": "Correct envelope layering and avoids single-membrane misconception."
+    },
+    {
+      "component": "NuclearPore_Complexes",
+      "evidence": "Exported under EXPORT_LOD0_NuclearPoreComplexes and Studio assembly status is validated.",
+      "function_relevance": "Export gate for mature mRNA."
+    },
+    {
+      "component": "NuclearPore_GateCores",
+      "evidence": "Exported under EXPORT_LOD0_NuclearPoreComplexes and Studio assembly status is validated.",
+      "function_relevance": "Selective transport gate, avoiding the open-hole pore misconception."
+    },
+    {
+      "component": "Nucleoplasm_Volume",
+      "evidence": "Exported under EXPORT_LOD0_Nucleoplasm and Studio assembly status is validated.",
+      "function_relevance": "Interior medium for transcription and mRNA movement."
+    },
+    {
+      "component": "Chromatin_Threads",
+      "evidence": "Phase 04C builder checklist passes chromatin-inside-nucleus and no-DNA-export checks; exported under EXPORT_LOD0_Chromatin.",
+      "function_relevance": "DNA packaging substrate for active gene teaching."
+    },
+    {
+      "component": "Nucleolus_Subregions",
+      "evidence": "Phase 05U builder checklist passes no-membrane and inside-nucleus checks; exported under EXPORT_LOD0_Nucleolus.",
+      "function_relevance": "Nuclear context and ribosomal-subunit biology, not the main protein-coding transcription focus."
+    },
+    {
+      "component": "Transport_Cargo",
+      "evidence": "Phase 06T builder checklist passes RNA export direction, pore-only crossing, and no-DNA-export checks; exported under EXPORT_LOD0_TransportCargo.",
+      "function_relevance": "Generic cargo/path basis for mRNA export."
+    },
+    {
+      "component": "RoughER_Connection",
+      "evidence": "Phase 07R biology review passes and confirms rough ER remains outside the nucleus; exported under EXPORT_LOD0_RoughERConnection.",
+      "function_relevance": "Downstream context for protein synthesis after mRNA exits the nucleus."
+    }
+  ],
+  "gaps_before_full_function_pass": [
+    {
+      "gap": "No explicit ActiveGene_Locus object is present.",
+      "risk": "Learners cannot see which gene is being transcribed; chromatin remains a generic structure."
+    },
+    {
+      "gap": "No explicit RNAPolymerase_Complex or NascentRNA_Strand objects are present.",
+      "risk": "The model can imply RNA export but not the act of transcription."
+    },
+    {
+      "gap": "Transport_Cargo exists but is generic.",
+      "risk": "mRNA, protein import cargo, and ribosomal subunit cargo may be visually confused unless identities are split or labeled through action state."
+    },
+    {
+      "gap": "No step-level transcription_mrna_export event is mapped.",
+      "risk": "The runtime only has a broad protein_synthesis event and cannot drive the gene activation to export sequence cleanly."
+    },
+    {
+      "gap": "backend/app/sim/reducer.py has a default cue for transcribe_gene, but export_mrna has no reducer-specific behavior.",
+      "risk": "The LLM/backend may validate export_mrna but produce weak or generic visual/resource feedback."
+    },
+    {
+      "gap": "Interaction_Hotspots is manifested, but action-specific select_gene, inspect_pore, and follow_mrna hotspots are not confirmed.",
+      "risk": "The learner interaction layer is not yet aligned to the gene dynamics workflow."
+    },
+    {
+      "gap": "integration/whole_cell_manifest.json marks nucleus as not_started.",
+      "risk": "Whole-cell orchestration can contradict the more advanced nucleus phase evidence unless manifest status is reconciled."
+    }
+  ],
+  "contradiction_check": {
+    "biological_contradictions_found": [
+      {
+        "id": "generic_chromatin_not_active_gene",
+        "severity": "medium",
+        "description": "Chromatin exists and passes no-DNA-export checks, but there is no explicit active gene locus or RNA polymerase state. This is a missing specificity issue rather than a wrong biology issue."
+      },
+      {
+        "id": "generic_transport_cargo_identity",
+        "severity": "medium",
+        "description": "Transport_Cargo supports RNA export directionally, but mRNA identity is not isolated from other transport cargos."
+      }
+    ],
+    "project_metadata_contradictions_found": [
+      {
+        "id": "whole_cell_manifest_status_stale",
+        "severity": "high",
+        "description": "The whole-cell manifest says nucleus is not_started while source art, review reports, export packages, uploads, and Studio validation exist."
+      }
+    ],
+    "no_contradictions_found_for": [
+      "DNA remains inside nucleus",
+      "RNA export crosses only through pores",
+      "nuclear pores include selective gate cores",
+      "nucleolus is not membrane-bound",
+      "rough ER remains outside nucleus"
+    ]
+  },
+  "pass_fail_checklist": {
+    "component_manifest_checked": true,
+    "part_manifests_checked": true,
+    "phase_reports_checked": true,
+    "roblox_export_manifest_checked": true,
+    "backend_action_schema_checked": true,
+    "animation_event_map_checked": true,
+    "major_components_use_exact_manifest_names": true,
+    "all_base_anatomy_for_transcription_mrna_export_present": true,
+    "all_action_specific_gene_dynamics_objects_present": true,
+    "runtime_event_sequence_present": true,
+    "full_function_ready_without_new_assets": true
+  },
+  "specialist_review_passes": {
+    "visual_organic_quality": {
+      "status": "superseded_pass",
+      "notes": "Superseded by phase_08g_visual_review.json and the three Phase 08G review renders."
+    },
+    "biology_accuracy": {
+      "status": "pass",
+      "notes": "Superseded by phase_08g_biology_review.json; action-specific transcription and export objects are now present."
+    },
+    "animation_functionality": {
+      "status": "pass",
+      "notes": "Superseded by phase_08g_animation_review.json; growth, cargo motion, and gate pulse hooks now exist in the source blend."
+    },
+    "roblox_export_readiness": {
+      "status": "source_art_pass_export_followup_required",
+      "notes": "Superseded by phase_08g_roblox_review.json; source art passes, while final Roblox export packaging remains Phase 08R."
+    },
+    "whole_cell_integration": {
+      "status": "pass_with_runtime_followup",
+      "notes": "Whole-cell manifest now references Phase 08G, and transcription_mrna_export is step-mapped; Studio runtime binding remains a follow-up."
+    }
+  },
+  "recommended_next_phase": {
+    "phase_id": "08r_gene_dynamics_roblox_mapping",
+    "do_next": [
+      "Create Roblox export packaging for the GeneDynamics action layer.",
+      "Map transcription_mrna_export steps to Studio runtime targets.",
+      "Convert curve-heavy RNA and path objects into Beam/Attachment or MeshPart equivalents.",
+      "Validate the action layer inside Studio against the imported Phase 07R nucleus."
+    ],
+    "do_not_do_next": [
+      "Do not rebuild the double envelope, pores, chromatin field, nucleolus, or rough ER connection.",
+      "Do not imply translation inside the nucleus.",
+      "Do not let DNA leave through a nuclear pore."
+    ]
+  }
+}

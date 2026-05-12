@@ -1,0 +1,36 @@
+{
+  "phase": "roblox_native_water_swimming_player_physics_removal",
+  "date": "2026-05-05",
+  "goal": "Remove custom player swim physics so the player can use Roblox-native water swimming inside the filled cell volume.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Changed the main cell movement mode from CytoplasmSwimming to NativeWaterSwimming.",
+    "Stopped calling the custom MainCellSwimmingController installer from BuildMainCellExperience.build().",
+    "Added installNativeWaterSwimmingMode() to delete custom player LocalScripts from StarterPlayerScripts and PlayerScripts.",
+    "Added runtime cleanup for custom player physics objects: MainCellCytoplasmBuoyancy, MainCellSwimVelocity, MainCellSwimOrientation, MainCellSwimAttachment, CytoplasmBuoyancy, CytoplasmVelocity, and CytoplasmOrientation.",
+    "Removed custom touch dive GUI artifacts from active players.",
+    "Restored Workspace.Gravity to Roblox default 196.2 for native water and object float tests.",
+    "Left non-player scene objects and nucleus assemblies untouched."
+  ],
+  "studio_probe": {
+    "build_result": "CellEnvironment_Main",
+    "movement_mode": "NativeWaterSwimming",
+    "player_custom_physics_enabled": false,
+    "workspace_gravity": 196.2,
+    "starter_custom_player_scripts": "none",
+    "runtime_custom_player_artifacts": "none",
+    "nucleus_workspace_candidates": "Nucleus_Model:Model parts=12 anchored=12 unanchored=0 collide=0"
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() in Studio and confirmed NativeWaterSwimming mode.",
+    "Queried StarterPlayerScripts and runtime players; no custom player swim scripts or physics artifacts remained."
+  ],
+  "important_observation": "Workspace.Nucleus_Model is currently fully anchored and non-colliding. It will not demonstrate water floatability until it is converted to an unanchored welded assembly or given a separate physical proxy.",
+  "next_recommended_phase": "If the goal is to test nucleus float/sink behavior, create a single unanchored nucleus physics proxy or welded assembly while preserving the visual nucleus meshes."
+}

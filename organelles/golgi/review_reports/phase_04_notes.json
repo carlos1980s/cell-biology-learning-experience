@@ -1,0 +1,16 @@
+{
+  "schema_version": "golgi_phase_notes_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "scope": [
+    "Roblox export packaging",
+    "FBX export groups",
+    "asset manifest",
+    "collision proxy and runtime anchors"
+  ],
+  "notes": [
+    "Exported six logical FBX package groups.",
+    "Wrote Golgi Roblox asset manifest with object, triangle, material, size, and placement metadata.",
+    "Real upload remains gated by Roblox credentials and package asset IDs."
+  ],
+  "next": "Phase 5: upload packages, assemble Workspace.Golgi_Model, and validate Studio edit/play modes when package IDs exist."
+}

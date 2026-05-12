@@ -1,0 +1,663 @@
+{
+  "schemaVersion": "nucleus-export-manifest/v1",
+  "sourceBlend": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /nucleus_roblox_functional_model.blend",
+  "exportRoot": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model",
+  "robloxAssetManifestTarget": "src/CellExperience/Data/NucleusMeshAssets.lua",
+  "scaleContract": {
+    "blenderUnitMeaning": "nucleus_source_unit",
+    "sourceOuterRadiusBlenderUnits": 3.2,
+    "sourceOuterDiameterBlenderUnits": 6.4,
+    "recommendedRobloxStudsPerBlenderUnit": 35.0,
+    "targetOuterDiameterRobloxStuds": 224.0,
+    "pivotObject": "Nucleus_RootRig",
+    "pivotLocationBlender": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "notes": "Keep all export groups aligned to Nucleus_RootRig. Roblox code should scale imported groups uniformly from this contract."
+  },
+  "groups": [
+    {
+      "index": 1,
+      "id": "outer_membrane_panels",
+      "displayName": "Outer Membrane Panels",
+      "exportCollection": "EXPORT_01_OuterMembranePanels",
+      "sourceCollections": [
+        "02_NUCLEAR_ENVELOPE"
+      ],
+      "sourceNamePrefixes": [
+        "NE_OuterMembrane_Panel_",
+        "NE_CutawayEdge_OuterMembrane_Rim_",
+        "NE_OuterMembrane_SurfaceBump_",
+        "NE_OuterMembrane_OrganicPit_",
+        "NE_OuterMembrane_ProteinSpeck_",
+        "NE_OuterMembrane_Rugosity",
+        "NE_OuterMembrane_OrganicSurfaceFold_",
+        "NE_OuterMembrane_ShallowOrganicDimple_",
+        "NE_OuterMembrane_ExposedPoreHole_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/OuterEnvelope",
+      "role": "visual",
+      "lodPolicy": "LOD0 combined hero shell; bake or merge small rugosity for LOD1.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_01_outer_membrane_panels_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 365,
+      "meshCount": 260,
+      "curveCount": 105,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "NE_CutawayEdge_OuterMembrane_Rim_EntrancePortal",
+        "NE_OuterMembrane_ExposedPoreHole_00_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_00_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_00_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_01_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_01_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_01_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_02_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_02_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_02_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_03_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_03_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_03_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_04_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_04_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_04_RaggedLip"
+      ],
+      "exportedFileSizeBytes": 1216508,
+      "exportedTriangleCount": 39514,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 2,
+      "id": "npc_assemblies",
+      "displayName": "Nuclear Pore Complex Assemblies",
+      "exportCollection": "EXPORT_02_NPCAssemblies",
+      "sourceCollections": [
+        "03_NUCLEAR_PORE_SYSTEM"
+      ],
+      "sourceNamePrefixes": [
+        "NPC_RingAssembly_",
+        "NPC_GateCore_Selectivity_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/NPCAssemblies",
+      "role": "visual_scriptable",
+      "lodPolicy": "Merge into several pore-cluster chunks; keep named anchor points for import/export scripts.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_02_npc_assemblies_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 706,
+      "meshCount": 658,
+      "curveCount": 48,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "NPC_GateCore_Selectivity_01",
+        "NPC_GateCore_Selectivity_01_FGFilament_1",
+        "NPC_GateCore_Selectivity_01_FGFilament_2",
+        "NPC_GateCore_Selectivity_01_FGFilament_3",
+        "NPC_GateCore_Selectivity_01_FGFilament_4",
+        "NPC_GateCore_Selectivity_01_FGFilament_5",
+        "NPC_GateCore_Selectivity_01_FGFilament_6",
+        "NPC_GateCore_Selectivity_02",
+        "NPC_GateCore_Selectivity_02_FGFilament_1",
+        "NPC_GateCore_Selectivity_02_FGFilament_2",
+        "NPC_GateCore_Selectivity_02_FGFilament_3",
+        "NPC_GateCore_Selectivity_02_FGFilament_4",
+        "NPC_GateCore_Selectivity_02_FGFilament_5",
+        "NPC_GateCore_Selectivity_02_FGFilament_6",
+        "NPC_GateCore_Selectivity_03",
+        "NPC_GateCore_Selectivity_03_FGFilament_1"
+      ],
+      "exportedFileSizeBytes": 887500,
+      "exportedTriangleCount": 28353,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 3,
+      "id": "inner_membrane_panels",
+      "displayName": "Inner Membrane Panels",
+      "exportCollection": "EXPORT_03_InnerMembranePanels",
+      "sourceCollections": [
+        "02_NUCLEAR_ENVELOPE"
+      ],
+      "sourceNamePrefixes": [
+        "NE_InnerMembrane_Panel_",
+        "NE_CutawayEdge_InnerMembrane_Rim_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/InnerMembrane",
+      "role": "visual",
+      "lodPolicy": "Keep as a separate mesh from the outer membrane so the cutaway double-layer remains readable.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_03_inner_membrane_panels_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 17,
+      "meshCount": 16,
+      "curveCount": 1,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "NE_CutawayEdge_InnerMembrane_Rim_EntrancePortal",
+        "NE_InnerMembrane_Panel_01",
+        "NE_InnerMembrane_Panel_02",
+        "NE_InnerMembrane_Panel_03",
+        "NE_InnerMembrane_Panel_04",
+        "NE_InnerMembrane_Panel_05",
+        "NE_InnerMembrane_Panel_06",
+        "NE_InnerMembrane_Panel_07",
+        "NE_InnerMembrane_Panel_08",
+        "NE_InnerMembrane_Panel_09",
+        "NE_InnerMembrane_Panel_10",
+        "NE_InnerMembrane_Panel_11",
+        "NE_InnerMembrane_Panel_12",
+        "NE_InnerMembrane_Panel_13",
+        "NE_InnerMembrane_Panel_14",
+        "NE_InnerMembrane_Panel_15"
+      ],
+      "exportedFileSizeBytes": 333676,
+      "exportedTriangleCount": 10861,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 4,
+      "id": "perinuclear_lumen",
+      "displayName": "Perinuclear Lumen Band",
+      "exportCollection": "EXPORT_04_PerinuclearLumen",
+      "sourceCollections": [
+        "02_NUCLEAR_ENVELOPE"
+      ],
+      "sourceNamePrefixes": [
+        "NE_PerinuclearSpace_LumenBand_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/PerinuclearLumen",
+      "role": "visual",
+      "lodPolicy": "Small orange/gold gap indicator; may be combined with inner membrane for lower LODs.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_04_perinuclear_lumen_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 17,
+      "meshCount": 16,
+      "curveCount": 1,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "NE_PerinuclearSpace_LumenBand_01",
+        "NE_PerinuclearSpace_LumenBand_02",
+        "NE_PerinuclearSpace_LumenBand_03",
+        "NE_PerinuclearSpace_LumenBand_04",
+        "NE_PerinuclearSpace_LumenBand_05",
+        "NE_PerinuclearSpace_LumenBand_06",
+        "NE_PerinuclearSpace_LumenBand_07",
+        "NE_PerinuclearSpace_LumenBand_08",
+        "NE_PerinuclearSpace_LumenBand_09",
+        "NE_PerinuclearSpace_LumenBand_10",
+        "NE_PerinuclearSpace_LumenBand_11",
+        "NE_PerinuclearSpace_LumenBand_12",
+        "NE_PerinuclearSpace_LumenBand_13",
+        "NE_PerinuclearSpace_LumenBand_14",
+        "NE_PerinuclearSpace_LumenBand_15",
+        "NE_PerinuclearSpace_LumenBand_16"
+      ],
+      "exportedFileSizeBytes": 122604,
+      "exportedTriangleCount": 3727,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 5,
+      "id": "lamina_web",
+      "displayName": "Nuclear Lamina Web",
+      "exportCollection": "EXPORT_05_LaminaWeb",
+      "sourceCollections": [
+        "04_LAMINA"
+      ],
+      "sourceNamePrefixes": [
+        "NuclearLamina_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/LaminaWeb",
+      "role": "visual",
+      "lodPolicy": "Merge curves into one or two web meshes; do not keep every strand as a Roblox instance.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_05_lamina_web_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 82,
+      "meshCount": 34,
+      "curveCount": 47,
+      "emptyCount": 1,
+      "sampleObjects": [
+        "NuclearLamina_LatticeTile_Latitude_00",
+        "NuclearLamina_LatticeTile_Latitude_01",
+        "NuclearLamina_LatticeTile_Latitude_02",
+        "NuclearLamina_LatticeTile_Latitude_03",
+        "NuclearLamina_LatticeTile_Meridian_04",
+        "NuclearLamina_LatticeTile_Meridian_05",
+        "NuclearLamina_LatticeTile_Meridian_06",
+        "NuclearLamina_LatticeTile_Meridian_07",
+        "NuclearLamina_LatticeTile_Meridian_08",
+        "NuclearLamina_LatticeTile_Meridian_09",
+        "NuclearLamina_LatticeTile_Meridian_10",
+        "NuclearLamina_LatticeTile_Meridian_11",
+        "NuclearLamina_LatticeTile_Meridian_12",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_00",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_01",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_02"
+      ],
+      "exportedFileSizeBytes": 523132,
+      "exportedTriangleCount": 17113,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 6,
+      "id": "nucleoplasm_volume",
+      "displayName": "Nucleoplasm Volume",
+      "exportCollection": "EXPORT_06_NucleoplasmVolume",
+      "sourceCollections": [
+        "05_NUCLEOPLASM"
+      ],
+      "sourceNamePrefixes": [
+        "Nucleoplasm_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/Nucleoplasm",
+      "role": "visual_transparent",
+      "lodPolicy": "Use one transparent volume plus sparse particles; avoid dense transparent overlap in Roblox.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_06_nucleoplasm_volume_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 96,
+      "meshCount": 82,
+      "curveCount": 14,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "Nucleoplasm_OrganicCloud_00",
+        "Nucleoplasm_OrganicCloud_01",
+        "Nucleoplasm_OrganicCloud_02",
+        "Nucleoplasm_OrganicCloud_03",
+        "Nucleoplasm_OrganicCloud_04",
+        "Nucleoplasm_OrganicCloud_05",
+        "Nucleoplasm_OrganicCloud_06",
+        "Nucleoplasm_OrganicCloud_07",
+        "Nucleoplasm_OrganicCloud_08",
+        "Nucleoplasm_Particle_00",
+        "Nucleoplasm_Particle_01",
+        "Nucleoplasm_Particle_02",
+        "Nucleoplasm_Particle_03",
+        "Nucleoplasm_Particle_04",
+        "Nucleoplasm_Particle_05",
+        "Nucleoplasm_Particle_06"
+      ],
+      "exportedFileSizeBytes": 144012,
+      "exportedTriangleCount": 4334,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 7,
+      "id": "chromatin_threads",
+      "displayName": "Chromatin Threads",
+      "exportCollection": "EXPORT_07_ChromatinThreads",
+      "sourceCollections": [
+        "06_GENOME_SYSTEM"
+      ],
+      "sourceNamePrefixes": [
+        "Chromatin_",
+        "Chromosome"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/Chromatin",
+      "role": "visual_animated",
+      "lodPolicy": "Combine many strands into a few meshes. Never animate chromatin outside the nucleus.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_07_chromatin_threads_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 184,
+      "meshCount": 39,
+      "curveCount": 135,
+      "emptyCount": 10,
+      "sampleObjects": [
+        "Chromatin_DiffuseThread_00",
+        "Chromatin_DiffuseThread_01",
+        "Chromatin_DiffuseThread_02",
+        "Chromatin_DiffuseThread_03",
+        "Chromatin_DiffuseThread_04",
+        "Chromatin_DiffuseThread_05",
+        "Chromatin_DiffuseThread_06",
+        "Chromatin_DiffuseThread_07",
+        "Chromatin_DiffuseThread_08",
+        "Chromatin_DiffuseThread_09",
+        "Chromatin_DiffuseThread_10",
+        "Chromatin_DiffuseThread_11",
+        "Chromatin_DiffuseThread_12",
+        "Chromatin_DiffuseThread_13",
+        "Chromatin_DiffuseThread_14",
+        "Chromatin_DiffuseThread_15"
+      ],
+      "exportedFileSizeBytes": 1032812,
+      "exportedTriangleCount": 29533,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 8,
+      "id": "nucleolus_body",
+      "displayName": "Nucleolus Body",
+      "exportCollection": "EXPORT_08_NucleolusBody",
+      "sourceCollections": [
+        "07_NUCLEOLUS"
+      ],
+      "sourceNamePrefixes": [
+        "Nucleolus_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/Nucleolus",
+      "role": "visual_hotspot",
+      "lodPolicy": "Export as one granular body mesh with optional subregion material zones.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_08_nucleolus_body_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 223,
+      "meshCount": 179,
+      "curveCount": 44,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "Nucleolus_AsymmetricSurfaceLobe_01",
+        "Nucleolus_AsymmetricSurfaceLobe_02",
+        "Nucleolus_AsymmetricSurfaceLobe_03",
+        "Nucleolus_AsymmetricSurfaceLobe_04",
+        "Nucleolus_rRNA_ProductionRibbon_1",
+        "Nucleolus_rRNA_ProductionRibbon_2",
+        "Nucleolus_rRNA_ProductionRibbon_3",
+        "Nucleolus_rRNA_ProductionRibbon_4",
+        "Nucleolus_rRNA_ProductionRibbon_5",
+        "Nucleolus_rRNA_ProductionRibbon_6",
+        "Nucleolus_rRNA_ProductionRibbon_7",
+        "Nucleolus_Subregion_1_MagentaSpeckleZone",
+        "Nucleolus_Subregion_2_MagentaSpeckleZone",
+        "Nucleolus_Subregion_3_MagentaSpeckleZone",
+        "Nucleolus_Subregion_4_MagentaSpeckleZone",
+        "Nucleolus_Subregion_5_MagentaSpeckleZone"
+      ],
+      "exportedFileSizeBytes": 549948,
+      "exportedTriangleCount": 16763,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 9,
+      "id": "er_connection",
+      "displayName": "ER Connection Sheets",
+      "exportCollection": "EXPORT_09_ERConnectionSheets",
+      "sourceCollections": [
+        "09_CELL_CONNECTIONS"
+      ],
+      "sourceNamePrefixes": [
+        "OuterEnvelope_ERConnectionPort_"
+      ],
+      "robloxTarget": "NucleusModel/MeshVisuals/ERConnection",
+      "role": "visual_context",
+      "lodPolicy": "Export as broad curved sheet chunks; keep ribosome dots sparse or bake them.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_09_er_connection_sheets_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 24,
+      "meshCount": 24,
+      "curveCount": 0,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_4",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_4",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_4",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_4_0"
+      ],
+      "exportedFileSizeBytes": 39324,
+      "exportedTriangleCount": 688,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 10,
+      "id": "transport_cargo",
+      "displayName": "Transport Cargo",
+      "exportCollection": "EXPORT_10_TransportCargo",
+      "sourceCollections": [
+        "08_TRANSPORT_CARGO"
+      ],
+      "sourceNamePrefixes": [
+        "TransportCargo_",
+        "DirectionArrow_"
+      ],
+      "robloxTarget": "NucleusModel/AnimationControllers/TransportCargo",
+      "role": "animated_instances",
+      "lodPolicy": "Use Roblox pooled instances for animation; export only reference shapes if useful.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_10_transport_cargo_reference_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 21,
+      "meshCount": 15,
+      "curveCount": 5,
+      "emptyCount": 1,
+      "sampleObjects": [
+        "TransportCargo_ImportPath_Protein_1",
+        "TransportCargo_ImportPath_Protein_2",
+        "TransportCargo_ImportPath_Protein_3",
+        "TransportCargo_Markers",
+        "TransportCargo_ProteinImport_DirectionArrow_1",
+        "TransportCargo_ProteinImport_DirectionArrow_2",
+        "TransportCargo_ProteinImport_DirectionArrow_3",
+        "TransportCargo_ProteinImport_NLS_1",
+        "TransportCargo_ProteinImport_NLS_2",
+        "TransportCargo_ProteinImport_NLS_3",
+        "TransportCargo_ProteinImport_NLS_Tag_1",
+        "TransportCargo_ProteinImport_NLS_Tag_2",
+        "TransportCargo_ProteinImport_NLS_Tag_3",
+        "TransportCargo_RibosomeExport_Subunit_1_1",
+        "TransportCargo_RibosomeExport_Subunit_1_2",
+        "TransportCargo_RibosomeExport_Subunit_2_1"
+      ],
+      "exportedFileSizeBytes": 29884,
+      "exportedTriangleCount": 550,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 11,
+      "id": "mitosis_fragments",
+      "displayName": "Mitosis Breakdown Fragments",
+      "exportCollection": "EXPORT_11_MitosisFragments",
+      "sourceCollections": [
+        "10_MITOSIS_FRAGMENTS"
+      ],
+      "sourceNamePrefixes": [
+        "NE_BreakdownFragment_"
+      ],
+      "robloxTarget": "NucleusModel/AnimationControllers/MitosisFragments",
+      "role": "animated_visual",
+      "lodPolicy": "Keep as a small fragment set for show/hide animation; avoid exporting too many tiny pieces.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_11_mitosis_fragments_lod0.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 28,
+      "meshCount": 28,
+      "curveCount": 0,
+      "emptyCount": 0,
+      "sampleObjects": [
+        "NE_BreakdownFragment_Vesicle_00",
+        "NE_BreakdownFragment_Vesicle_01",
+        "NE_BreakdownFragment_Vesicle_02",
+        "NE_BreakdownFragment_Vesicle_03",
+        "NE_BreakdownFragment_Vesicle_04",
+        "NE_BreakdownFragment_Vesicle_05",
+        "NE_BreakdownFragment_Vesicle_06",
+        "NE_BreakdownFragment_Vesicle_07",
+        "NE_BreakdownFragment_Vesicle_08",
+        "NE_BreakdownFragment_Vesicle_09",
+        "NE_BreakdownFragment_Vesicle_10",
+        "NE_BreakdownFragment_Vesicle_11",
+        "NE_BreakdownFragment_Vesicle_12",
+        "NE_BreakdownFragment_Vesicle_13",
+        "NE_BreakdownFragment_Vesicle_14",
+        "NE_BreakdownFragment_Vesicle_15"
+      ],
+      "exportedFileSizeBytes": 61388,
+      "exportedTriangleCount": 1746,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    },
+    {
+      "index": 12,
+      "id": "interaction_hotspots_collision",
+      "displayName": "Interaction Hotspots and Collision Anchors",
+      "exportCollection": "EXPORT_12_InteractionHotspotsCollision",
+      "sourceCollections": [
+        "00_CELL_CONTEXT",
+        "01_NUCLEUS_ROOT",
+        "11_INTERACTION_HOTSPOTS"
+      ],
+      "sourceNamePrefixes": [
+        "Nucleus_InteractionHotspot_",
+        "NucleusSocket_",
+        "Nucleus_RootRig",
+        "EXPORT_COLLISION_"
+      ],
+      "robloxTarget": "NucleusModel/InteractionAnchors",
+      "role": "nonvisual_gameplay",
+      "lodPolicy": "Use Roblox-native invisible parts/attachments for collision and prompts; mesh export is a guide only.",
+      "exportFile": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_12_interaction_hotspots_collision_guide.fbx",
+      "scale": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "objectCount": 24,
+      "meshCount": 22,
+      "curveCount": 0,
+      "emptyCount": 2,
+      "sampleObjects": [
+        "EXPORT_COLLISION_NucleusProxy_LowPolyShell",
+        "Nucleus_InteractionHotspot_Chromatin",
+        "Nucleus_InteractionHotspot_Chromatin_PulseRing",
+        "Nucleus_InteractionHotspot_Envelope",
+        "Nucleus_InteractionHotspot_Envelope_PulseRing",
+        "Nucleus_InteractionHotspot_Mitosis",
+        "Nucleus_InteractionHotspot_Mitosis_PulseRing",
+        "Nucleus_InteractionHotspot_Nucleolus",
+        "Nucleus_InteractionHotspot_Nucleolus_PulseRing",
+        "Nucleus_InteractionHotspot_Transcription",
+        "Nucleus_InteractionHotspot_Transcription_PulseRing",
+        "Nucleus_InteractionHotspot_Transport",
+        "Nucleus_InteractionHotspot_Transport_PulseRing",
+        "Nucleus_RootRig",
+        "Nucleus_RootRig_RadiusGuide",
+        "NucleusSocket_Axis_X"
+      ],
+      "exportedFileSizeBytes": 54028,
+      "exportedTriangleCount": 1680,
+      "exportStatus": "exported_pending_upload",
+      "robloxAssetManifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json"
+    }
+  ]
+}

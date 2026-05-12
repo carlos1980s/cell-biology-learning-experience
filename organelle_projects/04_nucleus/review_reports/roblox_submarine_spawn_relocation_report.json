@@ -1,0 +1,33 @@
+{
+  "phase": "roblox_submarine_spawn_relocation",
+  "date": "2026-05-07",
+  "goal": "Move the Play spawn from the old front pore position to the user-requested submarine-side coordinate.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Changed MainCellSwimSpawn source position to Vector3.new(0, 58, -385.691).",
+    "Changed spawnLookTarget to Vector3.new(0, 58, 0) so the player faces from the submarine side toward the cell.",
+    "Kept MainCellSwimSpawn.CanCollide=false so the spawn pad does not become an invisible obstruction.",
+    "Updated validation assertions to treat the submarine-side spawn as the current contract."
+  ],
+  "studio_probe": {
+    "model": "CellEnvironment_Main",
+    "spawn_position": "0, 58, -385.6910095214844",
+    "spawn_can_collide": false,
+    "spawn_look_vector": "0, 0, 0.9999999403953552",
+    "submarine_pivot": "0, 406, -385.6910095214844",
+    "submarine_bounding_box_center": "-0.0421142578125, 405.99993896484375, -385.6910095214844",
+    "submarine_bounding_box_size": "11.11754322052002, 8.835930824279785, 9.058399200439453",
+    "spawn_to_submarine_xz_studs": 0
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() and confirmed MainCellSwimSpawn position and look vector."
+  ],
+  "note": "The spawn now matches the requested X/Z and Y=58 swimming height. The live Submarine model's visible bounding box is currently around Y=406, so the submarine mesh itself may need a separate relocation if the visual model should also sit at Y=58.",
+  "result": "Pressing Play should now spawn the character at the submarine-side water coordinate instead of near the old pore-side floating start."
+}

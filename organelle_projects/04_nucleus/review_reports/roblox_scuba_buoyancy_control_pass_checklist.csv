@@ -1,0 +1,11 @@
+check,status,evidence
+Scuba buoyancy rig added,pass,"MainCellSwimmingController contains MainCellScubaBuoyancyRig"
+Persistent buoyancy trim added,pass,"MainCellSwimmingController contains buoyancyTrim"
+Touch inflate/vent controls added,pass,"MainCellSwimmingController contains InflateButton and VentButton"
+Buoyancy gauge added,pass,"MainCellSwimmingController contains BuoyancyGauge"
+Bubble feedback added,pass,"MainCellSwimmingController contains MainCellBuoyancyBubbles"
+Keyboard/gamepad mappings preserved,pass,"Space/Ctrl/Q and A/R1/B/L1 feed buoyancy intent"
+Live Studio controller updated,pass,"controller_source_length 24309 and all source checks true"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Android gameplay feel,not_tested,"requires phone retest"
+Quest gameplay feel,not_tested,"requires headset retest"

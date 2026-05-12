@@ -1,0 +1,21 @@
+{
+  "schema_version": "nucleus_socket_map_v1",
+  "sockets": [
+    {
+      "id": "nucleus_root",
+      "component": "Nucleus_RootRig",
+      "purpose": "Primary model pivot and Roblox model root."
+    },
+    {
+      "id": "whole_cell_context",
+      "component": "WholeCell_ContextSocket",
+      "purpose": "Placement anchor for whole-cell integration."
+    },
+    {
+      "id": "rough_er_attachment_zone",
+      "component": "RoughER_Connection",
+      "purpose": "Future external ER attachment zone outside the nuclear envelope."
+    }
+  ]
+}
+

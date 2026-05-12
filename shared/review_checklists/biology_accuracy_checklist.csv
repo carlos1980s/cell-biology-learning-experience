@@ -1,0 +1,7 @@
+check_id,criterion,required
+bio_001,All major components support biological function,true
+bio_002,The organelle does not imply impossible processes,true
+bio_003,Inputs outputs or relationships are represented where relevant,true
+bio_004,Student-facing explanation is concise and accurate,true
+bio_005,Component names match the manifest,true
+

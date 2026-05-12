@@ -1,0 +1,90 @@
+{
+  "schema_version": "phase_07r_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "07R",
+  "builder": "Corrective Rough ER Connection Builder",
+  "status": "built_pending_independent_visual_review",
+  "base_phase": "06T transport cargo",
+  "created_manifest_components": [
+    "RoughER_Connection"
+  ],
+  "carried_forward_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice",
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions",
+    "Transport_Cargo"
+  ],
+  "explicitly_not_created": [
+    "Mitosis_Fragments",
+    "Interaction_Hotspots",
+    "CondensedChromosomes",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/08_rough_er_connection_openstax.png",
+    "reference_images/nucleus_specs/01_nuclear_envelope.png"
+  ],
+  "source_reference": "OpenStax Biology 2e, The Endomembrane System and Proteins, Figure 4.16 image asset",
+  "text_specs_used": [
+    "organelle_projects/04_nucleus/nucleus_reverse_component_manifest_deep.csv rows ER_001-ER_006",
+    "organelle_projects/06_rough_er/ROUGH_ER_PROJECT_BRIEF.md"
+  ],
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_07r_rough_er_connection.blend",
+  "render_paths": [
+    {
+      "type": "reference_board",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_07r_reference_board.png",
+      "status": "complete"
+    },
+    {
+      "type": "rough_er_overview",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_07r_rough_er_overview.png",
+      "status": "complete"
+    },
+    {
+      "type": "er_connection_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_07r_er_connection_closeup.png",
+      "status": "complete"
+    }
+  ],
+  "membrane_sheet_count": 2,
+  "bridge_count": 1,
+  "lumen_band_count": 1,
+  "ribosome_dot_count": 72,
+  "cisterna_edge_lip_count": 4,
+  "sheet_lumen_line_count": 2,
+  "hidden_mitosis_seam_count": 1,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "reference_images_in_same_blender_scene": true,
+    "phase_scope_respected": true,
+    "rough_er_remains_outside_nucleus": true,
+    "outer_envelope_bridge_created": true,
+    "er_lumen_continuity_band_created": true,
+    "ribosomes_on_cytosolic_surface_only": true,
+    "pore_readability_not_obscured": true,
+    "builder_did_not_self_approve_visual_gate": true
+  },
+  "organic_treatment_notes": [
+    "Rough ER is built as folded thick custom mesh sheets with procedural material bump, dark cisterna lips, and visible lumen ribbons, not flat rectangles.",
+    "The bridge visually touches the outer nuclear envelope and carries a translucent lumen-continuity band.",
+    "Ribosome dots are irregularly distributed on the outside-facing ER sheet surfaces, not inside the lumen or on pore rings."
+  ],
+  "roblox_export_risks": [
+    "Folded sheet meshes need decimation and collision simplification before Roblox import.",
+    "Ribosome dots should be instanced or baked into LOD textures at distance.",
+    "The lumen-continuity material needs Roblox transparency validation."
+  ],
+  "next_required_step": "Run independent visual, biology, and Roblox readiness review before adding mitosis fragments."
+}

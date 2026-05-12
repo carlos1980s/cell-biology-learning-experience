@@ -1,0 +1,101 @@
+{
+  "schema_version": "phase_08g_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "builder": "Gene Dynamics Action Layer Builder",
+  "status": "built_with_scripted_specialist_reviews",
+  "base_phase": "07R rough ER connection",
+  "source_blend": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_07r_rough_er_connection.blend",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_08g_gene_dynamics.blend",
+  "created_action_components": [
+    "GeneDynamics"
+  ],
+  "created_action_objects": [
+    "ActiveGene_Locus",
+    "Chromatin_OpenStatePatch",
+    "TranscriptionFactor_Markers",
+    "RNAPolymerase_Complex",
+    "NascentRNA_Strand",
+    "PreMRNA_ProcessingMarkers",
+    "MatureMRNA_Cargo",
+    "MRNA_ExportPath_ToPore",
+    "PoreExport_CheckpointState",
+    "NucleusAction_Hotspots"
+  ],
+  "carried_forward_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice",
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection"
+  ],
+  "explicitly_not_rebuilt": [
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "NuclearPore_Complexes",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "CondensedChromosomes"
+  ],
+  "render_paths": [
+    {
+      "type": "active_gene_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_08g_active_gene_closeup.png",
+      "status": "complete"
+    },
+    {
+      "type": "transcription_growth",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_08g_transcription_growth.png",
+      "status": "complete"
+    },
+    {
+      "type": "mrna_pore_export",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_08g_mrna_pore_export.png",
+      "status": "complete"
+    }
+  ],
+  "action_object_count": 10,
+  "gene_dynamics_root": "GeneDynamics",
+  "selected_export_pore": "PoreExport_CheckpointState",
+  "keyframed_objects": 3,
+  "dna_export_present": false,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "phase_scope_respected": true,
+    "major_action_objects_use_exact_manifest_names": true,
+    "gene_locus_inside_nucleus": true,
+    "chromatin_open_state_patch_created": true,
+    "rna_polymerase_marker_created": true,
+    "nascent_rna_strand_created": true,
+    "mature_mrna_cargo_created": true,
+    "mrna_export_path_crosses_envelope_only_at_pore": true,
+    "pore_export_checkpoint_state_created": true,
+    "translation_not_inside_nucleus": true,
+    "dna_export_absent": true,
+    "base_nucleus_not_rebuilt": true
+  },
+  "notes_on_what_changed": [
+    "Added an action-specific GeneDynamics layer parented to Nucleus_RootRig.",
+    "Represented active gene targeting, local chromatin opening, RNA polymerase, nascent RNA, simplified processing, mature mRNA export, and selective pore checkpoint state.",
+    "Kept the existing Phase 07R envelope, pores, chromatin, nucleolus, transport cargo, and rough ER connection as carried-forward anatomy."
+  ],
+  "roblox_export_risks": [
+    "Phase 08G curves and small marker meshes need conversion to MeshParts, Beams, or Attachments before production Roblox import.",
+    "Transparent/emissive RNA and hotspot materials need Studio readability validation against the nucleoplasm.",
+    "GeneDynamics should ship as a toggleable inspection/action layer so it does not obscure base nucleus anatomy."
+  ],
+  "next_recommended_phase": "Phase 08R: Roblox mapping/export packaging for GeneDynamics, including Beam/Attachment variants and runtime event binding."
+}

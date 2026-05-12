@@ -1,0 +1,9 @@
+check,status,evidence
+Cell wall collision folder created,pass,"CellEnvironment_Main.CellWallCollisionBounds exists."
+All wall blockers present,pass,"Studio probe found 6 BasePart blockers."
+All wall blockers collidable,pass,"Studio probe found 6/6 CanCollide=true."
+Boundary is invisible,pass,"All blockers use Transparency=1."
+Native water swimming preserved,pass,"No custom player physics was reintroduced."
+Visual membrane preserved,pass,"No imported organelle or membrane visual mesh was modified."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

@@ -1,0 +1,20 @@
+{
+  "schema_version": "phase_08g_roblox_review_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "reviewer": "Roblox Export Reviewer",
+  "roblox_pass_for_source_art": true,
+  "roblox_export_ready": false,
+  "approved_for_next_phase": true,
+  "blocking_export_risks": [
+    "Curve action objects need Roblox-compatible Beam, Attachment, or MeshPart conversion.",
+    "Small marker meshes should be grouped or instanced for runtime performance.",
+    "Emission and transparency need Studio validation."
+  ],
+  "recommended_roblox_plan": [
+    "Export GeneDynamics as an optional action layer under Nucleus_Model/GeneDynamics.",
+    "Represent MRNA_ExportPath_ToPore as Beams between Attachments where possible.",
+    "Keep ActiveGene_Locus and PoreExport_CheckpointState as stable named runtime targets."
+  ],
+  "approved_to_continue": true
+}

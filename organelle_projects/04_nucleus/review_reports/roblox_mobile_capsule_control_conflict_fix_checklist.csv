@@ -1,0 +1,10 @@
+check,status,evidence
+Legacy cell movement controller conflict found,pass,"Studio showed CellPlayerBootstrap enabled while MainCellSwimmingController was also enabled"
+Legacy capsule touch controller conflict found,pass,"Studio showed ExplorerControls enabled"
+Main build disables legacy movement scripts,pass,"BuildMainCellExperience disables CellPlayerBootstrap and ExplorerControls"
+Main build disables old cytoplasm lighting controller,pass,"BuildMainCellExperience disables CellCytoplasmLightingController"
+Live Studio confirms old controls disabled,pass,"CellPlayerBootstrap disabled true; ExplorerControls disabled true"
+Main swim controller remains active,pass,"MainCellSwimmingController disabled false"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Android retest,not_tested,"requires phone play test"
+Quest retest,not_tested,"requires headset play test"

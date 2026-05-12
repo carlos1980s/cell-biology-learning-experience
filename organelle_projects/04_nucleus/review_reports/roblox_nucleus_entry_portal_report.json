@@ -1,0 +1,40 @@
+{
+  "phase": "roblox_nucleus_entry_portal",
+  "date": "2026-05-07",
+  "goal": "Add a readable and playable entrance into the actual nucleus, distinct from the removed outer cell entry helpers.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Added a NucleusEntryPortal to the live Workspace.Nucleus_Model when the nucleus is large enough for player traversal.",
+    "Placed the portal on the side of the nucleus facing the submarine/player approach.",
+    "Added an organic rim, glow, light, and short bubble/beam trail using non-colliding parts.",
+    "Changed the nucleus collision mode from a simple closed ImportedProxy to PortalControlledProxy for the main nucleus.",
+    "Added a runtime collision controller that keeps the nucleus proxy solid by default, then opens it when the player is near the portal or already inside the nucleus.",
+    "Kept the recently removed outer cell entrance and generated Terrain systems removed."
+  ],
+  "studio_probe": {
+    "model": "Workspace.Nucleus_Model",
+    "root_model": "CellEnvironment_Main",
+    "portal_count": 1,
+    "portal_enabled": true,
+    "portal_exists": true,
+    "portal_center": "-34.79245376586914, 58, -238.5952911376953",
+    "portal_radius": 34,
+    "portal_depth": 82,
+    "portal_parts": 35,
+    "portal_collidable_parts": 0,
+    "nucleus_collision_mode": "PortalControlledProxy",
+    "rebuild_stability": "Portal center stayed unchanged across two consecutive require(builder).build() calls.",
+    "spawn_position": "0, 58, -385.6910095214844"
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() twice and confirmed the portal did not drift between rebuilds."
+  ],
+  "note": "This is a Roblox-side gameplay portal over the current imported nucleus mesh. A future Blender source pass should cut a matching organic doorway into the exported visual/collision mesh for highest fidelity.",
+  "result": "The player now has a distinct nucleus entrance marker and a portal-controlled collision path into the actual nucleus."
+}

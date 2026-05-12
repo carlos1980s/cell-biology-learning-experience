@@ -1,0 +1,268 @@
+{
+  "schema_version": "vesicles_endosomes_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 7,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_TransportVesicles",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_TransportVesicles.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "operationId": "c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "operationId": "c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "done": true,
+        "response": {
+          "path": "assets/101922624152828",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:17.631973700Z",
+          "assetId": "101922624152828",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_TransportVesicles",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_TransportVesicles",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "101922624152828"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_EndosomeBodies",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_EndosomeBodies.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "operationId": "a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "operationId": "a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "done": true,
+        "response": {
+          "path": "assets/129163239425459",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:24.006901100Z",
+          "assetId": "129163239425459",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_EndosomeBodies",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_EndosomeBodies",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "129163239425459"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_CoatedVesicleCues",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CoatedVesicleCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "operationId": "75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "operationId": "75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "done": true,
+        "response": {
+          "path": "assets/133284714986745",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:33.587715300Z",
+          "assetId": "133284714986745",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_CoatedVesicleCues",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_CoatedVesicleCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "133284714986745"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_RabSNARECues",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_RabSNARECues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "operationId": "334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "operationId": "334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "done": true,
+        "response": {
+          "path": "assets/123159007290460",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:43.281059800Z",
+          "assetId": "123159007290460",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_RabSNARECues",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_RabSNARECues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "123159007290460"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_CargoSortingRoutes",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CargoSortingRoutes.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/c249ab32-a395-42d6-842e-f9a2f589976e",
+        "operationId": "c249ab32-a395-42d6-842e-f9a2f589976e",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/c249ab32-a395-42d6-842e-f9a2f589976e",
+        "operationId": "c249ab32-a395-42d6-842e-f9a2f589976e",
+        "done": true,
+        "response": {
+          "path": "assets/91251504545439",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:47.749907400Z",
+          "assetId": "91251504545439",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_CargoSortingRoutes",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_CargoSortingRoutes",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "91251504545439"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_ANCHORS_VesiclesEndosomesRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "operationId": "0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "operationId": "0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "done": true,
+        "response": {
+          "path": "assets/82727042734604",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:55.274226700Z",
+          "assetId": "82727042734604",
+          "displayName": "VesiclesEndosomes_EXPORT_ANCHORS_VesiclesEndosomes",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "82727042734604"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_COLLISION_VesiclesEndosomesProxy",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_COLLISION_VesiclesEndosomesProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "operationId": "29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "operationId": "29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "done": true,
+        "response": {
+          "path": "assets/118284458751030",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:01.265231300Z",
+          "assetId": "118284458751030",
+          "displayName": "VesiclesEndosomes_EXPORT_COLLISION_VesiclesEndosom",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_COLLISION_VesiclesEndosomesProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "118284458751030"
+    }
+  ]
+}

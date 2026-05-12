@@ -47,3 +47,68 @@ To list MCP tools after the code-execution probe:
 ```bash
 python3 tools/roblox_mcp_smoke.py --list-tools
 ```
+
+## Current Compatibility Issue
+
+On 2026-04-29, `rbx-studio-mcp 0.2.365` could list tools but every
+`tools/call` timed out. Studio still executed the command, so the request path
+was working. With `RUST_LOG=trace`, the bridge rejected Studio's `/response`
+body with:
+
+```text
+missing field `success`
+```
+
+The installed Studio plugin posts legacy responses shaped like:
+
+```json
+{"id":"...","response":"[OUTPUT] ..."}
+```
+
+The bridge binary expects a newer response body containing `success`. Until the
+installed plugin and binary are on matching versions, use the compatibility
+helper:
+
+```bash
+python3 tools/roblox_plugin_bridge.py 'print("compat bridge ok")'
+```
+
+This helper talks directly to the existing plugin polling interface on
+`127.0.0.1:44755` and accepts the legacy response shape. It leaves the installed
+Roblox files unchanged.
+
+## Production Workflow Notes
+
+Before running assembly scripts, stop Play/Test mode. The edit-time Workspace and
+the running play session can diverge; a model visible in play mode may not exist
+in the edit-time Workspace that production scripts need to repair.
+
+Recommended order:
+
+1. Stop play mode in Studio.
+2. Probe the bridge:
+
+   ```bash
+   python3 tools/roblox_plugin_bridge.py 'print("compat bridge ok")'
+   ```
+
+3. Run the assembler in edit mode.
+4. Run the Studio assembly validator.
+5. Inspect with Computer Use.
+6. Enter play mode and capture a player-camera screenshot.
+7. Stop play mode again before making further edit-time changes.
+
+If `tools/roblox_plugin_bridge.py` fails with `OSError: [Errno 48] Address
+already in use`, check the listener:
+
+```bash
+lsof -nP -iTCP:44755 -sTCP:LISTEN
+```
+
+If the listener is `/Applications/RobloxStudioMCP.app/.../rbx-studio-mcp
+--stdio`, it may be a stale helper holding the legacy bridge port. Kill only that
+helper process, not Roblox Studio, then retry the legacy bridge.
+
+Do not leave visible raw package imports in `Workspace`. Production assemblers
+must keep raw packages under `Workspace.MeshLibrary`, hide them, and clone only
+the visible reviewed assembly into the scoped organelle model.

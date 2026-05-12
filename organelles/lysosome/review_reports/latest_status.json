@@ -1,0 +1,14 @@
+{
+  "schema_version": "lysosome_latest_status_v1",
+  "organelle": "lysosome",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/lysosome/exports/lysosome_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/lysosome/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_LysosomeMembrane, EXPORT_LOD0_AcidicInterior, EXPORT_LOD0_DigestiveEnzymeClusters, EXPORT_LOD0_WasteCargoFragments, EXPORT_LOD0_RecycledOutputCues, EXPORT_ANCHORS_LysosomeRuntime, EXPORT_COLLISION_LysosomeProxy"
+  ],
+  "next_allowed_scope": "Upload Lysosome Phase 04 packages and record package_asset_id for every group."
+}

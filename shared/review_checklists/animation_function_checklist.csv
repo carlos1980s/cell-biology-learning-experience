@@ -1,0 +1,7 @@
+check_id,criterion,required
+anim_001,Animation supports biological function,true
+anim_002,Idle active stressed and inspected states are distinguishable,true
+anim_003,Motion avoids clipping or unreadable overlap,true
+anim_004,Pivots and component grouping support Roblox animation,true
+anim_005,Animation event hooks are documented,true
+

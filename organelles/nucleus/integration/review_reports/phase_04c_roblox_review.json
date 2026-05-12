@@ -1,0 +1,20 @@
+{
+  "schema_version": "phase_04c_roblox_review_v1",
+  "organelle": "nucleus",
+  "phase": "04C",
+  "reviewer": "Roblox Export Reviewer",
+  "roblox_pass_for_source_art": true,
+  "roblox_export_ready": false,
+  "approved_for_next_phase": true,
+  "blocking_export_risks": [
+    "The chromatin source art uses 46 curve fibers and 1240 bead instances merged into one bead mesh; direct export would be too dense for interactive Roblox use.",
+    "Curves must be converted, decimated, and split into LOD groups before import.",
+    "Nucleoplasm transparency may cause sorting issues around the chromatin in Roblox."
+  ],
+  "recommended_roblox_plan": [
+    "Keep this Blender file as high-quality source art.",
+    "Create a medium LOD with fewer converted curves and a low LOD using baked texture cards or simplified ropes.",
+    "Make chromatin toggleable for educational inspection views."
+  ],
+  "approved_to_continue": true
+}

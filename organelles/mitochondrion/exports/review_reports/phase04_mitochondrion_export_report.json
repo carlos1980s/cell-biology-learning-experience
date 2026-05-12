@@ -1,0 +1,1269 @@
+{
+  "schema_version": "mitochondrion_builder_report_v1",
+  "phase": "phase_04",
+  "phase_id": "phase_04_roblox_export_packaging",
+  "organelle": "mitochondrion",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Mitochondrion_RootRig",
+    "OuterMembrane",
+    "InnerMembrane_Cristae",
+    "Matrix_Volume",
+    "ATP_SignalSites",
+    "Stress_CueLayer",
+    "Interaction_Hotspots"
+  ],
+  "incomplete_components": [],
+  "manifest_components_still_missing_after_phase": [],
+  "render_paths": [
+    {
+      "type": "wide_export",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/review_renders/phase_04_export_groups_wide.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "runtime_anchors",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/review_renders/phase_04_runtime_anchors.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "collision_proxy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/review_renders/phase_04_collision_proxy.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/mitochondrion_phase_04_export_packaging.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "Mitochondrion_RootRig",
+    "WholeCell_ContextSocket",
+    "OuterMembrane",
+    "OuterMembrane_AsymmetricShell",
+    "OuterMembrane_RimFold_01",
+    "OuterMembrane_RimFold_02",
+    "OuterMembrane_RimFold_03",
+    "OuterMembrane_RimFold_04",
+    "OuterMembrane_RimFold_05",
+    "OuterMembrane_RimFold_06",
+    "OuterMembrane_RimFold_07",
+    "OuterMembrane_RimFold_08",
+    "Matrix_Volume",
+    "Matrix_Volume_AmberInterior",
+    "InnerMembrane_Cristae",
+    "InnerMembrane_Cristae_Fold_01",
+    "InnerMembrane_Cristae_Fold_02",
+    "InnerMembrane_Cristae_Fold_03",
+    "InnerMembrane_Cristae_Fold_04",
+    "InnerMembrane_Cristae_Fold_05",
+    "InnerMembrane_Cristae_Fold_06",
+    "InnerMembrane_Cristae_Fold_07",
+    "InnerMembrane_Cristae_Fold_08",
+    "InnerMembrane_Cristae_Fold_09",
+    "ATP_SignalSites",
+    "ATP_SignalSites_ATPGlow_01",
+    "ATP_SignalSites_ATPGlow_02",
+    "ATP_SignalSites_ATPGlow_03",
+    "ATP_SignalSites_ATPGlow_04",
+    "ATP_SignalSites_ATPGlow_05",
+    "ATP_SignalSites_ATPGlow_06",
+    "ATP_SignalSites_ATPGlow_07",
+    "ATP_SignalSites_ATPGlow_08",
+    "ATP_SignalSites_ATPGlow_09",
+    "ATP_SignalSites_ATPGlow_10",
+    "ATP_SignalSites_ATPGlow_11",
+    "ATP_SignalSites_ATPGlow_12",
+    "ATP_SignalSites_ATPGlow_13",
+    "ATP_SignalSites_ATPGlow_14",
+    "ATP_SignalSites_ATPGlow_15",
+    "ATP_SignalSites_ATPGlow_16",
+    "ATP_SignalSites_ATPGlow_17",
+    "ATP_SignalSites_ATPGlow_18",
+    "Stress_CueLayer",
+    "Stress_CueLayer_SurfacePatch_01",
+    "Stress_CueLayer_SurfacePatch_02",
+    "Stress_CueLayer_SurfacePatch_03",
+    "Stress_CueLayer_SurfacePatch_04",
+    "Stress_CueLayer_SurfacePatch_05",
+    "Stress_CueLayer_SurfacePatch_06",
+    "Interaction_Hotspots",
+    "Interaction_Hotspots_MitoAnchor_01",
+    "Interaction_Hotspots_MitoAnchor_02",
+    "Interaction_Hotspots_MitoAnchor_03",
+    "Interaction_Hotspots_MitoAnchor_04",
+    "Mitochondrion_CollisionProxy"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "Mitochondrion_KeyLight",
+    "Camera_Mitochondrion_wide_export",
+    "Camera_Mitochondrion_runtime_anchors",
+    "Camera_Mitochondrion_collision_proxy"
+  ],
+  "organic_construction_violations": [],
+  "transform_status": [
+    {
+      "name": "Mitochondrion_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_AsymmetricShell",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_06",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_07",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterMembrane_RimFold_08",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Matrix_Volume",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Matrix_Volume_AmberInterior",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_06",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_07",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_08",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerMembrane_Cristae_Fold_09",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_06",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_07",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_08",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_09",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_10",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_11",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_12",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_13",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_14",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_15",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_16",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_17",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ATP_SignalSites_ATPGlow_18",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer_SurfacePatch_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer_SurfacePatch_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer_SurfacePatch_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer_SurfacePatch_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer_SurfacePatch_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Stress_CueLayer_SurfacePatch_06",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_MitoAnchor_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_MitoAnchor_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_MitoAnchor_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_MitoAnchor_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Mitochondrion_CollisionProxy",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 61,
+      "mesh_object_count": 49,
+      "triangle_count": 8258,
+      "material_count": 9,
+      "texture_count": 0
+    },
+    "export_candidates_only": {
+      "object_count": 56,
+      "mesh_object_count": 48,
+      "triangle_count": 7586,
+      "material_count": 8,
+      "texture_count": 0
+    }
+  },
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/exports/mitochondrion_phase_04_roblox_asset_manifest.json",
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": true,
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated mitochondrion generated from script.",
+    "Visible biological meshes are generated organic meshes, not default primitives."
+  ],
+  "roblox_export_risks": [
+    "Cristae and ATP cue meshes need runtime budget validation.",
+    "Roblox package IDs are required before Studio assembly can pass."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

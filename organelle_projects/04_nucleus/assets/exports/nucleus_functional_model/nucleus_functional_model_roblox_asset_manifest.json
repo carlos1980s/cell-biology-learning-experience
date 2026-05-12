@@ -1,0 +1,1279 @@
+{
+  "schema_version": "nucleus_functional_model_roblox_asset_manifest_v1",
+  "organelle": "nucleus",
+  "source_blend": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /nucleus_roblox_functional_model.blend",
+  "source_export_manifest": "organelle_projects/04_nucleus/assets/nucleus_export_manifest.json",
+  "export_directory": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model",
+  "scale_contract": {
+    "blenderUnitMeaning": "nucleus_source_unit",
+    "sourceOuterRadiusBlenderUnits": 3.2,
+    "sourceOuterDiameterBlenderUnits": 6.4,
+    "recommendedRobloxStudsPerBlenderUnit": 35.0,
+    "targetOuterDiameterRobloxStuds": 224.0,
+    "pivotObject": "Nucleus_RootRig",
+    "pivotLocationBlender": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "notes": "Keep all export groups aligned to Nucleus_RootRig. Roblox code should scale imported groups uniformly from this contract."
+  },
+  "roblox_owner": {
+    "creator_type": "group",
+    "group_id_env": "ROBLOX_GROUP_ID"
+  },
+  "open_cloud": {
+    "api_key_env": "ROBLOX_OPEN_CLOUD_API_KEY",
+    "create_asset_endpoint": "https://apis.roblox.com/assets/v1/assets",
+    "asset_type": "Model",
+    "create_file_limit_bytes": 20971520
+  },
+  "roblox_model_name": "Nucleus_Model",
+  "raw_package_container": "Workspace.MeshLibrary/Nucleus_FunctionalModel_RawPackages",
+  "assembled_model_container": "Workspace.Nucleus_Model",
+  "upload_ready": true,
+  "exports": [
+    {
+      "export_group_id": "outer_membrane_panels",
+      "export_index": 1,
+      "display_name": "Outer Membrane Panels",
+      "export_collection": "EXPORT_01_OuterMembranePanels",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/OuterEnvelope",
+      "roblox_material_family": "visual",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_01_outer_membrane_panels_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 1216508,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 365,
+      "export_object_count": 1,
+      "triangle_count": 39514,
+      "decimate_ratio": 0.36,
+      "material_count": 6,
+      "material_names": [
+        "Membrane_Cutaway_Edge",
+        "Membrane_Outer_Purple",
+        "Membrane_Rugosity_Dark",
+        "Membrane_Surface_Bump",
+        "NPC_Hole_Shadow",
+        "NPC_Rim_DarkPurple"
+      ],
+      "sample_source_objects": [
+        "NE_CutawayEdge_OuterMembrane_Rim_EntrancePortal",
+        "NE_OuterMembrane_ExposedPoreHole_00_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_00_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_00_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_01_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_01_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_01_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_02_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_02_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_02_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_03_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_03_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_03_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_04_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_04_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_04_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_05_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_05_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_05_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_06_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_06_DarkCavity",
+        "NE_OuterMembrane_ExposedPoreHole_06_RaggedLip",
+        "NE_OuterMembrane_ExposedPoreHole_07_BlackRecessDisk",
+        "NE_OuterMembrane_ExposedPoreHole_07_DarkCavity"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_01_outer_membrane_panels_lod0",
+      "studio_import_model_names": [
+        "nucleus_01_outer_membrane_panels_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_01_outer_membrane_panels_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://120884519897871",
+          "size": [
+            662.835205078125,
+            657.453857421875,
+            656.3394775390625
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        1902.9481201171875,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        15
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://120884519897871"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://120884519897871",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "npc_assemblies",
+      "export_index": 2,
+      "display_name": "Nuclear Pore Complex Assemblies",
+      "export_collection": "EXPORT_02_NPCAssemblies",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/NPCAssemblies",
+      "roblox_material_family": "visual_scriptable",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_02_npc_assemblies_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 887500,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 706,
+      "export_object_count": 1,
+      "triangle_count": 28353,
+      "decimate_ratio": 0.26,
+      "material_count": 5,
+      "material_names": [
+        "Membrane_Rugosity_Dark",
+        "NPC_Gate_Lilac_Transparent",
+        "NPC_Hole_Shadow",
+        "NPC_Protein_Violet",
+        "NPC_Rim_DarkPurple"
+      ],
+      "sample_source_objects": [
+        "NPC_GateCore_Selectivity_01",
+        "NPC_GateCore_Selectivity_01_FGFilament_1",
+        "NPC_GateCore_Selectivity_01_FGFilament_2",
+        "NPC_GateCore_Selectivity_01_FGFilament_3",
+        "NPC_GateCore_Selectivity_01_FGFilament_4",
+        "NPC_GateCore_Selectivity_01_FGFilament_5",
+        "NPC_GateCore_Selectivity_01_FGFilament_6",
+        "NPC_GateCore_Selectivity_02",
+        "NPC_GateCore_Selectivity_02_FGFilament_1",
+        "NPC_GateCore_Selectivity_02_FGFilament_2",
+        "NPC_GateCore_Selectivity_02_FGFilament_3",
+        "NPC_GateCore_Selectivity_02_FGFilament_4",
+        "NPC_GateCore_Selectivity_02_FGFilament_5",
+        "NPC_GateCore_Selectivity_02_FGFilament_6",
+        "NPC_GateCore_Selectivity_03",
+        "NPC_GateCore_Selectivity_03_FGFilament_1",
+        "NPC_GateCore_Selectivity_03_FGFilament_2",
+        "NPC_GateCore_Selectivity_03_FGFilament_3",
+        "NPC_GateCore_Selectivity_03_FGFilament_4",
+        "NPC_GateCore_Selectivity_03_FGFilament_5",
+        "NPC_GateCore_Selectivity_03_FGFilament_6",
+        "NPC_GateCore_Selectivity_04",
+        "NPC_GateCore_Selectivity_04_FGFilament_1",
+        "NPC_GateCore_Selectivity_04_FGFilament_2"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_02_npc_assemblies_lod0",
+      "studio_import_model_names": [
+        "nucleus_02_npc_assemblies_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_02_npc_assemblies_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://116475457528450",
+          "size": [
+            680.1744384765625,
+            399.63165283203125,
+            679.46484375
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        1902.9481201171875,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        18
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://116475457528450"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://116475457528450",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "inner_membrane_panels",
+      "export_index": 3,
+      "display_name": "Inner Membrane Panels",
+      "export_collection": "EXPORT_03_InnerMembranePanels",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/InnerMembrane",
+      "roblox_material_family": "visual",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_03_inner_membrane_panels_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 333676,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 17,
+      "export_object_count": 1,
+      "triangle_count": 10861,
+      "decimate_ratio": 0.42,
+      "material_count": 2,
+      "material_names": [
+        "Membrane_Cutaway_Edge",
+        "Membrane_Inner_DeepPurple"
+      ],
+      "sample_source_objects": [
+        "NE_CutawayEdge_InnerMembrane_Rim_EntrancePortal",
+        "NE_InnerMembrane_Panel_01",
+        "NE_InnerMembrane_Panel_02",
+        "NE_InnerMembrane_Panel_03",
+        "NE_InnerMembrane_Panel_04",
+        "NE_InnerMembrane_Panel_05",
+        "NE_InnerMembrane_Panel_06",
+        "NE_InnerMembrane_Panel_07",
+        "NE_InnerMembrane_Panel_08",
+        "NE_InnerMembrane_Panel_09",
+        "NE_InnerMembrane_Panel_10",
+        "NE_InnerMembrane_Panel_11",
+        "NE_InnerMembrane_Panel_12",
+        "NE_InnerMembrane_Panel_13",
+        "NE_InnerMembrane_Panel_14",
+        "NE_InnerMembrane_Panel_15",
+        "NE_InnerMembrane_Panel_16"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_03_inner_membrane_panels_lod0",
+      "studio_import_model_names": [
+        "nucleus_03_inner_membrane_panels_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_03_inner_membrane_panels_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://88755769985681",
+          "size": [
+            609.1212158203125,
+            598.740234375,
+            608.9429931640625
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        -81.36068725585938,
+        83.0309066772461,
+        -285.9862060546875
+      ],
+      "studio_import_workspace_indices": [
+        7
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://88755769985681"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://88755769985681",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "perinuclear_lumen",
+      "export_index": 4,
+      "display_name": "Perinuclear Lumen Band",
+      "export_collection": "EXPORT_04_PerinuclearLumen",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/PerinuclearLumen",
+      "roblox_material_family": "visual",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_04_perinuclear_lumen_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 122604,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 17,
+      "export_object_count": 1,
+      "triangle_count": 3727,
+      "decimate_ratio": 0.36,
+      "material_count": 1,
+      "material_names": [
+        "Lumen_AmberGlow_Transparent"
+      ],
+      "sample_source_objects": [
+        "NE_PerinuclearSpace_LumenBand_01",
+        "NE_PerinuclearSpace_LumenBand_02",
+        "NE_PerinuclearSpace_LumenBand_03",
+        "NE_PerinuclearSpace_LumenBand_04",
+        "NE_PerinuclearSpace_LumenBand_05",
+        "NE_PerinuclearSpace_LumenBand_06",
+        "NE_PerinuclearSpace_LumenBand_07",
+        "NE_PerinuclearSpace_LumenBand_08",
+        "NE_PerinuclearSpace_LumenBand_09",
+        "NE_PerinuclearSpace_LumenBand_10",
+        "NE_PerinuclearSpace_LumenBand_11",
+        "NE_PerinuclearSpace_LumenBand_12",
+        "NE_PerinuclearSpace_LumenBand_13",
+        "NE_PerinuclearSpace_LumenBand_14",
+        "NE_PerinuclearSpace_LumenBand_15",
+        "NE_PerinuclearSpace_LumenBand_16",
+        "NE_PerinuclearSpace_LumenBand_EntrancePortal_GoldRim"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_04_perinuclear_lumen_lod0",
+      "studio_import_model_names": [
+        "nucleus_04_perinuclear_lumen_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_04_perinuclear_lumen_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://113725693331841",
+          "size": [
+            619.190185546875,
+            598.9891967773438,
+            609.0538330078125
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        -118.80770874023438,
+        2032.56787109375,
+        -267.54376220703125
+      ],
+      "studio_import_workspace_indices": [
+        17
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://113725693331841"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://113725693331841",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "lamina_web",
+      "export_index": 5,
+      "display_name": "Nuclear Lamina Web",
+      "export_collection": "EXPORT_05_LaminaWeb",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/LaminaWeb",
+      "roblox_material_family": "visual",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_05_lamina_web_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 523132,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 81,
+      "export_object_count": 1,
+      "triangle_count": 17113,
+      "decimate_ratio": 0.22,
+      "material_count": 2,
+      "material_names": [
+        "Lamina_Gold",
+        "Lamina_Node_DarkGold"
+      ],
+      "sample_source_objects": [
+        "NuclearLamina_LatticeTile_Latitude_00",
+        "NuclearLamina_LatticeTile_Latitude_01",
+        "NuclearLamina_LatticeTile_Latitude_02",
+        "NuclearLamina_LatticeTile_Latitude_03",
+        "NuclearLamina_LatticeTile_Meridian_04",
+        "NuclearLamina_LatticeTile_Meridian_05",
+        "NuclearLamina_LatticeTile_Meridian_06",
+        "NuclearLamina_LatticeTile_Meridian_07",
+        "NuclearLamina_LatticeTile_Meridian_08",
+        "NuclearLamina_LatticeTile_Meridian_09",
+        "NuclearLamina_LatticeTile_Meridian_10",
+        "NuclearLamina_LatticeTile_Meridian_11",
+        "NuclearLamina_LatticeTile_Meridian_12",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_00",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_01",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_02",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_03",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_04",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_05",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_06",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_07",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_08",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_09",
+        "NuclearLamina_LatticeTile_OrganicCrosslink_10"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_05_lamina_web_lod0",
+      "studio_import_model_names": [
+        "nucleus_05_lamina_web_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_05_lamina_web_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://107422643165153",
+          "size": [
+            561.485595703125,
+            556.2632446289062,
+            562.5330810546875
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        -87.49720001220703,
+        2021.7041015625,
+        -258.49761962890625
+      ],
+      "studio_import_workspace_indices": [
+        14
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://107422643165153"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://107422643165153",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "nucleoplasm_volume",
+      "export_index": 6,
+      "display_name": "Nucleoplasm Volume",
+      "export_collection": "EXPORT_06_NucleoplasmVolume",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/Nucleoplasm",
+      "roblox_material_family": "visual_transparent",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_06_nucleoplasm_volume_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 144012,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 96,
+      "export_object_count": 1,
+      "triangle_count": 4334,
+      "decimate_ratio": 0.3,
+      "material_count": 3,
+      "material_names": [
+        "Nucleoplasm_BlueGlass",
+        "Nucleoplasm_OrganicCloud",
+        "Nucleoplasm_Particles"
+      ],
+      "sample_source_objects": [
+        "Nucleoplasm_OrganicCloud_00",
+        "Nucleoplasm_OrganicCloud_01",
+        "Nucleoplasm_OrganicCloud_02",
+        "Nucleoplasm_OrganicCloud_03",
+        "Nucleoplasm_OrganicCloud_04",
+        "Nucleoplasm_OrganicCloud_05",
+        "Nucleoplasm_OrganicCloud_06",
+        "Nucleoplasm_OrganicCloud_07",
+        "Nucleoplasm_OrganicCloud_08",
+        "Nucleoplasm_Particle_00",
+        "Nucleoplasm_Particle_01",
+        "Nucleoplasm_Particle_02",
+        "Nucleoplasm_Particle_03",
+        "Nucleoplasm_Particle_04",
+        "Nucleoplasm_Particle_05",
+        "Nucleoplasm_Particle_06",
+        "Nucleoplasm_Particle_07",
+        "Nucleoplasm_Particle_08",
+        "Nucleoplasm_Particle_09",
+        "Nucleoplasm_Particle_10",
+        "Nucleoplasm_Particle_11",
+        "Nucleoplasm_Particle_12",
+        "Nucleoplasm_Particle_13",
+        "Nucleoplasm_Particle_14"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_06_nucleoplasm_volume_lod0",
+      "studio_import_model_names": [
+        "nucleus_06_nucleoplasm_volume_lod0",
+        "nucleus_06_nucleoplasm_volume_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "name": "Nucleus_06_nucleoplasm_volume_RobloxPackage",
+          "meshId": "rbxassetid://122310423005158",
+          "size": [
+            534.9400024414062,
+            533.7413940429688,
+            534.739990234375
+          ],
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "transparency": 0,
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        -65.10154724121094,
+        1630.094970703125,
+        -252.0271453857422
+      ],
+      "studio_import_workspace_indices": [
+        13
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://122310423005158"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://122310423005158",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "previous_studio_primary_mesh_asset_id": "rbxassetid://106259050155134",
+      "source_mesh_updated_in_this_pass": true,
+      "studio_reimported_at_utc": "2026-05-04T10:38:53Z"
+    },
+    {
+      "export_group_id": "chromatin_threads",
+      "export_index": 7,
+      "display_name": "Chromatin Threads",
+      "export_collection": "EXPORT_07_ChromatinThreads",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/Chromatin",
+      "roblox_material_family": "visual_animated",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_07_chromatin_threads_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 1032812,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 174,
+      "export_object_count": 1,
+      "triangle_count": 29533,
+      "decimate_ratio": 0.11,
+      "material_count": 6,
+      "material_names": [
+        "Cargo_RNA_Pink",
+        "Chromatin_CyanHighlights",
+        "Chromatin_MutedMass",
+        "Chromatin_Purple",
+        "Chromosome_MagentaPurple",
+        "Transcription_Active_Glow"
+      ],
+      "sample_source_objects": [
+        "Chromatin_DiffuseThread_00",
+        "Chromatin_DiffuseThread_01",
+        "Chromatin_DiffuseThread_02",
+        "Chromatin_DiffuseThread_03",
+        "Chromatin_DiffuseThread_04",
+        "Chromatin_DiffuseThread_05",
+        "Chromatin_DiffuseThread_06",
+        "Chromatin_DiffuseThread_07",
+        "Chromatin_DiffuseThread_08",
+        "Chromatin_DiffuseThread_09",
+        "Chromatin_DiffuseThread_10",
+        "Chromatin_DiffuseThread_11",
+        "Chromatin_DiffuseThread_12",
+        "Chromatin_DiffuseThread_13",
+        "Chromatin_DiffuseThread_14",
+        "Chromatin_DiffuseThread_15",
+        "Chromatin_DiffuseThread_16",
+        "Chromatin_DiffuseThread_17",
+        "Chromatin_DiffuseThread_18",
+        "Chromatin_DiffuseThread_19",
+        "Chromatin_DiffuseThread_20",
+        "Chromatin_DiffuseThread_21",
+        "Chromatin_DiffuseThread_22",
+        "Chromatin_DiffuseThread_23"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_07_chromatin_threads_lod0",
+      "studio_import_model_names": [
+        "nucleus_07_chromatin_threads_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "name": "Nucleus_07_chromatin_threads_RobloxPackage",
+          "meshId": "rbxassetid://83312476274506",
+          "size": [
+            405.19622802734375,
+            443.42486572265625,
+            457.99554443359375
+          ],
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "transparency": 0,
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        1178.0526123046875,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        12
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://83312476274506"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://83312476274506",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "previous_studio_primary_mesh_asset_id": "rbxassetid://84328764085806",
+      "source_mesh_updated_in_this_pass": true,
+      "studio_reimported_at_utc": "2026-05-04T10:38:53Z"
+    },
+    {
+      "export_group_id": "nucleolus_body",
+      "export_index": 8,
+      "display_name": "Nucleolus Body",
+      "export_collection": "EXPORT_08_NucleolusBody",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/Nucleolus",
+      "roblox_material_family": "visual_hotspot",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_08_nucleolus_body_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 549948,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 223,
+      "export_object_count": 1,
+      "triangle_count": 16763,
+      "decimate_ratio": 0.28,
+      "material_count": 4,
+      "material_names": [
+        "Cargo_RNA_Pink",
+        "NPC_Rim_DarkPurple",
+        "Nucleolus_DeepViolet",
+        "Nucleolus_MagentaSpeckles"
+      ],
+      "sample_source_objects": [
+        "Nucleolus_AsymmetricSurfaceLobe_01",
+        "Nucleolus_AsymmetricSurfaceLobe_02",
+        "Nucleolus_AsymmetricSurfaceLobe_03",
+        "Nucleolus_AsymmetricSurfaceLobe_04",
+        "Nucleolus_rRNA_ProductionRibbon_1",
+        "Nucleolus_rRNA_ProductionRibbon_2",
+        "Nucleolus_rRNA_ProductionRibbon_3",
+        "Nucleolus_rRNA_ProductionRibbon_4",
+        "Nucleolus_rRNA_ProductionRibbon_5",
+        "Nucleolus_rRNA_ProductionRibbon_6",
+        "Nucleolus_rRNA_ProductionRibbon_7",
+        "Nucleolus_Subregion_1_MagentaSpeckleZone",
+        "Nucleolus_Subregion_2_MagentaSpeckleZone",
+        "Nucleolus_Subregion_3_MagentaSpeckleZone",
+        "Nucleolus_Subregion_4_MagentaSpeckleZone",
+        "Nucleolus_Subregion_5_MagentaSpeckleZone",
+        "Nucleolus_SubregionBody",
+        "Nucleolus_SurfaceDarkCleft_01",
+        "Nucleolus_SurfaceDarkCleft_02",
+        "Nucleolus_SurfaceDarkCleft_03",
+        "Nucleolus_SurfaceDarkCleft_04",
+        "Nucleolus_SurfaceDarkCleft_05",
+        "Nucleolus_SurfaceDarkCleft_06",
+        "Nucleolus_SurfaceDarkCleft_07"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_08_nucleolus_body_lod0",
+      "studio_import_model_names": [
+        "nucleus_08_nucleolus_body_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "name": "Nucleus_08_nucleolus_body_RobloxPackage",
+          "meshId": "rbxassetid://123744975944825",
+          "size": [
+            204.33425903320312,
+            230.724853515625,
+            239.80947875976562
+          ],
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "transparency": 0,
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        233.73623657226562,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        11
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://123744975944825"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://123744975944825",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "previous_studio_primary_mesh_asset_id": "rbxassetid://135115818465775",
+      "source_mesh_updated_in_this_pass": true,
+      "studio_reimported_at_utc": "2026-05-04T10:38:53Z"
+    },
+    {
+      "export_group_id": "er_connection",
+      "export_index": 9,
+      "display_name": "ER Connection Sheets",
+      "export_collection": "EXPORT_09_ERConnectionSheets",
+      "roblox_placement_target": "NucleusModel/MeshVisuals/ERConnection",
+      "roblox_material_family": "visual_context",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_09_er_connection_sheets_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 39324,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 24,
+      "export_object_count": 1,
+      "triangle_count": 688,
+      "decimate_ratio": 0.62,
+      "material_count": 2,
+      "material_names": [
+        "Ribosome_OrangeDots",
+        "RoughER_BluePurple"
+      ],
+      "sample_source_objects": [
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_1_4",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_2_4",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_3_4",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_4_0",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_4_1",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_4_2",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_4_3",
+        "OuterEnvelope_ERConnectionPort_RibosomeDot_4_4",
+        "OuterEnvelope_ERConnectionPort_RoughERSheet_1",
+        "OuterEnvelope_ERConnectionPort_RoughERSheet_2",
+        "OuterEnvelope_ERConnectionPort_RoughERSheet_3",
+        "OuterEnvelope_ERConnectionPort_RoughERSheet_4"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_09_er_connection_sheets_lod0",
+      "studio_import_model_names": [
+        "nucleus_09_er_connection_sheets_lod0",
+        "nucleus_09_er_connection_sheets_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_09_er_connection_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://75343102199147",
+          "size": [
+            260.6254577636719,
+            113.1891098022461,
+            114.16567993164062
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        -40.47747039794922,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        6,
+        10
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://75343102199147"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://75343102199147",
+      "studio_import_mesh_part_count": 2,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "transport_cargo",
+      "export_index": 10,
+      "display_name": "Transport Cargo",
+      "export_collection": "EXPORT_10_TransportCargo",
+      "roblox_placement_target": "NucleusModel/AnimationControllers/TransportCargo",
+      "roblox_material_family": "animated_instances",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_10_transport_cargo_reference_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 29884,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 20,
+      "export_object_count": 1,
+      "triangle_count": 550,
+      "decimate_ratio": 0.7,
+      "material_count": 4,
+      "material_names": [
+        "Cargo_Protein_Green",
+        "Cargo_RNA_Pink",
+        "Cargo_Ribosome_Magenta",
+        "Hotspot_Gold"
+      ],
+      "sample_source_objects": [
+        "TransportCargo_ImportPath_Protein_1",
+        "TransportCargo_ImportPath_Protein_2",
+        "TransportCargo_ImportPath_Protein_3",
+        "TransportCargo_ProteinImport_DirectionArrow_1",
+        "TransportCargo_ProteinImport_DirectionArrow_2",
+        "TransportCargo_ProteinImport_DirectionArrow_3",
+        "TransportCargo_ProteinImport_NLS_1",
+        "TransportCargo_ProteinImport_NLS_2",
+        "TransportCargo_ProteinImport_NLS_3",
+        "TransportCargo_ProteinImport_NLS_Tag_1",
+        "TransportCargo_ProteinImport_NLS_Tag_2",
+        "TransportCargo_ProteinImport_NLS_Tag_3",
+        "TransportCargo_RibosomeExport_Subunit_1_1",
+        "TransportCargo_RibosomeExport_Subunit_1_2",
+        "TransportCargo_RibosomeExport_Subunit_2_1",
+        "TransportCargo_RibosomeExport_Subunit_2_2",
+        "TransportCargo_RNAExport_DirectionArrow_1",
+        "TransportCargo_RNAExport_DirectionArrow_2",
+        "TransportCargo_RNAExport_mRNA_Squiggle_1",
+        "TransportCargo_RNAExport_mRNA_Squiggle_2"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_10_transport_cargo_reference_lod0",
+      "studio_import_model_names": [
+        "nucleus_10_transport_cargo_reference_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_10_transport_cargo_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://72255814541883",
+          "size": [
+            100,
+            100.00001525878906,
+            100.00001525878906
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        -40.47747039794922,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        8
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://72255814541883"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://72255814541883",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "mitosis_fragments",
+      "export_index": 11,
+      "display_name": "Mitosis Breakdown Fragments",
+      "export_collection": "EXPORT_11_MitosisFragments",
+      "roblox_placement_target": "NucleusModel/AnimationControllers/MitosisFragments",
+      "roblox_material_family": "animated_visual",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_11_mitosis_fragments_lod0.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 61388,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 28,
+      "export_object_count": 1,
+      "triangle_count": 1746,
+      "decimate_ratio": 0.52,
+      "material_count": 2,
+      "material_names": [
+        "Membrane_Fragment_Purple",
+        "NPC_Fragment_Violet"
+      ],
+      "sample_source_objects": [
+        "NE_BreakdownFragment_Vesicle_00",
+        "NE_BreakdownFragment_Vesicle_01",
+        "NE_BreakdownFragment_Vesicle_02",
+        "NE_BreakdownFragment_Vesicle_03",
+        "NE_BreakdownFragment_Vesicle_04",
+        "NE_BreakdownFragment_Vesicle_05",
+        "NE_BreakdownFragment_Vesicle_06",
+        "NE_BreakdownFragment_Vesicle_07",
+        "NE_BreakdownFragment_Vesicle_08",
+        "NE_BreakdownFragment_Vesicle_09",
+        "NE_BreakdownFragment_Vesicle_10",
+        "NE_BreakdownFragment_Vesicle_11",
+        "NE_BreakdownFragment_Vesicle_12",
+        "NE_BreakdownFragment_Vesicle_13",
+        "NE_BreakdownFragment_Vesicle_14",
+        "NE_BreakdownFragment_Vesicle_15",
+        "NE_BreakdownFragment_Vesicle_16",
+        "NE_BreakdownFragment_Vesicle_17",
+        "NE_BreakdownFragment_Vesicle_18",
+        "NE_BreakdownFragment_Vesicle_19",
+        "NE_BreakdownFragment_Vesicle_20",
+        "NE_BreakdownFragment_Vesicle_21",
+        "NE_BreakdownFragment_Vesicle_22",
+        "NE_BreakdownFragment_Vesicle_23"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_11_mitosis_fragments_lod0",
+      "studio_import_model_names": [
+        "nucleus_11_mitosis_fragments_lod0"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_11_mitosis_fragments_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://117144488181049",
+          "size": [
+            35.52412414550781,
+            35.52412033081055,
+            35.52412414550781
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        116.65995788574219,
+        27.304595947265625,
+        33.705020904541016
+      ],
+      "studio_import_workspace_indices": [
+        16
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://117144488181049"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://117144488181049",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    },
+    {
+      "export_group_id": "interaction_hotspots_collision",
+      "export_index": 12,
+      "display_name": "Interaction Hotspots and Collision Anchors",
+      "export_collection": "EXPORT_12_InteractionHotspotsCollision",
+      "roblox_placement_target": "NucleusModel/InteractionAnchors",
+      "roblox_material_family": "nonvisual_gameplay",
+      "scale_contract": {
+        "pivotObject": "Nucleus_RootRig",
+        "pivotLocationBlender": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "robloxStudsPerBlenderUnit": 35.0,
+        "uniformScaleRequired": true
+      },
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_12_interaction_hotspots_collision_guide.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 54028,
+      "under_open_cloud_create_limit": true,
+      "source_object_count": 24,
+      "export_object_count": 1,
+      "triangle_count": 1680,
+      "decimate_ratio": 0.5,
+      "material_count": 8,
+      "material_names": [
+        "Axis_Blue",
+        "Axis_Green",
+        "Axis_Red",
+        "Guide_Transparent",
+        "Hotspot_Emission",
+        "Hotspot_Gold",
+        "MAT_EXPORT_AnchorMarkers_Cyan",
+        "Socket_White"
+      ],
+      "sample_source_objects": [
+        "EXPORT_COLLISION_NucleusProxy_LowPolyShell",
+        "Nucleus_InteractionHotspot_Chromatin",
+        "Nucleus_InteractionHotspot_Chromatin_PulseRing",
+        "Nucleus_InteractionHotspot_Envelope",
+        "Nucleus_InteractionHotspot_Envelope_PulseRing",
+        "Nucleus_InteractionHotspot_Mitosis",
+        "Nucleus_InteractionHotspot_Mitosis_PulseRing",
+        "Nucleus_InteractionHotspot_Nucleolus",
+        "Nucleus_InteractionHotspot_Nucleolus_PulseRing",
+        "Nucleus_InteractionHotspot_Transcription",
+        "Nucleus_InteractionHotspot_Transcription_PulseRing",
+        "Nucleus_InteractionHotspot_Transport",
+        "Nucleus_InteractionHotspot_Transport_PulseRing",
+        "Nucleus_RootRig",
+        "Nucleus_RootRig_RadiusGuide",
+        "NucleusSocket_Axis_X",
+        "NucleusSocket_Axis_X.001",
+        "NucleusSocket_Axis_Y",
+        "NucleusSocket_Axis_Y.001",
+        "NucleusSocket_Axis_Z",
+        "NucleusSocket_Axis_Z.001",
+        "NucleusSocket_Center",
+        "NucleusSocket_PivotSphere",
+        "NucleusSocket_PivotSphere.001"
+      ],
+      "status": "studio_imported_mesh_asset",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "uploaded_via_logged_in_studio_importer_mesh_asset",
+      "studio_import_model_name": "nucleus_12_interaction_hotspots_collision_guide",
+      "studio_import_model_names": [
+        "nucleus_12_interaction_hotspots_collision_guide"
+      ],
+      "studio_import_primary_mesh_parts": [
+        {
+          "transparency": 0,
+          "name": "Nucleus_12_interaction_..._collision_RobloxPackage",
+          "material": "Enum.Material.Plastic",
+          "color": [
+            163,
+            162,
+            165
+          ],
+          "meshId": "rbxassetid://126614230182568",
+          "size": [
+            640,
+            640,
+            640
+          ],
+          "textureId": ""
+        }
+      ],
+      "studio_import_primary_pivot": [
+        -83.69341278076172,
+        714.1238403320312,
+        -286.66015625
+      ],
+      "studio_import_workspace_indices": [
+        9
+      ],
+      "studio_mesh_asset_ids": [
+        "rbxassetid://126614230182568"
+      ],
+      "studio_primary_mesh_asset_id": "rbxassetid://126614230182568",
+      "studio_import_mesh_part_count": 1,
+      "studio_import_status": "uploaded_via_logged_in_studio_importer",
+      "source_mesh_updated_in_this_pass": false
+    }
+  ],
+  "studio_logged_in_import": {
+    "status": "complete_with_mesh_assets_no_package_links",
+    "captured_at_utc": "2026-05-04T06:54:17Z",
+    "workspace_import_count": 13,
+    "import_route": "Roblox Studio 3D Importer using logged-in Studio session",
+    "direct_api_limitations": [
+      "AssetService.CreateAssetAsync unavailable in this Studio build",
+      "AssetService.CreateDataModelContentAsync unavailable in this Studio build",
+      "Studio script cannot set MeshPart.MeshId directly (NotAccessible capability)"
+    ],
+    "duplicate_imports": [
+      "nucleus_09_er_connection_sheets_lod0"
+    ]
+  },
+  "latest_source_update": {
+    "phase": "nucleolus_scale_chromatin_decongestion_pass",
+    "updated_export_group_ids": [
+      "chromatin_threads",
+      "nucleolus_body",
+      "nucleoplasm_volume"
+    ],
+    "roblox_status": "affected groups reimported through logged-in Roblox Studio importer and staged as raw packages",
+    "updated_at_utc": "2026-05-04T10:07:15Z",
+    "studio_reimported_mesh_ids": {
+      "nucleoplasm_volume": "rbxassetid://122310423005158",
+      "chromatin_threads": "rbxassetid://83312476274506",
+      "nucleolus_body": "rbxassetid://123744975944825"
+    },
+    "studio_reimported_at_utc": "2026-05-04T10:38:53Z"
+  }
+}

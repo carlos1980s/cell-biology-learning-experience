@@ -1,0 +1,10 @@
+check,status,evidence
+Default mobile controls feed swim controller,pass,"MainCellSwimmingController includes humanoid.MoveDirection"
+Quest/navigation gamepads supported,pass,"MainCellSwimmingController includes GetNavigationGamepads"
+Connected gamepads supported,pass,"MainCellSwimmingController includes GetConnectedGamepads"
+Gamepad1-only limitation removed,pass,"gamepad state loop now iterates activeGamepads()"
+Thumbstick deadzone lowered,pass,"deadzone threshold changed to 0.08"
+Touch and gamepad partial input boosted,pass,"TOUCH_INPUT_GAIN = 1.45 and GAMEPAD_INPUT_GAIN = 1.35"
+Studio controller source updated,pass,"controller_source_length 19032 and checks all true"
+Android physical control review,not_tested,"requires device test after publish/play"
+Quest VR physical control review,not_tested,"requires headset test after publish/play"

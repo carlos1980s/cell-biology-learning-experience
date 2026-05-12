@@ -1,0 +1,137 @@
+{
+  "schema_version": "membrane_cytoplasm_builder_report_v1",
+  "phase": "phase_04",
+  "phase_id": "phase_04_roblox_export_packaging",
+  "organelle": "membrane_cytoplasm",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "WholeCellIntegration_RootRig",
+    "PlasmaMembrane_Boundary",
+    "Cytoplasm_Volume",
+    "OrganellePlacement_Sockets",
+    "TraffickingRoute_Overlays",
+    "CellSurface_Receptors",
+    "Integration_Hotspots"
+  ],
+  "incomplete_components": [],
+  "manifest_components_still_missing_after_phase": [],
+  "render_paths": [
+    {
+      "type": "wide_export",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/review_renders/phase_04_export_groups_wide.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "runtime_anchors",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/review_renders/phase_04_runtime_anchors.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "collision_proxy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/review_renders/phase_04_collision_proxy.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/membrane_cytoplasm_phase_04_export_packaging.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "WholeCellIntegration_RootRig",
+    "WholeCell_ContextSocket",
+    "PlasmaMembrane_Boundary",
+    "PlasmaMembrane_Boundary_MembranePatch_01",
+    "PlasmaMembrane_Boundary_MembranePatch_02",
+    "PlasmaMembrane_Boundary_MembranePatch_03",
+    "PlasmaMembrane_Boundary_MembranePatch_04",
+    "PlasmaMembrane_Boundary_MembranePatch_05",
+    "PlasmaMembrane_Boundary_MembranePatch_06",
+    "PlasmaMembrane_Boundary_MembranePatch_07",
+    "PlasmaMembrane_Boundary_MembranePatch_08",
+    "Cytoplasm_Volume",
+    "Cytoplasm_Volume_OrganicDetail_01",
+    "Cytoplasm_Volume_OrganicDetail_02",
+    "Cytoplasm_Volume_OrganicDetail_03",
+    "Cytoplasm_Volume_OrganicDetail_04",
+    "Cytoplasm_Volume_OrganicDetail_05",
+    "Cytoplasm_Volume_OrganicDetail_06",
+    "OrganellePlacement_Sockets",
+    "OrganellePlacement_Sockets_OrganicDetail_01",
+    "OrganellePlacement_Sockets_OrganicDetail_02",
+    "OrganellePlacement_Sockets_OrganicDetail_03",
+    "OrganellePlacement_Sockets_OrganicDetail_04",
+    "OrganellePlacement_Sockets_OrganicDetail_05",
+    "OrganellePlacement_Sockets_OrganicDetail_06",
+    "OrganellePlacement_Sockets_OrganicDetail_07",
+    "OrganellePlacement_Sockets_OrganicDetail_08",
+    "OrganellePlacement_Sockets_OrganicDetail_09",
+    "OrganellePlacement_Sockets_OrganicDetail_10",
+    "TraffickingRoute_Overlays",
+    "TraffickingRoute_Overlays_Branch_01",
+    "TraffickingRoute_Overlays_Branch_02",
+    "TraffickingRoute_Overlays_Branch_03",
+    "TraffickingRoute_Overlays_Branch_04",
+    "TraffickingRoute_Overlays_Branch_05",
+    "CellSurface_Receptors",
+    "CellSurface_Receptors_OrganicDetail_01",
+    "CellSurface_Receptors_OrganicDetail_02",
+    "CellSurface_Receptors_OrganicDetail_03",
+    "CellSurface_Receptors_OrganicDetail_04",
+    "CellSurface_Receptors_OrganicDetail_05",
+    "CellSurface_Receptors_OrganicDetail_06",
+    "CellSurface_Receptors_OrganicDetail_07",
+    "CellSurface_Receptors_OrganicDetail_08",
+    "CellSurface_Receptors_OrganicDetail_09",
+    "CellSurface_Receptors_OrganicDetail_10",
+    "CellSurface_Receptors_OrganicDetail_11",
+    "CellSurface_Receptors_OrganicDetail_12",
+    "Integration_Hotspots",
+    "Integration_Hotspots_OrganicDetail_01",
+    "Integration_Hotspots_OrganicDetail_02",
+    "Integration_Hotspots_OrganicDetail_03",
+    "Integration_Hotspots_OrganicDetail_04",
+    "Integration_Hotspots_OrganicDetail_05",
+    "Integration_Hotspots_OrganicDetail_06",
+    "Integration_Hotspots_OrganicDetail_07",
+    "MembraneCytoplasm_CollisionProxy"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "MembraneCytoplasm_KeyLight",
+    "Camera_MembraneCytoplasm_wide_export",
+    "Camera_MembraneCytoplasm_runtime_anchors",
+    "Camera_MembraneCytoplasm_collision_proxy"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 57,
+    "biological_mesh_count": 48,
+    "triangle_count": 10032
+  },
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/exports/membrane_cytoplasm_phase_04_roblox_asset_manifest.json",
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": true,
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated membrane/cytoplasm integration pass generated from inception.",
+    "Context objects are transparent and function-bearing."
+  ],
+  "roblox_export_risks": [
+    "Large transparent surfaces need Roblox material fallback checks.",
+    "Phase 5 requires real package_asset_id values for every group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

@@ -1,0 +1,33 @@
+{
+  "organelle": "nucleus",
+  "current_valid_phase": "02P",
+  "status": "pore_complex_scope_passed",
+  "full_nucleus_phase_3_status": "blocked",
+  "reason": "The corrective nuclear pore phase passed scoped visual review, but full Phase 3 remains blocked until lamina and internal systems pass their own gates.",
+  "base_status": "organelles/nucleus/review_reports/phase_02r_latest_status.json",
+  "builder_report": "organelles/nucleus/review_reports/phase_02p_builder_report.json",
+  "visual_review": "organelles/nucleus/integration/review_reports/phase_02p_visual_review.json",
+  "blend_path": "organelles/nucleus/integration/nucleus_phase_02p_nuclear_pores.blend",
+  "reference_board_render": "organelles/nucleus/review_renders/phase_02p_reference_board.png",
+  "new_manifest_components": [
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores"
+  ],
+  "validated_existing_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments"
+  ],
+  "next_allowed_scope": "NuclearLamina_Lattice only",
+  "next_blocked_scopes": [
+    "nucleoplasm",
+    "chromatin",
+    "nucleolus",
+    "transport cargo",
+    "rough ER connection",
+    "mitosis fragments",
+    "whole nucleus Phase 3"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "whole_cell_organelle_import_validation_v1",
+  "map_status": "pass",
+  "package_status": "ready",
+  "water_volume": {
+    "center": [
+      0,
+      58,
+      0
+    ],
+    "size": [
+      620,
+      360,
+      680
+    ]
+  },
+  "visible_root": "Workspace.CellEnvironment_Main/ImportedOrganelles",
+  "raw_package_root": "Workspace.MeshLibrary",
+  "organelle_results": [
+    {
+      "organelle": "nucleus",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "rough_er",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "ribosomes",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "smooth_er",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "golgi",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "lysosome",
+      "instance_count": 3,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "mitochondrion",
+      "instance_count": 3,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "peroxisomes",
+      "instance_count": 2,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "proteasomes",
+      "instance_count": 2,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "instance_count": 1,
+      "status": "pass",
+      "missing_package_asset_ids": [],
+      "blocking_findings": []
+    }
+  ],
+  "map_blocking_findings": [],
+  "missing_package_asset_ids": []
+}

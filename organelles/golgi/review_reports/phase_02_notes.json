@@ -1,0 +1,14 @@
+{
+  "schema_version": "golgi_phase_notes_v1",
+  "phase": "phase_02_first_real_anatomy",
+  "scope": [
+    "First real Golgi anatomy layer",
+    "Curved organic cisternae, cis/trans faces, early budding vesicles"
+  ],
+  "notes": [
+    "Added thickened asymmetric cisternal stack.",
+    "Added cis and trans face markers.",
+    "Added early budding vesicles but deferred dispatch and modification teaching layers."
+  ],
+  "next": "Phase 3: add cargo modification, dispatch vesicles, and interaction hotspots after Phase 2 reviews pass."
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "roblox_near_cell_spawn",
+  "date": "2026-05-05",
+  "goal": "Move the player spawn closer to the cell/nucleus so the player appears near the object immediately.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Moved MANIFEST.spawnPosition from (-79, 24, 151) to (-64, 78, 46).",
+    "Added MANIFEST.spawnLookTarget at (-64, 74, -116).",
+    "Changed MainCellSwimSpawn CFrame to CFrame.lookAt(...) so the spawn faces the nucleus.",
+    "Kept MainCellSwimSpawn non-colliding so it does not block native water diving.",
+    "Kept NativeWaterSwimming movement mode and did not reintroduce custom player forces."
+  ],
+  "studio_probe": {
+    "spawn_position": "-64, 78, 46",
+    "spawn_can_collide": false,
+    "spawn_water_sample": "810/810",
+    "movement_mode": "NativeWaterSwimming",
+    "nucleus_bbox_center": "-63.88618087768555, 85.331787109375, -115.59268188476562",
+    "nucleus_bbox_size": "356.61962890625, 225.50668334960938, 263.326171875",
+    "spawn_to_nucleus_center": 161.8
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() in Studio and confirmed the new spawn position is fully inside Terrain water."
+  ],
+  "result": "The player now spawns close to the front of the nucleus/cell object, in water, facing toward the nucleus."
+}

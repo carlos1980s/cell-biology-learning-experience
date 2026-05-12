@@ -1,0 +1,12 @@
+{
+  "schema_version": "rough_er_specialist_review_v1",
+  "phase": "phase_02_first_real_anatomy",
+  "organelle": "rough_er",
+  "approved_to_continue": true,
+  "review_type": "biology_accuracy",
+  "status": "pass_for_phase_scope",
+  "misconceptions_avoided": [
+    "Rough ER remains ribosome-studded and nucleus-adjacent.",
+    "Golgi handoff is vesicular, not random cargo drift."
+  ]
+}

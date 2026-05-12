@@ -1,0 +1,38 @@
+{
+  "phase": "roblox_cell_wall_collision_bounds",
+  "date": "2026-05-05",
+  "goal": "Make the cell boundary non-penetrable while preserving native water swimming and the current visual membrane.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Added a scoped invisible CellWallCollisionBounds folder under CellEnvironment_Main.",
+    "Added six anchored boundary blockers around the playable water/cell volume.",
+    "Set every boundary blocker to CanCollide=true, CanTouch=false, CanQuery=true, Transparency=1.",
+    "Added CellWallCollisionMode, CellWallCollisionParts, and CellWallCollisionThickness metadata to CellEnvironment_Main.",
+    "Kept visual membrane/organelle meshes unchanged and preserved NativeWaterSwimming."
+  ],
+  "studio_probe": {
+    "model": "CellEnvironment_Main",
+    "cell_wall_collision_mode": "InvisibleBounds",
+    "cell_wall_parts": 6,
+    "collidable_parts": 6,
+    "thickness": 18,
+    "parts": [
+      "CellWall_Block_XPositive pos=319, 58, 0 size=18, 396, 716",
+      "CellWall_Block_XNegative pos=-319, 58, 0 size=18, 396, 716",
+      "CellWall_Block_ZPositive pos=0, 58, 349 size=656, 396, 18",
+      "CellWall_Block_ZNegative pos=0, 58, -349 size=656, 396, 18",
+      "CellWall_Block_YPositive pos=0, 247, 0 size=656, 18, 716",
+      "CellWall_Block_YNegative pos=0, -131, 0 size=656, 18, 716"
+    ]
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() and confirmed six live collidable wall blockers."
+  ],
+  "result": "The player should no longer be able to swim out through the cell boundary."
+}

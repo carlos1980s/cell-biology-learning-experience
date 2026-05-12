@@ -1,0 +1,65 @@
+{
+  "schema_version": "phase_08r_review_report_v1",
+  "phase": "08R",
+  "review_type": "roblox_export_readiness",
+  "status": "conditional_pass_blocked_before_upload",
+  "source_manifest": "organelles/nucleus/exports/nucleus_phase_08r_roblox_asset_manifest.json",
+  "source_blend": "organelles/nucleus/integration/nucleus_phase_08g_gene_dynamics.blend",
+  "export_directory": "organelles/nucleus/exports/phase_08r_roblox",
+  "required_export_groups": {
+    "EXPORT_LOD0_GeneActivationSite": "present_under_open_cloud_limit",
+    "EXPORT_LOD0_RNAProcessingCargo": "present_under_open_cloud_limit",
+    "EXPORT_LOD0_MRNAExportPath": "present_under_open_cloud_limit",
+    "EXPORT_ANCHORS_GeneDynamicsRuntime": "present_under_open_cloud_limit"
+  },
+  "required_action_objects": {
+    "ActiveGene_Locus": true,
+    "Chromatin_OpenStatePatch": true,
+    "TranscriptionFactor_Markers": true,
+    "RNAPolymerase_Complex": true,
+    "NascentRNA_Strand": true,
+    "PreMRNA_ProcessingMarkers": true,
+    "MatureMRNA_Cargo": true,
+    "MRNA_ExportPath_ToPore": true,
+    "PoreExport_CheckpointState": true,
+    "NucleusAction_Hotspots": true
+  },
+  "checks": [
+    {
+      "check": "phase_08g_source_art_reused",
+      "result": "pass",
+      "evidence": "Export script loads nucleus_phase_08g_gene_dynamics.blend and does not rebuild the biology layer."
+    },
+    {
+      "check": "roblox_grouping_is_logical",
+      "result": "pass",
+      "evidence": "Action layer is separated into gene activation, RNA processing cargo, mRNA export path, and runtime anchors."
+    },
+    {
+      "check": "open_cloud_file_size_limit",
+      "result": "pass",
+      "evidence": "All FBX payload files are below the 20 MB Open Cloud create-asset limit."
+    },
+    {
+      "check": "raw_imports_preserved_as_library_assets",
+      "result": "pass",
+      "evidence": "Assembly target keeps raw packages under Workspace.MeshLibrary/Nucleus_Phase08R_RawPackages."
+    },
+    {
+      "check": "phase_07r_base_not_replaced",
+      "result": "pass",
+      "evidence": "Assembly script requires Workspace.Nucleus_Model and only replaces Nucleus_Model/GeneDynamics."
+    },
+    {
+      "check": "real_upload",
+      "result": "blocked",
+      "evidence": "ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID were not present in the shell environment."
+    }
+  ],
+  "roblox_export_risks": [
+    "Transparent RNA/path materials need readability validation against the Phase 07R nucleoplasm in Studio.",
+    "Runtime anchors are intentionally simple marker geometry and should be converted to invisible Attachments/Beams after import if performance requires it.",
+    "Open Cloud upload cannot complete until ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID are available to the shell."
+  ],
+  "decision": "FBX export package is ready for Open Cloud upload, but Phase 08R cannot be marked imported until package asset IDs exist."
+}

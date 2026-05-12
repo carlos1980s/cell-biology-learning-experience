@@ -1,0 +1,14 @@
+{
+  "schema_version": "cytoskeleton_centrosome_latest_status_v1",
+  "organelle": "cytoskeleton_centrosome",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "organelles/cytoskeleton_centrosome/exports/cytoskeleton_centrosome_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "organelles/cytoskeleton_centrosome/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_MicrotubuleTracks, EXPORT_LOD0_ActinNetwork, EXPORT_LOD0_IntermediateFilaments, EXPORT_LOD0_CentrosomeCentrioles, EXPORT_LOD0_MotorAndSpindleCues, EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime, EXPORT_COLLISION_CytoskeletonCentrosomeProxy"
+  ],
+  "next_allowed_scope": "Upload cytoskeleton_centrosome Phase 04 packages and record package_asset_id for every group."
+}

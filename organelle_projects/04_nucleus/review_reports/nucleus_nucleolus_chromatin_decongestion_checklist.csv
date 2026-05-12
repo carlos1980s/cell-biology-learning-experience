@@ -1,0 +1,11 @@
+check,status,evidence
+python_compile_generator,pass,python3 -m py_compile tools/create_nucleus_roblox_functional_model.py
+blend_regeneration,pass,nucleus_roblox_functional_model.blend regenerated
+affected_fbx_exports,pass,"groups 06, 07, 08 exported after source changes"
+nucleolus_radius_growth,pass,source radius 0.72 -> 1.04 Blender units
+chromatin_clearance,pass,min sampled chromatin distance 1.4527 vs 1.50 target shell; lumpy body extent remains clear
+nucleoplasm_intersections,pass,min sampled nucleoplasm detail distance 1.4009; no enlarged body intersection detected
+review_renders,pass,six review PNGs written
+live_blender_viewport,blocked,Blender MCP disconnected and active Blender window had unsaved unrelated ribosome file; did not discard user work
+roblox_studio_probe,pass,"legacy bridge confirmed assembled MeshIds 122310423005158, 83312476274506, 123744975944825"
+roblox_reimport_affected_groups,pass,"logged-in Studio importer created new MeshIds for groups 06, 07, 08 and assembler rebuilt Workspace.Nucleus_Model"

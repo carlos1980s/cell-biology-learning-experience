@@ -1,0 +1,44 @@
+{
+  "slug": "cytoskeleton_centrosome",
+  "title_no_space": "CytoskeletonCentrosome",
+  "root": "CytoskeletonCentrosome_RootRig",
+  "model_name": "CytoskeletonCentrosome_Model",
+  "raw_package_name": "CytoskeletonCentrosome_RawPackages",
+  "collision_proxy": "CytoskeletonCentrosome_CollisionProxy",
+  "required_components": ["WholeCell_ContextSocket", "CytoskeletonCentrosome_RootRig", "Microtubule_Tracks", "Actin_Network", "IntermediateFilaments", "Centrosome_Centrioles", "MotorProtein_Cues", "SpindleReadiness_Cues", "Interaction_Hotspots"],
+  "guide_points": [[-1.4, -0.4, 0.0], [-0.4, 0.45, 0.08], [0.55, -0.25, -0.04], [1.35, 0.35, 0.04]],
+  "context_scale": [2.5, 1.15, 0.78],
+  "proxy_scale": [2.15, 1.1, 0.58],
+  "world_color": [0.012, 0.016, 0.018],
+  "materials": {
+    "primary": [0.13, 0.74, 0.92, 1.0],
+    "secondary": [0.95, 0.28, 0.48, 1.0],
+    "process": [1.0, 0.72, 0.16, 1.0],
+    "hotspot": [1.0, 0.94, 0.28, 0.74],
+    "socket": [0.18, 0.55, 0.75, 0.15],
+    "collision": [0.2, 0.85, 0.65, 0.14]
+  },
+  "phase2_components": [
+    {"name": "Microtubule_Tracks", "function": "Long polarized microtubule tracks for organelle transport.", "material": "primary", "kind": "fiber_tracks", "count": 8, "radius": 0.035},
+    {"name": "Actin_Network", "function": "Branching actin network supporting cell shape and movement.", "material": "secondary", "kind": "fiber_tracks", "count": 7, "radius": 0.024},
+    {"name": "IntermediateFilaments", "function": "Tensile intermediate filament mesh for structural support.", "material": "secondary", "kind": "fiber_tracks", "count": 5, "radius": 0.02},
+    {"name": "Centrosome_Centrioles", "function": "Paired centriole region organizing microtubules.", "material": "process", "kind": "blob_cluster", "count": 8, "scale": [0.095, 0.055, 0.045]}
+  ],
+  "phase3_components": [
+    {"name": "MotorProtein_Cues", "function": "Motor protein cargo movement cues along microtubule tracks.", "material": "process", "kind": "blob_cluster", "count": 12, "scale": [0.055, 0.035, 0.028]},
+    {"name": "SpindleReadiness_Cues", "function": "Cell-cycle spindle readiness cues around centrosome tracks.", "material": "primary", "kind": "tube_network", "count": 4, "radius": 0.022},
+    {"name": "Interaction_Hotspots", "function": "Inspectable cytoskeleton and centrosome anchors.", "material": "hotspot", "kind": "blob_cluster", "count": 6, "scale": [0.08, 0.04, 0.03]}
+  ],
+  "export_groups": [
+    {"name": "EXPORT_LOD0_MicrotubuleTracks", "roots": ["Microtubule_Tracks"], "target": "CytoskeletonCentrosome_Model/MicrotubuleTracks", "family": "microtubules", "bindings": ["cytoskeleton.microtubules"]},
+    {"name": "EXPORT_LOD0_ActinNetwork", "roots": ["Actin_Network"], "target": "CytoskeletonCentrosome_Model/ActinNetwork", "family": "actin", "bindings": ["cytoskeleton.actin"]},
+    {"name": "EXPORT_LOD0_IntermediateFilaments", "roots": ["IntermediateFilaments"], "target": "CytoskeletonCentrosome_Model/IntermediateFilaments", "family": "intermediate_filaments", "bindings": ["cytoskeleton.intermediate"]},
+    {"name": "EXPORT_LOD0_CentrosomeCentrioles", "roots": ["Centrosome_Centrioles"], "target": "CytoskeletonCentrosome_Model/CentrosomeCentrioles", "family": "centrosome", "bindings": ["cytoskeleton.centrosome"]},
+    {"name": "EXPORT_LOD0_MotorAndSpindleCues", "roots": ["MotorProtein_Cues", "SpindleReadiness_Cues"], "target": "CytoskeletonCentrosome_Model/MotorAndSpindleCues", "family": "transport_cues", "bindings": ["cytoskeleton.transport"]},
+    {"name": "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime", "roots": ["Interaction_Hotspots"], "target": "CytoskeletonCentrosome_Model/RuntimeAnchors", "family": "runtime_anchors", "bindings": ["cytoskeleton.inspect"]},
+    {"name": "EXPORT_COLLISION_CytoskeletonCentrosomeProxy", "roots": ["CytoskeletonCentrosome_CollisionProxy"], "target": "CytoskeletonCentrosome_Model/CollisionProxy", "family": "collision_proxy", "bindings": []}
+  ],
+  "misconceptions_avoided": ["Cytoskeleton tracks are structural and transport systems, not random lines.", "Centrosome organizes microtubules.", "Spindle readiness is cell-cycle context, not constant mitosis."],
+  "notes": ["Formal organic-gated cytoskeleton/centrosome generated from inception.", "Fiber tracks are generated wavy tubes with functional metadata."],
+  "roblox_export_risks": ["Long thin tracks need Roblox collision and LOD testing.", "Phase 5 requires real package_asset_id values for every group."]
+}

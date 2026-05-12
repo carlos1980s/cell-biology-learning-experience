@@ -1,0 +1,158 @@
+{
+  "schema_version": "whole_cell_organelle_placement_map_v1",
+  "experience_root": "Workspace.CellEnvironment_Main",
+  "water_volume": {
+    "center": [0, 58, 0],
+    "size": [620, 360, 680]
+  },
+  "assembly_targets": {
+    "visible_root": "Workspace.CellEnvironment_Main/ImportedOrganelles",
+    "raw_package_root": "Workspace.MeshLibrary"
+  },
+  "asset_policy": {
+    "use_real_package_assets_only": true,
+    "allow_visual_proxies": false,
+    "include_nucleus_phase_07_base": true,
+    "include_nucleus_phase_08_gene_dynamics": false
+  },
+  "organelles": [
+    {
+      "id": "nucleus",
+      "display_name": "Nucleus",
+      "manifest": "organelles/nucleus/exports/nucleus_phase_07r_roblox_asset_manifest.json",
+      "raw_package_name": "Nucleus_Phase07R_RawPackages",
+      "biological_zone": "central_perinuclear",
+      "relationship_notes": "Central information organelle; Rough ER must sit close to the outer envelope.",
+      "instances": [
+        {"name": "Nucleus", "position": [-52, 92, -72], "rotation_degrees": [0, -16, 0], "scale": 35}
+      ]
+    },
+    {
+      "id": "rough_er",
+      "display_name": "RoughER",
+      "manifest": "organelles/rough_er/exports/rough_er_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "RoughER_RawPackages",
+      "biological_zone": "perinuclear_protein_synthesis",
+      "relationship_notes": "Attached near nucleus; cargo should route toward Golgi.",
+      "instances": [
+        {"name": "RoughER", "position": [-12, 96, -44], "rotation_degrees": [0, 18, -7], "scale": 28}
+      ]
+    },
+    {
+      "id": "ribosomes",
+      "display_name": "Ribosomes",
+      "manifest": "organelles/ribosomes/exports/ribosomes_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "Ribosomes_RawPackages",
+      "biological_zone": "rough_er_and_cytosol_translation",
+      "relationship_notes": "Placed near Rough ER while still readable as free and bound translation machinery.",
+      "instances": [
+        {"name": "Ribosomes", "position": [10, 104, -34], "rotation_degrees": [0, -8, 0], "scale": 16}
+      ]
+    },
+    {
+      "id": "smooth_er",
+      "display_name": "SmoothER",
+      "manifest": "organelles/smooth_er/exports/smooth_er_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "SmoothER_RawPackages",
+      "biological_zone": "peripheral_lipid_detox_calcium",
+      "relationship_notes": "Peripheral tubular ER, visually distinct from Rough ER and closer to peroxisome/metabolism zones.",
+      "instances": [
+        {"name": "SmoothER", "position": [-92, 104, 44], "rotation_degrees": [0, 34, 10], "scale": 24}
+      ]
+    },
+    {
+      "id": "golgi",
+      "display_name": "Golgi",
+      "manifest": "organelles/golgi/exports/golgi_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "Golgi_RawPackages",
+      "biological_zone": "post_er_processing",
+      "relationship_notes": "Near ER trans side; vesicles/endosomes sit between Golgi and membrane/lysosome regions.",
+      "instances": [
+        {"name": "Golgi", "position": [58, 94, -12], "rotation_degrees": [0, -28, 4], "scale": 23}
+      ]
+    },
+    {
+      "id": "vesicles_endosomes",
+      "display_name": "VesiclesEndosomes",
+      "manifest": "organelles/vesicles_endosomes/exports/vesicles_endosomes_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "VesiclesEndosomes_RawPackages",
+      "biological_zone": "trafficking_sorting_corridor",
+      "relationship_notes": "Between Golgi, membrane, and lysosome regions to keep cargo flow coherent.",
+      "instances": [
+        {"name": "VesiclesEndosomes", "position": [92, 88, 18], "rotation_degrees": [0, 18, 0], "scale": 16}
+      ]
+    },
+    {
+      "id": "lysosome",
+      "display_name": "Lysosome",
+      "manifest": "organelles/lysosome/exports/lysosome_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "Lysosome_RawPackages",
+      "biological_zone": "digestive_recycling",
+      "relationship_notes": "Multiple recycling/digestion points near vesicle/endosome traffic.",
+      "instances": [
+        {"name": "Lysosome_A", "position": [126, 78, 62], "rotation_degrees": [0, 12, 0], "scale": 18},
+        {"name": "Lysosome_B", "position": [104, 128, 96], "rotation_degrees": [0, -31, 8], "scale": 18},
+        {"name": "Lysosome_C", "position": [-116, 74, 86], "rotation_degrees": [0, 44, -5], "scale": 18}
+      ]
+    },
+    {
+      "id": "mitochondrion",
+      "display_name": "Mitochondrion",
+      "manifest": "organelles/mitochondrion/exports/mitochondrion_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "Mitochondrion_RawPackages",
+      "biological_zone": "distributed_energy",
+      "relationship_notes": "Distributed energy organelles across the cell, away from being a single decorative cluster.",
+      "instances": [
+        {"name": "Mitochondrion_A", "position": [-138, 112, -92], "rotation_degrees": [0, -24, 8], "scale": 24},
+        {"name": "Mitochondrion_B", "position": [118, 92, 112], "rotation_degrees": [0, 46, -6], "scale": 24},
+        {"name": "Mitochondrion_C", "position": [132, 154, -74], "rotation_degrees": [0, 18, 12], "scale": 24}
+      ]
+    },
+    {
+      "id": "peroxisomes",
+      "display_name": "Peroxisomes",
+      "manifest": "organelles/peroxisomes/exports/peroxisomes_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "Peroxisomes_RawPackages",
+      "biological_zone": "oxidative_metabolism_detox",
+      "relationship_notes": "Near mitochondria and Smooth ER to support oxidative metabolism and detox teaching.",
+      "instances": [
+        {"name": "Peroxisomes_A", "position": [-118, 126, 66], "rotation_degrees": [0, 20, 0], "scale": 14},
+        {"name": "Peroxisomes_B", "position": [96, 118, 86], "rotation_degrees": [0, -18, 7], "scale": 14}
+      ]
+    },
+    {
+      "id": "proteasomes",
+      "display_name": "Proteasomes",
+      "manifest": "organelles/proteasomes/exports/proteasomes_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "Proteasomes_RawPackages",
+      "biological_zone": "cytosolic_perinuclear_degradation",
+      "relationship_notes": "Small cytosolic/perinuclear degradation machines near protein synthesis and cargo flow.",
+      "instances": [
+        {"name": "Proteasomes_A", "position": [-30, 118, 18], "rotation_degrees": [0, 15, 0], "scale": 10},
+        {"name": "Proteasomes_B", "position": [74, 116, -58], "rotation_degrees": [0, -22, 0], "scale": 10}
+      ]
+    },
+    {
+      "id": "cytoskeleton_centrosome",
+      "display_name": "CytoskeletonCentrosome",
+      "manifest": "organelles/cytoskeleton_centrosome/exports/cytoskeleton_centrosome_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "CytoskeletonCentrosome_RawPackages",
+      "biological_zone": "cellwide_structure_transport",
+      "relationship_notes": "Broad structural overlay through the cytoplasm with centrosome near nucleus.",
+      "instances": [
+        {"name": "CytoskeletonCentrosome", "position": [0, 100, 0], "rotation_degrees": [0, 0, 0], "scale": 60}
+      ]
+    },
+    {
+      "id": "membrane_cytoplasm",
+      "display_name": "MembraneCytoplasm",
+      "manifest": "organelles/membrane_cytoplasm/exports/membrane_cytoplasm_phase_04_roblox_asset_manifest.json",
+      "raw_package_name": "MembraneCytoplasm_RawPackages",
+      "biological_zone": "whole_cell_context",
+      "relationship_notes": "Large transparent integration context centered in the native water volume.",
+      "instances": [
+        {"name": "MembraneCytoplasm", "position": [0, 58, 0], "rotation_degrees": [0, 0, 0], "scale": 95}
+      ]
+    }
+  ]
+}

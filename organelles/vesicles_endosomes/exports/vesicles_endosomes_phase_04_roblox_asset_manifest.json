@@ -1,0 +1,221 @@
+{
+  "schema_version": "vesicles_endosomes_phase_04_roblox_asset_manifest_v1",
+  "organelle": "vesicles_endosomes",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.VesiclesEndosomes_Model",
+  "raw_package_target": "Workspace.MeshLibrary/VesiclesEndosomes_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_TransportVesicles",
+    "EXPORT_LOD0_EndosomeBodies",
+    "EXPORT_LOD0_CoatedVesicleCues",
+    "EXPORT_LOD0_RabSNARECues",
+    "EXPORT_LOD0_CargoSortingRoutes",
+    "EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+    "EXPORT_COLLISION_VesiclesEndosomesProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_TransportVesicles",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_TransportVesicles.fbx",
+      "file_size_bytes": 69500,
+      "object_count": 9,
+      "triangle_count": 1872,
+      "object_names": [
+        "TransportVesicles_OrganicDetail_09",
+        "TransportVesicles_OrganicDetail_08",
+        "TransportVesicles_OrganicDetail_07",
+        "TransportVesicles_OrganicDetail_06",
+        "TransportVesicles_OrganicDetail_05",
+        "TransportVesicles_OrganicDetail_04",
+        "TransportVesicles_OrganicDetail_03",
+        "TransportVesicles_OrganicDetail_02",
+        "TransportVesicles_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/TransportVesicles",
+      "roblox_material_family": "vesicle_membrane",
+      "event_bindings": [
+        "vesicles.inspect_transport"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "101922624152828",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_EndosomeBodies",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_EndosomeBodies.fbx",
+      "file_size_bytes": 57244,
+      "object_count": 7,
+      "triangle_count": 1456,
+      "object_names": [
+        "EarlyEndosome_SortingBody_OrganicDetail_04",
+        "EarlyEndosome_SortingBody_OrganicDetail_03",
+        "EarlyEndosome_SortingBody_OrganicDetail_02",
+        "EarlyEndosome_SortingBody_OrganicDetail_01",
+        "LateEndosome_MaturationBody_OrganicDetail_03",
+        "LateEndosome_MaturationBody_OrganicDetail_02",
+        "LateEndosome_MaturationBody_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/EndosomeBodies",
+      "roblox_material_family": "endosome_body",
+      "event_bindings": [
+        "vesicles.inspect_sorting"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "129163239425459",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/a35742db-6a98-418a-b2ea-3dede6c53b16",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CoatedVesicleCues",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CoatedVesicleCues.fbx",
+      "file_size_bytes": 87724,
+      "object_count": 12,
+      "triangle_count": 2496,
+      "object_names": [
+        "CoatedVesicle_Cues_OrganicDetail_12",
+        "CoatedVesicle_Cues_OrganicDetail_11",
+        "CoatedVesicle_Cues_OrganicDetail_10",
+        "CoatedVesicle_Cues_OrganicDetail_09",
+        "CoatedVesicle_Cues_OrganicDetail_08",
+        "CoatedVesicle_Cues_OrganicDetail_07",
+        "CoatedVesicle_Cues_OrganicDetail_06",
+        "CoatedVesicle_Cues_OrganicDetail_05",
+        "CoatedVesicle_Cues_OrganicDetail_04",
+        "CoatedVesicle_Cues_OrganicDetail_03",
+        "CoatedVesicle_Cues_OrganicDetail_02",
+        "CoatedVesicle_Cues_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/CoatedVesicleCues",
+      "roblox_material_family": "coat_cues",
+      "event_bindings": [
+        "vesicles.coat_cues"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "133284714986745",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_RabSNARECues",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_RabSNARECues.fbx",
+      "file_size_bytes": 75388,
+      "object_count": 10,
+      "triangle_count": 2080,
+      "object_names": [
+        "RabSNARE_TeachingCues_OrganicDetail_10",
+        "RabSNARE_TeachingCues_OrganicDetail_09",
+        "RabSNARE_TeachingCues_OrganicDetail_08",
+        "RabSNARE_TeachingCues_OrganicDetail_07",
+        "RabSNARE_TeachingCues_OrganicDetail_06",
+        "RabSNARE_TeachingCues_OrganicDetail_05",
+        "RabSNARE_TeachingCues_OrganicDetail_04",
+        "RabSNARE_TeachingCues_OrganicDetail_03",
+        "RabSNARE_TeachingCues_OrganicDetail_02",
+        "RabSNARE_TeachingCues_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/RabSNARECues",
+      "roblox_material_family": "identity_cues",
+      "event_bindings": [
+        "vesicles.rab_snare"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "123159007290460",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CargoSortingRoutes",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CargoSortingRoutes.fbx",
+      "file_size_bytes": 35644,
+      "object_count": 4,
+      "triangle_count": 672,
+      "object_names": [
+        "CargoSorting_Routes_Branch_04",
+        "CargoSorting_Routes_Branch_03",
+        "CargoSorting_Routes_Branch_02",
+        "CargoSorting_Routes_Branch_01"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/CargoSortingRoutes",
+      "roblox_material_family": "cargo_routes",
+      "event_bindings": [
+        "vesicles.sorting_flow"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "91251504545439",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/c249ab32-a395-42d6-842e-f9a2f589976e",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_ANCHORS_VesiclesEndosomesRuntime.fbx",
+      "file_size_bytes": 44204,
+      "object_count": 5,
+      "triangle_count": 1040,
+      "object_names": [
+        "Interaction_Hotspots_OrganicDetail_05",
+        "Interaction_Hotspots_OrganicDetail_04",
+        "Interaction_Hotspots_OrganicDetail_03",
+        "Interaction_Hotspots_OrganicDetail_02",
+        "Interaction_Hotspots_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "vesicles.inspect"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "82727042734604",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_VesiclesEndosomesProxy",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_COLLISION_VesiclesEndosomesProxy.fbx",
+      "file_size_bytes": 19260,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "VesiclesEndosomes_CollisionProxy"
+      ],
+      "roblox_placement_target": "VesiclesEndosomes_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "118284458751030",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/29cdc7c5-9785-4399-874b-ab16df6e9066",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

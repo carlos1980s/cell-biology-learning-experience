@@ -1,0 +1,16 @@
+{
+  "schema_version": "golgi_phase_notes_v1",
+  "phase": "phase_03_functional_teaching_layer",
+  "scope": [
+    "Functional teaching layer",
+    "Cargo modification sites",
+    "Dispatch vesicles",
+    "Interaction hotspots"
+  ],
+  "notes": [
+    "Added cis/medial/trans enzyme zones and glyco-tag markers.",
+    "Added sorted outgoing vesicles only on the trans side.",
+    "Added inspectable teaching anchors for cis entry, modification flow, trans sorting, and dispatch."
+  ],
+  "next": "Phase 4: export logical Roblox package groups after Phase 3 reviews pass."
+}

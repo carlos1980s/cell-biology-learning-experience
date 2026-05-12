@@ -1,0 +1,13 @@
+{
+  "organelle": "proteasomes",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Proteasome_RootRig",
+    "CoreParticle_Barrel",
+    "RegulatoryCaps",
+    "Ubiquitin_TagCues",
+    "ProteinSubstrate_Thread",
+    "DegradationProduct_Cues",
+    "Interaction_Hotspots"
+  ]
+}

@@ -1,0 +1,7 @@
+check_id,criterion,required
+visual_001,Silhouette is recognizable from wide and close camera views,true
+visual_002,No major component is an unfinished default primitive,true
+visual_003,Organic finishing pass includes bevels or rounded geometry,true
+visual_004,Surface has material variation, bump, texture, or detail,true
+visual_005,Color palette is readable and not arbitrary,true
+

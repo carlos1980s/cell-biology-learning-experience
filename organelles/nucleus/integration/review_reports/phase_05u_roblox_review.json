@@ -1,0 +1,20 @@
+{
+  "schema_version": "phase_05u_roblox_review_v1",
+  "organelle": "nucleus",
+  "phase": "05U",
+  "reviewer": "Roblox Export Reviewer",
+  "roblox_pass_for_source_art": true,
+  "roblox_export_ready": false,
+  "approved_for_next_phase": true,
+  "blocking_export_risks": [
+    "The granular nucleolus source art uses dense lobe and surface geometry that should be decimated or baked before Roblox import.",
+    "The nucleolus overlaps visually with chromatin and nucleoplasm transparency; Roblox material sorting needs validation.",
+    "NOR arcs should become optional teaching overlays rather than always-on export geometry."
+  ],
+  "recommended_roblox_plan": [
+    "Create high, medium, and low nucleolus LOD meshes.",
+    "Bake fine granular texture into normal/roughness maps for the Roblox version.",
+    "Expose NOR contact arcs as a toggleable educational layer."
+  ],
+  "approved_to_continue": true
+}

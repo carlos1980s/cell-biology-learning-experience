@@ -1,0 +1,16 @@
+{
+  "schema_version": "mitochondrion_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/Mitochondrion_RawPackages",
+  "expected_visible_model": "Workspace.Mitochondrion_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_OuterMembrane",
+    "EXPORT_LOD0_InnerMembraneCristae",
+    "EXPORT_LOD0_MatrixVolume",
+    "EXPORT_LOD0_ATPSignalSites",
+    "EXPORT_LOD0_StressCueLayer",
+    "EXPORT_ANCHORS_MitochondrionRuntime",
+    "EXPORT_COLLISION_MitochondrionProxy"
+  ]
+}

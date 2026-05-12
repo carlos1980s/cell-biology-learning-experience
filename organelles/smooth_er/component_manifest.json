@@ -1,0 +1,13 @@
+{
+  "organelle": "smooth_er",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "SmoothER_RootRig",
+    "TubularNetwork",
+    "LipidSynthesis_Zones",
+    "DetoxReaction_Sites",
+    "CalciumStorage_Pockets",
+    "ERTransition_HandoffCues",
+    "Interaction_Hotspots"
+  ]
+}

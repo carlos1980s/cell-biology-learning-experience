@@ -1,0 +1,14 @@
+{
+  "organelle": "vesicles_endosomes",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "VesiclesEndosomes_RootRig",
+    "TransportVesicles",
+    "EarlyEndosome_SortingBody",
+    "LateEndosome_MaturationBody",
+    "CoatedVesicle_Cues",
+    "RabSNARE_TeachingCues",
+    "CargoSorting_Routes",
+    "Interaction_Hotspots"
+  ]
+}

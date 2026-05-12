@@ -1,0 +1,214 @@
+{
+  "schema_version": "smooth_er_phase_04_roblox_asset_manifest_v1",
+  "organelle": "smooth_er",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.SmoothER_Model",
+  "raw_package_target": "Workspace.MeshLibrary/SmoothER_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_TubularNetwork",
+    "EXPORT_LOD0_LipidSynthesisZones",
+    "EXPORT_LOD0_DetoxReactionSites",
+    "EXPORT_LOD0_CalciumStoragePockets",
+    "EXPORT_LOD0_ERTransitionHandoffCues",
+    "EXPORT_ANCHORS_SmoothERRuntime",
+    "EXPORT_COLLISION_SmoothERProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_TubularNetwork",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_TubularNetwork.fbx",
+      "file_size_bytes": 60636,
+      "object_count": 9,
+      "triangle_count": 1328,
+      "object_names": [
+        "TubularNetwork_SmoothBranch_05",
+        "TubularNetwork_SmoothBranch_04",
+        "TubularNetwork_SmoothBranch_03",
+        "TubularNetwork_SmoothBranch_02",
+        "TubularNetwork_SmoothBranch_01",
+        "TubularNetwork_JunctionBulge_04",
+        "TubularNetwork_JunctionBulge_03",
+        "TubularNetwork_JunctionBulge_02",
+        "TubularNetwork_JunctionBulge_01"
+      ],
+      "roblox_placement_target": "SmoothER_Model/TubularNetwork",
+      "roblox_material_family": "smooth_membrane",
+      "event_bindings": [
+        "smooth_er.inspect_tubules"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "75377650496612",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/6e3852ee-7962-4123-aa43-473b04ab6e83",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_LipidSynthesisZones",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_LipidSynthesisZones.fbx",
+      "file_size_bytes": 62220,
+      "object_count": 12,
+      "triangle_count": 1296,
+      "object_names": [
+        "LipidSynthesis_Zones_GoldPatch_12",
+        "LipidSynthesis_Zones_GoldPatch_11",
+        "LipidSynthesis_Zones_GoldPatch_10",
+        "LipidSynthesis_Zones_GoldPatch_09",
+        "LipidSynthesis_Zones_GoldPatch_08",
+        "LipidSynthesis_Zones_GoldPatch_07",
+        "LipidSynthesis_Zones_GoldPatch_06",
+        "LipidSynthesis_Zones_GoldPatch_05",
+        "LipidSynthesis_Zones_GoldPatch_04",
+        "LipidSynthesis_Zones_GoldPatch_03",
+        "LipidSynthesis_Zones_GoldPatch_02",
+        "LipidSynthesis_Zones_GoldPatch_01"
+      ],
+      "roblox_placement_target": "SmoothER_Model/LipidSynthesisZones",
+      "roblox_material_family": "lipid_synthesis",
+      "event_bindings": [
+        "smooth_er.lipid_synthesis"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "95855681786068",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/f65bd191-ca6f-442e-9bb5-383df6937cd4",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_DetoxReactionSites",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_DetoxReactionSites.fbx",
+      "file_size_bytes": 49996,
+      "object_count": 9,
+      "triangle_count": 972,
+      "object_names": [
+        "DetoxReaction_Sites_MagentaPatch_09",
+        "DetoxReaction_Sites_MagentaPatch_08",
+        "DetoxReaction_Sites_MagentaPatch_07",
+        "DetoxReaction_Sites_MagentaPatch_06",
+        "DetoxReaction_Sites_MagentaPatch_05",
+        "DetoxReaction_Sites_MagentaPatch_04",
+        "DetoxReaction_Sites_MagentaPatch_03",
+        "DetoxReaction_Sites_MagentaPatch_02",
+        "DetoxReaction_Sites_MagentaPatch_01"
+      ],
+      "roblox_placement_target": "SmoothER_Model/DetoxReactionSites",
+      "roblox_material_family": "detox_sites",
+      "event_bindings": [
+        "smooth_er.detox"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "129525698807530",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/8e8db181-93e6-4a6c-a43e-5ed4fdd0d0c0",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CalciumStoragePockets",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_CalciumStoragePockets.fbx",
+      "file_size_bytes": 34572,
+      "object_count": 3,
+      "triangle_count": 756,
+      "object_names": [
+        "CalciumStorage_Pockets_BlueReservoir_03",
+        "CalciumStorage_Pockets_BlueReservoir_02",
+        "CalciumStorage_Pockets_BlueReservoir_01"
+      ],
+      "roblox_placement_target": "SmoothER_Model/CalciumStoragePockets",
+      "roblox_material_family": "calcium_storage",
+      "event_bindings": [
+        "smooth_er.calcium_release"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "137614309160708",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/6b56546e-037b-458c-865b-cd16ee5c6181",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_ERTransitionHandoffCues",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_ERTransitionHandoffCues.fbx",
+      "file_size_bytes": 27468,
+      "object_count": 3,
+      "triangle_count": 420,
+      "object_names": [
+        "ERTransition_HandoffCues_ExitBud_03",
+        "ERTransition_HandoffCues_ExitBud_02",
+        "ERTransition_HandoffCues_ExitBud_01"
+      ],
+      "roblox_placement_target": "SmoothER_Model/ERTransitionHandoffCues",
+      "roblox_material_family": "handoff_cues",
+      "event_bindings": [
+        "smooth_er.handoff"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "140495497010127",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/c61cf130-1826-47ff-b2f6-b2bcc7eda90a",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_SmoothERRuntime",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_ANCHORS_SmoothERRuntime.fbx",
+      "file_size_bytes": 29484,
+      "object_count": 4,
+      "triangle_count": 432,
+      "object_names": [
+        "Interaction_Hotspots_SmoothERAnchor_04",
+        "Interaction_Hotspots_SmoothERAnchor_03",
+        "Interaction_Hotspots_SmoothERAnchor_02",
+        "Interaction_Hotspots_SmoothERAnchor_01"
+      ],
+      "roblox_placement_target": "SmoothER_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "smooth_er.inspect"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "113173391352125",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/5a926fb0-4597-4668-beda-e6df1b202932",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_SmoothERProxy",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_COLLISION_SmoothERProxy.fbx",
+      "file_size_bytes": 19228,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "SmoothER_CollisionProxy"
+      ],
+      "roblox_placement_target": "SmoothER_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "88657592324577",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/b6a72447-28e5-4cc3-ba66-618a4ebf5983",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

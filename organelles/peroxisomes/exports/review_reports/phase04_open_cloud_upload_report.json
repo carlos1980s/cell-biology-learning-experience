@@ -1,0 +1,9 @@
+{
+  "schema_version": "peroxisomes_phase04_open_cloud_upload_report_v1",
+  "decision": "dry_run_complete",
+  "manifest": "organelles/peroxisomes/exports/peroxisomes_phase_04_roblox_asset_manifest.json",
+  "credentials": {
+    "ROBLOX_OPEN_CLOUD_API_KEY": false,
+    "ROBLOX_GROUP_ID": false
+  }
+}

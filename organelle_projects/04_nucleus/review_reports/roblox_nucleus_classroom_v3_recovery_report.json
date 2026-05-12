@@ -1,0 +1,72 @@
+{
+  "phase": "roblox_nucleus_classroom_v3_recovery",
+  "generated_at": "2026-05-09T12:12:16Z",
+  "generated_at_local": "2026-05-09 20:12:16 +08",
+  "goal": "Resume the nucleus classroom V3 work after the prior Codex/Roblox Studio session hung, validate what was installed, and determine whether Play-mode review can continue.",
+  "source_report": "organelle_projects/04_nucleus/review_reports/roblox_nucleus_classroom_v3_report.json",
+  "studio_place_id": 78330326549565,
+  "studio_place_name_observed": "Cell V1 experience",
+  "bridge_recovery": {
+    "official_mcp_status": "locked_or_timed_out",
+    "official_mcp_evidence": [
+      "Roblox Studio logs repeatedly returned HTTP 423 Locked for http://localhost:44755/request.",
+      "get_studio_mode timed out after 120 seconds in the prior diagnosis.",
+      "start_stop_play start_play timed out after 8 seconds during this recovery pass."
+    ],
+    "legacy_bridge_status": "usable_before_studio_cloud_disconnect",
+    "legacy_bridge_helper": "tools/roblox_plugin_bridge.py"
+  },
+  "edit_mode_validation_before_disconnect": {
+    "runtime": "Workspace.NucleusClassroom_V3",
+    "runtime_exists": true,
+    "runtime_version": "NucleusClassroom_V3_2",
+    "runtime_children": 7,
+    "waypoint_count": 25,
+    "target_anchor_count": 25,
+    "class_data_count": 25,
+    "teacher_model": "Workspace.NucleusClassroom_V3.TeacherGuide",
+    "teacher_child_count": 9,
+    "spawn": "Workspace.V3_ClassStartSpawn",
+    "server_script": "ServerScriptService.NucleusClassroomV3Controller",
+    "server_script_enabled": true,
+    "server_script_source_length": 43384,
+    "client_script": "StarterPlayer.StarterPlayerScripts.NucleusClassroomV3Client",
+    "client_script_enabled": true,
+    "client_script_source_length": 11203,
+    "remotes": [
+      "ReplicatedStorage.NucleusClassroomV3Remotes.ClassState",
+      "ReplicatedStorage.NucleusClassroomV3Remotes.ClassAction"
+    ],
+    "legacy_v1_teacher_scripts_disabled": true
+  },
+  "audio_validation": {
+    "sound_count": 25,
+    "roblox_sound_ids_ready": 1,
+    "roblox_sound_ids_pending": 24,
+    "ready_sound": "Voice_arrival_greeting",
+    "pending_status_expected": "Subtitles remain fallback until the remaining MP3s are uploaded and moderated."
+  },
+  "play_mode_review": {
+    "status": "blocked",
+    "blocker": "Roblox Studio cloud session failed with Unable to Connect to Server / RCC-277 while opening or testing the Cell V1 experience.",
+    "attempted_routes": [
+      "Official MCP start_stop_play start_play",
+      "Roblox Studio Test menu / toolbar Play control",
+      "Studio local autosave recovery path"
+    ],
+    "autosave_path_found_then_cleared": "/Users/carlosmarinronco/Library/Application Support/Roblox/RobloxStudio/AutoSaves/78330326549565_AutoRecovery_0.rbxl",
+    "remaining_local_rbxl": "/Users/carlosmarinronco/Documents/Scene1.rbxl",
+    "remaining_local_rbxl_status": "wrong_place_sheep_herding_scene_not_cell_nucleus",
+    "decision": "Do not install nucleus classroom content into Scene1.rbxl because it is not the target cell experience."
+  },
+  "screenshots": {
+    "rcc277_error": "organelle_projects/04_nucleus/review_reports/screenshots/nucleus_classroom_v3_rcc277_error.png",
+    "wrong_place_scene1": "organelle_projects/04_nucleus/review_reports/screenshots/nucleus_classroom_v3_scene1_wrong_place.png"
+  },
+  "verifications_run": [
+    "python3 -m py_compile tools/install_v3_nucleus_classroom.py tools/upload_nucleus_classroom_audio_oauth.py tools/generate_nucleus_classroom_audio.py",
+    "Legacy bridge edit-mode probes for runtime, audio, server/client scripts, remotes, and disabled V1 scripts"
+  ],
+  "result": "partial_pass_blocked",
+  "next_recommended_phase": "Reopen the correct Cell V1 experience or restore a valid local copy, rerun tools/install_v3_nucleus_classroom.py if the V3 runtime is missing, then perform Play-mode review for teacher movement, follow gate, questions, subtitles/audio fallback, and mobile-safe UI."
+}

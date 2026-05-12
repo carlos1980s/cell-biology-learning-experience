@@ -1,0 +1,14 @@
+{
+  "schema_version": "peroxisomes_latest_status_v1",
+  "organelle": "peroxisomes",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "organelles/peroxisomes/exports/peroxisomes_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "organelles/peroxisomes/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_PeroxisomeMembrane, EXPORT_LOD0_CatalaseCrystalCore, EXPORT_LOD0_FattyAcidProcessingSites, EXPORT_LOD0_OxidativeReactionCues, EXPORT_LOD0_DetoxOutputCues, EXPORT_ANCHORS_PeroxisomesRuntime, EXPORT_COLLISION_PeroxisomeProxy"
+  ],
+  "next_allowed_scope": "Upload peroxisomes Phase 04 packages and record package_asset_id for every group."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "rough_er_phase_notes_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "notes": [
+    "Formal organic-gated rough ER phase generated from script.",
+    "Visible biological meshes are generated organic meshes, not default primitives."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

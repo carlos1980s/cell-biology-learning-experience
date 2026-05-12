@@ -1,0 +1,231 @@
+{
+  "schema_version": "golgi_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 6,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CisternaStack",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CisternaStack.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "operationId": "9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "operationId": "9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "done": true,
+        "response": {
+          "path": "assets/103365965252910",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:19.849482800Z",
+          "assetId": "103365965252910",
+          "displayName": "Golgi_EXPORT_LOD0_CisternaStack",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_CisternaStack",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "103365965252910"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CisTransFaces",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CisTransFaces.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/21c72856-d723-42f5-9f35-06e12ca2da76",
+        "operationId": "21c72856-d723-42f5-9f35-06e12ca2da76",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/21c72856-d723-42f5-9f35-06e12ca2da76",
+        "operationId": "21c72856-d723-42f5-9f35-06e12ca2da76",
+        "done": true,
+        "response": {
+          "path": "assets/103577071268170",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:24.054173900Z",
+          "assetId": "103577071268170",
+          "displayName": "Golgi_EXPORT_LOD0_CisTransFaces",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_CisTransFaces",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "103577071268170"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_BuddingAndDispatchVesicles",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_BuddingAndDispatchVesicles.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "operationId": "abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "operationId": "abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "done": true,
+        "response": {
+          "path": "assets/80001263448310",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:43.845139Z",
+          "assetId": "80001263448310",
+          "displayName": "Golgi_EXPORT_LOD0_BuddingAndDispatchVesicles",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_BuddingAndDispatchVesicles",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "80001263448310"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CargoModificationSites",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CargoModificationSites.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "operationId": "496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "operationId": "496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "done": true,
+        "response": {
+          "path": "assets/97494970595213",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:58.711681900Z",
+          "assetId": "97494970595213",
+          "displayName": "Golgi_EXPORT_LOD0_CargoModificationSites",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_CargoModificationSites",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "97494970595213"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_ANCHORS_GolgiRuntime",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_ANCHORS_GolgiRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "operationId": "61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "operationId": "61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "done": true,
+        "response": {
+          "path": "assets/95064147024835",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:04.117649100Z",
+          "assetId": "95064147024835",
+          "displayName": "Golgi_EXPORT_ANCHORS_GolgiRuntime",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_ANCHORS_GolgiRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95064147024835"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_COLLISION_GolgiProxy",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_COLLISION_GolgiProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "operationId": "3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "operationId": "3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "done": true,
+        "response": {
+          "path": "assets/85502414196203",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:09.978142700Z",
+          "assetId": "85502414196203",
+          "displayName": "Golgi_EXPORT_COLLISION_GolgiProxy",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_COLLISION_GolgiProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "85502414196203"
+    }
+  ]
+}

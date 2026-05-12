@@ -1,0 +1,54 @@
+{
+  "schema_version": "remaining_organelle_rollout_validation_v1",
+  "status": "pass",
+  "organelle_results": [
+    {
+      "organelle": "ribosomes",
+      "status": "pass",
+      "required_component_count": 9,
+      "export_group_count": 7,
+      "total_export_bytes": 311028,
+      "blocking_findings": []
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "status": "pass",
+      "required_component_count": 9,
+      "export_group_count": 7,
+      "total_export_bytes": 373908,
+      "blocking_findings": []
+    },
+    {
+      "organelle": "peroxisomes",
+      "status": "pass",
+      "required_component_count": 8,
+      "export_group_count": 7,
+      "total_export_bytes": 324452,
+      "blocking_findings": []
+    },
+    {
+      "organelle": "proteasomes",
+      "status": "pass",
+      "required_component_count": 8,
+      "export_group_count": 7,
+      "total_export_bytes": 348676,
+      "blocking_findings": []
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "status": "pass",
+      "required_component_count": 9,
+      "export_group_count": 7,
+      "total_export_bytes": 371748,
+      "blocking_findings": []
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "status": "pass",
+      "required_component_count": 8,
+      "export_group_count": 7,
+      "total_export_bytes": 383028,
+      "blocking_findings": []
+    }
+  ]
+}

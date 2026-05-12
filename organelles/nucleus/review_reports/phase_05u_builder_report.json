@@ -1,0 +1,66 @@
+{
+  "schema_version": "phase_05u_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "05U",
+  "builder": "Corrective Nucleolus Builder",
+  "status": "built_pending_independent_visual_review",
+  "base_phase": "04C chromatin",
+  "created_manifest_components": [
+    "Nucleolus_Subregions"
+  ],
+  "explicitly_not_created": [
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots",
+    "CondensedChromosomes"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/05_nucleolus.png",
+    "reference_images/nucleus_specs/07_nucleolus_organizer_regions.png"
+  ],
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_05u_nucleolus.blend",
+  "render_paths": [
+    {
+      "type": "reference_board",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_05u_reference_board.png",
+      "status": "complete"
+    },
+    {
+      "type": "nucleolus_review",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_05u_nucleolus_review.png",
+      "status": "complete"
+    },
+    {
+      "type": "nucleolus_detail_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_05u_nucleolus_detail_closeup.png",
+      "status": "complete"
+    }
+  ],
+  "granule_count": 520,
+  "ridge_count": 52,
+  "fibrillar_center_count": 5,
+  "nor_contact_count": 4,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "reference_images_in_same_blender_scene": true,
+    "phase_scope_respected": true,
+    "nucleolus_has_no_membrane": true,
+    "nucleolus_inside_nucleus": true,
+    "condensed_chromosomes_not_created": true,
+    "builder_did_not_self_approve_visual_gate": true
+  },
+  "organic_treatment_notes": [
+    "Nucleolus is a lumpy dark-violet body with granular and fibrillar subregions, not a smooth sphere.",
+    "Fibrillar centers are pockets, not membrane-bound compartments.",
+    "NOR contact loops are shown as stylized rRNA-gene contact regions feeding the nucleolus without implying a separate membrane."
+  ],
+  "roblox_export_risks": [
+    "Granular surface mesh needs decimation for Roblox.",
+    "NOR contact loops and dense chromatin overlap should be exported as optional inspection layers.",
+    "The nucleolus should remain visually distinct after Roblox material conversion."
+  ],
+  "next_required_step": "Run independent visual and biology review before adding transport cargo."
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "ribosomes_phase_04_roblox_asset_manifest_v1",
+  "organelle": "ribosomes",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.Ribosomes_Model",
+  "raw_package_target": "Workspace.MeshLibrary/Ribosomes_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_FreeRibosomeCluster",
+    "EXPORT_LOD0_BoundRibosomeRow",
+    "EXPORT_LOD0_SubunitForms",
+    "EXPORT_LOD0_mRNAThread",
+    "EXPORT_LOD0_PeptideExitCues",
+    "EXPORT_ANCHORS_RibosomeRuntime",
+    "EXPORT_COLLISION_RibosomeProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_FreeRibosomeCluster",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_FreeRibosomeCluster.fbx",
+      "file_size_bytes": 81100,
+      "object_count": 10,
+      "triangle_count": 2300,
+      "object_names": [
+        "FreeRibosome_Cluster_Ribosome_05_SmallSubunit",
+        "FreeRibosome_Cluster_Ribosome_05_LargeSubunit",
+        "FreeRibosome_Cluster_Ribosome_04_SmallSubunit",
+        "FreeRibosome_Cluster_Ribosome_04_LargeSubunit",
+        "FreeRibosome_Cluster_Ribosome_03_SmallSubunit",
+        "FreeRibosome_Cluster_Ribosome_03_LargeSubunit",
+        "FreeRibosome_Cluster_Ribosome_02_SmallSubunit",
+        "FreeRibosome_Cluster_Ribosome_02_LargeSubunit",
+        "FreeRibosome_Cluster_Ribosome_01_SmallSubunit",
+        "FreeRibosome_Cluster_Ribosome_01_LargeSubunit"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/FreeRibosomeCluster",
+      "roblox_material_family": "ribosome_subunits",
+      "event_bindings": [
+        "ribosomes.inspect_free"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "98399492353061",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/114874c4-7add-4d88-9564-77c5204415e0",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_BoundRibosomeRow",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_BoundRibosomeRow.fbx",
+      "file_size_bytes": 102348,
+      "object_count": 15,
+      "triangle_count": 2800,
+      "object_names": [
+        "BoundRibosome_Row_Ribosome_05_SmallSubunit",
+        "BoundRibosome_Row_Ribosome_05_LargeSubunit",
+        "BoundRibosome_Row_Ribosome_05_BoundMembraneFoot",
+        "BoundRibosome_Row_Ribosome_04_SmallSubunit",
+        "BoundRibosome_Row_Ribosome_04_LargeSubunit",
+        "BoundRibosome_Row_Ribosome_04_BoundMembraneFoot",
+        "BoundRibosome_Row_Ribosome_03_SmallSubunit",
+        "BoundRibosome_Row_Ribosome_03_LargeSubunit",
+        "BoundRibosome_Row_Ribosome_03_BoundMembraneFoot",
+        "BoundRibosome_Row_Ribosome_02_SmallSubunit",
+        "BoundRibosome_Row_Ribosome_02_LargeSubunit",
+        "BoundRibosome_Row_Ribosome_02_BoundMembraneFoot",
+        "BoundRibosome_Row_Ribosome_01_SmallSubunit",
+        "BoundRibosome_Row_Ribosome_01_LargeSubunit",
+        "BoundRibosome_Row_Ribosome_01_BoundMembraneFoot"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/BoundRibosomeRow",
+      "roblox_material_family": "bound_ribosomes",
+      "event_bindings": [
+        "ribosomes.inspect_bound"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "122866987189004",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/d86a62bb-aa5a-41a2-aa1a-6aeb4242ba6b",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_SubunitForms",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_SubunitForms.fbx",
+      "file_size_bytes": 36796,
+      "object_count": 4,
+      "triangle_count": 752,
+      "object_names": [
+        "LargeSubunit_Forms_Reference_02",
+        "LargeSubunit_Forms_Reference_01",
+        "SmallSubunit_Forms_Reference_02",
+        "SmallSubunit_Forms_Reference_01"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/SubunitForms",
+      "roblox_material_family": "subunits",
+      "event_bindings": [
+        "ribosomes.subunits"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "112320694762345",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/00d5728c-1331-407f-8bfc-818a635c17c0",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_mRNAThread",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_mRNAThread.fbx",
+      "file_size_bytes": 22924,
+      "object_count": 2,
+      "triangle_count": 288,
+      "object_names": [
+        "mRNA_Thread_DirectionalStrand_02",
+        "mRNA_Thread_DirectionalStrand_01"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/mRNAThread",
+      "roblox_material_family": "mrna",
+      "event_bindings": [
+        "ribosomes.mrna_flow"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "73035792051142",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/df56d6d0-0336-4a04-a69d-ab049863779a",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_PeptideExitCues",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_PeptideExitCues.fbx",
+      "file_size_bytes": 30060,
+      "object_count": 5,
+      "triangle_count": 320,
+      "object_names": [
+        "PeptideExit_Cues_GrowingChain_05",
+        "PeptideExit_Cues_GrowingChain_04",
+        "PeptideExit_Cues_GrowingChain_03",
+        "PeptideExit_Cues_GrowingChain_02",
+        "PeptideExit_Cues_GrowingChain_01"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/PeptideExitCues",
+      "roblox_material_family": "peptide",
+      "event_bindings": [
+        "ribosomes.peptide_growth"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "82300613918764",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/e3eaa8a1-6787-4a35-b6b4-ce377cd97969",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_RibosomeRuntime",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_ANCHORS_RibosomeRuntime.fbx",
+      "file_size_bytes": 33612,
+      "object_count": 5,
+      "triangle_count": 540,
+      "object_names": [
+        "Interaction_Hotspots_RibosomeAnchor_05",
+        "Interaction_Hotspots_RibosomeAnchor_04",
+        "Interaction_Hotspots_RibosomeAnchor_03",
+        "Interaction_Hotspots_RibosomeAnchor_02",
+        "Interaction_Hotspots_RibosomeAnchor_01"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "ribosomes.inspect_translation"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "72361240072967",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/e50b972b-98ff-4bb4-b8f0-d14ceb14baf2",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_RibosomeProxy",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_COLLISION_RibosomeProxy.fbx",
+      "file_size_bytes": 19244,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "Ribosome_CollisionProxy"
+      ],
+      "roblox_placement_target": "Ribosomes_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "92839333153630",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/6560b100-4cbb-47f0-af30-0a8a07f383dc",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

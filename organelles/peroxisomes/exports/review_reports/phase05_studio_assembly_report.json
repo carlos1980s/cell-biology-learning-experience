@@ -1,0 +1,16 @@
+{
+  "schema_version": "peroxisomes_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/Peroxisomes_RawPackages",
+  "expected_visible_model": "Workspace.Peroxisomes_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_PeroxisomeMembrane",
+    "EXPORT_LOD0_CatalaseCrystalCore",
+    "EXPORT_LOD0_FattyAcidProcessingSites",
+    "EXPORT_LOD0_OxidativeReactionCues",
+    "EXPORT_LOD0_DetoxOutputCues",
+    "EXPORT_ANCHORS_PeroxisomesRuntime",
+    "EXPORT_COLLISION_PeroxisomeProxy"
+  ]
+}

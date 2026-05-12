@@ -1,0 +1,11 @@
+check,status,evidence
+Entry guide removed,pass,"Studio probe found CellEntryPoreGuide=false."
+Pore collision gate removed,pass,"Studio probe found CellWallCollisionBounds=false."
+Generated Terrain water removed,pass,"Builder no longer contains terrain:FillBlock or Enum.Material.Water."
+User-edited Terrain preserved,pass,"Studio probe found Terrain CountCells stayed 83479116 before and after builder rebuild."
+Terrain folder absent from generated root,pass,"Studio probe found root Terrain folder=false."
+Submarine-side spawn preserved,pass,"MainCellSwimSpawn remains at 0,58,-385.691."
+Total mesh assembly preserved,pass,"Imported organelle assembly path remains intact."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."
+Studio deployment,pass,"Builder deployed and require(builder).build() succeeded through the legacy bridge."

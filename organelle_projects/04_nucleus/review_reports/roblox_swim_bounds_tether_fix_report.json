@@ -1,0 +1,45 @@
+{
+  "phase": "roblox_swim_bounds_tether_fix",
+  "date": "2026-05-04",
+  "bug": "Player felt anchored to a vertical column near the spawn and could only move a limited distance vertically or horizontally.",
+  "root_cause": "The swim bounds were too small and the out-of-bounds correction pulled the player toward BOUNDS_CENTER. When the player hit a top/side edge, the return vector also dragged them toward the center column.",
+  "source_changes": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "changes": [
+      "Expanded SwimBoundsCenter from Vector3.new(0, 32, 35) to Vector3.new(0, 58, 0).",
+      "Expanded SwimBoundsSize from Vector3.new(260, 150, 300) to Vector3.new(620, 360, 680).",
+      "Replaced center-tether return logic with boundaryReturnVelocity().",
+      "boundaryReturnVelocity() pushes only toward the nearest in-bounds point, so crossing the top only pushes down and crossing a side only pushes sideways.",
+      "Removed the pre-controller AssemblyLinearVelocity center pull; boundary correction is now blended into the target swim velocity."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "builder_applied": "main_cell_bounds_tether_fix_build_applied CellEnvironment_Main",
+    "live_bounds_center": "0, 58, 0",
+    "live_bounds_size": "620, 360, 680",
+    "installed_controller_checks": {
+      "has_boundary_return": true,
+      "has_center_tether": false,
+      "has_direct_dive": true,
+      "has_move_pad": false,
+      "main_controller_enabled": true
+    },
+    "legacy_control_scripts": {
+      "CellPlayerBootstrap": "disabled",
+      "ExplorerControls": "disabled",
+      "CellCytoplasmLightingController": "disabled",
+      "MainCellSwimmingController": "enabled"
+    }
+  },
+  "validation": {
+    "python_compile": "passed for deploy_main_cell_environment_to_studio.py and roblox_plugin_bridge.py",
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok"
+  },
+  "device_review_needed": [
+    "Android: confirm the player no longer feels pulled back to a central vertical line.",
+    "Android: hold Up for several seconds and confirm the player can rise across the larger cell volume.",
+    "Quest: confirm horizontal and vertical movement are no longer capped near spawn."
+  ]
+}

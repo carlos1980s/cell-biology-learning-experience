@@ -1,0 +1,38 @@
+{
+  "phase": "roblox_scuba_buoyancy_climb_bugfix",
+  "date": "2026-05-04",
+  "bug": "The scuba buoyancy pack could not climb strongly enough.",
+  "root_cause": "Buoyancy trim only changed VectorForce, while LinearVelocity continued to target a damped vertical velocity. The velocity controller was fighting the climb.",
+  "source_change": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "changes": [
+      "Added BUOYANCY_VERTICAL_SPEED = 18.",
+      "Added BUOYANCY_VERTICAL_RESPONSE = 4.8.",
+      "Buoyancy trim now directly drives target vertical swim velocity.",
+      "Vertical damping is reduced as trim moves away from neutral.",
+      "VectorForce trim scale was reduced from 0.18 to 0.12 so the effect is controlled by velocity plus softer lift instead of fighting the controller."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "builder_applied": "main_cell_buoyancy_climb_fix_build_applied CellEnvironment_Main",
+    "studio_edit_mode_confirmed": true,
+    "controller_source_length": 24775,
+    "installed_controller_checks": {
+      "has_vertical_speed": true,
+      "has_vertical_response": true,
+      "has_target_trim_velocity": true,
+      "has_damping_release": true,
+      "has_lower_force_scale": true
+    }
+  },
+  "validation": {
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok"
+  },
+  "device_review_needed": [
+    "Hold inflate until the gauge fills above neutral; player should now climb clearly.",
+    "Release inflate; player should continue drifting up briefly and slowly return toward neutral.",
+    "Hold vent; player should sink clearly."
+  ]
+}

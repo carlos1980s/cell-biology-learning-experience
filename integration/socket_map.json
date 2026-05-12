@@ -1,0 +1,35 @@
+{
+  "schema_version": "socket_map_v1",
+  "sockets": [
+    {
+      "id": "cell_center_nucleus",
+      "organelle": "nucleus",
+      "position": [0.0, 0.0, 0.0],
+      "notes": "Primary central reference socket."
+    },
+    {
+      "id": "inner_cytoplasm_mitochondrion_cluster",
+      "organelle": "mitochondrion",
+      "position": [4.5, -1.0, 1.0],
+      "notes": "Initial mitochondrion cluster reference."
+    },
+    {
+      "id": "nucleus_adjacent_rough_er",
+      "organelle": "rough_er",
+      "position": [2.2, 0.4, 0.0],
+      "notes": "Rough ER should read as nucleus-adjacent."
+    },
+    {
+      "id": "cytoplasm_golgi_stack",
+      "organelle": "golgi",
+      "position": [-3.5, 1.2, 0.4],
+      "notes": "Golgi should sit downstream from ER handoff."
+    },
+    {
+      "id": "cytoplasm_lysosome_field",
+      "organelle": "lysosome",
+      "position": [-2.0, -3.0, 0.6],
+      "notes": "Lysosome field avoids nucleus and main ER cluster."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "nuclear_lamina",
+  "parent_components": [
+    "NuclearLamina_Lattice"
+  ],
+  "required_objects": [
+    "NuclearLamina_Lattice"
+  ],
+  "must_not_create": [
+    "OuterNuclearMembrane_Panels",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions"
+  ]
+}
+

@@ -1,0 +1,43 @@
+{
+  "phase": "roblox_cell_entry_guide",
+  "date": "2026-05-05",
+  "goal": "Make the allowed cell entry point visually discoverable without changing the pore-only wall collision behavior.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Added CellEntryPoreGuide as a non-colliding visual folder under CellEnvironment_Main.",
+    "Added a translucent cyan EntryPoreSoftGlow centered just outside the front pore.",
+    "Added 22 irregular neon EntryPoreRingMarker beads around the pore so the allowed opening reads as a biological entry point.",
+    "Added nine brighter EntryPoreBeaconMarker spheres as a vertical yellow beacon through the gate.",
+    "Extended the EntryGuideBubble trail to eight bubbles spanning outward from the front pore, with connecting beams.",
+    "Added a CellEntryPoreLight and low-rate soft-textured EntryPoreParticleMist to make the entry easier to find in the water volume without box-like particles.",
+    "Kept the existing TopOpenWithPoreGate collision mode: players can enter through the top opening or the front pore, and the other wall blockers remain collidable."
+  ],
+  "studio_probe": {
+    "model": "CellEnvironment_Main",
+    "entry_guide_exists": true,
+    "entry_guide_base_parts": 41,
+    "entry_guide_collidable_parts": 0,
+    "entry_pore_beacon_markers": 9,
+    "entry_guide_bubbles": 8,
+    "entry_guide_z_span": "358.9677734375 to 414.7746276855469",
+    "entry_guide_enabled": true,
+    "entry_guide_pore_center": "-64, 78, 349",
+    "entry_guide_visual_center": "-64, 78, 361.6000061035156",
+    "cell_wall_pore_center": "-64, 78, 349",
+    "spawn_position_after_submarine_relocation": "0, 58, -385.6910095214844",
+    "spawn_note": "The player spawn is now submarine-side; this guide remains at the front pore entry.",
+    "entry_mist_texture": "rbxasset://textures/particles/smoke_main.dds",
+    "selected_in_studio": "Workspace.CellEnvironment_Main.CellEntryPoreGuide"
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() and confirmed the guide exists with zero collidable BaseParts.",
+    "Selected Workspace.CellEnvironment_Main.CellEntryPoreGuide in Studio for immediate inspection."
+  ],
+  "result": "The front pore entry remains visibly marked and non-colliding while preserving the existing non-penetrable cell wall and pore-only entry behavior."
+}

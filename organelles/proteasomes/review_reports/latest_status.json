@@ -1,0 +1,14 @@
+{
+  "schema_version": "proteasomes_latest_status_v1",
+  "organelle": "proteasomes",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "organelles/proteasomes/exports/proteasomes_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "organelles/proteasomes/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_CoreParticleBarrel, EXPORT_LOD0_RegulatoryCaps, EXPORT_LOD0_UbiquitinTagCues, EXPORT_LOD0_ProteinSubstrateThread, EXPORT_LOD0_DegradationProductCues, EXPORT_ANCHORS_ProteasomesRuntime, EXPORT_COLLISION_ProteasomeProxy"
+  ],
+  "next_allowed_scope": "Upload proteasomes Phase 04 packages and record package_asset_id for every group."
+}

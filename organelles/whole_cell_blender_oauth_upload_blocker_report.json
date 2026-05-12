@@ -1,0 +1,6 @@
+{
+  "schema_version": "whole_cell_blender_oauth_upload_blocker_report_v1",
+  "status": "blocked",
+  "reason": "400, message='Token has been revoked', url='https://apis.roblox.com/oauth/v1/token'",
+  "next_allowed_scope": "Log in through the Blender Roblox add-on, or rerun with --interactive-login-if-needed."
+}

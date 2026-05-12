@@ -1,0 +1,42 @@
+{
+  "schema_version": "phase_08r_review_report_v1",
+  "phase": "08R",
+  "review_type": "whole_cell_integration",
+  "status": "exported_upload_blocked",
+  "whole_cell_manifest": "integration/whole_cell_manifest.json",
+  "action_manifest": "organelles/nucleus/nucleus_action_manifest.json",
+  "event_map": "integration/animation_event_map.json",
+  "backend_contract": {
+    "nuclear_mrna_queue": "backend/app/schemas/cell_state.py",
+    "queue_updates_delta": "backend/app/schemas/events.py",
+    "transcribe_and_export_rules": "backend/app/sim/biological_rules.py"
+  },
+  "checks": [
+    {
+      "check": "protein_synthesis_sequence_remains_broad",
+      "result": "pass",
+      "evidence": "Phase 08R adds import/runtime packaging for transcription_mrna_export without moving translation into the nucleus."
+    },
+    {
+      "check": "nucleus_action_layer_targets_existing_model",
+      "result": "pass",
+      "evidence": "Visible assembly target is Workspace.Nucleus_Model/GeneDynamics, not a replacement Nucleus_Model."
+    },
+    {
+      "check": "mRNA_export_is_pore_only",
+      "result": "pass",
+      "evidence": "Export package includes MRNA_ExportPath_ToPore and PoreExport_CheckpointState, and the runtime controller maps export_mrna to those cues."
+    },
+    {
+      "check": "DNA_export_avoided",
+      "result": "pass",
+      "evidence": "No runtime binding exports ActiveGene_Locus or chromatin out of the nucleus."
+    },
+    {
+      "check": "full_studio_integration",
+      "result": "blocked",
+      "evidence": "Open Cloud package asset IDs are required before Studio assembly can be validated."
+    }
+  ],
+  "decision": "Whole-cell contract is ready for Phase 08R import, but current project status must remain upload blocked until real Roblox asset IDs exist."
+}

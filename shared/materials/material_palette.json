@@ -1,0 +1,37 @@
+{
+  "schema_version": "material_palette_v1",
+  "materials": {
+    "membrane_translucent_blue": {
+      "base_color": "#6FB7D6",
+      "accent_color": "#B7E6F2",
+      "roughness": 0.42,
+      "transmission_hint": 0.28
+    },
+    "nucleus_violet": {
+      "base_color": "#7C5FB5",
+      "accent_color": "#D6C2FF",
+      "roughness": 0.5
+    },
+    "mitochondria_coral": {
+      "base_color": "#D96E5A",
+      "accent_color": "#FFD166",
+      "roughness": 0.48
+    },
+    "golgi_gold": {
+      "base_color": "#D8A63A",
+      "accent_color": "#F4D35E",
+      "roughness": 0.46
+    },
+    "er_teal": {
+      "base_color": "#3BA99C",
+      "accent_color": "#9BE7D8",
+      "roughness": 0.52
+    },
+    "lysosome_magenta": {
+      "base_color": "#C8558C",
+      "accent_color": "#FFB3D1",
+      "roughness": 0.5
+    }
+  }
+}
+

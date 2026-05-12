@@ -1,0 +1,47 @@
+{
+  "schema_version": "phase_02p_visual_review_v1",
+  "organelle": "nucleus",
+  "phase": "02P",
+  "reviewer": "Visual Organic Quality Reviewer",
+  "reviewer_provenance": "manual_render_inspection",
+  "review_scope": "nuclear pore complexes and gate cores on the approved Phase 02R envelope",
+  "visual_pass": true,
+  "approved_to_continue": true,
+  "approved_next_scope": "nuclear lamina only",
+  "score_0_to_100": 82,
+  "score_evidence": {
+    "reference_board": "organelles/nucleus/review_renders/phase_02p_reference_board.png",
+    "distribution_review": "organelles/nucleus/review_renders/phase_02p_pore_distribution_review.png",
+    "closeup": "organelles/nucleus/review_renders/phase_02p_pore_complex_closeup.png",
+    "notes": "Score is manual and scoped to pore readability, not automated similarity. The builder first produced pores that were too bulky, then reduced protrusion and reframed the close-up before this review."
+  },
+  "reference_images_used": [
+    "reference_images/nucleus_specs/02_nuclear_pores.png"
+  ],
+  "reference_alignment": {
+    "silhouette": "partial_pass",
+    "color_language": "pass",
+    "component_relationships": "pass",
+    "organic_3d_translation": "partial_pass",
+    "biology_conflicts": []
+  },
+  "passed_checks": [
+    "Reference image and pore-bearing candidate are visible in the same Blender scene.",
+    "Pore complexes are raised, embedded into the envelope, and visibly distributed on the outer membrane.",
+    "Pore openings include gate-core filaments so the model does not teach pores as passive open holes.",
+    "Pore rings are custom generated meshes rather than default torus primitives.",
+    "Lamina, nucleoplasm, chromatin, nucleolus, cargo, ER connection, and mitosis artifacts were not added in this phase."
+  ],
+  "minor_issues": [
+    "Some pore rings still read slightly regular from the board distance; later polishing should add more irregular protein subunit variation.",
+    "The pore density is appropriate for this review slice but not yet enough for a final whole-nucleus hero model.",
+    "The close-up camera now proves the gate/opening, but a future review should add one more exterior grazing angle after the lamina is added."
+  ],
+  "major_failures": [],
+  "required_fixes_before_final_export": [
+    "Create a Roblox LOD plan for pore rings and gate filaments.",
+    "Bake or simplify small gate filaments for lower-end Roblox devices.",
+    "Do not add transport cargo until the pore/gate animation contract exists."
+  ],
+  "decision_notes": "Phase 02P passes as a scoped pore-complex foundation. It authorizes the next gated build scope: nuclear lamina only. It does not approve nucleoplasm, chromatin, nucleolus, transport cargo, rough ER, or mitosis fragments."
+}

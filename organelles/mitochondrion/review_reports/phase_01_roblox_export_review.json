@@ -1,0 +1,24 @@
+{
+  "export_pass": false,
+  "score_0_to_100": 62,
+  "major_failures": [
+    "Transforms are not applied before export: WholeCell_ContextSocket is created with non-default rotation and scale, and there is no export-prep step that applies transforms.",
+    "Export readiness for modifiers is unresolved: Organic_RoundedBevel and Organic_WeightedNormals are added to mesh objects but are not applied or explicitly documented as intentionally preserved before FBX/Roblox import.",
+    "No exported files, export collection, or Roblox import artifact are listed for Phase 1, so the review cannot verify actual exported object names, hierarchy, or import behavior.",
+    "Required export budget data is incomplete: triangle counts, material count, texture count, and object count are not measured, only general future risks are listed."
+  ],
+  "minor_issues": [
+    "Mitochondrion_RootRig and WholeCell_ContextSocket use exact manifest names, and the six intentionally deferred manifest components are reported as incomplete.",
+    "The root rig is an Empty parent at the origin, which is useful as an animation anchor, but the Roblox mapping for that Empty needs to be defined because Roblox import workflows may not preserve it as a usable rig object.",
+    "Procedural noise, bump nodes, and transparent socket materials are useful for Blender review but will need baked textures or simplified Roblox material equivalents.",
+    "Non-manifest review aids such as Phase01_ContextSocket_ATPScaleMarker, Phase01_ReviewFloor_NonManifest, lights, and cameras should be excluded from any production export or clearly marked in an export collection."
+  ],
+  "required_fixes": [
+    "Add an explicit export-prep path before Roblox export that applies or bakes object transforms for WholeCell_ContextSocket and all future mesh components.",
+    "Document whether bevel and weighted-normal modifiers are applied, baked, or intentionally preserved before export, and verify the imported result in Roblox.",
+    "Create or document the Phase 1 export artifact list, including exported files, exportable component names, excluded review-only objects, and hierarchy under Mitochondrion_RootRig.",
+    "Add measured object, triangle, material, and texture counts to the builder or export report for Phase 1 and carry those budgets into later cristae-heavy phases.",
+    "Define the Roblox-side representation of Mitochondrion_RootRig if Blender Empty objects are not preserved reliably by the selected import pipeline."
+  ],
+  "approved_to_continue": false
+}

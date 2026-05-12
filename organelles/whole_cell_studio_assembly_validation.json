@@ -1,0 +1,493 @@
+{
+  "schema_version": "whole_cell_studio_assembly_validation_v1",
+  "status": "pass",
+  "expected_instance_count": 18,
+  "actual_instance_count": 18,
+  "water_volume": {
+    "center": [
+      0.0,
+      58.0,
+      0.0
+    ],
+    "size": [
+      620.0,
+      360.0,
+      680.0
+    ]
+  },
+  "live": {
+    "root_exists": true,
+    "assembly_count": 18,
+    "missing_environment_packages": "EXPORT_LOD0_CytoplasmTerrainGel,EXPORT_COLLISION_CytoplasmWalkable,EXPORT_LOD0_CytoskeletonGuideFibers,EXPORT_LOD0_SuspendedCytoplasmParticles,EXPORT_ANCHORS_CellEnvironmentRuntime,IMPORT_NUCLEUS_ERConnectionSheets",
+    "water_size": {
+      "y": 480,
+      "x": 716,
+      "z": 840
+    },
+    "raw_libraries": [
+      {
+        "name": "Nucleus_Phase07R_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 10,
+        "collision_violations": 0,
+        "part_count": 1179
+      },
+      {
+        "name": "Nucleus_FunctionalModel_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 12,
+        "collision_violations": 0,
+        "part_count": 12
+      },
+      {
+        "name": "MainCellEnvironment_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 0,
+        "collision_violations": 0,
+        "part_count": 0
+      },
+      {
+        "name": "VesiclesEndosomes_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 7,
+        "collision_violations": 0,
+        "part_count": 48
+      },
+      {
+        "name": "RoughER_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 7,
+        "collision_violations": 0,
+        "part_count": 99
+      },
+      {
+        "name": "Proteasomes_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 88
+      },
+      {
+        "name": "Lysosome_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 122
+      },
+      {
+        "name": "CytoskeletonCentrosome_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 102
+      },
+      {
+        "name": "Mitochondrion_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 96
+      },
+      {
+        "name": "Peroxisomes_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 80
+      },
+      {
+        "name": "MembraneCytoplasm_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 98
+      },
+      {
+        "name": "Golgi_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 12,
+        "collision_violations": 0,
+        "part_count": 222
+      },
+      {
+        "name": "Ribosomes_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 14,
+        "collision_violations": 0,
+        "part_count": 84
+      },
+      {
+        "name": "SmoothER_RawPackages",
+        "visibility_violations": 0,
+        "package_count": 15,
+        "collision_violations": 0,
+        "part_count": 83
+      }
+    ],
+    "imported_instances": [
+      {
+        "organelle_folder": "VesiclesEndosomes",
+        "biological_zone": "trafficking_sorting_corridor",
+        "instance_name": "VesiclesEndosomes",
+        "organelle_id": "vesicles_endosomes",
+        "collision_part_count": 0,
+        "part_count": 48,
+        "visible_part_count": 47,
+        "center": {
+          "y": 88,
+          "x": 92.00000762939453,
+          "z": 17.999996185302734
+        },
+        "size": {
+          "y": 8.283608436584473,
+          "x": 16.000001907348633,
+          "z": 8.29911994934082
+        }
+      },
+      {
+        "organelle_folder": "Nucleus",
+        "biological_zone": "central_perinuclear",
+        "instance_name": "Nucleus",
+        "organelle_id": "nucleus",
+        "collision_part_count": 1,
+        "part_count": 1179,
+        "visible_part_count": 1178,
+        "center": {
+          "y": 91.03157806396484,
+          "x": -52.26081085205078,
+          "z": -72.78350067138672
+        },
+        "size": {
+          "y": 17.708717346191406,
+          "x": 32.0250244140625,
+          "z": 33.63749313354492
+        }
+      },
+      {
+        "organelle_folder": "RoughER",
+        "biological_zone": "perinuclear_protein_synthesis",
+        "instance_name": "RoughER",
+        "organelle_id": "rough_er",
+        "collision_part_count": 0,
+        "part_count": 98,
+        "visible_part_count": 97,
+        "center": {
+          "y": 96,
+          "x": -12.000001907348633,
+          "z": -44
+        },
+        "size": {
+          "y": 10.909011840820312,
+          "x": 28.000001907348633,
+          "z": 10.045409202575684
+        }
+      },
+      {
+        "organelle_folder": "Proteasomes",
+        "biological_zone": "cytosolic_perinuclear_degradation",
+        "instance_name": "Proteasomes_A",
+        "organelle_id": "proteasomes",
+        "collision_part_count": 0,
+        "part_count": 44,
+        "visible_part_count": 43,
+        "center": {
+          "y": 118,
+          "x": -29.999998092651367,
+          "z": 17.999998092651367
+        },
+        "size": {
+          "y": 2.8442540168762207,
+          "x": 10,
+          "z": 5.435428619384766
+        }
+      },
+      {
+        "organelle_folder": "Proteasomes",
+        "biological_zone": "cytosolic_perinuclear_degradation",
+        "instance_name": "Proteasomes_B",
+        "organelle_id": "proteasomes",
+        "collision_part_count": 0,
+        "part_count": 44,
+        "visible_part_count": 43,
+        "center": {
+          "y": 116,
+          "x": 74,
+          "z": -58
+        },
+        "size": {
+          "y": 2.8442540168762207,
+          "x": 10.000004768371582,
+          "z": 5.435427665710449
+        }
+      },
+      {
+        "organelle_folder": "Lysosome",
+        "biological_zone": "digestive_recycling",
+        "instance_name": "Lysosome_A",
+        "organelle_id": "lysosome",
+        "collision_part_count": 0,
+        "part_count": 61,
+        "visible_part_count": 60,
+        "center": {
+          "y": 78,
+          "x": 126,
+          "z": 62
+        },
+        "size": {
+          "y": 11.150218963623047,
+          "x": 17.999996185302734,
+          "z": 12.704108238220215
+        }
+      },
+      {
+        "organelle_folder": "Lysosome",
+        "biological_zone": "digestive_recycling",
+        "instance_name": "Lysosome_B",
+        "organelle_id": "lysosome",
+        "collision_part_count": 0,
+        "part_count": 61,
+        "visible_part_count": 60,
+        "center": {
+          "y": 127.99999237060547,
+          "x": 104,
+          "z": 96
+        },
+        "size": {
+          "y": 11.1502103805542,
+          "x": 17.999980926513672,
+          "z": 12.704108238220215
+        }
+      },
+      {
+        "organelle_folder": "Lysosome",
+        "biological_zone": "digestive_recycling",
+        "instance_name": "Lysosome_C",
+        "organelle_id": "lysosome",
+        "collision_part_count": 0,
+        "part_count": 61,
+        "visible_part_count": 60,
+        "center": {
+          "y": 74,
+          "x": -115.99999237060547,
+          "z": 86
+        },
+        "size": {
+          "y": 11.150219917297363,
+          "x": 17.999996185302734,
+          "z": 12.704108238220215
+        }
+      },
+      {
+        "organelle_folder": "CytoskeletonCentrosome",
+        "biological_zone": "cellwide_structure_transport",
+        "instance_name": "CytoskeletonCentrosome",
+        "organelle_id": "cytoskeleton_centrosome",
+        "collision_part_count": 0,
+        "part_count": 51,
+        "visible_part_count": 50,
+        "center": {
+          "y": 100,
+          "x": 0,
+          "z": -4.76837158203125e-07
+        },
+        "size": {
+          "y": 60,
+          "x": 60,
+          "z": 21.778011322021484
+        }
+      },
+      {
+        "organelle_folder": "Mitochondrion",
+        "biological_zone": "distributed_energy",
+        "instance_name": "Mitochondrion_A",
+        "organelle_id": "mitochondrion",
+        "collision_part_count": 0,
+        "part_count": 48,
+        "visible_part_count": 47,
+        "center": {
+          "y": 112,
+          "x": -138,
+          "z": -92.00000762939453
+        },
+        "size": {
+          "y": 11.452518463134766,
+          "x": 23.999998092651367,
+          "z": 10.72960376739502
+        }
+      },
+      {
+        "organelle_folder": "Mitochondrion",
+        "biological_zone": "distributed_energy",
+        "instance_name": "Mitochondrion_B",
+        "organelle_id": "mitochondrion",
+        "collision_part_count": 0,
+        "part_count": 48,
+        "visible_part_count": 47,
+        "center": {
+          "y": 92.00000762939453,
+          "x": 118.00000762939453,
+          "z": 111.99999237060547
+        },
+        "size": {
+          "y": 11.452518463134766,
+          "x": 24.000003814697266,
+          "z": 10.729604721069336
+        }
+      },
+      {
+        "organelle_folder": "Mitochondrion",
+        "biological_zone": "distributed_energy",
+        "instance_name": "Mitochondrion_C",
+        "organelle_id": "mitochondrion",
+        "collision_part_count": 0,
+        "part_count": 48,
+        "visible_part_count": 47,
+        "center": {
+          "y": 154,
+          "x": 132,
+          "z": -74
+        },
+        "size": {
+          "y": 11.452518463134766,
+          "x": 24.000003814697266,
+          "z": 10.729604721069336
+        }
+      },
+      {
+        "organelle_folder": "Peroxisomes",
+        "biological_zone": "oxidative_metabolism_detox",
+        "instance_name": "Peroxisomes_A",
+        "organelle_id": "peroxisomes",
+        "collision_part_count": 0,
+        "part_count": 40,
+        "visible_part_count": 39,
+        "center": {
+          "y": 126,
+          "x": -117.99998474121094,
+          "z": 65.99999237060547
+        },
+        "size": {
+          "y": 6.443958282470703,
+          "x": 13.999988555908203,
+          "z": 7.1565470695495605
+        }
+      },
+      {
+        "organelle_folder": "Peroxisomes",
+        "biological_zone": "oxidative_metabolism_detox",
+        "instance_name": "Peroxisomes_B",
+        "organelle_id": "peroxisomes",
+        "collision_part_count": 0,
+        "part_count": 40,
+        "visible_part_count": 39,
+        "center": {
+          "y": 118,
+          "x": 96,
+          "z": 86
+        },
+        "size": {
+          "y": 6.443957805633545,
+          "x": 14.000011444091797,
+          "z": 7.156552791595459
+        }
+      },
+      {
+        "organelle_folder": "MembraneCytoplasm",
+        "biological_zone": "whole_cell_context",
+        "instance_name": "MembraneCytoplasm",
+        "organelle_id": "membrane_cytoplasm",
+        "collision_part_count": 0,
+        "part_count": 49,
+        "visible_part_count": 48,
+        "center": {
+          "y": 58,
+          "x": 0,
+          "z": 0
+        },
+        "size": {
+          "y": 95,
+          "x": 88.66666412353516,
+          "z": 50.666664123535156
+        }
+      },
+      {
+        "organelle_folder": "Golgi",
+        "biological_zone": "post_er_processing",
+        "instance_name": "Golgi",
+        "organelle_id": "golgi",
+        "collision_part_count": 0,
+        "part_count": 111,
+        "visible_part_count": 110,
+        "center": {
+          "y": 94,
+          "x": 58,
+          "z": -11.999998092651367
+        },
+        "size": {
+          "y": 7.118946552276611,
+          "x": 22.999996185302734,
+          "z": 10.821016311645508
+        }
+      },
+      {
+        "organelle_folder": "Ribosomes",
+        "biological_zone": "rough_er_and_cytosol_translation",
+        "instance_name": "Ribosomes",
+        "organelle_id": "ribosomes",
+        "collision_part_count": 0,
+        "part_count": 42,
+        "visible_part_count": 41,
+        "center": {
+          "y": 104,
+          "x": 10,
+          "z": -34
+        },
+        "size": {
+          "y": 6.428754806518555,
+          "x": 15.999998092651367,
+          "z": 7.901053428649902
+        }
+      },
+      {
+        "organelle_folder": "SmoothER",
+        "biological_zone": "peripheral_lipid_detox_calcium",
+        "instance_name": "SmoothER",
+        "organelle_id": "smooth_er",
+        "collision_part_count": 0,
+        "part_count": 41,
+        "visible_part_count": 40,
+        "center": {
+          "y": 104,
+          "x": -92.00000762939453,
+          "z": 44.000003814697266
+        },
+        "size": {
+          "y": 13.645008087158203,
+          "x": 24.000001907348633,
+          "z": 11.932642936706543
+        }
+      }
+    ],
+    "swim_bounds_center": {
+      "y": 58,
+      "x": 0,
+      "z": 0
+    },
+    "root_name": "Workspace.CellEnvironment_Main",
+    "missing_organelle_packages": "",
+    "water_center": {
+      "y": 58,
+      "x": 0,
+      "z": 0
+    },
+    "swim_bounds_size": {
+      "y": 360,
+      "x": 620,
+      "z": 680
+    }
+  },
+  "blocking_findings": [],
+  "warnings": [
+    "Non-organelle environment packages are still missing: EXPORT_LOD0_CytoplasmTerrainGel,EXPORT_COLLISION_CytoplasmWalkable,EXPORT_LOD0_CytoskeletonGuideFibers,EXPORT_LOD0_SuspendedCytoplasmParticles,EXPORT_ANCHORS_CellEnvironmentRuntime,IMPORT_NUCLEUS_ERConnectionSheets"
+  ]
+}

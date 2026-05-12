@@ -1,0 +1,268 @@
+{
+  "schema_version": "mitochondrion_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 7,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_OuterMembrane",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_OuterMembrane.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "operationId": "a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "operationId": "a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "done": true,
+        "response": {
+          "path": "assets/84890769121226",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:02.573173100Z",
+          "assetId": "84890769121226",
+          "displayName": "Mitochondrion_EXPORT_LOD0_OuterMembrane",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_OuterMembrane",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "84890769121226"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_InnerMembraneCristae",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_InnerMembraneCristae.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "operationId": "df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "operationId": "df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "done": true,
+        "response": {
+          "path": "assets/100563105582480",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:09.738218600Z",
+          "assetId": "100563105582480",
+          "displayName": "Mitochondrion_EXPORT_LOD0_InnerMembraneCristae",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_InnerMembraneCristae",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "100563105582480"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_MatrixVolume",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_MatrixVolume.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "operationId": "13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "operationId": "13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "done": true,
+        "response": {
+          "path": "assets/72954790840741",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:13.758953300Z",
+          "assetId": "72954790840741",
+          "displayName": "Mitochondrion_EXPORT_LOD0_MatrixVolume",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_MatrixVolume",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "72954790840741"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_ATPSignalSites",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_ATPSignalSites.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/91514817-10e8-4e05-a088-547db3908188",
+        "operationId": "91514817-10e8-4e05-a088-547db3908188",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/91514817-10e8-4e05-a088-547db3908188",
+        "operationId": "91514817-10e8-4e05-a088-547db3908188",
+        "done": true,
+        "response": {
+          "path": "assets/136496051324880",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:24.981377300Z",
+          "assetId": "136496051324880",
+          "displayName": "Mitochondrion_EXPORT_LOD0_ATPSignalSites",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_ATPSignalSites",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "136496051324880"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_StressCueLayer",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_StressCueLayer.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "operationId": "9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "operationId": "9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "done": true,
+        "response": {
+          "path": "assets/84381834890533",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:31.278924Z",
+          "assetId": "84381834890533",
+          "displayName": "########################################",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_StressCueLayer",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "84381834890533"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_ANCHORS_MitochondrionRuntime",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_ANCHORS_MitochondrionRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/91d99738-f735-4d53-a821-50b2075bfa78",
+        "operationId": "91d99738-f735-4d53-a821-50b2075bfa78",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/91d99738-f735-4d53-a821-50b2075bfa78",
+        "operationId": "91d99738-f735-4d53-a821-50b2075bfa78",
+        "done": true,
+        "response": {
+          "path": "assets/123262900817475",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:37.487190200Z",
+          "assetId": "123262900817475",
+          "displayName": "Mitochondrion_EXPORT_ANCHORS_MitochondrionRuntime",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_ANCHORS_MitochondrionRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "123262900817475"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_COLLISION_MitochondrionProxy",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_COLLISION_MitochondrionProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "operationId": "5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "operationId": "5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "done": true,
+        "response": {
+          "path": "assets/85945624405765",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:43.489863Z",
+          "assetId": "85945624405765",
+          "displayName": "Mitochondrion_EXPORT_COLLISION_MitochondrionProxy",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_COLLISION_MitochondrionProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "85945624405765"
+    }
+  ]
+}

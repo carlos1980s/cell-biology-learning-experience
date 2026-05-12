@@ -1,0 +1,13 @@
+{
+  "organelle": "peroxisomes",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Peroxisome_RootRig",
+    "Peroxisome_Membrane",
+    "CatalaseCrystal_Core",
+    "FattyAcidProcessing_Sites",
+    "OxidativeReaction_Cues",
+    "DetoxOutput_Cues",
+    "Interaction_Hotspots"
+  ]
+}

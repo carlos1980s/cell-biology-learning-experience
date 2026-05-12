@@ -1,0 +1,6 @@
+{
+  "schema_version": "whole_cell_roblox_oauth_upload_blocker_report_v1",
+  "status": "blocked",
+  "reason": "OAuth callback was not received within 300s",
+  "next_allowed_scope": "Complete the Roblox OAuth browser prompt, then rerun this uploader."
+}

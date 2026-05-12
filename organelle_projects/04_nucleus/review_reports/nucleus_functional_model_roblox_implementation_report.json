@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "nucleus-roblox-implementation-report/v1",
+  "phase": "functional_model_roblox_export_import_pass",
+  "timestamp": "2026-05-04T13:56:43+0800",
+  "decision": "partial_pass_exports_ready_upload_blocked",
+  "summary": "Regenerated functional nucleus was exported into 12 Roblox package-ready FBX groups and validated with an Open Cloud dry run. New package assets were not uploaded because ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID are not set in this environment, so Studio still displays the previous Phase07R package IDs.",
+  "sourceBlend": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /nucleus_roblox_functional_model.blend",
+  "sourceManifest": "organelle_projects/04_nucleus/assets/nucleus_export_manifest.json",
+  "assetManifest": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json",
+  "scaleContract": {
+    "blenderUnitMeaning": "nucleus_source_unit",
+    "sourceOuterRadiusBlenderUnits": 3.2,
+    "sourceOuterDiameterBlenderUnits": 6.4,
+    "recommendedRobloxStudsPerBlenderUnit": 35.0,
+    "targetOuterDiameterRobloxStuds": 224.0,
+    "pivotObject": "Nucleus_RootRig",
+    "pivotLocationBlender": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "notes": "Keep all export groups aligned to Nucleus_RootRig. Roblox code should scale imported groups uniformly from this contract."
+  },
+  "exportAudit": {
+    "exportCount": 12,
+    "totalTriangles": 159400,
+    "maxFileSizeBytes": 1285724,
+    "allUnderOpenCloud20MbLimit": true,
+    "allExportedPendingUpload": true
+  },
+  "exports": [
+    {
+      "index": 1,
+      "id": "outer_membrane_panels",
+      "target": "NucleusModel/MeshVisuals/OuterEnvelope",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_01_outer_membrane_panels_lod0.fbx",
+      "fileSizeBytes": 1216316,
+      "triangleCount": 39514,
+      "sourceObjectCount": 365,
+      "decimateRatio": 0.36,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 2,
+      "id": "npc_assemblies",
+      "target": "NucleusModel/MeshVisuals/NPCAssemblies",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_02_npc_assemblies_lod0.fbx",
+      "fileSizeBytes": 887484,
+      "triangleCount": 28353,
+      "sourceObjectCount": 706,
+      "decimateRatio": 0.26,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 3,
+      "id": "inner_membrane_panels",
+      "target": "NucleusModel/MeshVisuals/InnerMembrane",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_03_inner_membrane_panels_lod0.fbx",
+      "fileSizeBytes": 333676,
+      "triangleCount": 10861,
+      "sourceObjectCount": 17,
+      "decimateRatio": 0.42,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 4,
+      "id": "perinuclear_lumen",
+      "target": "NucleusModel/MeshVisuals/PerinuclearLumen",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_04_perinuclear_lumen_lod0.fbx",
+      "fileSizeBytes": 122604,
+      "triangleCount": 3727,
+      "sourceObjectCount": 17,
+      "decimateRatio": 0.36,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 5,
+      "id": "lamina_web",
+      "target": "NucleusModel/MeshVisuals/LaminaWeb",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_05_lamina_web_lod0.fbx",
+      "fileSizeBytes": 523132,
+      "triangleCount": 17113,
+      "sourceObjectCount": 81,
+      "decimateRatio": 0.22,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 6,
+      "id": "nucleoplasm_volume",
+      "target": "NucleusModel/MeshVisuals/Nucleoplasm",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_06_nucleoplasm_volume_lod0.fbx",
+      "fileSizeBytes": 144124,
+      "triangleCount": 4334,
+      "sourceObjectCount": 96,
+      "decimateRatio": 0.3,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 7,
+      "id": "chromatin_threads",
+      "target": "NucleusModel/MeshVisuals/Chromatin",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_07_chromatin_threads_lod0.fbx",
+      "fileSizeBytes": 1285724,
+      "triangleCount": 36895,
+      "sourceObjectCount": 210,
+      "decimateRatio": 0.11,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 8,
+      "id": "nucleolus_body",
+      "target": "NucleusModel/MeshVisuals/Nucleolus",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_08_nucleolus_body_lod0.fbx",
+      "fileSizeBytes": 460588,
+      "triangleCount": 13939,
+      "sourceObjectCount": 177,
+      "decimateRatio": 0.28,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 9,
+      "id": "er_connection",
+      "target": "NucleusModel/MeshVisuals/ERConnection",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_09_er_connection_sheets_lod0.fbx",
+      "fileSizeBytes": 39452,
+      "triangleCount": 688,
+      "sourceObjectCount": 24,
+      "decimateRatio": 0.62,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 10,
+      "id": "transport_cargo",
+      "target": "NucleusModel/AnimationControllers/TransportCargo",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_10_transport_cargo_reference_lod0.fbx",
+      "fileSizeBytes": 29660,
+      "triangleCount": 550,
+      "sourceObjectCount": 20,
+      "decimateRatio": 0.7,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 11,
+      "id": "mitosis_fragments",
+      "target": "NucleusModel/AnimationControllers/MitosisFragments",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_11_mitosis_fragments_lod0.fbx",
+      "fileSizeBytes": 61388,
+      "triangleCount": 1746,
+      "sourceObjectCount": 28,
+      "decimateRatio": 0.52,
+      "status": "exported_pending_upload"
+    },
+    {
+      "index": 12,
+      "id": "interaction_hotspots_collision",
+      "target": "NucleusModel/InteractionAnchors",
+      "sourceFile": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_12_interaction_hotspots_collision_guide.fbx",
+      "fileSizeBytes": 54172,
+      "triangleCount": 1680,
+      "sourceObjectCount": 24,
+      "decimateRatio": 0.5,
+      "status": "exported_pending_upload"
+    }
+  ],
+  "validation": {
+    "pythonCompile": "passed for generator, exporter, uploader, functional Studio assembler, Phase07R Studio assembler",
+    "blenderBackgroundExport": "passed",
+    "openCloudDryRun": "passed payload validation for all 12 groups",
+    "realOpenCloudUpload": "blocked_missing_ROBLOX_OPEN_CLOUD_API_KEY_and_ROBLOX_GROUP_ID",
+    "functionalStudioAssembly": "blocked_manifest_has_no_package_asset_id_values",
+    "officialRobloxMcp": "timed_out_on_health_check_after_120s",
+    "legacyBridgeStudioQuery": {
+      "legacyHealth": true,
+      "currentPipeline": "Phase07R_OpenCloud_GroupPackages",
+      "currentNucleusParts": 1320,
+      "currentVisibleParts": 1237,
+      "badFrontCapVisibleBeforeHideCheck": 0,
+      "badFrontCapPartsHidden": 44
+    }
+  },
+  "reviewRenders": [
+    "review_renders/nucleus_scale_pore_pass_hero.png",
+    "review_renders/nucleus_scale_pore_pass_board.png",
+    "review_renders/nucleus_scale_pore_pass_focus.png",
+    "review_renders/nucleus_scale_pore_pass_internal_spacing.png"
+  ],
+  "robloxImplementationFiles": [
+    "tools/export_nucleus_functional_model_roblox_groups.py",
+    "tools/upload_nucleus_phase07r_open_cloud_assets.py",
+    "tools/assemble_nucleus_functional_model_in_studio.py",
+    "src/CellExperience/Data/NucleusMeshAssets.lua",
+    "src/CellExperience/OrganelleModels/Nucleus.lua",
+    "tools/assemble_nucleus_phase07r_packages_in_studio.py"
+  ],
+  "nextRequiredAction": "Set ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID, run the upload script against the functional asset manifest, then run the functional Studio assembler and perform edit/play viewport review."
+}

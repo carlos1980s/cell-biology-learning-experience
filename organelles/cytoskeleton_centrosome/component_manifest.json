@@ -1,0 +1,14 @@
+{
+  "organelle": "cytoskeleton_centrosome",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "CytoskeletonCentrosome_RootRig",
+    "Microtubule_Tracks",
+    "Actin_Network",
+    "IntermediateFilaments",
+    "Centrosome_Centrioles",
+    "MotorProtein_Cues",
+    "SpindleReadiness_Cues",
+    "Interaction_Hotspots"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schema_version": "golgi_builder_report_v1",
+  "phase": "phase_01",
+  "phase_id": "phase_01_formal_scaffold",
+  "organelle": "golgi",
+  "status": "built",
+  "builder_scope": [
+    "Formal restart scaffold only",
+    "Blender scene setup, cameras, and lighting",
+    "Organic material recipes for later Golgi anatomy",
+    "Golgi_RootRig and WholeCell_ContextSocket only as manifest components",
+    "Review-only placement/direction guides marked export_exclude"
+  ],
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Golgi_RootRig"
+  ],
+  "incomplete_components": [
+    "Cisterna_Stack",
+    "Cis_Face",
+    "Trans_Face",
+    "Cargo_ModificationSites",
+    "Budding_Vesicles",
+    "Dispatch_Vesicles",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "Cisterna_Stack",
+    "Cis_Face",
+    "Trans_Face",
+    "Cargo_ModificationSites",
+    "Budding_Vesicles",
+    "Dispatch_Vesicles",
+    "Interaction_Hotspots"
+  ],
+  "exploratory_reference_policy": "Earlier Golgi Phase 1/2 files remain reference evidence and are not the formal current gate unless named phase_01_formal_*.",
+  "render_paths": [
+    {
+      "type": "wide_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_01_formal_wide_scaffold.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "close_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_01_formal_close_context_socket.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_01_formal_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/golgi_phase_01_formal_scaffold.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "Golgi_RootRig",
+    "WholeCell_ContextSocket"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_FormalReviewGhost",
+    "Golgi_Phase01_FormalReviewOrbit",
+    "Golgi_Phase01_CisDirectionGuide",
+    "Golgi_Phase01_TransDirectionGuide",
+    "Golgi_KeyLight_FormalSoftbox",
+    "Golgi_WarmRimLight",
+    "Camera_Golgi_Phase01_FormalWideScaffold",
+    "Camera_Golgi_Phase01_FormalCloseSocket",
+    "Camera_Golgi_Phase01_FormalExportInspection"
+  ],
+  "transform_status": [
+    {
+      "name": "Golgi_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 11,
+      "mesh_object_count": 4,
+      "triangle_count": 6560,
+      "material_count": 2,
+      "texture_count": 0
+    },
+    "export_candidates_only": {
+      "object_count": 2,
+      "mesh_object_count": 0,
+      "triangle_count": 0,
+      "material_count": 0,
+      "texture_count": 0
+    }
+  },
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "three_review_renders_exist_or_pending_reason_listed": true,
+    "major_components_use_manifest_names": true,
+    "phase_scope_limited_to_scene_root_context": true,
+    "no_biological_cisternae_created": true,
+    "review_guides_marked_export_exclude": true,
+    "visual_organic_quality": "pass_for_phase_01_material_recipes_and_context_only",
+    "biology_accuracy": "pass_for_scaffold_no_misleading_golgi_anatomy",
+    "animation_functionality": "pass_root_rig_created_for_future_animation_parenting",
+    "roblox_export_readiness": "conditional_pass_no_mesh_export_yet_root_and_socket_mapping_recorded",
+    "whole_cell_integration": "pass_context_socket_created",
+    "render_paths": [
+      {
+        "type": "wide_scaffold",
+        "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_01_formal_wide_scaffold.png",
+        "status": "created",
+        "reason": null
+      },
+      {
+        "type": "close_scaffold",
+        "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_01_formal_close_context_socket.png",
+        "status": "created",
+        "reason": null
+      },
+      {
+        "type": "export_inspection",
+        "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_01_formal_export_inspection.png",
+        "status": "created",
+        "reason": null
+      }
+    ],
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Started a formal Golgi production restart while preserving previous Golgi work as reference evidence.",
+    "Created only Golgi_RootRig and WholeCell_ContextSocket as manifest components.",
+    "Added review-only placement and cis/trans direction guides; they are excluded from export.",
+    "No cisternae, faces, vesicles, cargo markers, dispatch vesicles, or interaction hotspots were built in Phase 1."
+  ],
+  "roblox_export_risks": [
+    "Nucleus Phase 08R remains upload/Studio/play-mode blocked, so Golgi cannot be labeled scale-up production-ready yet.",
+    "Procedural materials need baking or Roblox material fallback mapping before import phases.",
+    "Phase 2 must avoid using the Phase 1 review ghost as biological Golgi geometry."
+  ],
+  "next_recommended_phase": "Phase 2: build organic gold/yellow curved Cisterna_Stack, Cis_Face, Trans_Face, and early Budding_Vesicles only after this formal Phase 1 gate passes."
+}

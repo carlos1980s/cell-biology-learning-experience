@@ -1,0 +1,25 @@
+{
+  "export_pass": false,
+  "score_0_to_100": 66,
+  "major_failures": [
+    "Transforms are not applied before export: WholeCell_ContextSocket_ReviewShell keeps non-default scale, and WholeCell_ContextSocket_OrientationRing keeps non-default rotation without an export-prep transform bake.",
+    "No Roblox-ready export artifact is produced or listed for Phase 1, so exported files, imported hierarchy, and Roblox object behavior cannot be verified.",
+    "Required export budget data is incomplete: triangle count, material count, texture count, and export object count are not measured for the current scene.",
+    "RoughER_RootRig and WholeCell_ContextSocket are Blender Empty objects, but the report does not define how those pivots/sockets will map to Roblox Models, Attachments, or metadata."
+  ],
+  "minor_issues": [
+    "RoughER_RootRig and WholeCell_ContextSocket use exact names from component_manifest.json.",
+    "The intentionally deferred manifest components are reported: FoldedMembrane_Sheets, Ribosome_SurfaceClusters, ProteinFolding_Cavities, Nucleus_ConnectionSocket, Golgi_HandoffVesicles, and Interaction_Hotspots.",
+    "Procedural noise, bump, transparency, and glass-like material settings are useful for Blender review but will need baked textures or simplified Roblox material equivalents.",
+    "Review-only helpers such as WholeCell_ContextSocket_ReviewShell, WholeCell_ContextSocket_OrientationRing, Phase01_ReviewBackdrop, cameras, and lights need explicit exclusion from production export or placement in a clearly named export/non-export collection.",
+    "The Phase 1 render exists and confirms a simple socket scaffold, but it does not demonstrate any rough ER export geometry, ribosome layout, nucleus connection, or Golgi handoff components."
+  ],
+  "required_fixes": [
+    "Add an explicit export-prep step before any Roblox import that applies or bakes transforms on WholeCell_ContextSocket_ReviewShell, WholeCell_ContextSocket_OrientationRing, and all future mesh components.",
+    "Create or document the export artifact list, including exported file paths, exportable component names, excluded review-only objects, and hierarchy under RoughER_RootRig.",
+    "Add measured object count, triangle count, material count, texture count, and any LOD or mesh-merge assumptions to the builder/export report.",
+    "Define the Roblox-side representation of RoughER_RootRig and WholeCell_ContextSocket, including pivot placement, Attachment use, and whether the visible socket shell/ring are exported or setup-only metadata.",
+    "Before Phase 2 is approved, ensure future FoldedMembrane_Sheets are separated into meaningful export chunks with stable manifest names and a Roblox triangle/object budget."
+  ],
+  "approved_to_continue": false
+}

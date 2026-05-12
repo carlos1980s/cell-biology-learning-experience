@@ -1,0 +1,18 @@
+{
+  "schema_version": "golgi_specialist_review_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "organelle": "golgi",
+  "approved_to_continue": true,
+  "review_type": "animation_functionality",
+  "status": "pass_for_phase_scope",
+  "checks": [
+    {
+      "check": "root_rig_exists",
+      "result": true
+    },
+    {
+      "check": "functional_groups_parented",
+      "result": true
+    }
+  ]
+}

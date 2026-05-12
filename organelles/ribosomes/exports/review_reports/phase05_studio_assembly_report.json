@@ -1,0 +1,16 @@
+{
+  "schema_version": "ribosomes_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/Ribosomes_RawPackages",
+  "expected_visible_model": "Workspace.Ribosomes_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_FreeRibosomeCluster",
+    "EXPORT_LOD0_BoundRibosomeRow",
+    "EXPORT_LOD0_SubunitForms",
+    "EXPORT_LOD0_mRNAThread",
+    "EXPORT_LOD0_PeptideExitCues",
+    "EXPORT_ANCHORS_RibosomeRuntime",
+    "EXPORT_COLLISION_RibosomeProxy"
+  ]
+}

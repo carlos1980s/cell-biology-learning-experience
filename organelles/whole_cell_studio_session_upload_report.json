@@ -1,0 +1,25 @@
+{
+  "schema_version": "whole_cell_studio_session_upload_report_v1",
+  "status": "fail",
+  "route": "logged_in_roblox_studio_asset_service",
+  "processed_count": 0,
+  "results": [
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_LOD0_ProteinFoldingCavities",
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_LOD0_ProteinFoldingCavities.fbx",
+      "geometry_cache": "organelles/rough_er/exports/studio_session_geometry/EXPORT_LOD0_ProteinFoldingCavities.json",
+      "extracted_triangle_count": 1408,
+      "extracted_vertex_count": 800,
+      "status": "failed",
+      "studio_stdout": "[OUTPUT] studio_user_id=6108806590\n[UNEXPECTED ERROR] CreateAssetAsync and CreateAssetVersionAsync are not available yet\n",
+      "studio_stderr": "",
+      "studio_returncode": 0,
+      "error": "[OUTPUT] studio_user_id=6108806590\n[UNEXPECTED ERROR] CreateAssetAsync and CreateAssetVersionAsync are not available yet\n",
+      "elapsed_seconds": 1.31
+    }
+  ],
+  "failures": [
+    "rough_er/EXPORT_LOD0_ProteinFoldingCavities: upload failed"
+  ]
+}

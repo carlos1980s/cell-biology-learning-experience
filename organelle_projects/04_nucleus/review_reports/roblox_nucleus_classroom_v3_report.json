@@ -1,0 +1,51 @@
+{
+  "phase": "roblox_nucleus_classroom_v3",
+  "generated_at": "2026-05-09T06:47:41.704443+00:00",
+  "goal": "Install a teacher-led 10-15 minute nucleus class with physical teacher movement, follow checks, functional overlays, questions, neutral lighting, subtitles, and optional Roblox audio.",
+  "installer": "tools/install_v3_nucleus_classroom.py",
+  "audio_manifest": "audio/nucleus_classroom_v3/nucleus_classroom_manifest.json",
+  "segment_count": 25,
+  "question_count": 4,
+  "estimated_audio_seconds": 407.09,
+  "estimated_class_seconds": 601.09,
+  "local_audio_segments_available": 25,
+  "roblox_sound_id_segments_ready": 1,
+  "studio_result": {
+    "old_v2_runtime_exists": false,
+    "old_v1_runtime_exists": false,
+    "pending_audio_count": 24,
+    "ready_audio_count": 1,
+    "sound_count": 25,
+    "raw_teacher_count": 2,
+    "status": "nucleus_classroom_v3_installed",
+    "nucleus_center": [
+      216.6,
+      240.8,
+      -69.6
+    ],
+    "workspace_enabled": true,
+    "lighting_exposure": -0.2199999988079071,
+    "spawn_position": [
+      1.7,
+      252.8,
+      58.7
+    ],
+    "active_teacher_parts": 8,
+    "highlight_count": 0,
+    "runtime": "Workspace.NucleusClassroom_V3",
+    "lighting_brightness": 0.5400000214576721,
+    "version": "NucleusClassroom_V3_2",
+    "segment_count": 25,
+    "billboard_count": 1,
+    "prompt_count": 0,
+    "spawn_name": "V3_ClassStartSpawn",
+    "teacher_reused_existing": false
+  },
+  "class_plan": [
+    "Teacher greets the player at a near-nucleus spawn.",
+    "Teacher moves physically through nucleus topics and blocks advancement if the player swims too far away.",
+    "Structure lessons cover envelope, ER continuity, pores, nucleoplasm, lamina, chromatin, nucleolus, RNA export, translation, protein routing, and mitosis.",
+    "Functional overlays animate DNA opening, transcription, RNA processing, mRNA export, ribosome subunit export, translation, protein handoff, transport cargo, and mitosis.",
+    "Short checks validate pores, mRNA export, gene-expression order, and nucleolus role."
+  ]
+}

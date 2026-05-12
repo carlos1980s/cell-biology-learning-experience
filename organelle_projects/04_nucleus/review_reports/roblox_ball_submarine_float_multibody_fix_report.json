@@ -1,0 +1,48 @@
+{
+  "phase": "roblox_ball_submarine_float_multibody_fix",
+  "date": "2026-05-05",
+  "goal": "Stop the user-added Workspace.Ball from dropping by making submarine float forces cover the full constrained ball assembly.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "root_cause": [
+    "The first float pass attached buoyancy primarily to the exterior CollisionBall.",
+    "Workspace.Ball is made of several physical parts across constrained assemblies, including exterior glass/rings, interior body pieces, and a driver seat.",
+    "The runtime server path also attempted to write Script.Source, which can fail without PluginOrOpenCloud capability."
+  ],
+  "changes": [
+    "Added multi-part submarine float version marker: multi_part_v2.",
+    "Added per-physical-part VectorForce bodies using each part's own mass instead of a single assembly force.",
+    "Added a builder-owned RunService.Heartbeat controller so runtime float does not depend on writing a new Script.Source.",
+    "Guarded optional Script.Source assignment with pcall for Studio/plugin contexts.",
+    "Set all ball physical descendants unanchored and non-massless so mass and lift are coherent.",
+    "Kept old rolling angular/align controls disabled to prevent the floating ball from being pulled by the previous rolling controller.",
+    "Added live telemetry attributes: SubmarineFloatBodyCount, SubmarineFloatTotalMass, and SubmarineFloatTotalForceY."
+  ],
+  "studio_probe": {
+    "ball": "Workspace.Ball",
+    "float_version": "multi_part_v2",
+    "target_y": 137.79,
+    "physical_part_count": 7,
+    "force_count": 7,
+    "live_body_count": 7,
+    "total_part_mass": 3096.48,
+    "neutral_gravity_y": 130052.16,
+    "total_force_y": 273463.78,
+    "lift_ratio_below_target": 2.10,
+    "y_range_at_probe": "100.16..101.79"
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio with the legacy bridge.",
+    "Ran require(builder).build() in Studio and confirmed the build returned CellEnvironment_Main.",
+    "Queried Workspace.Ball in Studio and confirmed seven active buoyancy forces."
+  ],
+  "result": "The ball now has enough lift applied across all physical pieces to rise instead of dropping, with runtime telemetry showing the heartbeat controller is active.",
+  "residual_risks": [
+    "Full play-mode physics observation through the legacy bridge is limited because the official MCP helper intermittently occupies the Studio polling port.",
+    "If the ball should become player-drivable later, the rolling AngularVelocity package controls should be replaced with submarine thrust controls instead of re-enabled."
+  ]
+}

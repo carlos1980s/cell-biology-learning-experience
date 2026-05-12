@@ -1,0 +1,11 @@
+check,status,evidence
+Membrane no longer sealed,pass,"CellWallCollisionMode=TopOpenWithPoreGate."
+Top entry open,pass,"No CellWall_Block_YPositive part is generated; CellWallTopOpeningEnabled=true."
+Front pore open,pass,"Front wall is split into left/right/top/bottom blockers around pore center -64,78,349."
+Other sides blocked,pass,"XPositive, XNegative, ZNegative, and YNegative blockers remain collidable."
+All generated blockers collidable,pass,"Studio probe found 8/8 wall parts CanCollide=true."
+Spawn close to pore,pass,"Spawn is 15 studs from pore center."
+Spawn does not block entry,pass,"MainCellSwimSpawn.CanCollide=false."
+Native swimming preserved,pass,"MovementMode=NativeWaterSwimming."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

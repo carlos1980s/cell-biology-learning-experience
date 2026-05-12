@@ -1,0 +1,45 @@
+{
+  "schema_version": "phase_checklist_v1",
+  "organelle": "nucleus",
+  "phase": "08R",
+  "status": "partial_pass_upload_blocked",
+  "items": [
+    {
+      "item": "Phase 08G source art reused without rebuilding biology layer",
+      "status": "pass"
+    },
+    {
+      "item": "Four logical FBX packages exported",
+      "status": "pass"
+    },
+    {
+      "item": "Phase 08R asset manifest created with counts, file sizes, material fallbacks, targets, bindings, and upload status",
+      "status": "pass"
+    },
+    {
+      "item": "Open Cloud dry run completed",
+      "status": "pass"
+    },
+    {
+      "item": "Real Open Cloud upload completed",
+      "status": "blocked_missing_credentials"
+    },
+    {
+      "item": "Studio edit-mode assembly completed under Workspace.Nucleus_Model/GeneDynamics",
+      "status": "blocked_missing_package_asset_ids"
+    },
+    {
+      "item": "Studio play-mode runtime validation completed",
+      "status": "blocked_missing_package_asset_ids"
+    },
+    {
+      "item": "Backend tests confirm queue_updates and mRNA export serialization",
+      "status": "pass",
+      "evidence": "backend/.venv/bin/python -m pytest -> 17 passed"
+    }
+  ],
+  "blocking_environment": {
+    "ROBLOX_OPEN_CLOUD_API_KEY": false,
+    "ROBLOX_GROUP_ID": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "proteasomes_specialist_review_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "organelle": "proteasomes",
+  "approved_to_continue": true,
+  "review_type": "biology_accuracy",
+  "status": "pass_for_phase_scope",
+  "misconceptions_avoided": [
+    "Proteasomes are non-membrane degradation machines.",
+    "Ubiquitin tags precede substrate recognition.",
+    "Threading and product release are directional."
+  ]
+}

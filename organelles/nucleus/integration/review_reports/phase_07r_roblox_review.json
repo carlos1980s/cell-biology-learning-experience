@@ -1,0 +1,22 @@
+{
+  "schema_version": "phase_07r_roblox_review_v1",
+  "organelle": "nucleus",
+  "phase": "07R",
+  "reviewer": "Roblox Export Reviewer",
+  "roblox_pass_for_source_art": true,
+  "roblox_export_ready": false,
+  "approved_for_next_phase": true,
+  "blocking_export_risks": [
+    "Folded ER sheets use source-art smoothing and should be exported as simplified LOD meshes.",
+    "Ribosome dots should be instanced, merged, or baked into far-distance texture/normal detail.",
+    "The lumen continuity material and sheet lumen ribbons use transparency and need Roblox Studio validation.",
+    "The rough ER connection should remain a toggleable/context layer if it competes with nucleus inspection views."
+  ],
+  "recommended_roblox_plan": [
+    "Create a high-detail source mesh, medium LOD sheet mesh, and low LOD silhouette sheet.",
+    "Use instanced ribosome markers near inspection cameras and texture/normal detail for distant ribosome density.",
+    "Represent the lumen continuity band and sheet lumen ribbons as low-opacity Beams or MeshPart strips with fallback opaque materials.",
+    "Attach the whole group under RoughER_Connection with a stable pivot for later cell assembly."
+  ],
+  "approved_to_continue": true
+}

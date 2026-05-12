@@ -1,0 +1,48 @@
+{
+  "schema_version": "phase_02r_visual_review_v1",
+  "organelle": "nucleus",
+  "phase": "02R",
+  "reviewer": "Visual Organic Quality Reviewer",
+  "reviewer_provenance": "manual_render_inspection",
+  "review_scope": "double nuclear envelope, inner membrane, and perinuclear lumen only",
+  "visual_pass": true,
+  "approved_to_continue": true,
+  "approved_next_scope": "nuclear pore seat and pore-complex design may begin as a separate gated phase; full nucleus Phase 3 remains blocked",
+  "score_0_to_100": 86,
+  "score_evidence": {
+    "reference_board": "organelles/nucleus/review_renders/phase_02r_reference_board.png",
+    "closeup": "organelles/nucleus/review_renders/phase_02r_double_envelope_closeup.png",
+    "cutaway_inspection": "organelles/nucleus/review_renders/phase_02r_lumen_cutaway_inspection.png",
+    "notes": "Score is a scoped manual review score, not an automated image-similarity score. It evaluates envelope-only recognizability, layer readability, organic material treatment, and avoidance of geometric placeholder artifacts."
+  },
+  "reference_images_used": [
+    "reference_images/nucleus_specs/01_nuclear_envelope.png"
+  ],
+  "reference_alignment": {
+    "silhouette": "partial_pass",
+    "color_language": "pass",
+    "component_relationships": "pass",
+    "organic_3d_translation": "pass",
+    "biology_conflicts": []
+  },
+  "passed_checks": [
+    "Reference image and 3D candidate are present in the same Blender scene.",
+    "Outer membrane, inner membrane, and perinuclear lumen are visually separate.",
+    "The lumen is visible as a continuous glowing layer between the two membranes.",
+    "The envelope surface has nonuniform contour and procedural organic material variation.",
+    "No pore complexes, pore gate cores, lamina, chromatin, nucleolus, or transport cargo were built in this corrective phase.",
+    "The square patch artifacts from the first corrective render pass were removed before review."
+  ],
+  "minor_issues": [
+    "The candidate intentionally lacks pore complexes, so it cannot yet fully match the reference image's outer surface detail.",
+    "The board render favors envelope/lumen readability over fitting the entire reference paragraph at maximum legibility.",
+    "The cutaway edge is still cleaner and more circular than the biological reference; the next pass should break the rim with pore seats and local membrane deformation."
+  ],
+  "major_failures": [],
+  "required_fixes_before_full_nucleus_phase_3": [
+    "Add nuclear pore seats and pore complexes in a separate gated phase using reference_images/nucleus_specs/02_nuclear_pores.png.",
+    "Do not use torus/cylinder/sphere primitives as final pore anatomy without substantial custom deformation and review.",
+    "Run another same-scene Blender board review before adding lamina, nucleoplasm, chromatin, or nucleolus."
+  ],
+  "decision_notes": "Phase 02R resolves the immediate process failure by restarting with one scoped envelope part, generating a Blender scene, showing the reference and candidate together, and writing this review only after inspecting the rendered outputs. This is not approval for full nucleus Phase 3."
+}

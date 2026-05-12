@@ -1,0 +1,9 @@
+{
+  "schema_version": "golgi_specialist_review_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "organelle": "golgi",
+  "approved_to_continue": true,
+  "review_type": "whole_cell_integration",
+  "status": "pre_production_pass_nucleus_gate_blocked",
+  "blocking_external_gate": "Nucleus Phase 08R still requires real Roblox package asset IDs, Studio assembly, and play-mode validation."
+}

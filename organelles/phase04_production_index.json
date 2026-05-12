@@ -1,0 +1,172 @@
+{
+  "schema_version": "organelle_phase04_production_index_v1",
+  "status": "indexed",
+  "organelle_count": 11,
+  "items": [
+    {
+      "organelle": "golgi",
+      "phase_04_blend": "organelles/golgi/golgi_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/golgi/review_renders/phase_04_collision_proxy.png",
+        "organelles/golgi/review_renders/phase_04_export_groups_wide.png",
+        "organelles/golgi/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/golgi/exports/golgi_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_CisternaStack, EXPORT_LOD0_CisTransFaces, EXPORT_LOD0_BuddingAndDispatchVesicles, EXPORT_LOD0_CargoModificationSites, EXPORT_ANCHORS_GolgiRuntime, EXPORT_COLLISION_GolgiProxy"
+      ]
+    },
+    {
+      "organelle": "rough_er",
+      "phase_04_blend": "organelles/rough_er/rough_er_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/rough_er/review_renders/phase_04_collision_proxy.png",
+        "organelles/rough_er/review_renders/phase_04_export_groups_wide.png",
+        "organelles/rough_er/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/rough_er/exports/rough_er_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_FoldedMembraneSheets, EXPORT_LOD0_RibosomeSurfaceClusters, EXPORT_LOD0_ProteinFoldingCavities, EXPORT_LOD0_GolgiHandoffVesicles, EXPORT_ANCHORS_RoughERRuntime, EXPORT_COLLISION_RoughERProxy"
+      ]
+    },
+    {
+      "organelle": "lysosome",
+      "phase_04_blend": "organelles/lysosome/lysosome_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/lysosome/review_renders/phase_04_collision_proxy.png",
+        "organelles/lysosome/review_renders/phase_04_export_groups_wide.png",
+        "organelles/lysosome/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/lysosome/exports/lysosome_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_LysosomeMembrane, EXPORT_LOD0_AcidicInterior, EXPORT_LOD0_DigestiveEnzymeClusters, EXPORT_LOD0_WasteCargoFragments, EXPORT_LOD0_RecycledOutputCues, EXPORT_ANCHORS_LysosomeRuntime, EXPORT_COLLISION_LysosomeProxy"
+      ]
+    },
+    {
+      "organelle": "mitochondrion",
+      "phase_04_blend": "organelles/mitochondrion/mitochondrion_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/mitochondrion/review_renders/phase_04_collision_proxy.png",
+        "organelles/mitochondrion/review_renders/phase_04_export_groups_wide.png",
+        "organelles/mitochondrion/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/mitochondrion/exports/mitochondrion_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_OuterMembrane, EXPORT_LOD0_InnerMembraneCristae, EXPORT_LOD0_MatrixVolume, EXPORT_LOD0_ATPSignalSites, EXPORT_LOD0_StressCueLayer, EXPORT_ANCHORS_MitochondrionRuntime, EXPORT_COLLISION_MitochondrionProxy"
+      ]
+    },
+    {
+      "organelle": "smooth_er",
+      "phase_04_blend": "organelles/smooth_er/smooth_er_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/smooth_er/review_renders/phase_04_collision_proxy.png",
+        "organelles/smooth_er/review_renders/phase_04_export_groups_wide.png",
+        "organelles/smooth_er/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/smooth_er/exports/smooth_er_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_TubularNetwork, EXPORT_LOD0_LipidSynthesisZones, EXPORT_LOD0_DetoxReactionSites, EXPORT_LOD0_CalciumStoragePockets, EXPORT_LOD0_ERTransitionHandoffCues, EXPORT_ANCHORS_SmoothERRuntime, EXPORT_COLLISION_SmoothERProxy"
+      ]
+    },
+    {
+      "organelle": "ribosomes",
+      "phase_04_blend": "organelles/ribosomes/ribosomes_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/ribosomes/review_renders/phase_04_collision_proxy.png",
+        "organelles/ribosomes/review_renders/phase_04_export_groups_wide.png",
+        "organelles/ribosomes/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/ribosomes/exports/ribosomes_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_FreeRibosomeCluster, EXPORT_LOD0_BoundRibosomeRow, EXPORT_LOD0_SubunitForms, EXPORT_LOD0_mRNAThread, EXPORT_LOD0_PeptideExitCues, EXPORT_ANCHORS_RibosomeRuntime, EXPORT_COLLISION_RibosomeProxy"
+      ]
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "phase_04_blend": "organelles/vesicles_endosomes/vesicles_endosomes_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/vesicles_endosomes/review_renders/phase_04_collision_proxy.png",
+        "organelles/vesicles_endosomes/review_renders/phase_04_export_groups_wide.png",
+        "organelles/vesicles_endosomes/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/vesicles_endosomes/exports/vesicles_endosomes_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_TransportVesicles, EXPORT_LOD0_EndosomeBodies, EXPORT_LOD0_CoatedVesicleCues, EXPORT_LOD0_RabSNARECues, EXPORT_LOD0_CargoSortingRoutes, EXPORT_ANCHORS_VesiclesEndosomesRuntime, EXPORT_COLLISION_VesiclesEndosomesProxy"
+      ]
+    },
+    {
+      "organelle": "peroxisomes",
+      "phase_04_blend": "organelles/peroxisomes/peroxisomes_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/peroxisomes/review_renders/phase_04_collision_proxy.png",
+        "organelles/peroxisomes/review_renders/phase_04_export_groups_wide.png",
+        "organelles/peroxisomes/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/peroxisomes/exports/peroxisomes_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_PeroxisomeMembrane, EXPORT_LOD0_CatalaseCrystalCore, EXPORT_LOD0_FattyAcidProcessingSites, EXPORT_LOD0_OxidativeReactionCues, EXPORT_LOD0_DetoxOutputCues, EXPORT_ANCHORS_PeroxisomesRuntime, EXPORT_COLLISION_PeroxisomeProxy"
+      ]
+    },
+    {
+      "organelle": "proteasomes",
+      "phase_04_blend": "organelles/proteasomes/proteasomes_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/proteasomes/review_renders/phase_04_collision_proxy.png",
+        "organelles/proteasomes/review_renders/phase_04_export_groups_wide.png",
+        "organelles/proteasomes/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/proteasomes/exports/proteasomes_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_CoreParticleBarrel, EXPORT_LOD0_RegulatoryCaps, EXPORT_LOD0_UbiquitinTagCues, EXPORT_LOD0_ProteinSubstrateThread, EXPORT_LOD0_DegradationProductCues, EXPORT_ANCHORS_ProteasomesRuntime, EXPORT_COLLISION_ProteasomeProxy"
+      ]
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "phase_04_blend": "organelles/cytoskeleton_centrosome/cytoskeleton_centrosome_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/cytoskeleton_centrosome/review_renders/phase_04_collision_proxy.png",
+        "organelles/cytoskeleton_centrosome/review_renders/phase_04_export_groups_wide.png",
+        "organelles/cytoskeleton_centrosome/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/cytoskeleton_centrosome/exports/cytoskeleton_centrosome_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_MicrotubuleTracks, EXPORT_LOD0_ActinNetwork, EXPORT_LOD0_IntermediateFilaments, EXPORT_LOD0_CentrosomeCentrioles, EXPORT_LOD0_MotorAndSpindleCues, EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime, EXPORT_COLLISION_CytoskeletonCentrosomeProxy"
+      ]
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "phase_04_blend": "organelles/membrane_cytoplasm/membrane_cytoplasm_phase_04_export_packaging.blend",
+      "phase_04_renders": [
+        "organelles/membrane_cytoplasm/review_renders/phase_04_collision_proxy.png",
+        "organelles/membrane_cytoplasm/review_renders/phase_04_export_groups_wide.png",
+        "organelles/membrane_cytoplasm/review_renders/phase_04_runtime_anchors.png"
+      ],
+      "asset_manifest": "organelles/membrane_cytoplasm/exports/membrane_cytoplasm_phase_04_roblox_asset_manifest.json",
+      "latest_status": "blocked_missing_package_asset_ids",
+      "latest_phase": "phase_05_roblox_assembly",
+      "blocking_findings": [
+        "Roblox package asset IDs are missing for: EXPORT_LOD0_PlasmaMembraneBoundary, EXPORT_LOD0_CytoplasmVolume, EXPORT_LOD0_OrganellePlacementSockets, EXPORT_LOD0_TraffickingRouteOverlays, EXPORT_LOD0_CellSurfaceReceptors, EXPORT_ANCHORS_MembraneCytoplasmRuntime, EXPORT_COLLISION_MembraneCytoplasmProxy"
+      ]
+    }
+  ]
+}

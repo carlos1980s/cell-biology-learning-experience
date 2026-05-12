@@ -1,0 +1,221 @@
+{
+  "schema_version": "mitochondrion_phase_04_roblox_asset_manifest_v1",
+  "organelle": "mitochondrion",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.Mitochondrion_Model",
+  "raw_package_target": "Workspace.MeshLibrary/Mitochondrion_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_OuterMembrane",
+    "EXPORT_LOD0_InnerMembraneCristae",
+    "EXPORT_LOD0_MatrixVolume",
+    "EXPORT_LOD0_ATPSignalSites",
+    "EXPORT_LOD0_StressCueLayer",
+    "EXPORT_ANCHORS_MitochondrionRuntime",
+    "EXPORT_COLLISION_MitochondrionProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_OuterMembrane",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_OuterMembrane.fbx",
+      "file_size_bytes": 85724,
+      "object_count": 9,
+      "triangle_count": 2048,
+      "object_names": [
+        "OuterMembrane_RimFold_08",
+        "OuterMembrane_RimFold_07",
+        "OuterMembrane_RimFold_06",
+        "OuterMembrane_RimFold_05",
+        "OuterMembrane_RimFold_04",
+        "OuterMembrane_RimFold_03",
+        "OuterMembrane_RimFold_02",
+        "OuterMembrane_RimFold_01",
+        "OuterMembrane_AsymmetricShell"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/OuterMembrane",
+      "roblox_material_family": "outer_membrane",
+      "event_bindings": [
+        "mitochondrion.inspect_outer_membrane"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "84890769121226",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_InnerMembraneCristae",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_InnerMembraneCristae.fbx",
+      "file_size_bytes": 59164,
+      "object_count": 9,
+      "triangle_count": 1260,
+      "object_names": [
+        "InnerMembrane_Cristae_Fold_09",
+        "InnerMembrane_Cristae_Fold_08",
+        "InnerMembrane_Cristae_Fold_07",
+        "InnerMembrane_Cristae_Fold_06",
+        "InnerMembrane_Cristae_Fold_05",
+        "InnerMembrane_Cristae_Fold_04",
+        "InnerMembrane_Cristae_Fold_03",
+        "InnerMembrane_Cristae_Fold_02",
+        "InnerMembrane_Cristae_Fold_01"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/InnerMembraneCristae",
+      "roblox_material_family": "cristae",
+      "event_bindings": [
+        "mitochondrion.inspect_cristae"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "100563105582480",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_MatrixVolume",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_MatrixVolume.fbx",
+      "file_size_bytes": 26924,
+      "object_count": 1,
+      "triangle_count": 572,
+      "object_names": [
+        "Matrix_Volume_AmberInterior"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/MatrixVolume",
+      "roblox_material_family": "matrix",
+      "event_bindings": [
+        "mitochondrion.inspect_matrix"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "72954790840741",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/13a6e004-8863-48cf-a5b8-f900fccfc74f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_ATPSignalSites",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_ATPSignalSites.fbx",
+      "file_size_bytes": 86876,
+      "object_count": 18,
+      "triangle_count": 1944,
+      "object_names": [
+        "ATP_SignalSites_ATPGlow_18",
+        "ATP_SignalSites_ATPGlow_17",
+        "ATP_SignalSites_ATPGlow_16",
+        "ATP_SignalSites_ATPGlow_15",
+        "ATP_SignalSites_ATPGlow_14",
+        "ATP_SignalSites_ATPGlow_13",
+        "ATP_SignalSites_ATPGlow_12",
+        "ATP_SignalSites_ATPGlow_11",
+        "ATP_SignalSites_ATPGlow_10",
+        "ATP_SignalSites_ATPGlow_09",
+        "ATP_SignalSites_ATPGlow_08",
+        "ATP_SignalSites_ATPGlow_07",
+        "ATP_SignalSites_ATPGlow_06",
+        "ATP_SignalSites_ATPGlow_05",
+        "ATP_SignalSites_ATPGlow_04",
+        "ATP_SignalSites_ATPGlow_03",
+        "ATP_SignalSites_ATPGlow_02",
+        "ATP_SignalSites_ATPGlow_01"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/ATPSignalSites",
+      "roblox_material_family": "atp_sites",
+      "event_bindings": [
+        "mitochondrion.atp_production"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "136496051324880",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/91514817-10e8-4e05-a088-547db3908188",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_StressCueLayer",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_StressCueLayer.fbx",
+      "file_size_bytes": 39596,
+      "object_count": 6,
+      "triangle_count": 720,
+      "object_names": [
+        "Stress_CueLayer_SurfacePatch_06",
+        "Stress_CueLayer_SurfacePatch_05",
+        "Stress_CueLayer_SurfacePatch_04",
+        "Stress_CueLayer_SurfacePatch_03",
+        "Stress_CueLayer_SurfacePatch_02",
+        "Stress_CueLayer_SurfacePatch_01"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/StressCueLayer",
+      "roblox_material_family": "stress_cues",
+      "event_bindings": [
+        "mitochondrion.stress_state"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "84381834890533",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_MitochondrionRuntime",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_ANCHORS_MitochondrionRuntime.fbx",
+      "file_size_bytes": 30716,
+      "object_count": 4,
+      "triangle_count": 480,
+      "object_names": [
+        "Interaction_Hotspots_MitoAnchor_04",
+        "Interaction_Hotspots_MitoAnchor_03",
+        "Interaction_Hotspots_MitoAnchor_02",
+        "Interaction_Hotspots_MitoAnchor_01"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "mitochondrion.inspect_energy"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "123262900817475",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/91d99738-f735-4d53-a821-50b2075bfa78",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_MitochondrionProxy",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_COLLISION_MitochondrionProxy.fbx",
+      "file_size_bytes": 19244,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "Mitochondrion_CollisionProxy"
+      ],
+      "roblox_placement_target": "Mitochondrion_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "85945624405765",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/5579880b-b986-4442-bb01-23d1c2eb78e6",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

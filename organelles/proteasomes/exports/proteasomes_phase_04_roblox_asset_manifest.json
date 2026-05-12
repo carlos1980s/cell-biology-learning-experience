@@ -1,0 +1,217 @@
+{
+  "schema_version": "proteasomes_phase_04_roblox_asset_manifest_v1",
+  "organelle": "proteasomes",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.Proteasomes_Model",
+  "raw_package_target": "Workspace.MeshLibrary/Proteasomes_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_CoreParticleBarrel",
+    "EXPORT_LOD0_RegulatoryCaps",
+    "EXPORT_LOD0_UbiquitinTagCues",
+    "EXPORT_LOD0_ProteinSubstrateThread",
+    "EXPORT_LOD0_DegradationProductCues",
+    "EXPORT_ANCHORS_ProteasomesRuntime",
+    "EXPORT_COLLISION_ProteasomeProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_CoreParticleBarrel",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_CoreParticleBarrel.fbx",
+      "file_size_bytes": 75708,
+      "object_count": 10,
+      "triangle_count": 2080,
+      "object_names": [
+        "CoreParticle_Barrel_OrganicDetail_10",
+        "CoreParticle_Barrel_OrganicDetail_09",
+        "CoreParticle_Barrel_OrganicDetail_08",
+        "CoreParticle_Barrel_OrganicDetail_07",
+        "CoreParticle_Barrel_OrganicDetail_06",
+        "CoreParticle_Barrel_OrganicDetail_05",
+        "CoreParticle_Barrel_OrganicDetail_04",
+        "CoreParticle_Barrel_OrganicDetail_03",
+        "CoreParticle_Barrel_OrganicDetail_02",
+        "CoreParticle_Barrel_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/CoreParticleBarrel",
+      "roblox_material_family": "core_barrel",
+      "event_bindings": [
+        "proteasomes.inspect_core"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "115003555125638",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/e98bbe32-209b-497f-8650-6b16cd4b0684",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_RegulatoryCaps",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_RegulatoryCaps.fbx",
+      "file_size_bytes": 50396,
+      "object_count": 6,
+      "triangle_count": 1248,
+      "object_names": [
+        "RegulatoryCaps_OrganicDetail_06",
+        "RegulatoryCaps_OrganicDetail_05",
+        "RegulatoryCaps_OrganicDetail_04",
+        "RegulatoryCaps_OrganicDetail_03",
+        "RegulatoryCaps_OrganicDetail_02",
+        "RegulatoryCaps_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/RegulatoryCaps",
+      "roblox_material_family": "regulatory_caps",
+      "event_bindings": [
+        "proteasomes.inspect_caps"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "119067654402979",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_UbiquitinTagCues",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_UbiquitinTagCues.fbx",
+      "file_size_bytes": 68956,
+      "object_count": 9,
+      "triangle_count": 1872,
+      "object_names": [
+        "Ubiquitin_TagCues_OrganicDetail_09",
+        "Ubiquitin_TagCues_OrganicDetail_08",
+        "Ubiquitin_TagCues_OrganicDetail_07",
+        "Ubiquitin_TagCues_OrganicDetail_06",
+        "Ubiquitin_TagCues_OrganicDetail_05",
+        "Ubiquitin_TagCues_OrganicDetail_04",
+        "Ubiquitin_TagCues_OrganicDetail_03",
+        "Ubiquitin_TagCues_OrganicDetail_02",
+        "Ubiquitin_TagCues_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/UbiquitinTagCues",
+      "roblox_material_family": "ubiquitin_tags",
+      "event_bindings": [
+        "proteasomes.ubiquitin"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "90962892368837",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/e6bba2ca-d52b-4779-bf91-405f4092f291",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_ProteinSubstrateThread",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_ProteinSubstrateThread.fbx",
+      "file_size_bytes": 29964,
+      "object_count": 3,
+      "triangle_count": 504,
+      "object_names": [
+        "ProteinSubstrate_Thread_Branch_03",
+        "ProteinSubstrate_Thread_Branch_02",
+        "ProteinSubstrate_Thread_Branch_01"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/ProteinSubstrateThread",
+      "roblox_material_family": "substrate_thread",
+      "event_bindings": [
+        "proteasomes.threading"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "93632218983583",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_DegradationProductCues",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_DegradationProductCues.fbx",
+      "file_size_bytes": 75260,
+      "object_count": 10,
+      "triangle_count": 2080,
+      "object_names": [
+        "DegradationProduct_Cues_OrganicDetail_10",
+        "DegradationProduct_Cues_OrganicDetail_09",
+        "DegradationProduct_Cues_OrganicDetail_08",
+        "DegradationProduct_Cues_OrganicDetail_07",
+        "DegradationProduct_Cues_OrganicDetail_06",
+        "DegradationProduct_Cues_OrganicDetail_05",
+        "DegradationProduct_Cues_OrganicDetail_04",
+        "DegradationProduct_Cues_OrganicDetail_03",
+        "DegradationProduct_Cues_OrganicDetail_02",
+        "DegradationProduct_Cues_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/DegradationProductCues",
+      "roblox_material_family": "products",
+      "event_bindings": [
+        "proteasomes.products"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "104449963098050",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/45267d8f-ae05-4e29-8335-fcc11fbff178",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_ProteasomesRuntime",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_ANCHORS_ProteasomesRuntime.fbx",
+      "file_size_bytes": 44188,
+      "object_count": 5,
+      "triangle_count": 1040,
+      "object_names": [
+        "Interaction_Hotspots_OrganicDetail_05",
+        "Interaction_Hotspots_OrganicDetail_04",
+        "Interaction_Hotspots_OrganicDetail_03",
+        "Interaction_Hotspots_OrganicDetail_02",
+        "Interaction_Hotspots_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "proteasomes.inspect"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "92715380772524",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_ProteasomeProxy",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_COLLISION_ProteasomeProxy.fbx",
+      "file_size_bytes": 19244,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "Proteasome_CollisionProxy"
+      ],
+      "roblox_placement_target": "Proteasomes_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "117963135206467",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/9a093f9b-f620-4082-9cac-aab0638b09a1",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "reference_manifest_v1",
+  "status": "reference_images_available",
+  "global_rules": "REFERENCE_IMAGE_DESIGN_PRINCIPLES.md",
+  "nucleus": {
+    "source_folder": "organelle_projects/04_nucleus/specs",
+    "central_reference_folder": "reference_images/nucleus_specs",
+    "available_files": [
+      {
+        "path": "reference_images/nucleus_specs/01_nuclear_envelope.png",
+        "source_path": "organelle_projects/04_nucleus/specs/01_nuclear_envelope.png",
+        "baseline_for": [
+          "double_envelope",
+          "perinuclear_lumen"
+        ],
+        "review_focus": "Double nuclear envelope structure, thickness, purple membrane language, and visible inner/outer separation."
+      },
+      {
+        "path": "reference_images/nucleus_specs/02_nuclear_pores.png",
+        "source_path": "organelle_projects/04_nucleus/specs/02_nuclear_pores.png",
+        "baseline_for": [
+          "nuclear_pores",
+          "pore_gate_cores",
+          "transport_cargo"
+        ],
+        "review_focus": "Raised nuclear pore complexes and selective gate readability; pores must not read as open holes."
+      },
+      {
+        "path": "reference_images/nucleus_specs/03_nucleoplasm.png",
+        "source_path": "organelle_projects/04_nucleus/specs/03_nucleoplasm.png",
+        "baseline_for": [
+          "nucleoplasm"
+        ],
+        "review_focus": "Transparent blue interior volume that preserves readability of internal structures."
+      },
+      {
+        "path": "reference_images/nucleus_specs/04_chromatin.png",
+        "source_path": "organelle_projects/04_nucleus/specs/04_chromatin.png",
+        "baseline_for": [
+          "chromatin"
+        ],
+        "review_focus": "Tangled chromatin thread density, color contrast, and internal organization; DNA remains inside the nucleus."
+      },
+      {
+        "path": "reference_images/nucleus_specs/05_nucleolus.png",
+        "source_path": "organelle_projects/04_nucleus/specs/05_nucleolus.png",
+        "baseline_for": [
+          "nucleolus"
+        ],
+        "review_focus": "Dense bumpy nucleolus subregions without a surrounding membrane."
+      },
+      {
+        "path": "reference_images/nucleus_specs/06_nuclear_lamina.png",
+        "source_path": "organelle_projects/04_nucleus/specs/06_nuclear_lamina.png",
+        "baseline_for": [
+          "nuclear_lamina"
+        ],
+        "review_focus": "Gold lamina lattice placed inside the envelope, not outside it."
+      },
+            {
+                "path": "reference_images/nucleus_specs/07_nucleolus_organizer_regions.png",
+                "source_path": "organelle_projects/04_nucleus/specs/07_nucleolus_organizer_regions.png",
+                "baseline_for": [
+                    "nucleolus",
+                    "chromatin"
+                ],
+                "review_focus": "Nucleolus organizer region relationship to chromatin and nucleolus substructure."
+            },
+            {
+                "path": "reference_images/nucleus_specs/08_rough_er_connection_openstax.png",
+                "source_path": "https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins",
+                "baseline_for": [
+                    "rough_er_connection"
+                ],
+                "review_focus": "Rough ER continuity with the nuclear envelope and ribosomes on the cytosolic face of folded ER membranes."
+            }
+        ],
+    "expected_files": [],
+    "review_requirement": "Use available nucleus reference images as visual baselines. If none are available, report that limitation explicitly."
+  }
+}

@@ -1,0 +1,12 @@
+check,status,evidence
+Small swim bounds expanded,pass,"SwimBoundsSize is 620, 360, 680"
+Bounds recentered for full playable cell,pass,"SwimBoundsCenter is 0, 58, 0"
+Center-column tether removed,pass,"Installed controller has center tether false"
+Axis-specific boundary correction added,pass,"Installed controller has boundaryReturnVelocity"
+Direct dive preserved,pass,"Installed controller has DIRECT_DIVE_SPEED = 34"
+Custom MovePad remains removed,pass,"Installed controller has MovePad false"
+Legacy controls remain disabled,pass,"CellPlayerBootstrap and ExplorerControls disabled"
+Main controller remains enabled,pass,"MainCellSwimmingController disabled false"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Android tether retest,not_tested,"requires phone play test"
+Quest tether retest,not_tested,"requires headset play test"

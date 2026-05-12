@@ -1,0 +1,13 @@
+check,status,evidence
+Workspace ball detected,pass,"Workspace.Ball.Exterior.CollisionBall"
+Ball preserved,pass,"No replacement object created; controller attached to Workspace.Ball"
+Submarine float attachment added,pass,"MainCellSubmarineFloatAttachment exists"
+Buoyancy force added,pass,"MainCellSubmarineBuoyancy exists with upward force"
+Upright stabilizer added,pass,"MainCellSubmarineStabilizer exists and enabled"
+Bubble feedback added,pass,"MainCellSubmarineBubbles exists"
+Old rolling control disabled,pass,"ControlAngularVelocity enabled false"
+Old align control disabled,pass,"ControlAlignOrientation enabled false"
+Hover target set,pass,"SubmarineFloatTargetY = 32"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Studio screenshot captured,pass,"review_renders/roblox_gameplay_polish/ball_submarine_float_studio_view.png"
+Submarine thrust driving controls,not_in_scope,"This pass only makes the ball float/hover"

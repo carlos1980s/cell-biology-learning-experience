@@ -1,0 +1,8 @@
+{
+  "schema_version": "cytoskeleton_centrosome_specialist_review_v1",
+  "phase": "phase_02_first_real_anatomy",
+  "organelle": "cytoskeleton_centrosome",
+  "approved_to_continue": true,
+  "review_type": "animation_functionality",
+  "status": "pass_for_phase_scope"
+}

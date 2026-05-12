@@ -1,0 +1,8 @@
+{
+  "schema_version": "rough_er_specialist_review_v1",
+  "phase": "phase_03_functional_teaching_layer",
+  "organelle": "rough_er",
+  "approved_to_continue": true,
+  "review_type": "whole_cell_integration",
+  "status": "pre_production_pass_nucleus_gate_blocked"
+}

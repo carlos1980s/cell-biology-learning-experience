@@ -1,0 +1,67 @@
+{
+  "schema_version": "animation_event_map_v1",
+  "events": [
+    {
+      "event": "inspect_nucleus",
+      "targets": ["nucleus"],
+      "expected_cue": "highlight pores, chromatin, and nucleolus"
+    },
+    {
+      "event": "energy_demand",
+      "targets": ["mitochondrion"],
+      "expected_cue": "increase ATP signal intensity"
+    },
+    {
+      "event": "protein_synthesis",
+      "targets": ["nucleus", "rough_er", "golgi"],
+      "expected_cue": "show mRNA/export, folding, and vesicle handoff sequence"
+    },
+    {
+      "event": "transcription_mrna_export",
+      "targets": ["nucleus", "ribosome", "rough_er"],
+      "expected_cue": "show gene targeting, chromatin opening, transcription, mRNA processing, selective pore export, and outside-nucleus handoff",
+      "steps": [
+        {
+          "step": "signal_targets_gene",
+          "animation": "highlight_active_gene",
+          "targets": ["ActiveGene_Locus", "TranscriptionFactor_Markers", "NucleusAction_Hotspots"]
+        },
+        {
+          "step": "chromatin_opens",
+          "animation": "loosen_chromatin_patch",
+          "targets": ["Chromatin_OpenStatePatch", "Chromatin_Threads"]
+        },
+        {
+          "step": "transcription_begins",
+          "animation": "grow_nascent_rna",
+          "targets": ["RNAPolymerase_Complex", "NascentRNA_Strand"]
+        },
+        {
+          "step": "mrna_processing",
+          "animation": "mark_processed_mrna",
+          "targets": ["PreMRNA_ProcessingMarkers", "MatureMRNA_Cargo"]
+        },
+        {
+          "step": "pore_selective_export",
+          "animation": "export_mrna_through_pore",
+          "targets": ["MRNA_ExportPath_ToPore", "PoreExport_CheckpointState", "NuclearPore_GateCores"]
+        },
+        {
+          "step": "handoff_to_translation_context",
+          "animation": "handoff_outside_nucleus",
+          "targets": ["MatureMRNA_Cargo", "RoughER_Connection"]
+        }
+      ],
+      "biology_guardrails": [
+        "DNA stays inside the nucleus",
+        "mRNA crosses the envelope only through nuclear pores",
+        "translation happens outside the nucleus"
+      ]
+    },
+    {
+      "event": "recycling_response",
+      "targets": ["lysosome"],
+      "expected_cue": "show waste cargo intake and recycled output"
+    }
+  ]
+}

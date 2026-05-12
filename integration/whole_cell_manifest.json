@@ -1,0 +1,32 @@
+{
+  "schema_version": "whole_cell_manifest_v1",
+  "organelles": [
+    {
+      "slug": "nucleus",
+      "manifest": "organelles/nucleus/component_manifest.json",
+      "status": "phase_08r_gene_dynamics_exported_upload_blocked",
+      "latest_status": "organelles/nucleus/review_reports/phase_08r_latest_status.json",
+      "action_manifest": "organelles/nucleus/nucleus_action_manifest.json"
+    },
+    {
+      "slug": "mitochondrion",
+      "manifest": "organelles/mitochondrion/component_manifest.json",
+      "status": "not_started"
+    },
+    {
+      "slug": "rough_er",
+      "manifest": "organelles/rough_er/component_manifest.json",
+      "status": "not_started"
+    },
+    {
+      "slug": "golgi",
+      "manifest": "organelles/golgi/component_manifest.json",
+      "status": "not_started"
+    },
+    {
+      "slug": "lysosome",
+      "manifest": "organelles/lysosome/component_manifest.json",
+      "status": "not_started"
+    }
+  ]
+}

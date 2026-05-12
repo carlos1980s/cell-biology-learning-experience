@@ -1,0 +1,49 @@
+{
+  "phase": "roblox_v1_teacher_led_nucleus_lecture",
+  "generated_at": "2026-05-08T10:18:29.246459+00:00",
+  "goal": "Replace hub/station lesson with a teacher-led nucleus lecture using subtitles, optional ElevenLabs audio, focused organ lighting, and synchronized biology animations.",
+  "installer": "tools/install_v1_teacher_lecture.py",
+  "audio_manifest": "audio/nucleus_lecture/nucleus_lecture_manifest.json",
+  "segment_count": 12,
+  "local_audio_segments_available": 12,
+  "roblox_sound_id_segments_ready": 0,
+  "studio_result": {
+    "pending_audio_count": 12,
+    "sound_count": 12,
+    "raw_teacher_count": 2,
+    "status": "v1_teacher_lecture_installed",
+    "lecture_billboard_count": 1,
+    "workspace_enabled": true,
+    "old_lesson_client_disabled": true,
+    "lecture_prompt_count": 0,
+    "active_teacher_parts": 18,
+    "runtime": "Workspace.V1TeacherLecture",
+    "lighting_exposure": -0.05000000074505806,
+    "version": "TeacherLecture_V2",
+    "segment_count": 12,
+    "lighting_brightness": 1.149999976158142,
+    "old_lesson_server_disabled": true,
+    "old_lesson_runtime_exists": false,
+    "teacher_reused_existing": true
+  },
+  "acceptance_notes": [
+    "Old V1 station runtime is removed from Workspace and old lesson scripts are disabled.",
+    "Audio SoundIds remain blank until Roblox audio upload/moderation, so subtitles are the immediate fallback.",
+    "Teacher movement, organ captions, focus lighting, and animations are self-contained in Roblox.",
+    "Play-mode visual/audio behavior still needs manual review in the active Studio session."
+  ],
+  "play_mode_visual_smoke": {
+    "status": "pass",
+    "method": "Computer Use screenshot after pressing Play in Roblox Studio",
+    "observed": [
+      "teacher visible near nucleus",
+      "speech bubble visible",
+      "focused organ caption visible",
+      "Replay/Next/Restart controls visible"
+    ],
+    "remaining": [
+      "Android/VR control pass",
+      "Roblox SoundId playback after audio upload/moderation"
+    ]
+  }
+}

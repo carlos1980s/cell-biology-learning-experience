@@ -1,0 +1,9 @@
+check,status,evidence
+Spawn moved closer,pass,"MainCellSwimSpawn position = -64, 78, 46."
+Spawn faces nucleus,pass,"Spawn CFrame uses CFrame.lookAt(MANIFEST.spawnPosition, MANIFEST.spawnLookTarget)."
+Spawn remains in water,pass,"Studio water sample around spawn = 810/810 water voxels."
+Spawn does not block diving,pass,"MainCellSwimSpawn.CanCollide=false."
+Native swimming preserved,pass,"MovementMode=NativeWaterSwimming."
+Custom player physics not reintroduced,pass,"Build still applies installNativeWaterSwimmingMode()."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

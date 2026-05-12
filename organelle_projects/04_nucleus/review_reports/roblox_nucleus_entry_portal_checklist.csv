@@ -1,0 +1,13 @@
+check,status,evidence
+Nucleus entrance exists,pass,"Studio probe found Workspace.Nucleus_Model.NucleusEntryPortal."
+Portal is on actual nucleus,pass,"Portal parent is Workspace.Nucleus_Model, not the outer cell."
+Portal visible but non-blocking,pass,"Portal has 35 BaseParts and 0 CanCollide=true parts."
+Collision is portal controlled,pass,"Workspace.Nucleus_Model NucleusMembraneCollisionMode=PortalControlledProxy."
+Portal has player-scale aperture,pass,"NucleusEntryPortalRadius=34 and depth=82 studs."
+Portal faces player approach,pass,"Portal is placed between submarine-side spawn and nucleus surface."
+Rebuild is stable,pass,"Portal center was unchanged across two consecutive builder rebuilds."
+Outer cell entry remains removed,pass,"Validation still asserts CellEntryPoreGuide and CellWallCollisionBounds are absent."
+Generated Terrain remains removed,pass,"Validation still asserts terrain:FillBlock and Enum.Material.Water are absent."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."
+Studio deployment,pass,"Builder deployed and require(builder).build() succeeded through the legacy bridge."
