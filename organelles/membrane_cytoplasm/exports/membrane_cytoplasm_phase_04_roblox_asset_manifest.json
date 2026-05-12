@@ -1,0 +1,222 @@
+{
+  "schema_version": "membrane_cytoplasm_phase_04_roblox_asset_manifest_v1",
+  "organelle": "membrane_cytoplasm",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.MembraneCytoplasm_Model",
+  "raw_package_target": "Workspace.MeshLibrary/MembraneCytoplasm_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_PlasmaMembraneBoundary",
+    "EXPORT_LOD0_CytoplasmVolume",
+    "EXPORT_LOD0_OrganellePlacementSockets",
+    "EXPORT_LOD0_TraffickingRouteOverlays",
+    "EXPORT_LOD0_CellSurfaceReceptors",
+    "EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+    "EXPORT_COLLISION_MembraneCytoplasmProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_PlasmaMembraneBoundary",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_PlasmaMembraneBoundary.fbx",
+      "file_size_bytes": 66284,
+      "object_count": 8,
+      "triangle_count": 1792,
+      "object_names": [
+        "PlasmaMembrane_Boundary_MembranePatch_08",
+        "PlasmaMembrane_Boundary_MembranePatch_07",
+        "PlasmaMembrane_Boundary_MembranePatch_06",
+        "PlasmaMembrane_Boundary_MembranePatch_05",
+        "PlasmaMembrane_Boundary_MembranePatch_04",
+        "PlasmaMembrane_Boundary_MembranePatch_03",
+        "PlasmaMembrane_Boundary_MembranePatch_02",
+        "PlasmaMembrane_Boundary_MembranePatch_01"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/PlasmaMembraneBoundary",
+      "roblox_material_family": "plasma_membrane",
+      "event_bindings": [
+        "whole_cell.membrane"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "71720023370660",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/7be07491-3a4d-49eb-94c6-c4896f67926f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CytoplasmVolume",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CytoplasmVolume.fbx",
+      "file_size_bytes": 51020,
+      "object_count": 6,
+      "triangle_count": 1248,
+      "object_names": [
+        "Cytoplasm_Volume_OrganicDetail_06",
+        "Cytoplasm_Volume_OrganicDetail_05",
+        "Cytoplasm_Volume_OrganicDetail_04",
+        "Cytoplasm_Volume_OrganicDetail_03",
+        "Cytoplasm_Volume_OrganicDetail_02",
+        "Cytoplasm_Volume_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/CytoplasmVolume",
+      "roblox_material_family": "cytoplasm",
+      "event_bindings": [
+        "whole_cell.cytoplasm"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "118328570680125",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_OrganellePlacementSockets",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_OrganellePlacementSockets.fbx",
+      "file_size_bytes": 75500,
+      "object_count": 10,
+      "triangle_count": 2080,
+      "object_names": [
+        "OrganellePlacement_Sockets_OrganicDetail_10",
+        "OrganellePlacement_Sockets_OrganicDetail_09",
+        "OrganellePlacement_Sockets_OrganicDetail_08",
+        "OrganellePlacement_Sockets_OrganicDetail_07",
+        "OrganellePlacement_Sockets_OrganicDetail_06",
+        "OrganellePlacement_Sockets_OrganicDetail_05",
+        "OrganellePlacement_Sockets_OrganicDetail_04",
+        "OrganellePlacement_Sockets_OrganicDetail_03",
+        "OrganellePlacement_Sockets_OrganicDetail_02",
+        "OrganellePlacement_Sockets_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/OrganellePlacementSockets",
+      "roblox_material_family": "placement_sockets",
+      "event_bindings": [
+        "whole_cell.sockets"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "113185079572782",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_TraffickingRouteOverlays",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_TraffickingRouteOverlays.fbx",
+      "file_size_bytes": 41452,
+      "object_count": 5,
+      "triangle_count": 840,
+      "object_names": [
+        "TraffickingRoute_Overlays_Branch_05",
+        "TraffickingRoute_Overlays_Branch_04",
+        "TraffickingRoute_Overlays_Branch_03",
+        "TraffickingRoute_Overlays_Branch_02",
+        "TraffickingRoute_Overlays_Branch_01"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/TraffickingRouteOverlays",
+      "roblox_material_family": "route_overlays",
+      "event_bindings": [
+        "whole_cell.routes"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "121684113095271",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/21e0df60-744a-4fc8-891d-3b6b014555b3",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CellSurfaceReceptors",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CellSurfaceReceptors.fbx",
+      "file_size_bytes": 87868,
+      "object_count": 12,
+      "triangle_count": 2496,
+      "object_names": [
+        "CellSurface_Receptors_OrganicDetail_12",
+        "CellSurface_Receptors_OrganicDetail_11",
+        "CellSurface_Receptors_OrganicDetail_10",
+        "CellSurface_Receptors_OrganicDetail_09",
+        "CellSurface_Receptors_OrganicDetail_08",
+        "CellSurface_Receptors_OrganicDetail_07",
+        "CellSurface_Receptors_OrganicDetail_06",
+        "CellSurface_Receptors_OrganicDetail_05",
+        "CellSurface_Receptors_OrganicDetail_04",
+        "CellSurface_Receptors_OrganicDetail_03",
+        "CellSurface_Receptors_OrganicDetail_02",
+        "CellSurface_Receptors_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/CellSurfaceReceptors",
+      "roblox_material_family": "surface_receptors",
+      "event_bindings": [
+        "whole_cell.receptors"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "105308419999004",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_ANCHORS_MembraneCytoplasmRuntime.fbx",
+      "file_size_bytes": 56700,
+      "object_count": 7,
+      "triangle_count": 1456,
+      "object_names": [
+        "Integration_Hotspots_OrganicDetail_07",
+        "Integration_Hotspots_OrganicDetail_06",
+        "Integration_Hotspots_OrganicDetail_05",
+        "Integration_Hotspots_OrganicDetail_04",
+        "Integration_Hotspots_OrganicDetail_03",
+        "Integration_Hotspots_OrganicDetail_02",
+        "Integration_Hotspots_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "whole_cell.inspect"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "118670694618888",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/f6100c93-b3c0-4238-bf0f-81aa7394917b",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_MembraneCytoplasmProxy",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_COLLISION_MembraneCytoplasmProxy.fbx",
+      "file_size_bytes": 19260,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "MembraneCytoplasm_CollisionProxy"
+      ],
+      "roblox_placement_target": "MembraneCytoplasm_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "134108799037835",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/a6c35904-145e-4c4d-ac4f-6654312ae525",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

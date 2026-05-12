@@ -1,0 +1,9 @@
+check,status,evidence
+Cooler non-yellow lighting applied,pass,"Lighting ClockTime 13.25 Brightness 0.98 Exposure 0.02; warm/gold fills replaced with cool cyan/blue/purple fills"
+Mobile touch steering improved,pass,"MainCellSwimmingController has 188x188 touch pad and SWIM_ACCELERATION = 46"
+VR/gamepad play path preserved,pass,"UserInputService.VREnabled and Thumbstick1 input remain in controller source"
+Outer nuclear membrane transparency reduced 50 percent,pass,"outer_membrane_panels source transparency 0.01; live Studio sample 0.009999999776482582"
+Studio edit-mode deployment confirmed,pass,"legacy bridge reported RunService:IsRunning() false after deploy"
+Live Studio visual review captured,pass,"review_renders/roblox_gameplay_polish/controls_lighting_membrane_studio_view.png"
+Phone steering verified on physical Android device,not_tested,"requires device or Studio device-emulation play test"
+VR steering verified in headset,not_tested,"requires VR play test"

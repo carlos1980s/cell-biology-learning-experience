@@ -5,8 +5,9 @@ Purpose: represent the nucleus as the command center and DNA storage area.
 Recommended Roblox object: one `Model` named `Nucleus` with submodels for nuclear
 envelope, pores, internal volume, and interaction markers.
 
-First build target: a movable nucleus shell with readable nuclear pores and a
-clear pivot so it can be repositioned inside the cell.
+First build target: a movable, walkable nucleus chamber with solid irregular
+walls, readable nuclear pore gates, four educational levels, and a clear pivot
+so it can be repositioned inside the cell.
 
 ## Biological overview
 
@@ -100,73 +101,103 @@ and small solutes move through nuclear pore complexes.
 
 ## Roblox design concept
 
-Build a large translucent nucleus that reads clearly from outside the cell and
-also works as a visitable learning zone. The shell should communicate
-"protected but connected": a double envelope, visible pores, a faint lamina
-grid, and animated cargo particles crossing only at pore sites.
+Build the nucleus as a functional organic building rather than a realistic
+transparent blob. The priority is gameplay readability: players should be able
+to walk around and through a protected genome chamber with solid walls, obvious
+gateways, interior floors, and strong color-coded learning zones.
 
-Suggested experience: the player approaches the nucleus, sees pulses of mRNA
-leaving pores and nuclear proteins entering, then activates hotspots for DNA
-storage, nuclear envelope, pore selectivity, and gene expression.
+This is an educational scale model, not literal microscopic scale. The
+relationships should remain biologically accurate, but the spatial design is
+expanded into a 3-4 storey explorable structure so students can understand the
+nucleus as a protected information compartment.
+
+The preferred art path is mesh-first: use authored or generated OBJ meshes for
+the organic shell, pore ring, and nucleolus core, then keep simple Roblox parts
+for floors, ramps, collision, hotspots, and transport effects. If mesh asset IDs
+are not available yet, the builder falls back to a procedural blockout.
+
+Suggested experience: the player approaches a warm orange-red irregular wall,
+enters through one enlarged nuclear pore gate, walks through chromatin galleries
+and a nucleolus production core, then reaches a transport overlook where mRNA
+and ribosomal subunit paths visibly exit through pore gates.
 
 ## Model hierarchy
 
 ```text
 Nucleus
   PivotCore
-  NuclearEnvelope
-    OuterMembrane
-    InnerMembrane
-    PerinuclearSpaceHint
-    NuclearLamina
-  NuclearPores
-    Pore_001
-      RingOuter
-      RingInner
+  NavigationCollision
+    Floors
+    Ramps
+    InvisibleWallGuides
+  OrganicEnvelope
+    MeshVisuals
+      OrganicShellMesh
+      OrganicSurfaceAccents
+    LaminaBands
+  PoreGates
+    WalkablePoreGate
+      GateRingMesh
+      GateRing
+      GateTunnel
       SelectiveGate
-      ImportExportPath
-    Pore_...
-  Nucleoplasm
-    InteriorVolume
-    AmbientParticles
-  CargoAnimation
-    ImportProteinParticles
-    ExportMRNAParticles
-    ExportRibosomalSubunitParticles
-  AttachmentPoints
-    ChromatinAnchors
-    NucleolusAnchor
-    RoughERConnectionHints
+    VisualPores
+  InteriorLevels
+    Level1_EnvelopeEntry
+    Level2_ChromatinGallery
+    Level3_NucleolusCore
+    Level4_TransportOverlook
+  GenomeRoutes
+    ChromatinCables
+    GeneActivationMarkers
+  NucleolusCore
+    RibosomeBiogenesisHubMesh
+    PreRRNAParticles
+    SubunitAssemblyMarkers
+  TransportPaths
+    MRNAExportPath
+    RibosomalSubunitExportPath
   Hotspots
     EnvelopeHotspot
-    PoreHotspot
-    NucleoplasmHotspot
-    GeneExpressionHotspot
+    PoreGateHotspot
+    ChromatinGalleryHotspot
+    NucleolusCoreHotspot
+    TransportOverlookHotspot
 ```
 
 ## Materials, colors, and effects
 
-- Outer and inner membranes: translucent blue-violet or cool cyan material with
-  low opacity; use slightly different tints so the double membrane is readable.
-- Perinuclear space: thin pale glow between the membranes.
-- Pores: darker teal or graphite rings with a brighter central gate; keep high
-  contrast against the envelope.
-- Lamina: subtle inner mesh in desaturated green or pale gold, using low
-  transparency so it does not compete with chromatin.
-- Nucleoplasm: faint fog or soft particles, not dense enough to hide internal
-  features.
+- Outer wall: solid warm orange/red SmoothPlastic or Slate-like material, with
+  darker red-purple patches and irregular lobes to avoid a perfect sphere. Use
+  `nucleus_organic_shell_v1.obj` once imported into Roblox.
+- Inner wall and lamina: darker magenta/violet bands that read as structural
+  support, like a biological wall lining rather than a transparent membrane.
+- Pores: dark graphite or deep violet ringed gates with bright yellow/cyan cargo
+  paths. One pore is enlarged as a walkable entrance; the rest are visual
+  selective gates.
+- Interior floors: muted amber, red-brown, or purple platforms. They are
+  functional navigation surfaces first and biological metaphor second.
+- Chromatin galleries: thick blue/purple cable routes attached to walls and
+  platforms, grouped as genome districts rather than random spaghetti.
+- Nucleolus core: dense irregular purple/blue central tower or production hub.
+  Use `nucleolus_core_v1.obj` once imported into Roblox.
 - Cargo particles: color-code imported nuclear proteins, exported mRNA, and
   exported ribosomal subunits. Use short trails only near pores.
 
 ## Interactions and hotspots
 
-- Nuclear envelope hotspot: toggles a cutaway showing inner membrane, outer
-  membrane, and perinuclear space.
-- Pore selectivity hotspot: lets the player send small solutes through quickly,
-  then requires a "signal tag" for a larger protein or RNA cargo.
-- Gene expression hotspot: starts a simplified sequence: chromatin region lights
-  up, RNA particle forms, RNA exits through a pore, ribosome hotspot receives
-  it.
+- Nuclear envelope hotspot: explains the wall metaphor and clarifies that the
+  real envelope is a double membrane, even though the game shows it as a
+  walkable protective chamber.
+- Pore gate hotspot: lets the player compare small solute movement with larger
+  signal-tagged protein/RNA transport through selective gates.
+- Chromatin gallery hotspot: lights one cable route to show DNA packaging and
+  regulated access to genes.
+- Nucleolus core hotspot: shows rRNA production and early ribosomal subunit
+  assembly inside a dense non-membrane nuclear region.
+- Transport overlook hotspot: starts a simplified sequence: chromatin region
+  lights up, RNA particle forms, RNA exits through a pore, and a ribosome
+  hotspot receives it.
 - Cell-cycle hotspot: optional timed overlay showing envelope disassembly and
   reassembly during mitosis, clearly marked as a process in many eukaryotic
   cells rather than the normal interphase state.
@@ -175,17 +206,23 @@ Nucleus
 
 ## Performance notes
 
-- Use 24 to 40 visible pores, then imply additional pores with texture or small
-  decals. Do not build hundreds of detailed pore assemblies.
+- Use one enlarged walkable pore and 18 to 30 smaller visible pores. Do not
+  build hundreds of detailed pore assemblies.
 - Make detailed pore rings reusable components cloned from one template.
-- Prefer low-poly rings, torus meshes, or cylinders with bevel-like visual
+- Prefer low-poly rings, cylinders, and sphere clusters with bevel-like visual
   treatment over many small parts.
+- Keep visual wall geometry separate from simple invisible collision floors,
+  ramps, and guide walls. The player should walk smoothly even if the organic
+  wall silhouette is irregular.
+- Store imported mesh IDs in `src/CellExperience/Data/NucleusMeshAssets.lua`.
+  Blank IDs intentionally keep the part-based fallback active.
 - Animate cargo particles with pooled instances and short paths; avoid spawning
   new parts continuously.
 - Keep the nucleus pivot central and expose placement handles so downstream
   builders can reposition it without recalculating chromatin or ER geometry.
 - Ensure the envelope remains readable on low graphics settings by relying on
-  silhouette, color contrast, and pore placement rather than transparency alone.
+  silhouette, solid color contrast, pore placement, and architectural levels
+  rather than transparency.
 
 ## Sources
 

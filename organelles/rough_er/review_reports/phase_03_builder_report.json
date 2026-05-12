@@ -1,0 +1,2299 @@
+{
+  "schema_version": "rough_er_builder_report_v1",
+  "phase": "phase_03",
+  "phase_id": "phase_03_functional_teaching_layer",
+  "organelle": "rough_er",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "RoughER_RootRig",
+    "FoldedMembrane_Sheets",
+    "Ribosome_SurfaceClusters",
+    "ProteinFolding_Cavities",
+    "Nucleus_ConnectionSocket",
+    "Golgi_HandoffVesicles",
+    "Interaction_Hotspots"
+  ],
+  "incomplete_components": [],
+  "manifest_components_still_missing_after_phase": [],
+  "render_paths": [
+    {
+      "type": "wide_function",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/review_renders/phase_03_wide_function.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "folding_cavities",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/review_renders/phase_03_folding_cavities.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "golgi_handoff",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/review_renders/phase_03_golgi_handoff.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/rough_er_phase_03_functional_teaching.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "RoughER_RootRig",
+    "WholeCell_ContextSocket",
+    "FoldedMembrane_Sheets",
+    "FoldedMembrane_Sheets_Layer_01",
+    "FoldedMembrane_Sheets_Layer_02",
+    "FoldedMembrane_Sheets_Layer_03",
+    "FoldedMembrane_Sheets_Layer_04",
+    "FoldedMembrane_Sheets_Layer_05",
+    "FoldedMembrane_Sheets_ShallowTubule_01",
+    "FoldedMembrane_Sheets_ShallowTubule_02",
+    "FoldedMembrane_Sheets_ShallowTubule_03",
+    "FoldedMembrane_Sheets_ShallowTubule_04",
+    "FoldedMembrane_Sheets_ShallowTubule_05",
+    "FoldedMembrane_Sheets_ShallowTubule_06",
+    "Ribosome_SurfaceClusters",
+    "Ribosome_SurfaceClusters_Ribosome_01",
+    "Ribosome_SurfaceClusters_Ribosome_02",
+    "Ribosome_SurfaceClusters_Ribosome_03",
+    "Ribosome_SurfaceClusters_Ribosome_04",
+    "Ribosome_SurfaceClusters_Ribosome_05",
+    "Ribosome_SurfaceClusters_Ribosome_06",
+    "Ribosome_SurfaceClusters_Ribosome_07",
+    "Ribosome_SurfaceClusters_Ribosome_08",
+    "Ribosome_SurfaceClusters_Ribosome_09",
+    "Ribosome_SurfaceClusters_Ribosome_10",
+    "Ribosome_SurfaceClusters_Ribosome_11",
+    "Ribosome_SurfaceClusters_Ribosome_12",
+    "Ribosome_SurfaceClusters_Ribosome_13",
+    "Ribosome_SurfaceClusters_Ribosome_14",
+    "Ribosome_SurfaceClusters_Ribosome_15",
+    "Ribosome_SurfaceClusters_Ribosome_16",
+    "Ribosome_SurfaceClusters_Ribosome_17",
+    "Ribosome_SurfaceClusters_Ribosome_18",
+    "Ribosome_SurfaceClusters_Ribosome_19",
+    "Ribosome_SurfaceClusters_Ribosome_20",
+    "Ribosome_SurfaceClusters_Ribosome_21",
+    "Ribosome_SurfaceClusters_Ribosome_22",
+    "Ribosome_SurfaceClusters_Ribosome_23",
+    "Ribosome_SurfaceClusters_Ribosome_24",
+    "Ribosome_SurfaceClusters_Ribosome_25",
+    "Ribosome_SurfaceClusters_Ribosome_26",
+    "Ribosome_SurfaceClusters_Ribosome_27",
+    "Ribosome_SurfaceClusters_Ribosome_28",
+    "Ribosome_SurfaceClusters_Ribosome_29",
+    "Ribosome_SurfaceClusters_Ribosome_30",
+    "Ribosome_SurfaceClusters_Ribosome_31",
+    "Ribosome_SurfaceClusters_Ribosome_32",
+    "Ribosome_SurfaceClusters_Ribosome_33",
+    "Ribosome_SurfaceClusters_Ribosome_34",
+    "Ribosome_SurfaceClusters_Ribosome_35",
+    "Ribosome_SurfaceClusters_Ribosome_36",
+    "Ribosome_SurfaceClusters_Ribosome_37",
+    "Ribosome_SurfaceClusters_Ribosome_38",
+    "Ribosome_SurfaceClusters_Ribosome_39",
+    "Ribosome_SurfaceClusters_Ribosome_40",
+    "Ribosome_SurfaceClusters_Ribosome_41",
+    "Ribosome_SurfaceClusters_Ribosome_42",
+    "Ribosome_SurfaceClusters_Ribosome_43",
+    "Ribosome_SurfaceClusters_Ribosome_44",
+    "Ribosome_SurfaceClusters_Ribosome_45",
+    "Ribosome_SurfaceClusters_Ribosome_46",
+    "Ribosome_SurfaceClusters_Ribosome_47",
+    "Ribosome_SurfaceClusters_Ribosome_48",
+    "Ribosome_SurfaceClusters_Ribosome_49",
+    "Ribosome_SurfaceClusters_Ribosome_50",
+    "Ribosome_SurfaceClusters_Ribosome_51",
+    "Ribosome_SurfaceClusters_Ribosome_52",
+    "Ribosome_SurfaceClusters_Ribosome_53",
+    "Ribosome_SurfaceClusters_Ribosome_54",
+    "Nucleus_ConnectionSocket",
+    "ProteinFolding_Cavities",
+    "ProteinFolding_Cavities_LumenPocket_01",
+    "ProteinFolding_Cavities_NascentProtein_01",
+    "ProteinFolding_Cavities_LumenPocket_02",
+    "ProteinFolding_Cavities_NascentProtein_02",
+    "ProteinFolding_Cavities_LumenPocket_03",
+    "ProteinFolding_Cavities_NascentProtein_03",
+    "ProteinFolding_Cavities_LumenPocket_04",
+    "ProteinFolding_Cavities_NascentProtein_04",
+    "Golgi_HandoffVesicles",
+    "Golgi_HandoffVesicles_COPIIBud_01",
+    "Golgi_HandoffVesicles_CoatCue_01_01",
+    "Golgi_HandoffVesicles_CoatCue_01_02",
+    "Golgi_HandoffVesicles_CoatCue_01_03",
+    "Golgi_HandoffVesicles_CoatCue_01_04",
+    "Golgi_HandoffVesicles_COPIIBud_02",
+    "Golgi_HandoffVesicles_CoatCue_02_01",
+    "Golgi_HandoffVesicles_CoatCue_02_02",
+    "Golgi_HandoffVesicles_CoatCue_02_03",
+    "Golgi_HandoffVesicles_CoatCue_02_04",
+    "Golgi_HandoffVesicles_COPIIBud_03",
+    "Golgi_HandoffVesicles_CoatCue_03_01",
+    "Golgi_HandoffVesicles_CoatCue_03_02",
+    "Golgi_HandoffVesicles_CoatCue_03_03",
+    "Golgi_HandoffVesicles_CoatCue_03_04",
+    "Golgi_HandoffVesicles_COPIIBud_04",
+    "Golgi_HandoffVesicles_CoatCue_04_01",
+    "Golgi_HandoffVesicles_CoatCue_04_02",
+    "Golgi_HandoffVesicles_CoatCue_04_03",
+    "Golgi_HandoffVesicles_CoatCue_04_04",
+    "Interaction_Hotspots",
+    "Interaction_Hotspots_RoughERAnchor_01",
+    "Interaction_Hotspots_RoughERAnchor_02",
+    "Interaction_Hotspots_RoughERAnchor_03",
+    "Interaction_Hotspots_RoughERAnchor_04"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "Nucleus_ConnectionSocket_CurvedEnvelopeContact",
+    "RoughER_KeyLight",
+    "Camera_RoughER_wide_function",
+    "Camera_RoughER_folding_cavities",
+    "Camera_RoughER_golgi_handoff"
+  ],
+  "organic_construction_violations": [],
+  "transform_status": [
+    {
+      "name": "RoughER_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_Layer_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_Layer_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_Layer_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_Layer_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_Layer_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_ShallowTubule_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_ShallowTubule_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_ShallowTubule_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_ShallowTubule_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_ShallowTubule_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "FoldedMembrane_Sheets_ShallowTubule_06",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_06",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_07",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_08",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_09",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_10",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_11",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_12",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_13",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_14",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_15",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_16",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_17",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_18",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_19",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_20",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_21",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_22",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_23",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_24",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_25",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_26",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_27",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_28",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_29",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_30",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_31",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_32",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_33",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_34",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_35",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_36",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_37",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_38",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_39",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_40",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_41",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_42",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_43",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_44",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_45",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_46",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_47",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_48",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_49",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_50",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_51",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_52",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_53",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Ribosome_SurfaceClusters_Ribosome_54",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Nucleus_ConnectionSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_LumenPocket_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_NascentProtein_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_LumenPocket_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_NascentProtein_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_LumenPocket_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_NascentProtein_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_LumenPocket_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "ProteinFolding_Cavities_NascentProtein_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_COPIIBud_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_01_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_01_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_01_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_01_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_COPIIBud_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_02_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_02_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_02_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_02_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_COPIIBud_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_03_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_03_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_03_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_03_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_COPIIBud_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_04_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_04_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_04_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Golgi_HandoffVesicles_CoatCue_04_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_RoughERAnchor_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_RoughERAnchor_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_RoughERAnchor_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Interaction_Hotspots_RoughERAnchor_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 111,
+      "mesh_object_count": 99,
+      "triangle_count": 24413,
+      "material_count": 8,
+      "texture_count": 0
+    },
+    "export_candidates_only": {
+      "object_count": 105,
+      "mesh_object_count": 97,
+      "triangle_count": 24045,
+      "material_count": 7,
+      "texture_count": 0
+    }
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated rough ER phase generated from script.",
+    "Visible biological meshes are generated organic meshes, not default primitives."
+  ],
+  "roblox_export_risks": [
+    "Many ribosome detail meshes may need merging for Roblox runtime.",
+    "Roblox package IDs are required before Studio assembly can pass."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

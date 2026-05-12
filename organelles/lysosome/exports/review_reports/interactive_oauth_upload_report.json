@@ -1,0 +1,268 @@
+{
+  "schema_version": "lysosome_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 7,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_LysosomeMembrane",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_LysosomeMembrane.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "operationId": "5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "operationId": "5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "done": true,
+        "response": {
+          "path": "assets/103700054022789",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:08.185598900Z",
+          "assetId": "103700054022789",
+          "displayName": "Lysosome_EXPORT_LOD0_LysosomeMembrane",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_LysosomeMembrane",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "103700054022789"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_AcidicInterior",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_AcidicInterior.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "operationId": "2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "operationId": "2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "done": true,
+        "response": {
+          "path": "assets/111063447773568",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:12.183560500Z",
+          "assetId": "111063447773568",
+          "displayName": "Lysosome_EXPORT_LOD0_AcidicInterior",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_AcidicInterior",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "111063447773568"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_DigestiveEnzymeClusters",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_DigestiveEnzymeClusters.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "operationId": "0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "operationId": "0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "done": true,
+        "response": {
+          "path": "assets/117305269277716",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:28.305621800Z",
+          "assetId": "117305269277716",
+          "displayName": "Lysosome_EXPORT_LOD0_DigestiveEnzymeClusters",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_DigestiveEnzymeClusters",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "117305269277716"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_WasteCargoFragments",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_WasteCargoFragments.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/db4aaaa9-15ab-4114-836b-e56019625314",
+        "operationId": "db4aaaa9-15ab-4114-836b-e56019625314",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/db4aaaa9-15ab-4114-836b-e56019625314",
+        "operationId": "db4aaaa9-15ab-4114-836b-e56019625314",
+        "done": true,
+        "response": {
+          "path": "assets/91673949275832",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:36.692382900Z",
+          "assetId": "91673949275832",
+          "displayName": "Lysosome_EXPORT_LOD0_WasteCargoFragments",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_WasteCargoFragments",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "91673949275832"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_RecycledOutputCues",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_RecycledOutputCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/36be884d-3401-4765-b829-6f3bd20bea17",
+        "operationId": "36be884d-3401-4765-b829-6f3bd20bea17",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/36be884d-3401-4765-b829-6f3bd20bea17",
+        "operationId": "36be884d-3401-4765-b829-6f3bd20bea17",
+        "done": true,
+        "response": {
+          "path": "assets/80775731352612",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:42.166785Z",
+          "assetId": "80775731352612",
+          "displayName": "Lysosome_EXPORT_LOD0_RecycledOutputCues",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_RecycledOutputCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "80775731352612"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_ANCHORS_LysosomeRuntime",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_ANCHORS_LysosomeRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "operationId": "3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "operationId": "3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "done": true,
+        "response": {
+          "path": "assets/127635415866764",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:49.164463Z",
+          "assetId": "127635415866764",
+          "displayName": "Lysosome_EXPORT_ANCHORS_LysosomeRuntime",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_ANCHORS_LysosomeRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "127635415866764"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_COLLISION_LysosomeProxy",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_COLLISION_LysosomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/27d807c2-9409-41b5-8310-caaecd23f37f",
+        "operationId": "27d807c2-9409-41b5-8310-caaecd23f37f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/27d807c2-9409-41b5-8310-caaecd23f37f",
+        "operationId": "27d807c2-9409-41b5-8310-caaecd23f37f",
+        "done": true,
+        "response": {
+          "path": "assets/122171898843989",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:55.093167300Z",
+          "assetId": "122171898843989",
+          "displayName": "Lysosome_EXPORT_COLLISION_LysosomeProxy",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_COLLISION_LysosomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "122171898843989"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "phase_06t_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "06T",
+  "builder": "Corrective Transport Cargo Builder",
+  "status": "built_pending_independent_visual_review",
+  "base_phase": "05U nucleolus",
+  "created_manifest_components": [
+    "Transport_Cargo"
+  ],
+  "carried_forward_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice",
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions"
+  ],
+  "explicitly_not_created": [
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots",
+    "CondensedChromosomes",
+    "Chromatin_Threads"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/02_nuclear_pores.png",
+    "reference_images/nucleus_specs/04_chromatin.png",
+    "reference_images/nucleus_specs/05_nucleolus.png"
+  ],
+  "text_specs_used": [
+    "organelle_projects/04_nucleus/nucleus_reverse_component_manifest_deep.csv rows TRN_001-TRN_008"
+  ],
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_06t_transport_cargo.blend",
+  "render_paths": [
+    {
+      "type": "reference_board",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_06t_reference_board.png",
+      "status": "complete"
+    },
+    {
+      "type": "transport_overview",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_06t_transport_overview.png",
+      "status": "complete"
+    },
+    {
+      "type": "pore_transport_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_06t_pore_transport_closeup.png",
+      "status": "complete"
+    }
+  ],
+  "protein_cargo_count": 5,
+  "mrna_cargo_count": 5,
+  "ribosomal_subunit_cargo_count": 5,
+  "small_solute_dot_count": 6,
+  "transport_path_count": 3,
+  "direction_arrow_count": 2,
+  "keyframed_transport_objects": 4,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "reference_images_in_same_blender_scene": true,
+    "phase_scope_respected": true,
+    "transport_paths_cross_envelope_only_at_pores": true,
+    "protein_import_direction_is_cytoplasm_to_nucleoplasm": true,
+    "rna_export_direction_is_nucleus_to_cytoplasm": true,
+    "ribosomal_subunit_export_starts_near_nucleolus": true,
+    "dna_export_absent": true,
+    "rough_er_not_created": true,
+    "builder_did_not_self_approve_visual_gate": true
+  },
+  "organic_treatment_notes": [
+    "Cargo objects are small lumpy grouped bodies or squiggle curves instead of unmodified default primitives.",
+    "Route guides are thin, segmented, and aimed through selected pore centers rather than rendered as heavy neon rods.",
+    "Protein import is green with NLS tag beads, RNA export is pink squiggle cargo, and ribosomal subunit export is paired magenta/cyan particles from the nucleolus."
+  ],
+  "animation_notes": [
+    "Representative protein, mRNA, and ribosomal-subunit cargo objects have location keyframes on their expected travel windows.",
+    "NPC_GatePulse_Controller has a keyed gate_pulse custom property for Roblox event mapping."
+  ],
+  "roblox_export_risks": [
+    "Curve cargo and path guides should be converted or represented as Roblox Beams/Attachments during export.",
+    "Transparent/emissive path materials need Studio validation for readability against nucleoplasm.",
+    "Dense inherited nucleus source art still requires LOD grouping before Roblox import."
+  ],
+  "next_required_step": "Run independent visual, biology, and Roblox readiness review before adding rough ER connection."
+}

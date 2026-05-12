@@ -1,0 +1,17 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "perinuclear_lumen",
+  "parent_components": [
+    "PerinuclearLumen_Segments"
+  ],
+  "required_objects": [
+    "PerinuclearLumen_Segments"
+  ],
+  "must_not_create": [
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "NuclearPore_Complexes",
+    "Nucleolus_Subregions"
+  ]
+}
+

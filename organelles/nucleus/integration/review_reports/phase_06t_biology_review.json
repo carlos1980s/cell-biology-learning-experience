@@ -1,0 +1,28 @@
+{
+  "schema_version": "phase_06t_biology_review_v1",
+  "organelle": "nucleus",
+  "phase": "06T",
+  "reviewer": "Biology Accuracy Reviewer",
+  "biology_pass": true,
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "RoughER_Connection only",
+  "component_review": {
+    "Transport_Cargo": {
+      "structure_meaningful": true,
+      "function_represented": "The phase shows selective nucleocytoplasmic transport: NLS-tagged proteins enter through nuclear pores, mRNA exits through pores, ribosomal subunit cargo moves outward from the nucleolus, and small solute dots diffuse through pore centers.",
+      "misconceptions_avoided": [
+        "DNA is not shown leaving the nucleus.",
+        "Cargo paths cross the envelope at nuclear pore complexes instead of through membrane walls.",
+        "Nuclear pores remain gated structures, not empty passive holes.",
+        "The nucleolus is not given a membrane during ribosomal subunit export."
+      ],
+      "remaining_accuracy_risks": [
+        "Direction arrows and colored route paths are stylized teaching overlays, not literal molecular structures.",
+        "Cargo scale is illustrative for camera readability rather than molecularly proportional.",
+        "Small solute dots are simplified and do not distinguish ions from metabolites."
+      ]
+    }
+  },
+  "required_fixes": [],
+  "approved_to_continue": true
+}

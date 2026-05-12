@@ -1,0 +1,114 @@
+{
+  "schema_version": "membrane_cytoplasm_builder_report_v1",
+  "phase": "phase_02",
+  "phase_id": "phase_02_first_real_anatomy",
+  "organelle": "membrane_cytoplasm",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "WholeCellIntegration_RootRig",
+    "PlasmaMembrane_Boundary",
+    "Cytoplasm_Volume",
+    "OrganellePlacement_Sockets"
+  ],
+  "incomplete_components": [
+    "TraffickingRoute_Overlays",
+    "CellSurface_Receptors",
+    "Integration_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "TraffickingRoute_Overlays",
+    "CellSurface_Receptors",
+    "Integration_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_anatomy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/review_renders/phase_02_wide_anatomy.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "detail_close",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/review_renders/phase_02_detail_close.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/review_renders/phase_02_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/membrane_cytoplasm/membrane_cytoplasm_phase_02_first_real_anatomy.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "WholeCellIntegration_RootRig",
+    "WholeCell_ContextSocket",
+    "PlasmaMembrane_Boundary",
+    "PlasmaMembrane_Boundary_MembranePatch_01",
+    "PlasmaMembrane_Boundary_MembranePatch_02",
+    "PlasmaMembrane_Boundary_MembranePatch_03",
+    "PlasmaMembrane_Boundary_MembranePatch_04",
+    "PlasmaMembrane_Boundary_MembranePatch_05",
+    "PlasmaMembrane_Boundary_MembranePatch_06",
+    "PlasmaMembrane_Boundary_MembranePatch_07",
+    "PlasmaMembrane_Boundary_MembranePatch_08",
+    "Cytoplasm_Volume",
+    "Cytoplasm_Volume_OrganicDetail_01",
+    "Cytoplasm_Volume_OrganicDetail_02",
+    "Cytoplasm_Volume_OrganicDetail_03",
+    "Cytoplasm_Volume_OrganicDetail_04",
+    "Cytoplasm_Volume_OrganicDetail_05",
+    "Cytoplasm_Volume_OrganicDetail_06",
+    "OrganellePlacement_Sockets",
+    "OrganellePlacement_Sockets_OrganicDetail_01",
+    "OrganellePlacement_Sockets_OrganicDetail_02",
+    "OrganellePlacement_Sockets_OrganicDetail_03",
+    "OrganellePlacement_Sockets_OrganicDetail_04",
+    "OrganellePlacement_Sockets_OrganicDetail_05",
+    "OrganellePlacement_Sockets_OrganicDetail_06",
+    "OrganellePlacement_Sockets_OrganicDetail_07",
+    "OrganellePlacement_Sockets_OrganicDetail_08",
+    "OrganellePlacement_Sockets_OrganicDetail_09",
+    "OrganellePlacement_Sockets_OrganicDetail_10"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "MembraneCytoplasm_KeyLight",
+    "Camera_MembraneCytoplasm_wide_anatomy",
+    "Camera_MembraneCytoplasm_detail_close",
+    "Camera_MembraneCytoplasm_export_inspection"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 29,
+    "biological_mesh_count": 24,
+    "triangle_count": 5120
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated membrane/cytoplasm integration pass generated from inception.",
+    "Context objects are transparent and function-bearing."
+  ],
+  "roblox_export_risks": [
+    "Large transparent surfaces need Roblox material fallback checks.",
+    "Phase 5 requires real package_asset_id values for every group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

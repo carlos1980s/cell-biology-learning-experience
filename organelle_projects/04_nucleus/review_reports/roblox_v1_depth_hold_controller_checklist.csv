@@ -1,0 +1,8 @@
+Item,Status,Evidence
+"Installer deployed","pass","Studio bridge returned v1_depth_hold_installed."
+"Client script installed","pass","StarterPlayer.StarterPlayerScripts.V1DepthHoldController"
+"Workspace marker set","pass","DepthHold_V2"
+"Spawn still in water","pass","Water=8"
+"No custom move pad","pass","Controller installs only V1DepthHoldControls Up/Down buttons."
+"No constant upward lift","pass","DepthHold_V2 removes the previous mass*gravity lift term that could push players to the surface."
+"Play-mode verification","pending","Hold stillness and rise/dive responsiveness must be checked in Studio Play mode."

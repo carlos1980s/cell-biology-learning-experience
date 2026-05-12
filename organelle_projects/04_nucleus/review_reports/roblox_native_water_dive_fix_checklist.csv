@@ -1,0 +1,11 @@
+check,status,evidence
+Native movement kept,pass,"CellEnvironment_Main MovementMode = NativeWaterSwimming."
+No custom player force controller reintroduced,pass,"The build still calls installNativeWaterSwimmingMode(), not installSwimmingController()."
+Deep Terrain water at cell midpoint,pass,"Probe: cell_mid=4352/4352 water voxels in 64-stud cube."
+Deep Terrain water at spawn,pass,"Probe: spawn=4624/4624 water voxels in 64-stud cube."
+Water below spawn,pass,"Probe: below_spawn=3468/4913 water voxels."
+Water above spawn,pass,"Probe: above_spawn=4913/4913 water voxels."
+Spawn no longer blocks descent,pass,"MainCellSwimSpawn.CanCollide=false."
+Default gravity preserved,pass,"Workspace.Gravity=196.2."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

@@ -1,0 +1,31 @@
+{
+  "phase": "roblox_mobile_capsule_control_conflict_fix",
+  "date": "2026-05-04",
+  "problem": "Phone controls appeared unresponsive because legacy capsule/cell controls were still enabled alongside MainCellSwimmingController.",
+  "studio_findings_before_fix": {
+    "CellPlayerBootstrap": "enabled",
+    "ExplorerControls": "enabled",
+    "MainCellSwimmingController": "enabled",
+    "risk": "CellPlayerBootstrap and MainCellSwimmingController both attach movement physics to the player; ExplorerControls also owns a mobile touch UI for the capsule."
+  },
+  "source_change": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "change": "Main cell controller installation now disables legacy StarterPlayerScripts: CellPlayerBootstrap, ExplorerControls, and CellCytoplasmLightingController.",
+    "attribute_marker": "DisabledByMainCellExperience"
+  },
+  "studio_state_after_fix": {
+    "CellPlayerBootstrap": "disabled",
+    "ExplorerControls": "disabled",
+    "CellCytoplasmLightingController": "disabled",
+    "MainCellSwimmingController": "enabled"
+  },
+  "validation": {
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok",
+    "studio_bridge_deploy": "main_cell_conflict_fix_build_applied CellEnvironment_Main"
+  },
+  "next_device_review": [
+    "Android: verify the main swim touch pad now moves without capsule control interference.",
+    "Quest: verify no old capsule controller captures the navigation gamepad while swimming."
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "peroxisomes_phase_04_roblox_asset_manifest_v1",
+  "organelle": "peroxisomes",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.Peroxisomes_Model",
+  "raw_package_target": "Workspace.MeshLibrary/Peroxisomes_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_PeroxisomeMembrane",
+    "EXPORT_LOD0_CatalaseCrystalCore",
+    "EXPORT_LOD0_FattyAcidProcessingSites",
+    "EXPORT_LOD0_OxidativeReactionCues",
+    "EXPORT_LOD0_DetoxOutputCues",
+    "EXPORT_ANCHORS_PeroxisomesRuntime",
+    "EXPORT_COLLISION_PeroxisomeProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_PeroxisomeMembrane",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_PeroxisomeMembrane.fbx",
+      "file_size_bytes": 44428,
+      "object_count": 5,
+      "triangle_count": 1040,
+      "object_names": [
+        "Peroxisome_Membrane_OrganicDetail_05",
+        "Peroxisome_Membrane_OrganicDetail_04",
+        "Peroxisome_Membrane_OrganicDetail_03",
+        "Peroxisome_Membrane_OrganicDetail_02",
+        "Peroxisome_Membrane_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/PeroxisomeMembrane",
+      "roblox_material_family": "peroxisome_membrane",
+      "event_bindings": [
+        "peroxisomes.inspect_membrane"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "79673345419499",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/cfacbb23-516c-4d1c-96d0-74622021ac2b",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CatalaseCrystalCore",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_CatalaseCrystalCore.fbx",
+      "file_size_bytes": 56988,
+      "object_count": 7,
+      "triangle_count": 1456,
+      "object_names": [
+        "CatalaseCrystal_Core_OrganicDetail_07",
+        "CatalaseCrystal_Core_OrganicDetail_06",
+        "CatalaseCrystal_Core_OrganicDetail_05",
+        "CatalaseCrystal_Core_OrganicDetail_04",
+        "CatalaseCrystal_Core_OrganicDetail_03",
+        "CatalaseCrystal_Core_OrganicDetail_02",
+        "CatalaseCrystal_Core_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/CatalaseCrystalCore",
+      "roblox_material_family": "catalase_core",
+      "event_bindings": [
+        "peroxisomes.catalase"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "80395075664499",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/b7e1d6f2-8977-4136-bae9-f798bbc3540f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_FattyAcidProcessingSites",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_FattyAcidProcessingSites.fbx",
+      "file_size_bytes": 75468,
+      "object_count": 10,
+      "triangle_count": 2080,
+      "object_names": [
+        "FattyAcidProcessing_Sites_OrganicDetail_10",
+        "FattyAcidProcessing_Sites_OrganicDetail_09",
+        "FattyAcidProcessing_Sites_OrganicDetail_08",
+        "FattyAcidProcessing_Sites_OrganicDetail_07",
+        "FattyAcidProcessing_Sites_OrganicDetail_06",
+        "FattyAcidProcessing_Sites_OrganicDetail_05",
+        "FattyAcidProcessing_Sites_OrganicDetail_04",
+        "FattyAcidProcessing_Sites_OrganicDetail_03",
+        "FattyAcidProcessing_Sites_OrganicDetail_02",
+        "FattyAcidProcessing_Sites_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/FattyAcidProcessingSites",
+      "roblox_material_family": "fatty_acid_sites",
+      "event_bindings": [
+        "peroxisomes.fatty_acids"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "130030044134655",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/6ea63e4c-b4b2-4fc5-a9cf-68842e334962",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_OxidativeReactionCues",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_OxidativeReactionCues.fbx",
+      "file_size_bytes": 69068,
+      "object_count": 9,
+      "triangle_count": 1872,
+      "object_names": [
+        "OxidativeReaction_Cues_OrganicDetail_09",
+        "OxidativeReaction_Cues_OrganicDetail_08",
+        "OxidativeReaction_Cues_OrganicDetail_07",
+        "OxidativeReaction_Cues_OrganicDetail_06",
+        "OxidativeReaction_Cues_OrganicDetail_05",
+        "OxidativeReaction_Cues_OrganicDetail_04",
+        "OxidativeReaction_Cues_OrganicDetail_03",
+        "OxidativeReaction_Cues_OrganicDetail_02",
+        "OxidativeReaction_Cues_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/OxidativeReactionCues",
+      "roblox_material_family": "oxidative_cues",
+      "event_bindings": [
+        "peroxisomes.oxidation"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "80201547890430",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/aa1ec863-4093-489d-bfbd-4e8bd7eb2b0f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_DetoxOutputCues",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_DetoxOutputCues.fbx",
+      "file_size_bytes": 30108,
+      "object_count": 3,
+      "triangle_count": 504,
+      "object_names": [
+        "DetoxOutput_Cues_Branch_03",
+        "DetoxOutput_Cues_Branch_02",
+        "DetoxOutput_Cues_Branch_01"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/DetoxOutputCues",
+      "roblox_material_family": "detox_output",
+      "event_bindings": [
+        "peroxisomes.detox_output"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "89743403815801",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/c574e87c-dbce-4fe7-a803-2455fd58d54f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_PeroxisomesRuntime",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_ANCHORS_PeroxisomesRuntime.fbx",
+      "file_size_bytes": 44188,
+      "object_count": 5,
+      "triangle_count": 1040,
+      "object_names": [
+        "Interaction_Hotspots_OrganicDetail_05",
+        "Interaction_Hotspots_OrganicDetail_04",
+        "Interaction_Hotspots_OrganicDetail_03",
+        "Interaction_Hotspots_OrganicDetail_02",
+        "Interaction_Hotspots_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "peroxisomes.inspect"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "136175076049067",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/5f2583b5-c2d7-44d2-af90-471645e2b42d",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_PeroxisomeProxy",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_COLLISION_PeroxisomeProxy.fbx",
+      "file_size_bytes": 19244,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "Peroxisome_CollisionProxy"
+      ],
+      "roblox_placement_target": "Peroxisomes_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "98723311842139",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/463014df-47af-411e-8505-d467e4493303",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

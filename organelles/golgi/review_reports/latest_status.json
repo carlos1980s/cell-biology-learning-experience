@@ -1,0 +1,14 @@
+{
+  "schema_version": "golgi_latest_status_v1",
+  "organelle": "golgi",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/exports/golgi_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_CisternaStack, EXPORT_LOD0_CisTransFaces, EXPORT_LOD0_BuddingAndDispatchVesicles, EXPORT_LOD0_CargoModificationSites, EXPORT_ANCHORS_GolgiRuntime, EXPORT_COLLISION_GolgiProxy"
+  ],
+  "next_allowed_scope": "Upload Golgi Phase 04 packages, record package_asset_id for every group, then rerun Studio assembly plus edit/play validation."
+}

@@ -1,0 +1,41 @@
+{
+  "phase": "roblox_native_water_dive_fix",
+  "date": "2026-05-05",
+  "goal": "Make native Roblox water diving possible by ensuring the playable cell volume is real Terrain water and the spawn pad does not block descent.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "root_cause": [
+    "Native Roblox water can support diving, but the previous Studio probe found no Terrain water at the playable cell midpoint and no water at the nucleus area.",
+    "The player was likely interacting with a shallow or partial water patch rather than a deep Terrain water volume.",
+    "The invisible SpawnLocation was collidable, which could act like a hidden floor at the entry point."
+  ],
+  "changes": [
+    "Added addNativeWaterVolume() to fill the whole playable swim bounds with Terrain water.",
+    "Set Terrain water color, transparency, reflectance, wave size, and wave speed for calmer underwater review.",
+    "Changed MainCellSwimSpawn.CanCollide to false so it cannot block diving.",
+    "Kept player movement mode as NativeWaterSwimming and did not reintroduce custom player LinearVelocity or VectorForce control."
+  ],
+  "studio_probe": {
+    "movement_mode": "NativeWaterSwimming",
+    "workspace_gravity": 196.2,
+    "spawn_can_collide": false,
+    "native_water_volume_center": "0, 58, 0",
+    "native_water_volume_size": "652, 432, 712",
+    "terrain_water_samples": {
+      "origin_64_cube": "2816/4096",
+      "cell_mid_64_cube": "4352/4352",
+      "spawn_64_cube": "4624/4624",
+      "below_spawn_64_cube": "3468/4913",
+      "above_spawn_64_cube": "4913/4913"
+    }
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() in Studio and confirmed full Terrain water samples around spawn and cell midpoint."
+  ],
+  "result": "The cell bounds are now deep Terrain water, so native Roblox water controls should be able to dive by aiming/moving downward instead of being stuck on a shallow surface or hidden spawn floor."
+}

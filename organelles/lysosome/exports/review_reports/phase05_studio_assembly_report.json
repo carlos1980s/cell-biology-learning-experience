@@ -1,0 +1,16 @@
+{
+  "schema_version": "lysosome_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/Lysosome_RawPackages",
+  "expected_visible_model": "Workspace.Lysosome_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_LysosomeMembrane",
+    "EXPORT_LOD0_AcidicInterior",
+    "EXPORT_LOD0_DigestiveEnzymeClusters",
+    "EXPORT_LOD0_WasteCargoFragments",
+    "EXPORT_LOD0_RecycledOutputCues",
+    "EXPORT_ANCHORS_LysosomeRuntime",
+    "EXPORT_COLLISION_LysosomeProxy"
+  ]
+}

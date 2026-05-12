@@ -1,0 +1,22 @@
+{
+  "schema_version": "phase_06t_roblox_review_v1",
+  "organelle": "nucleus",
+  "phase": "06T",
+  "reviewer": "Roblox Export Reviewer",
+  "roblox_pass_for_source_art": true,
+  "roblox_export_ready": false,
+  "approved_for_next_phase": true,
+  "blocking_export_risks": [
+    "Curve paths and mRNA squiggle curves need conversion to mesh strips, Beams, or Attachment-driven effects for Roblox.",
+    "Transparent route guides and nucleoplasm may sort differently in Roblox Studio and need viewport validation.",
+    "Cargo keyframes and NPC_GatePulse_Controller custom properties must be translated into Roblox tween/event logic.",
+    "The inherited nucleus scene remains dense and needs LOD grouping before full import."
+  ],
+  "recommended_roblox_plan": [
+    "Export cargo tokens as separate named mesh groups under Transport_Cargo.",
+    "Represent route guides as Roblox Beams with Attachments at pore centers and cargo endpoints.",
+    "Map NPC_GatePulse_Controller gate_pulse keyframes to a Roblox animation event table.",
+    "Keep direction arrows and route guides toggleable as teaching overlays."
+  ],
+  "approved_to_continue": true
+}

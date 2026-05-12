@@ -1,0 +1,49 @@
+{
+  "phase": "roblox_scuba_buoyancy_control_pass",
+  "date": "2026-05-04",
+  "goal": "Make the main player feel like they are scuba diving through cytoplasm with a buoyancy control for up/down movement.",
+  "source_change": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "changes": [
+      "Added a local MainCellScubaBuoyancyRig attached to the player's torso/root with twin tanks, back plate, and trim valve glow.",
+      "Changed vertical movement from direct rise/sink thrust into persistent buoyancyTrim.",
+      "Added inflate/vent touch controls using + and - buttons.",
+      "Mapped keyboard Space to inflate and Ctrl/Q to vent.",
+      "Mapped Quest/gamepad A/R1 to inflate and B/L1 to vent.",
+      "Added MainCellBuoyancyBubbles particle feedback while adjusting buoyancy.",
+      "Added a mobile BuoyancyGauge showing positive/negative trim."
+    ]
+  },
+  "control_model": {
+    "horizontal_swim": "camera-relative pad/thumbstick/keyboard movement",
+    "vertical_swim": "persistent buoyancy trim applied through VectorForce",
+    "buoyancy_adjust_rate": 1.25,
+    "buoyancy_force_scale": 0.18,
+    "buoyancy_recentering_rate": 0.035
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "builder_applied": "main_cell_scuba_buoyancy_build_applied CellEnvironment_Main",
+    "studio_edit_mode_confirmed": true,
+    "controller_source_length": 24309,
+    "installed_controller_checks": {
+      "has_scuba_rig": true,
+      "has_buoyancy_gauge": true,
+      "has_buoyancy_trim": true,
+      "has_bubbles": true,
+      "has_inflate_button": true,
+      "has_vent_button": true,
+      "has_force_scale": true
+    }
+  },
+  "validation": {
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok"
+  },
+  "device_review_needed": [
+    "Android: confirm + and - buttons inflate/vent and produce persistent climb/sink.",
+    "Android: confirm horizontal pad still swims while buoyancy trim is active.",
+    "Quest: confirm A/R1 inflates and B/L1 vents.",
+    "Quest: confirm the player can hover by returning buoyancy near neutral."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "nucleus_director_checkpoint_v1",
+  "organelle": "nucleus",
+  "checkpoint": "post_phase_07r",
+  "latest_blender_scene": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_07r_rough_er_connection.blend",
+  "passed_scoped_phases": [
+    "Phase 02R double nuclear envelope",
+    "Phase 02P nuclear pore complexes and gate cores",
+    "Phase 02L nuclear lamina",
+    "Phase 03N nucleoplasm volume",
+    "Phase 04C chromatin threads",
+    "Phase 05U nucleolus subregions",
+    "Phase 06T transport cargo",
+    "Phase 07R rough ER connection"
+  ],
+  "blocked_or_deferred_components": [
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "repeated_issues": [
+    "Source-art components can pass scoped Blender review while still needing Roblox LOD and material simplification.",
+    "Reference-board composition remains useful but should get a final layout pass after all nucleus parts exist.",
+    "Teaching overlays and context layers must become toggleable in Roblox."
+  ],
+  "current_quality_notes": [
+    "Rough ER connection was iterated after an initial failed render; final source art is smaller, smoother, outside the envelope, and does not block the nucleus inspection view.",
+    "A follow-up polish pass added dark cisterna lips, lumen ribbons, and denser ribosome placement to reduce the smooth-sheet/toy risk.",
+    "Rough ER is approved only as scoped source art, with explicit polish debt around export-only LOD grouping and Roblox material validation.",
+    "No full-nucleus approval has been issued yet."
+  ],
+  "recommended_next_phase": "Phase 08M Mitosis_Fragments only: hidden membrane shards and reassembly sockets for nuclear envelope breakdown/reassembly, without changing the default intact nucleus.",
+  "phase_2_can_continue": true
+}

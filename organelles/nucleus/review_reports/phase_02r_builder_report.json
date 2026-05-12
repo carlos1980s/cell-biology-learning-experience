@@ -1,0 +1,76 @@
+{
+  "schema_version": "phase_02r_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "02R",
+  "builder": "Corrective Double Envelope Builder",
+  "status": "built_pending_independent_visual_review",
+  "purpose": "Restart the nucleus visual pipeline at one part only: double nuclear envelope plus perinuclear lumen.",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments"
+  ],
+  "explicitly_not_created": [
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice",
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "CondensedChromosomes",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/01_nuclear_envelope.png"
+  ],
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_02r_double_envelope_rebuild.blend",
+  "render_paths": [
+    {
+      "type": "reference_board",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02r_reference_board.png",
+      "status": "complete"
+    },
+    {
+      "type": "double_envelope_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02r_double_envelope_closeup.png",
+      "status": "complete"
+    },
+    {
+      "type": "lumen_cutaway_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02r_lumen_cutaway_inspection.png",
+      "status": "complete"
+    }
+  ],
+  "mesh_budget": {
+    "mesh_object_count": 15,
+    "triangle_count_before_modifier_evaluation": 30544,
+    "material_count": 3
+  },
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "reference_image_in_same_blender_scene": true,
+    "major_components_use_manifest_names": true,
+    "phase_scope_respected": true,
+    "pores_lamina_and_internals_not_built": true,
+    "biological_meshes_are_custom_meshes_not_default_primitives": true,
+    "builder_did_not_self_approve_visual_gate": true
+  },
+  "organic_treatment_notes": [
+    "Outer and inner membrane surfaces are custom mesh shells with asymmetrical radius fields, cutaway rims, procedural material variation, and subtle surface wrinkles.",
+    "The perinuclear lumen is a separate translucent glowing layer between the outer and inner membranes, with highlighted cutaway edges.",
+    "No torus, cylinder, or UV sphere primitives are used for biological envelope components."
+  ],
+  "roblox_export_risks": [
+    "This is still a Blender visual candidate, not a final Roblox import package.",
+    "Transparency and emission for the lumen will need Roblox material fallback or baked texture treatment.",
+    "Raised membrane ridges should be merged or baked for LOD1 if the envelope is approved visually."
+  ],
+  "next_required_step": "Run independent visual review against the reference board before adding pores or lamina."
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "peroxisomes_builder_report_v1",
+  "phase": "phase_02",
+  "phase_id": "phase_02_first_real_anatomy",
+  "organelle": "peroxisomes",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Peroxisome_RootRig",
+    "Peroxisome_Membrane",
+    "CatalaseCrystal_Core",
+    "FattyAcidProcessing_Sites"
+  ],
+  "incomplete_components": [
+    "OxidativeReaction_Cues",
+    "DetoxOutput_Cues",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "OxidativeReaction_Cues",
+    "DetoxOutput_Cues",
+    "Interaction_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_anatomy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/peroxisomes/review_renders/phase_02_wide_anatomy.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "detail_close",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/peroxisomes/review_renders/phase_02_detail_close.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/peroxisomes/review_renders/phase_02_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/peroxisomes/peroxisomes_phase_02_first_real_anatomy.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "Peroxisome_RootRig",
+    "WholeCell_ContextSocket",
+    "Peroxisome_Membrane",
+    "Peroxisome_Membrane_OrganicDetail_01",
+    "Peroxisome_Membrane_OrganicDetail_02",
+    "Peroxisome_Membrane_OrganicDetail_03",
+    "Peroxisome_Membrane_OrganicDetail_04",
+    "Peroxisome_Membrane_OrganicDetail_05",
+    "CatalaseCrystal_Core",
+    "CatalaseCrystal_Core_OrganicDetail_01",
+    "CatalaseCrystal_Core_OrganicDetail_02",
+    "CatalaseCrystal_Core_OrganicDetail_03",
+    "CatalaseCrystal_Core_OrganicDetail_04",
+    "CatalaseCrystal_Core_OrganicDetail_05",
+    "CatalaseCrystal_Core_OrganicDetail_06",
+    "CatalaseCrystal_Core_OrganicDetail_07",
+    "FattyAcidProcessing_Sites",
+    "FattyAcidProcessing_Sites_OrganicDetail_01",
+    "FattyAcidProcessing_Sites_OrganicDetail_02",
+    "FattyAcidProcessing_Sites_OrganicDetail_03",
+    "FattyAcidProcessing_Sites_OrganicDetail_04",
+    "FattyAcidProcessing_Sites_OrganicDetail_05",
+    "FattyAcidProcessing_Sites_OrganicDetail_06",
+    "FattyAcidProcessing_Sites_OrganicDetail_07",
+    "FattyAcidProcessing_Sites_OrganicDetail_08",
+    "FattyAcidProcessing_Sites_OrganicDetail_09",
+    "FattyAcidProcessing_Sites_OrganicDetail_10"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "Peroxisomes_KeyLight",
+    "Camera_Peroxisomes_wide_anatomy",
+    "Camera_Peroxisomes_detail_close",
+    "Camera_Peroxisomes_export_inspection"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 27,
+    "biological_mesh_count": 22,
+    "triangle_count": 4576
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated peroxisomes generated from inception.",
+    "Visible components use function-bearing generated organic meshes."
+  ],
+  "roblox_export_risks": [
+    "Small reaction cues may need batching.",
+    "Phase 5 requires real package_asset_id values for every group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

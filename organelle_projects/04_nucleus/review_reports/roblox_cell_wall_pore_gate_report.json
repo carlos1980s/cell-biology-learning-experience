@@ -1,0 +1,47 @@
+{
+  "phase": "roblox_cell_wall_pore_gate",
+  "date": "2026-05-05",
+  "goal": "Make the cell membrane non-penetrable except through the top opening and a front pore entry, with the player spawning close to that pore.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Changed the boundary collision mode from a sealed invisible box to TopOpenWithPoreGate.",
+    "Removed the top Y-positive blocker so players can enter from above.",
+    "Split the front Z-positive wall into left, right, bottom, and top pieces to leave a pore opening.",
+    "Kept side, back, and bottom blockers non-penetrable.",
+    "Moved the spawn to (-64, 78, 364), just outside the pore at (-64, 78, 349).",
+    "Extended the native water padding so the close outside-pore spawn still starts inside water."
+  ],
+  "studio_probe": {
+    "model": "CellEnvironment_Main",
+    "movement_mode": "NativeWaterSwimming",
+    "spawn_position": "-64, 78, 364",
+    "spawn_can_collide": false,
+    "cell_wall_collision_mode": "TopOpenWithPoreGate",
+    "top_open": true,
+    "cell_wall_parts": 8,
+    "collidable_parts": 8,
+    "pore_center": "-64, 78, 349",
+    "pore_size": "96, 120, 18",
+    "spawn_to_pore_center": 15.0,
+    "wall_parts": [
+      "CellWall_Block_XNegative",
+      "CellWall_Block_XPositive",
+      "CellWall_Block_YNegative",
+      "CellWall_Block_ZNegative",
+      "CellWall_Pore_ZPositive_Bottom",
+      "CellWall_Pore_ZPositive_Left",
+      "CellWall_Pore_ZPositive_Right",
+      "CellWall_Pore_ZPositive_Top"
+    ]
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() and confirmed top-open pore-gated wall geometry."
+  ],
+  "result": "The player now appears close to the cell surface and can enter through the front pore or from the top, while other membrane directions remain blocked."
+}

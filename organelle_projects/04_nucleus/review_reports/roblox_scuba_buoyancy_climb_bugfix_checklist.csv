@@ -1,0 +1,10 @@
+check,status,evidence
+Root cause identified,pass,"LinearVelocity was damping vertical climb while VectorForce tried to lift"
+Buoyancy trim drives vertical velocity,pass,"Controller contains targetTrimVelocity"
+Climb speed constant added,pass,"BUOYANCY_VERTICAL_SPEED = 18"
+Trim response constant added,pass,"BUOYANCY_VERTICAL_RESPONSE = 4.8"
+Vertical damping releases during trim,pass,"Controller contains trimDampingRelease"
+Live Studio controller updated,pass,"controller_source_length 24775 and source checks true"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Android climb retest,not_tested,"requires phone play test"
+Quest climb retest,not_tested,"requires headset play test"

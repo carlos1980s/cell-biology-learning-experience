@@ -1,0 +1,13 @@
+{
+  "organelle": "membrane_cytoplasm",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "WholeCellIntegration_RootRig",
+    "PlasmaMembrane_Boundary",
+    "Cytoplasm_Volume",
+    "OrganellePlacement_Sockets",
+    "TraffickingRoute_Overlays",
+    "CellSurface_Receptors",
+    "Integration_Hotspots"
+  ]
+}

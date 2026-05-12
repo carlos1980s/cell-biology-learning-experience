@@ -1,0 +1,16 @@
+{
+  "schema_version": "component_manifest_v1",
+  "organelle": "rough_er",
+  "root": "RoughER_RootRig",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "RoughER_RootRig",
+    "FoldedMembrane_Sheets",
+    "Ribosome_SurfaceClusters",
+    "ProteinFolding_Cavities",
+    "Nucleus_ConnectionSocket",
+    "Golgi_HandoffVesicles",
+    "Interaction_Hotspots"
+  ]
+}
+

@@ -1,0 +1,43 @@
+{
+  "phase": "roblox_ball_submarine_float",
+  "date": "2026-05-05",
+  "goal": "Make the user-added Workspace.Ball float like a submarine without replacing the ball object.",
+  "source_changes": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "changes": [
+      "Added configureBallSubmarine() to detect Workspace.Ball and preserve it.",
+      "Added MainCellSubmarineFloatAttachment, MainCellSubmarineBuoyancy, and MainCellSubmarineStabilizer to the ball core.",
+      "Added MainCellSubmarineBubbles for underwater feedback.",
+      "Added MainCellSubmarineFloatController server script for passive hover, upright stabilization, gentle bobbing, and vertical damping.",
+      "Disabled the ball package's old ControlAngularVelocity and ControlAlignOrientation so rolling controls do not fight floating."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "builder_applied": "main_cell_ball_submarine_build_applied CellEnvironment_Main",
+    "ball_primary": "Workspace.Ball.Exterior.CollisionBall",
+    "target_y": 32,
+    "mode": "PassiveHover",
+    "checks": {
+      "has_attachment": true,
+      "has_buoyancy": true,
+      "has_stabilizer": true,
+      "has_bubbles": true,
+      "has_controller": true,
+      "old_angular_enabled": false,
+      "old_align_enabled": false,
+      "core_anchored": false,
+      "core_collide": true,
+      "core_massless": false
+    }
+  },
+  "validation": {
+    "main_cell_environment_validator": "validate_main_cell_environment_ok",
+    "diff_check": "passed",
+    "studio_screenshot": "review_renders/roblox_gameplay_polish/ball_submarine_float_studio_view.png"
+  },
+  "notes": [
+    "The ball remains Workspace.Ball and keeps its existing enter/exit prompt structure.",
+    "This pass makes it float/hover like a submarine. It does not yet redesign the ball's onboard driving controls into full submarine thrust controls."
+  ]
+}

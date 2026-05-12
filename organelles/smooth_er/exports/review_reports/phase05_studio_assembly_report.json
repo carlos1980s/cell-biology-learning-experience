@@ -1,0 +1,16 @@
+{
+  "schema_version": "smooth_er_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/SmoothER_RawPackages",
+  "expected_visible_model": "Workspace.SmoothER_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_TubularNetwork",
+    "EXPORT_LOD0_LipidSynthesisZones",
+    "EXPORT_LOD0_DetoxReactionSites",
+    "EXPORT_LOD0_CalciumStoragePockets",
+    "EXPORT_LOD0_ERTransitionHandoffCues",
+    "EXPORT_ANCHORS_SmoothERRuntime",
+    "EXPORT_COLLISION_SmoothERProxy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "cytoskeleton_centrosome_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/CytoskeletonCentrosome_RawPackages",
+  "expected_visible_model": "Workspace.CytoskeletonCentrosome_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_MicrotubuleTracks",
+    "EXPORT_LOD0_ActinNetwork",
+    "EXPORT_LOD0_IntermediateFilaments",
+    "EXPORT_LOD0_CentrosomeCentrioles",
+    "EXPORT_LOD0_MotorAndSpindleCues",
+    "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+    "EXPORT_COLLISION_CytoskeletonCentrosomeProxy"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "component_manifest_v1",
+  "organelle": "golgi",
+  "root": "Golgi_RootRig",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Golgi_RootRig",
+    "Cisterna_Stack",
+    "Cis_Face",
+    "Trans_Face",
+    "Cargo_ModificationSites",
+    "Budding_Vesicles",
+    "Dispatch_Vesicles",
+    "Interaction_Hotspots"
+  ]
+}
+

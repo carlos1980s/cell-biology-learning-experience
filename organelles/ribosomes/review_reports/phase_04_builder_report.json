@@ -1,0 +1,132 @@
+{
+  "schema_version": "ribosomes_builder_report_v1",
+  "phase": "phase_04",
+  "phase_id": "phase_04_roblox_export_packaging",
+  "organelle": "ribosomes",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Ribosome_RootRig",
+    "FreeRibosome_Cluster",
+    "BoundRibosome_Row",
+    "LargeSubunit_Forms",
+    "SmallSubunit_Forms",
+    "mRNA_Thread",
+    "PeptideExit_Cues",
+    "Interaction_Hotspots"
+  ],
+  "incomplete_components": [],
+  "manifest_components_still_missing_after_phase": [],
+  "render_paths": [
+    {
+      "type": "wide_export",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/ribosomes/review_renders/phase_04_export_groups_wide.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "runtime_anchors",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/ribosomes/review_renders/phase_04_runtime_anchors.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "collision_proxy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/ribosomes/review_renders/phase_04_collision_proxy.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/ribosomes/ribosomes_phase_04_export_packaging.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "Ribosome_RootRig",
+    "WholeCell_ContextSocket",
+    "FreeRibosome_Cluster",
+    "FreeRibosome_Cluster_Ribosome_01_LargeSubunit",
+    "FreeRibosome_Cluster_Ribosome_01_SmallSubunit",
+    "FreeRibosome_Cluster_Ribosome_02_LargeSubunit",
+    "FreeRibosome_Cluster_Ribosome_02_SmallSubunit",
+    "FreeRibosome_Cluster_Ribosome_03_LargeSubunit",
+    "FreeRibosome_Cluster_Ribosome_03_SmallSubunit",
+    "FreeRibosome_Cluster_Ribosome_04_LargeSubunit",
+    "FreeRibosome_Cluster_Ribosome_04_SmallSubunit",
+    "FreeRibosome_Cluster_Ribosome_05_LargeSubunit",
+    "FreeRibosome_Cluster_Ribosome_05_SmallSubunit",
+    "BoundRibosome_Row",
+    "BoundRibosome_Row_Ribosome_01_LargeSubunit",
+    "BoundRibosome_Row_Ribosome_01_SmallSubunit",
+    "BoundRibosome_Row_Ribosome_01_BoundMembraneFoot",
+    "BoundRibosome_Row_Ribosome_02_LargeSubunit",
+    "BoundRibosome_Row_Ribosome_02_SmallSubunit",
+    "BoundRibosome_Row_Ribosome_02_BoundMembraneFoot",
+    "BoundRibosome_Row_Ribosome_03_LargeSubunit",
+    "BoundRibosome_Row_Ribosome_03_SmallSubunit",
+    "BoundRibosome_Row_Ribosome_03_BoundMembraneFoot",
+    "BoundRibosome_Row_Ribosome_04_LargeSubunit",
+    "BoundRibosome_Row_Ribosome_04_SmallSubunit",
+    "BoundRibosome_Row_Ribosome_04_BoundMembraneFoot",
+    "BoundRibosome_Row_Ribosome_05_LargeSubunit",
+    "BoundRibosome_Row_Ribosome_05_SmallSubunit",
+    "BoundRibosome_Row_Ribosome_05_BoundMembraneFoot",
+    "LargeSubunit_Forms",
+    "SmallSubunit_Forms",
+    "LargeSubunit_Forms_Reference_01",
+    "SmallSubunit_Forms_Reference_01",
+    "LargeSubunit_Forms_Reference_02",
+    "SmallSubunit_Forms_Reference_02",
+    "mRNA_Thread",
+    "mRNA_Thread_DirectionalStrand_01",
+    "mRNA_Thread_DirectionalStrand_02",
+    "PeptideExit_Cues",
+    "PeptideExit_Cues_GrowingChain_01",
+    "PeptideExit_Cues_GrowingChain_02",
+    "PeptideExit_Cues_GrowingChain_03",
+    "PeptideExit_Cues_GrowingChain_04",
+    "PeptideExit_Cues_GrowingChain_05",
+    "Interaction_Hotspots",
+    "Interaction_Hotspots_RibosomeAnchor_01",
+    "Interaction_Hotspots_RibosomeAnchor_02",
+    "Interaction_Hotspots_RibosomeAnchor_03",
+    "Interaction_Hotspots_RibosomeAnchor_04",
+    "Interaction_Hotspots_RibosomeAnchor_05",
+    "Ribosome_CollisionProxy"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "Ribosomes_KeyLight",
+    "Camera_Ribosomes_wide_export",
+    "Camera_Ribosomes_runtime_anchors",
+    "Camera_Ribosomes_collision_proxy"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 51,
+    "biological_mesh_count": 41,
+    "triangle_count": 7120
+  },
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/ribosomes/exports/ribosomes_phase_04_roblox_asset_manifest.json",
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": true,
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated Ribosomes generated from inception.",
+    "Subunits, mRNA, peptide cues, free ribosomes, and bound ribosomes are modeled as function-bearing organic meshes."
+  ],
+  "roblox_export_risks": [
+    "Many small ribosome meshes may need batching for Roblox performance.",
+    "Phase 5 requires package_asset_id values for every export group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

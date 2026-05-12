@@ -1,0 +1,10 @@
+check,status,evidence
+Custom player controller removed,pass,"StarterPlayerScripts probe returned no MainCellSwimmingController, CellPlayerBootstrap, ExplorerControls, or CellCytoplasmLightingController."
+Runtime player physics removed,pass,"Runtime probe returned no MainCellSwimAttachment, MainCellCytoplasmBuoyancy, MainCellSwimVelocity, MainCellSwimOrientation, CytoplasmBuoyancy, CytoplasmVelocity, or CytoplasmOrientation."
+Native water movement mode applied,pass,"CellEnvironment_Main MovementMode = NativeWaterSwimming."
+Workspace custom physics flag disabled,pass,"MainCellPlayerCustomPhysicsEnabled = false."
+Default Roblox gravity restored,pass,"Workspace.Gravity = 196.2."
+Scene objects preserved,pass,"No nucleus or ball replacement was performed in this pass."
+Nucleus floatability ready,blocked,"Workspace.Nucleus_Model is still anchored: 12 anchored parts, 0 unanchored parts, 0 collidable parts."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

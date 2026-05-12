@@ -1,0 +1,32 @@
+{
+  "schema_version": "nucleus_director_checkpoint_v1",
+  "organelle": "nucleus",
+  "checkpoint": "post_phase_06t",
+  "latest_blender_scene": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_06t_transport_cargo.blend",
+  "passed_scoped_phases": [
+    "Phase 02R double nuclear envelope",
+    "Phase 02P nuclear pore complexes and gate cores",
+    "Phase 02L nuclear lamina",
+    "Phase 03N nucleoplasm volume",
+    "Phase 04C chromatin threads",
+    "Phase 05U nucleolus subregions",
+    "Phase 06T transport cargo"
+  ],
+  "blocked_or_deferred_components": [
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "repeated_issues": [
+    "Reference-board composition improves review discipline but still needs final layout polish.",
+    "Several teaching overlays pass Blender review but must become toggleable Roblox layers.",
+    "No dedicated transport baseline PNG exists yet; Phase 06T used related nucleus reference images plus the transport component spec."
+  ],
+  "current_quality_notes": [
+    "Transport cargo now visually crosses selected nuclear pore complexes and does not imply DNA export.",
+    "The transport pass is approved as scoped source art, not direct Roblox export art.",
+    "No full-nucleus approval has been issued yet."
+  ],
+  "recommended_next_phase": "Phase 07R RoughER_Connection only: folded rough ER membrane continuity with the outer nuclear envelope, ribosome dots on the cytoplasmic face, and lumen continuity cue.",
+  "phase_2_can_continue": true
+}

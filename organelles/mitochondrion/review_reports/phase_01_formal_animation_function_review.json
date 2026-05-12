@@ -1,0 +1,8 @@
+{
+  "schema_version": "mitochondrion_specialist_review_v1",
+  "phase": "phase_01_formal_scaffold",
+  "organelle": "mitochondrion",
+  "approved_to_continue": true,
+  "review_type": "animation_functionality",
+  "status": "pass_for_phase_scope"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "proteasomes_specialist_review_v1",
+  "phase": "phase_03_functional_teaching_layer",
+  "organelle": "proteasomes",
+  "approved_to_continue": true,
+  "review_type": "roblox_export_readiness",
+  "status": "conditional_pass_for_phase_scope"
+}

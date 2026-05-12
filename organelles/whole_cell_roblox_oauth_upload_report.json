@@ -1,0 +1,2601 @@
+{
+  "schema_version": "whole_cell_roblox_oauth_upload_report_v1",
+  "status": "pass",
+  "route": "interactive_roblox_oauth",
+  "processed_count": 70,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_COLLISION_RoughERProxy",
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_COLLISION_RoughERProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/70ae609c-86f8-4186-86f8-d61706507d7f",
+        "operationId": "70ae609c-86f8-4186-86f8-d61706507d7f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/70ae609c-86f8-4186-86f8-d61706507d7f",
+        "operationId": "70ae609c-86f8-4186-86f8-d61706507d7f",
+        "done": true,
+        "response": {
+          "path": "assets/104957367536489",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:23.804472200Z",
+          "assetId": "104957367536489",
+          "displayName": "RoughER_EXPORT_COLLISION_RoughERProxy",
+          "description": "Cell Blender to Roblox organelle package: rough_er/EXPORT_COLLISION_RoughERProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "104957367536489"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_FreeRibosomeCluster",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_FreeRibosomeCluster.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/114874c4-7add-4d88-9564-77c5204415e0",
+        "operationId": "114874c4-7add-4d88-9564-77c5204415e0",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/114874c4-7add-4d88-9564-77c5204415e0",
+        "operationId": "114874c4-7add-4d88-9564-77c5204415e0",
+        "done": true,
+        "response": {
+          "path": "assets/98399492353061",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:31.735631900Z",
+          "assetId": "98399492353061",
+          "displayName": "Ribosomes_EXPORT_LOD0_FreeRibosomeCluster",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_LOD0_FreeRibosomeCluster",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "98399492353061"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_BoundRibosomeRow",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_BoundRibosomeRow.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/d86a62bb-aa5a-41a2-aa1a-6aeb4242ba6b",
+        "operationId": "d86a62bb-aa5a-41a2-aa1a-6aeb4242ba6b",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/d86a62bb-aa5a-41a2-aa1a-6aeb4242ba6b",
+        "operationId": "d86a62bb-aa5a-41a2-aa1a-6aeb4242ba6b",
+        "done": true,
+        "response": {
+          "path": "assets/122866987189004",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:40.434929600Z",
+          "assetId": "122866987189004",
+          "displayName": "Ribosomes_EXPORT_LOD0_BoundRibosomeRow",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_LOD0_BoundRibosomeRow",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "122866987189004"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_SubunitForms",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_SubunitForms.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/00d5728c-1331-407f-8bfc-818a635c17c0",
+        "operationId": "00d5728c-1331-407f-8bfc-818a635c17c0",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/00d5728c-1331-407f-8bfc-818a635c17c0",
+        "operationId": "00d5728c-1331-407f-8bfc-818a635c17c0",
+        "done": true,
+        "response": {
+          "path": "assets/112320694762345",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:46.560671600Z",
+          "assetId": "112320694762345",
+          "displayName": "Ribosomes_EXPORT_LOD0_SubunitForms",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_LOD0_SubunitForms",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "112320694762345"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_mRNAThread",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_mRNAThread.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/df56d6d0-0336-4a04-a69d-ab049863779a",
+        "operationId": "df56d6d0-0336-4a04-a69d-ab049863779a",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/df56d6d0-0336-4a04-a69d-ab049863779a",
+        "operationId": "df56d6d0-0336-4a04-a69d-ab049863779a",
+        "done": true,
+        "response": {
+          "path": "assets/73035792051142",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:53.435278200Z",
+          "assetId": "73035792051142",
+          "displayName": "Ribosomes_EXPORT_LOD0_mRNAThread",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_LOD0_mRNAThread",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "73035792051142"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_PeptideExitCues",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_PeptideExitCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/e3eaa8a1-6787-4a35-b6b4-ce377cd97969",
+        "operationId": "e3eaa8a1-6787-4a35-b6b4-ce377cd97969",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/e3eaa8a1-6787-4a35-b6b4-ce377cd97969",
+        "operationId": "e3eaa8a1-6787-4a35-b6b4-ce377cd97969",
+        "done": true,
+        "response": {
+          "path": "assets/82300613918764",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:58.130391600Z",
+          "assetId": "82300613918764",
+          "displayName": "Ribosomes_EXPORT_LOD0_PeptideExitCues",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_LOD0_PeptideExitCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "82300613918764"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_ANCHORS_RibosomeRuntime",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_ANCHORS_RibosomeRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/e50b972b-98ff-4bb4-b8f0-d14ceb14baf2",
+        "operationId": "e50b972b-98ff-4bb4-b8f0-d14ceb14baf2",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/e50b972b-98ff-4bb4-b8f0-d14ceb14baf2",
+        "operationId": "e50b972b-98ff-4bb4-b8f0-d14ceb14baf2",
+        "done": true,
+        "response": {
+          "path": "assets/72361240072967",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:05.507241200Z",
+          "assetId": "72361240072967",
+          "displayName": "Ribosomes_EXPORT_ANCHORS_RibosomeRuntime",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_ANCHORS_RibosomeRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "72361240072967"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_COLLISION_RibosomeProxy",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_COLLISION_RibosomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/6560b100-4cbb-47f0-af30-0a8a07f383dc",
+        "operationId": "6560b100-4cbb-47f0-af30-0a8a07f383dc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/6560b100-4cbb-47f0-af30-0a8a07f383dc",
+        "operationId": "6560b100-4cbb-47f0-af30-0a8a07f383dc",
+        "done": true,
+        "response": {
+          "path": "assets/92839333153630",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:11.463545800Z",
+          "assetId": "92839333153630",
+          "displayName": "Ribosomes_EXPORT_COLLISION_RibosomeProxy",
+          "description": "Cell Blender to Roblox organelle package: ribosomes/EXPORT_COLLISION_RibosomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "92839333153630"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_TubularNetwork",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_TubularNetwork.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/6e3852ee-7962-4123-aa43-473b04ab6e83",
+        "operationId": "6e3852ee-7962-4123-aa43-473b04ab6e83",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/6e3852ee-7962-4123-aa43-473b04ab6e83",
+        "operationId": "6e3852ee-7962-4123-aa43-473b04ab6e83",
+        "done": true,
+        "response": {
+          "path": "assets/75377650496612",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:18.685227500Z",
+          "assetId": "75377650496612",
+          "displayName": "SmoothER_EXPORT_LOD0_TubularNetwork",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_LOD0_TubularNetwork",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "75377650496612"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_LipidSynthesisZones",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_LipidSynthesisZones.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/f65bd191-ca6f-442e-9bb5-383df6937cd4",
+        "operationId": "f65bd191-ca6f-442e-9bb5-383df6937cd4",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/f65bd191-ca6f-442e-9bb5-383df6937cd4",
+        "operationId": "f65bd191-ca6f-442e-9bb5-383df6937cd4",
+        "done": true,
+        "response": {
+          "path": "assets/95855681786068",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:26.899319800Z",
+          "assetId": "95855681786068",
+          "displayName": "SmoothER_EXPORT_LOD0_LipidSynthesisZones",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_LOD0_LipidSynthesisZones",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95855681786068"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_DetoxReactionSites",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_DetoxReactionSites.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/8e8db181-93e6-4a6c-a43e-5ed4fdd0d0c0",
+        "operationId": "8e8db181-93e6-4a6c-a43e-5ed4fdd0d0c0",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/8e8db181-93e6-4a6c-a43e-5ed4fdd0d0c0",
+        "operationId": "8e8db181-93e6-4a6c-a43e-5ed4fdd0d0c0",
+        "done": true,
+        "response": {
+          "path": "assets/129525698807530",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:35.980201800Z",
+          "assetId": "129525698807530",
+          "displayName": "SmoothER_EXPORT_LOD0_DetoxReactionSites",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_LOD0_DetoxReactionSites",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "129525698807530"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_CalciumStoragePockets",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_CalciumStoragePockets.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/6b56546e-037b-458c-865b-cd16ee5c6181",
+        "operationId": "6b56546e-037b-458c-865b-cd16ee5c6181",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/6b56546e-037b-458c-865b-cd16ee5c6181",
+        "operationId": "6b56546e-037b-458c-865b-cd16ee5c6181",
+        "done": true,
+        "response": {
+          "path": "assets/137614309160708",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:41.444895300Z",
+          "assetId": "137614309160708",
+          "displayName": "SmoothER_EXPORT_LOD0_CalciumStoragePockets",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_LOD0_CalciumStoragePockets",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "137614309160708"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_ERTransitionHandoffCues",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_ERTransitionHandoffCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/c61cf130-1826-47ff-b2f6-b2bcc7eda90a",
+        "operationId": "c61cf130-1826-47ff-b2f6-b2bcc7eda90a",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/c61cf130-1826-47ff-b2f6-b2bcc7eda90a",
+        "operationId": "c61cf130-1826-47ff-b2f6-b2bcc7eda90a",
+        "done": true,
+        "response": {
+          "path": "assets/140495497010127",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:48.215005600Z",
+          "assetId": "140495497010127",
+          "displayName": "SmoothER_EXPORT_LOD0_ERTransitionHandoffCues",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_LOD0_ERTransitionHandoffCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "140495497010127"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_ANCHORS_SmoothERRuntime",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_ANCHORS_SmoothERRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/5a926fb0-4597-4668-beda-e6df1b202932",
+        "operationId": "5a926fb0-4597-4668-beda-e6df1b202932",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/5a926fb0-4597-4668-beda-e6df1b202932",
+        "operationId": "5a926fb0-4597-4668-beda-e6df1b202932",
+        "done": true,
+        "response": {
+          "path": "assets/113173391352125",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:52.672199900Z",
+          "assetId": "113173391352125",
+          "displayName": "SmoothER_EXPORT_ANCHORS_SmoothERRuntime",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_ANCHORS_SmoothERRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "113173391352125"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_COLLISION_SmoothERProxy",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_COLLISION_SmoothERProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/b6a72447-28e5-4cc3-ba66-618a4ebf5983",
+        "operationId": "b6a72447-28e5-4cc3-ba66-618a4ebf5983",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/b6a72447-28e5-4cc3-ba66-618a4ebf5983",
+        "operationId": "b6a72447-28e5-4cc3-ba66-618a4ebf5983",
+        "done": true,
+        "response": {
+          "path": "assets/88657592324577",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:52:58.730798200Z",
+          "assetId": "88657592324577",
+          "displayName": "SmoothER_EXPORT_COLLISION_SmoothERProxy",
+          "description": "Cell Blender to Roblox organelle package: smooth_er/EXPORT_COLLISION_SmoothERProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "88657592324577"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CisternaStack",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CisternaStack.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "operationId": "9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "operationId": "9a75b1b7-90b6-4a97-b706-18f412d3bcc2",
+        "done": true,
+        "response": {
+          "path": "assets/103365965252910",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:19.849482800Z",
+          "assetId": "103365965252910",
+          "displayName": "Golgi_EXPORT_LOD0_CisternaStack",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_CisternaStack",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "103365965252910"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CisTransFaces",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CisTransFaces.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/21c72856-d723-42f5-9f35-06e12ca2da76",
+        "operationId": "21c72856-d723-42f5-9f35-06e12ca2da76",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/21c72856-d723-42f5-9f35-06e12ca2da76",
+        "operationId": "21c72856-d723-42f5-9f35-06e12ca2da76",
+        "done": true,
+        "response": {
+          "path": "assets/103577071268170",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:24.054173900Z",
+          "assetId": "103577071268170",
+          "displayName": "Golgi_EXPORT_LOD0_CisTransFaces",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_CisTransFaces",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "103577071268170"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_BuddingAndDispatchVesicles",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_BuddingAndDispatchVesicles.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "operationId": "abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "operationId": "abc8673c-4687-45a5-9be1-277e3b48dcdc",
+        "done": true,
+        "response": {
+          "path": "assets/80001263448310",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:43.845139Z",
+          "assetId": "80001263448310",
+          "displayName": "Golgi_EXPORT_LOD0_BuddingAndDispatchVesicles",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_BuddingAndDispatchVesicles",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "80001263448310"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CargoModificationSites",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CargoModificationSites.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "operationId": "496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "operationId": "496a4150-44e3-46d8-bbe8-3fa042bb00ae",
+        "done": true,
+        "response": {
+          "path": "assets/97494970595213",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:53:58.711681900Z",
+          "assetId": "97494970595213",
+          "displayName": "Golgi_EXPORT_LOD0_CargoModificationSites",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_LOD0_CargoModificationSites",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "97494970595213"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_ANCHORS_GolgiRuntime",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_ANCHORS_GolgiRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "operationId": "61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "operationId": "61eb867b-14db-4c83-b5fb-8c6da2a5f059",
+        "done": true,
+        "response": {
+          "path": "assets/95064147024835",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:04.117649100Z",
+          "assetId": "95064147024835",
+          "displayName": "Golgi_EXPORT_ANCHORS_GolgiRuntime",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_ANCHORS_GolgiRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95064147024835"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_COLLISION_GolgiProxy",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_COLLISION_GolgiProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "operationId": "3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "operationId": "3a5f69de-f360-4dbd-bcff-e3df821c2403",
+        "done": true,
+        "response": {
+          "path": "assets/85502414196203",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:09.978142700Z",
+          "assetId": "85502414196203",
+          "displayName": "Golgi_EXPORT_COLLISION_GolgiProxy",
+          "description": "Cell Blender to Roblox organelle package: golgi/EXPORT_COLLISION_GolgiProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "85502414196203"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_TransportVesicles",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_TransportVesicles.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "operationId": "c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "operationId": "c1b7abc8-3361-45d8-ad71-87f69272d7bf",
+        "done": true,
+        "response": {
+          "path": "assets/101922624152828",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:17.631973700Z",
+          "assetId": "101922624152828",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_TransportVesicles",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_TransportVesicles",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "101922624152828"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_EndosomeBodies",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_EndosomeBodies.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "operationId": "a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "operationId": "a35742db-6a98-418a-b2ea-3dede6c53b16",
+        "done": true,
+        "response": {
+          "path": "assets/129163239425459",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:24.006901100Z",
+          "assetId": "129163239425459",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_EndosomeBodies",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_EndosomeBodies",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "129163239425459"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_CoatedVesicleCues",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CoatedVesicleCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "operationId": "75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "operationId": "75a6eea3-c6d3-4f07-bb3f-a30ea68149c2",
+        "done": true,
+        "response": {
+          "path": "assets/133284714986745",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:33.587715300Z",
+          "assetId": "133284714986745",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_CoatedVesicleCues",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_CoatedVesicleCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "133284714986745"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_RabSNARECues",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_RabSNARECues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "operationId": "334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "operationId": "334b96b9-6332-4aa8-b30f-dfce44e8fc6f",
+        "done": true,
+        "response": {
+          "path": "assets/123159007290460",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:43.281059800Z",
+          "assetId": "123159007290460",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_RabSNARECues",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_RabSNARECues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "123159007290460"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_CargoSortingRoutes",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CargoSortingRoutes.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/c249ab32-a395-42d6-842e-f9a2f589976e",
+        "operationId": "c249ab32-a395-42d6-842e-f9a2f589976e",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/c249ab32-a395-42d6-842e-f9a2f589976e",
+        "operationId": "c249ab32-a395-42d6-842e-f9a2f589976e",
+        "done": true,
+        "response": {
+          "path": "assets/91251504545439",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:47.749907400Z",
+          "assetId": "91251504545439",
+          "displayName": "VesiclesEndosomes_EXPORT_LOD0_CargoSortingRoutes",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_LOD0_CargoSortingRoutes",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "91251504545439"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_ANCHORS_VesiclesEndosomesRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "operationId": "0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "operationId": "0618e1af-7d3b-49f7-831b-8c30b1162a2a",
+        "done": true,
+        "response": {
+          "path": "assets/82727042734604",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:54:55.274226700Z",
+          "assetId": "82727042734604",
+          "displayName": "VesiclesEndosomes_EXPORT_ANCHORS_VesiclesEndosomes",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "82727042734604"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_COLLISION_VesiclesEndosomesProxy",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_COLLISION_VesiclesEndosomesProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "operationId": "29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "operationId": "29cdc7c5-9785-4399-874b-ab16df6e9066",
+        "done": true,
+        "response": {
+          "path": "assets/118284458751030",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:01.265231300Z",
+          "assetId": "118284458751030",
+          "displayName": "VesiclesEndosomes_EXPORT_COLLISION_VesiclesEndosom",
+          "description": "Cell Blender to Roblox organelle package: vesicles_endosomes/EXPORT_COLLISION_VesiclesEndosomesProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "118284458751030"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_LysosomeMembrane",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_LysosomeMembrane.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "operationId": "5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "operationId": "5535f410-d8d0-4e59-ab8f-6cc20b186090",
+        "done": true,
+        "response": {
+          "path": "assets/103700054022789",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:08.185598900Z",
+          "assetId": "103700054022789",
+          "displayName": "Lysosome_EXPORT_LOD0_LysosomeMembrane",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_LysosomeMembrane",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "103700054022789"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_AcidicInterior",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_AcidicInterior.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "operationId": "2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "operationId": "2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+        "done": true,
+        "response": {
+          "path": "assets/111063447773568",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:12.183560500Z",
+          "assetId": "111063447773568",
+          "displayName": "Lysosome_EXPORT_LOD0_AcidicInterior",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_AcidicInterior",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "111063447773568"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_DigestiveEnzymeClusters",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_DigestiveEnzymeClusters.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "operationId": "0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "operationId": "0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+        "done": true,
+        "response": {
+          "path": "assets/117305269277716",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:28.305621800Z",
+          "assetId": "117305269277716",
+          "displayName": "Lysosome_EXPORT_LOD0_DigestiveEnzymeClusters",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_DigestiveEnzymeClusters",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "117305269277716"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_WasteCargoFragments",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_WasteCargoFragments.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/db4aaaa9-15ab-4114-836b-e56019625314",
+        "operationId": "db4aaaa9-15ab-4114-836b-e56019625314",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/db4aaaa9-15ab-4114-836b-e56019625314",
+        "operationId": "db4aaaa9-15ab-4114-836b-e56019625314",
+        "done": true,
+        "response": {
+          "path": "assets/91673949275832",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:36.692382900Z",
+          "assetId": "91673949275832",
+          "displayName": "Lysosome_EXPORT_LOD0_WasteCargoFragments",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_WasteCargoFragments",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "91673949275832"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_RecycledOutputCues",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_RecycledOutputCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/36be884d-3401-4765-b829-6f3bd20bea17",
+        "operationId": "36be884d-3401-4765-b829-6f3bd20bea17",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/36be884d-3401-4765-b829-6f3bd20bea17",
+        "operationId": "36be884d-3401-4765-b829-6f3bd20bea17",
+        "done": true,
+        "response": {
+          "path": "assets/80775731352612",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:42.166785Z",
+          "assetId": "80775731352612",
+          "displayName": "Lysosome_EXPORT_LOD0_RecycledOutputCues",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_LOD0_RecycledOutputCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "80775731352612"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_ANCHORS_LysosomeRuntime",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_ANCHORS_LysosomeRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "operationId": "3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "operationId": "3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+        "done": true,
+        "response": {
+          "path": "assets/127635415866764",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:49.164463Z",
+          "assetId": "127635415866764",
+          "displayName": "Lysosome_EXPORT_ANCHORS_LysosomeRuntime",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_ANCHORS_LysosomeRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "127635415866764"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_COLLISION_LysosomeProxy",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_COLLISION_LysosomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/27d807c2-9409-41b5-8310-caaecd23f37f",
+        "operationId": "27d807c2-9409-41b5-8310-caaecd23f37f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/27d807c2-9409-41b5-8310-caaecd23f37f",
+        "operationId": "27d807c2-9409-41b5-8310-caaecd23f37f",
+        "done": true,
+        "response": {
+          "path": "assets/122171898843989",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:55:55.093167300Z",
+          "assetId": "122171898843989",
+          "displayName": "Lysosome_EXPORT_COLLISION_LysosomeProxy",
+          "description": "Cell Blender to Roblox organelle package: lysosome/EXPORT_COLLISION_LysosomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "122171898843989"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_OuterMembrane",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_OuterMembrane.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "operationId": "a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "operationId": "a65d84fa-cf29-465a-b8e4-3fe9701f7dad",
+        "done": true,
+        "response": {
+          "path": "assets/84890769121226",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:02.573173100Z",
+          "assetId": "84890769121226",
+          "displayName": "Mitochondrion_EXPORT_LOD0_OuterMembrane",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_OuterMembrane",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "84890769121226"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_InnerMembraneCristae",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_InnerMembraneCristae.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "operationId": "df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "operationId": "df18f9a4-1566-45cc-a097-a3a0e6f333c3",
+        "done": true,
+        "response": {
+          "path": "assets/100563105582480",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:09.738218600Z",
+          "assetId": "100563105582480",
+          "displayName": "Mitochondrion_EXPORT_LOD0_InnerMembraneCristae",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_InnerMembraneCristae",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "100563105582480"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_MatrixVolume",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_MatrixVolume.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "operationId": "13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "operationId": "13a6e004-8863-48cf-a5b8-f900fccfc74f",
+        "done": true,
+        "response": {
+          "path": "assets/72954790840741",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:13.758953300Z",
+          "assetId": "72954790840741",
+          "displayName": "Mitochondrion_EXPORT_LOD0_MatrixVolume",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_MatrixVolume",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "72954790840741"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_ATPSignalSites",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_ATPSignalSites.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/91514817-10e8-4e05-a088-547db3908188",
+        "operationId": "91514817-10e8-4e05-a088-547db3908188",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/91514817-10e8-4e05-a088-547db3908188",
+        "operationId": "91514817-10e8-4e05-a088-547db3908188",
+        "done": true,
+        "response": {
+          "path": "assets/136496051324880",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:24.981377300Z",
+          "assetId": "136496051324880",
+          "displayName": "Mitochondrion_EXPORT_LOD0_ATPSignalSites",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_ATPSignalSites",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "136496051324880"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_StressCueLayer",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_StressCueLayer.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "operationId": "9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "operationId": "9c108dd0-24b1-46d7-bdcb-99f82b2898a3",
+        "done": true,
+        "response": {
+          "path": "assets/84381834890533",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:31.278924Z",
+          "assetId": "84381834890533",
+          "displayName": "########################################",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_LOD0_StressCueLayer",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "84381834890533"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_ANCHORS_MitochondrionRuntime",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_ANCHORS_MitochondrionRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/91d99738-f735-4d53-a821-50b2075bfa78",
+        "operationId": "91d99738-f735-4d53-a821-50b2075bfa78",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/91d99738-f735-4d53-a821-50b2075bfa78",
+        "operationId": "91d99738-f735-4d53-a821-50b2075bfa78",
+        "done": true,
+        "response": {
+          "path": "assets/123262900817475",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:37.487190200Z",
+          "assetId": "123262900817475",
+          "displayName": "Mitochondrion_EXPORT_ANCHORS_MitochondrionRuntime",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_ANCHORS_MitochondrionRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "123262900817475"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_COLLISION_MitochondrionProxy",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_COLLISION_MitochondrionProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "operationId": "5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "operationId": "5579880b-b986-4442-bb01-23d1c2eb78e6",
+        "done": true,
+        "response": {
+          "path": "assets/85945624405765",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:43.489863Z",
+          "assetId": "85945624405765",
+          "displayName": "Mitochondrion_EXPORT_COLLISION_MitochondrionProxy",
+          "description": "Cell Blender to Roblox organelle package: mitochondrion/EXPORT_COLLISION_MitochondrionProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "85945624405765"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_PeroxisomeMembrane",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_PeroxisomeMembrane.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/cfacbb23-516c-4d1c-96d0-74622021ac2b",
+        "operationId": "cfacbb23-516c-4d1c-96d0-74622021ac2b",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/cfacbb23-516c-4d1c-96d0-74622021ac2b",
+        "operationId": "cfacbb23-516c-4d1c-96d0-74622021ac2b",
+        "done": true,
+        "response": {
+          "path": "assets/79673345419499",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:49.283447Z",
+          "assetId": "79673345419499",
+          "displayName": "Peroxisomes_EXPORT_LOD0_PeroxisomeMembrane",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_LOD0_PeroxisomeMembrane",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "79673345419499"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_CatalaseCrystalCore",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_CatalaseCrystalCore.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/b7e1d6f2-8977-4136-bae9-f798bbc3540f",
+        "operationId": "b7e1d6f2-8977-4136-bae9-f798bbc3540f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/b7e1d6f2-8977-4136-bae9-f798bbc3540f",
+        "operationId": "b7e1d6f2-8977-4136-bae9-f798bbc3540f",
+        "done": true,
+        "response": {
+          "path": "assets/80395075664499",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:56:57.571871200Z",
+          "assetId": "80395075664499",
+          "displayName": "Peroxisomes_EXPORT_LOD0_CatalaseCrystalCore",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_LOD0_CatalaseCrystalCore",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "80395075664499"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_FattyAcidProcessingSites",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_FattyAcidProcessingSites.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/6ea63e4c-b4b2-4fc5-a9cf-68842e334962",
+        "operationId": "6ea63e4c-b4b2-4fc5-a9cf-68842e334962",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/6ea63e4c-b4b2-4fc5-a9cf-68842e334962",
+        "operationId": "6ea63e4c-b4b2-4fc5-a9cf-68842e334962",
+        "done": true,
+        "response": {
+          "path": "assets/130030044134655",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:05.726683600Z",
+          "assetId": "130030044134655",
+          "displayName": "Peroxisomes_EXPORT_LOD0_FattyAcidProcessingSites",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_LOD0_FattyAcidProcessingSites",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "130030044134655"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_OxidativeReactionCues",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_OxidativeReactionCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/aa1ec863-4093-489d-bfbd-4e8bd7eb2b0f",
+        "operationId": "aa1ec863-4093-489d-bfbd-4e8bd7eb2b0f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/aa1ec863-4093-489d-bfbd-4e8bd7eb2b0f",
+        "operationId": "aa1ec863-4093-489d-bfbd-4e8bd7eb2b0f",
+        "done": true,
+        "response": {
+          "path": "assets/80201547890430",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:13.063180800Z",
+          "assetId": "80201547890430",
+          "displayName": "Peroxisomes_EXPORT_LOD0_OxidativeReactionCues",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_LOD0_OxidativeReactionCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "80201547890430"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_DetoxOutputCues",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_DetoxOutputCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/c574e87c-dbce-4fe7-a803-2455fd58d54f",
+        "operationId": "c574e87c-dbce-4fe7-a803-2455fd58d54f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/c574e87c-dbce-4fe7-a803-2455fd58d54f",
+        "operationId": "c574e87c-dbce-4fe7-a803-2455fd58d54f",
+        "done": true,
+        "response": {
+          "path": "assets/89743403815801",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:17.540530800Z",
+          "assetId": "89743403815801",
+          "displayName": "Peroxisomes_EXPORT_LOD0_DetoxOutputCues",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_LOD0_DetoxOutputCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "89743403815801"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_ANCHORS_PeroxisomesRuntime",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_ANCHORS_PeroxisomesRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/5f2583b5-c2d7-44d2-af90-471645e2b42d",
+        "operationId": "5f2583b5-c2d7-44d2-af90-471645e2b42d",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/5f2583b5-c2d7-44d2-af90-471645e2b42d",
+        "operationId": "5f2583b5-c2d7-44d2-af90-471645e2b42d",
+        "done": true,
+        "response": {
+          "path": "assets/136175076049067",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:20.885750800Z",
+          "assetId": "136175076049067",
+          "displayName": "Peroxisomes_EXPORT_ANCHORS_PeroxisomesRuntime",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_ANCHORS_PeroxisomesRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "136175076049067"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_COLLISION_PeroxisomeProxy",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_COLLISION_PeroxisomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/463014df-47af-411e-8505-d467e4493303",
+        "operationId": "463014df-47af-411e-8505-d467e4493303",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/463014df-47af-411e-8505-d467e4493303",
+        "operationId": "463014df-47af-411e-8505-d467e4493303",
+        "done": true,
+        "response": {
+          "path": "assets/98723311842139",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:24.827972400Z",
+          "assetId": "98723311842139",
+          "displayName": "Peroxisomes_EXPORT_COLLISION_PeroxisomeProxy",
+          "description": "Cell Blender to Roblox organelle package: peroxisomes/EXPORT_COLLISION_PeroxisomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "98723311842139"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_CoreParticleBarrel",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_CoreParticleBarrel.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "operationId": "e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "operationId": "e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "done": true,
+        "response": {
+          "path": "assets/115003555125638",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:32.327148900Z",
+          "assetId": "115003555125638",
+          "displayName": "Proteasomes_EXPORT_LOD0_CoreParticleBarrel",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_CoreParticleBarrel",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "115003555125638"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_RegulatoryCaps",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_RegulatoryCaps.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "operationId": "81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "operationId": "81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "done": true,
+        "response": {
+          "path": "assets/119067654402979",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:37.837255200Z",
+          "assetId": "119067654402979",
+          "displayName": "Proteasomes_EXPORT_LOD0_RegulatoryCaps",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_RegulatoryCaps",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "119067654402979"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_UbiquitinTagCues",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_UbiquitinTagCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "operationId": "e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "operationId": "e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "done": true,
+        "response": {
+          "path": "assets/90962892368837",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:46.596836700Z",
+          "assetId": "90962892368837",
+          "displayName": "Proteasomes_EXPORT_LOD0_UbiquitinTagCues",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_UbiquitinTagCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "90962892368837"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_ProteinSubstrateThread",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_ProteinSubstrateThread.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "operationId": "98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "operationId": "98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "done": true,
+        "response": {
+          "path": "assets/93632218983583",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:51.342184Z",
+          "assetId": "93632218983583",
+          "displayName": "Proteasomes_EXPORT_LOD0_ProteinSubstrateThread",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_ProteinSubstrateThread",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "93632218983583"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_DegradationProductCues",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_DegradationProductCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "operationId": "45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "operationId": "45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "done": true,
+        "response": {
+          "path": "assets/104449963098050",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:01.668835400Z",
+          "assetId": "104449963098050",
+          "displayName": "Proteasomes_EXPORT_LOD0_DegradationProductCues",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_DegradationProductCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "104449963098050"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_ANCHORS_ProteasomesRuntime",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_ANCHORS_ProteasomesRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "operationId": "2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "operationId": "2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "done": true,
+        "response": {
+          "path": "assets/92715380772524",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:04.697742900Z",
+          "assetId": "92715380772524",
+          "displayName": "Proteasomes_EXPORT_ANCHORS_ProteasomesRuntime",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_ANCHORS_ProteasomesRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "92715380772524"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_COLLISION_ProteasomeProxy",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_COLLISION_ProteasomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "operationId": "9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "operationId": "9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "done": true,
+        "response": {
+          "path": "assets/117963135206467",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:08.984631600Z",
+          "assetId": "117963135206467",
+          "displayName": "Proteasomes_EXPORT_COLLISION_ProteasomeProxy",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_COLLISION_ProteasomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "117963135206467"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_MicrotubuleTracks",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MicrotubuleTracks.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "operationId": "cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "operationId": "cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "done": true,
+        "response": {
+          "path": "assets/95903370015324",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:15.757415Z",
+          "assetId": "95903370015324",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_MicrotubuleTrac",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_MicrotubuleTracks",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95903370015324"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_ActinNetwork",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_ActinNetwork.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "operationId": "ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "operationId": "ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "done": true,
+        "response": {
+          "path": "assets/132417208634661",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:22.285411600Z",
+          "assetId": "132417208634661",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_ActinNetwork",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_ActinNetwork",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "132417208634661"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_IntermediateFilaments",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_IntermediateFilaments.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "operationId": "7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "operationId": "7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "done": true,
+        "response": {
+          "path": "assets/95719273552129",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:28.723709500Z",
+          "assetId": "95719273552129",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_IntermediateFil",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_IntermediateFilaments",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95719273552129"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_CentrosomeCentrioles",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_CentrosomeCentrioles.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "operationId": "14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "operationId": "14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "done": true,
+        "response": {
+          "path": "assets/124390498761836",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:37.397003200Z",
+          "assetId": "124390498761836",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_CentrosomeCentr",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_CentrosomeCentrioles",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "124390498761836"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_MotorAndSpindleCues",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MotorAndSpindleCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "operationId": "65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "operationId": "65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "done": true,
+        "response": {
+          "path": "assets/96985826139636",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:47.980755500Z",
+          "assetId": "96985826139636",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_MotorAndSpindle",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_MotorAndSpindleCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "96985826139636"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "operationId": "333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "operationId": "333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "done": true,
+        "response": {
+          "path": "assets/84197880362906",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:52.754823600Z",
+          "assetId": "84197880362906",
+          "displayName": "CytoskeletonCentrosome_EXPORT_ANCHORS_Cytoskeleton",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "84197880362906"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_COLLISION_CytoskeletonCentrosomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "operationId": "38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "operationId": "38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "done": true,
+        "response": {
+          "path": "assets/89957612291026",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:56.511004200Z",
+          "assetId": "89957612291026",
+          "displayName": "CytoskeletonCentrosome_EXPORT_COLLISION_Cytoskelet",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "89957612291026"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_PlasmaMembraneBoundary",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_PlasmaMembraneBoundary.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "operationId": "7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "operationId": "7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "done": true,
+        "response": {
+          "path": "assets/71720023370660",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:03.525179200Z",
+          "assetId": "71720023370660",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_PlasmaMembraneBounda",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_PlasmaMembraneBoundary",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "71720023370660"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_CytoplasmVolume",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CytoplasmVolume.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "operationId": "bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "operationId": "bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "done": true,
+        "response": {
+          "path": "assets/118328570680125",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:10.270734800Z",
+          "assetId": "118328570680125",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_CytoplasmVolume",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_CytoplasmVolume",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "118328570680125"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_OrganellePlacementSockets",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_OrganellePlacementSockets.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "operationId": "3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "operationId": "3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "done": true,
+        "response": {
+          "path": "assets/113185079572782",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:15.423095Z",
+          "assetId": "113185079572782",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_OrganellePlacementSo",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_OrganellePlacementSockets",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "113185079572782"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_TraffickingRouteOverlays",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_TraffickingRouteOverlays.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "operationId": "21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "operationId": "21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "done": true,
+        "response": {
+          "path": "assets/121684113095271",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:20.604136800Z",
+          "assetId": "121684113095271",
+          "displayName": "##################################################",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_TraffickingRouteOverlays",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "121684113095271"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_CellSurfaceReceptors",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CellSurfaceReceptors.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "operationId": "8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "operationId": "8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "done": true,
+        "response": {
+          "path": "assets/105308419999004",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:30.601585200Z",
+          "assetId": "105308419999004",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_CellSurfaceReceptors",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_CellSurfaceReceptors",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "105308419999004"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_ANCHORS_MembraneCytoplasmRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "operationId": "f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "operationId": "f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "done": true,
+        "response": {
+          "path": "assets/118670694618888",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:37.090643900Z",
+          "assetId": "118670694618888",
+          "displayName": "MembraneCytoplasm_EXPORT_ANCHORS_MembraneCytoplasm",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "118670694618888"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_COLLISION_MembraneCytoplasmProxy",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_COLLISION_MembraneCytoplasmProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "operationId": "a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "operationId": "a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "done": true,
+        "response": {
+          "path": "assets/134108799037835",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:40.381328600Z",
+          "assetId": "134108799037835",
+          "displayName": "MembraneCytoplasm_EXPORT_COLLISION_MembraneCytopla",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_COLLISION_MembraneCytoplasmProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "134108799037835"
+    }
+  ],
+  "failures": []
+}

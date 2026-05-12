@@ -1,0 +1,38 @@
+{
+  "phase": "roblox_v1_teacher_led_nucleus_lecture_v2_1",
+  "generated_at": "2026-05-08T23:51:13.714674+00:00",
+  "goal": "Replace selection-like component highlighting with a player-first teacher guide, local focus glow, teacher pointer beam, neutral lecture lighting, subtitles, optional ElevenLabs audio, and synchronized biology animations.",
+  "installer": "tools/install_v1_teacher_lecture.py",
+  "audio_manifest": "audio/nucleus_lecture/nucleus_lecture_manifest.json",
+  "segment_count": 13,
+  "local_audio_segments_available": 13,
+  "roblox_sound_id_segments_ready": 1,
+  "studio_result": {
+    "pending_audio_count": 12,
+    "sound_count": 13,
+    "raw_teacher_count": 2,
+    "status": "v1_teacher_lecture_installed",
+    "lecture_billboard_count": 1,
+    "workspace_enabled": true,
+    "old_lesson_client_disabled": true,
+    "lecture_prompt_count": 0,
+    "active_teacher_parts": 18,
+    "lighting_exposure": -0.18000000715255737,
+    "runtime": "Workspace.V1TeacherLecture",
+    "lighting_brightness": 0.7799999713897705,
+    "version": "TeacherLecture_V2_1",
+    "segment_count": 13,
+    "lecture_highlight_count": 0,
+    "old_lesson_server_disabled": true,
+    "old_lesson_runtime_exists": false,
+    "teacher_reused_existing": true
+  },
+  "acceptance_notes": [
+    "Old V1 station runtime is removed from Workspace and old lesson scripts are disabled.",
+    "Audio SoundIds remain blank until Roblox audio upload/moderation, so subtitles are the immediate fallback.",
+    "Teacher starts near the player spawn, introduces the lecture, then moves between topic waypoints.",
+    "Whole-object Highlight adorners are not used; focus is local glow plus a pointer beam.",
+    "Teacher movement, organ captions, local lighting, and animations are self-contained in Roblox.",
+    "Play-mode visual/audio behavior still needs manual review in the active Studio session."
+  ]
+}

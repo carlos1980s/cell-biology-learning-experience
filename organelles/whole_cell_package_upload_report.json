@@ -1,0 +1,688 @@
+{
+  "schema_version": "whole_cell_package_upload_dry_run_report_v1",
+  "status": "pass",
+  "endpoint": "https://apis.roblox.com/assets/v1/assets",
+  "items": [
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_NucleusEnvelope",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-f628865e3a8f4fa29dd7b62f4518ad3e",
+      "payload_bytes": 883235,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_NucleusEnvelope.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_NuclearPoreComplexes",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-68758470468a478aa63f9674056f6644",
+      "payload_bytes": 868290,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_NuclearPoreComplexes.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_Lamina",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-8fb1f20d48bc412bbee2aa66be0f3f34",
+      "payload_bytes": 3886872,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Lamina.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_Nucleoplasm",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-a749878c2f164c2cafd61ef2d8157c54",
+      "payload_bytes": 2112407,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Nucleoplasm.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_Chromatin",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-4168151b90554cc28f1e0d41998d940f",
+      "payload_bytes": 6606209,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Chromatin.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_Nucleolus",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-a8ceb69c5dd54964b28cbd1e7a1b2ba4",
+      "payload_bytes": 2689105,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Nucleolus.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_TransportCargo",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-87664e6b7867436fa7e9c7c1107ca49b",
+      "payload_bytes": 647248,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_TransportCargo.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_LOD0_RoughERConnection",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-00444f6fa48f42e38d4344542a289f35",
+      "payload_bytes": 1185833,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_RoughERConnection.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_COLLISION_NucleusProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-4c5caf47f5d047d3914e33bcf517d6bb",
+      "payload_bytes": 33417,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_COLLISION_NucleusProxy.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "nucleus",
+      "export_group": "EXPORT_ANCHORS_NucleusSockets",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-01a420e9be954d738b39d12b34342096",
+      "payload_bytes": 18537,
+      "source_file": "organelles/nucleus/exports/phase_07r_roblox/EXPORT_ANCHORS_NucleusSockets.fbx",
+      "has_package_asset_id": true
+    },
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_LOD0_FoldedMembraneSheets",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-0ef189f754a245fda6bfd443ea9de73e",
+      "payload_bytes": 269556,
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_LOD0_FoldedMembraneSheets.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_LOD0_RibosomeSurfaceClusters",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-4237d554249f493fbde492c65bb6b9d1",
+      "payload_bytes": 275277,
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_LOD0_RibosomeSurfaceClusters.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_LOD0_ProteinFoldingCavities",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-5a8c0c461a194292aeb3bb21444af3a2",
+      "payload_bytes": 59050,
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_LOD0_ProteinFoldingCavities.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_LOD0_GolgiHandoffVesicles",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-d775f6e86bf5493abbed3b5d7d29b837",
+      "payload_bytes": 104868,
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_LOD0_GolgiHandoffVesicles.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_ANCHORS_RoughERRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-b5c45f166cbd42bc827465458cda6c61",
+      "payload_bytes": 46267,
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_ANCHORS_RoughERRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_COLLISION_RoughERProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-3d09de7990484eed8a8076bf50621581",
+      "payload_bytes": 4795,
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_COLLISION_RoughERProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_FreeRibosomeCluster",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-411e0e07045745cb9bbe76a3134d0ed5",
+      "payload_bytes": 81715,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_FreeRibosomeCluster.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_BoundRibosomeRow",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-0a1d97b255534dc88573fe23feaa6a85",
+      "payload_bytes": 102954,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_BoundRibosomeRow.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_SubunitForms",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-e8d9f491ef0e4e12816d93b7d869e7dd",
+      "payload_bytes": 37390,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_SubunitForms.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_mRNAThread",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-afc046a3443f417cae0ca729f9a61bb7",
+      "payload_bytes": 23512,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_mRNAThread.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_LOD0_PeptideExitCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-a52414129a834c0e96d8dc82686a731b",
+      "payload_bytes": 30663,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_LOD0_PeptideExitCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_ANCHORS_RibosomeRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-33f3b8fe9b80434cbec8794cdf7d64b1",
+      "payload_bytes": 34224,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_ANCHORS_RibosomeRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_COLLISION_RibosomeProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-603d315fb1444ea4945e15b7a7531b08",
+      "payload_bytes": 4800,
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_COLLISION_RibosomeProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_TubularNetwork",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-c49fe40db5f045bf8ae6e7c096651ae3",
+      "payload_bytes": 61236,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_TubularNetwork.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_LipidSynthesisZones",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-9d35ba809f1b47be88576ee569dafe4c",
+      "payload_bytes": 62835,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_LipidSynthesisZones.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_DetoxReactionSites",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-d2e20af81d674945afb417c0ee656993",
+      "payload_bytes": 50608,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_DetoxReactionSites.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_CalciumStoragePockets",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-14f996441c9c42d4842b1f4f7c7810e0",
+      "payload_bytes": 35193,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_CalciumStoragePockets.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_LOD0_ERTransitionHandoffCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-1a1e388e263a4ebabdcf4e564adf34c0",
+      "payload_bytes": 28095,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_LOD0_ERTransitionHandoffCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_ANCHORS_SmoothERRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-abba01f0efe648199aa58d1614ddb936",
+      "payload_bytes": 30096,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_ANCHORS_SmoothERRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_COLLISION_SmoothERProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-35848702384845dfa7ce0d907cece25a",
+      "payload_bytes": 4800,
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_COLLISION_SmoothERProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CisternaStack",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-5ea4224afcf64ad2ba139d7dae014bdd",
+      "payload_bytes": 602585,
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CisternaStack.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CisTransFaces",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-733790694e8e4dd0b043d854b474dd9e",
+      "payload_bytes": 31401,
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CisTransFaces.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_BuddingAndDispatchVesicles",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-cdf3bf6e6ce240208f94280ad0775a03",
+      "payload_bytes": 277424,
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_BuddingAndDispatchVesicles.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_LOD0_CargoModificationSites",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-092c522b61e74bbf83c3e1e9c7d3f0dd",
+      "payload_bytes": 157236,
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_LOD0_CargoModificationSites.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_ANCHORS_GolgiRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-179fe01d901f4c8881c47945965a4be6",
+      "payload_bytes": 42095,
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_ANCHORS_GolgiRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_COLLISION_GolgiProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-1f7317912b5a4c7d990d26b064dd705a",
+      "payload_bytes": 4783,
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_COLLISION_GolgiProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_TransportVesicles",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-bb2960f975e346ff8d4c624d6a46770b",
+      "payload_bytes": 70127,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_TransportVesicles.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_EndosomeBodies",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-6fc2730651bf4f14b4079e1fce870d54",
+      "payload_bytes": 57862,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_EndosomeBodies.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_CoatedVesicleCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-dfb393e4d3e74f94877188827df2dcbf",
+      "payload_bytes": 88351,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CoatedVesicleCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_RabSNARECues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-249a22ab417f4bdfaeb9f743faab755d",
+      "payload_bytes": 76000,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_RabSNARECues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_LOD0_CargoSortingRoutes",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-5577c723d4454eef9198366eacdbaa8f",
+      "payload_bytes": 36274,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_LOD0_CargoSortingRoutes.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_ANCHORS_VesiclesEndosomesRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-5e36fdf8f9d340cdb15778eaaf37ba0e",
+      "payload_bytes": 44861,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_ANCHORS_VesiclesEndosomesRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_COLLISION_VesiclesEndosomesProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-fb5760b92a8741708ccaa6bd202bc58c",
+      "payload_bytes": 4861,
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_COLLISION_VesiclesEndosomesProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_LysosomeMembrane",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-5cdae2c4f8de4871a96f96fb318dbaf9",
+      "payload_bytes": 75880,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_LysosomeMembrane.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_AcidicInterior",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-d99a86316ce245f885267ad40da35071",
+      "payload_bytes": 28418,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_AcidicInterior.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_DigestiveEnzymeClusters",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-98cc83e203214622b9b3f0c3ad873013",
+      "payload_bytes": 170061,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_DigestiveEnzymeClusters.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_WasteCargoFragments",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-4a0a5db7dd7d4e7791a7b306bcc561c5",
+      "payload_bytes": 58289,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_WasteCargoFragments.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_LOD0_RecycledOutputCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-6c231267516642138e4e9e083af7b2cd",
+      "payload_bytes": 32942,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_RecycledOutputCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_ANCHORS_LysosomeRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-0a96dc55a4084541b4acdfe0c9532fc6",
+      "payload_bytes": 31326,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_ANCHORS_LysosomeRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_COLLISION_LysosomeProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-218d9a80e9004a1eba89cb5189c711fc",
+      "payload_bytes": 4798,
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_COLLISION_LysosomeProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_OuterMembrane",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-267e6df1d41744ec9cd9187c001a53e2",
+      "payload_bytes": 86329,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_OuterMembrane.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_InnerMembraneCristae",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-52358983294047e1868e3cafa78edd0d",
+      "payload_bytes": 59790,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_InnerMembraneCristae.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_MatrixVolume",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-80c226779cc34f1c9d89b6017aff8c88",
+      "payload_bytes": 27526,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_MatrixVolume.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_ATPSignalSites",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-d009f429b6c841de9b8cfccb39d65270",
+      "payload_bytes": 87484,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_ATPSignalSites.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_LOD0_StressCueLayer",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-641160be9c0a4105856e0c969d06540b",
+      "payload_bytes": 40204,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_LOD0_StressCueLayer.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_ANCHORS_MitochondrionRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-4835681d6a474d9e8b9f2c2545bafbdc",
+      "payload_bytes": 31351,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_ANCHORS_MitochondrionRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_COLLISION_MitochondrionProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-63bb251783b5495e954832eb3e10fe61",
+      "payload_bytes": 4839,
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_COLLISION_MitochondrionProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_PeroxisomeMembrane",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-8b7f527674c742899e04053c4d1be05b",
+      "payload_bytes": 45044,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_PeroxisomeMembrane.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_CatalaseCrystalCore",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-49eadc9b281440d69aada8cf41e3749c",
+      "payload_bytes": 57607,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_CatalaseCrystalCore.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_FattyAcidProcessingSites",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-dd0daf94045f43cd8c218681b4bd5200",
+      "payload_bytes": 76102,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_FattyAcidProcessingSites.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_OxidativeReactionCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-163cafc8795944ffb28bd1749eb601e1",
+      "payload_bytes": 69693,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_OxidativeReactionCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_LOD0_DetoxOutputCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-3efcb9e9cdfe4a058f9e9dbe80fdc660",
+      "payload_bytes": 30715,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_LOD0_DetoxOutputCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_ANCHORS_PeroxisomesRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-a856bbcf17954433a68e0bb70fab3ba2",
+      "payload_bytes": 44813,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_ANCHORS_PeroxisomesRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_COLLISION_PeroxisomeProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-e026345230054e058d80b4499941fa0c",
+      "payload_bytes": 4826,
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_COLLISION_PeroxisomeProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_CoreParticleBarrel",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-172dd13f171740a58554d347b2678bcf",
+      "payload_bytes": 76324,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_CoreParticleBarrel.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_RegulatoryCaps",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-6f2c7fce222949be92bac2e2f34316b8",
+      "payload_bytes": 51000,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_RegulatoryCaps.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_UbiquitinTagCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-55bfb669026d4d2d8fbc3e0e82e62582",
+      "payload_bytes": 69566,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_UbiquitinTagCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_ProteinSubstrateThread",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-b0e4edb96d6b469396a4f5ab313cb860",
+      "payload_bytes": 30592,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_ProteinSubstrateThread.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_DegradationProductCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-1615eaf566fc4cc6a2a35c03c39a4747",
+      "payload_bytes": 75888,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_DegradationProductCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_ANCHORS_ProteasomesRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-1c33ab69d1e84bab8aecb2ff8b12effe",
+      "payload_bytes": 44813,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_ANCHORS_ProteasomesRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_COLLISION_ProteasomeProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-b09c3bd7b30c4b81acdb7f132cfdd355",
+      "payload_bytes": 4826,
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_COLLISION_ProteasomeProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_MicrotubuleTracks",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-a4a13ec97c1e4f688ec00fff14e5d43f",
+      "payload_bytes": 55193,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MicrotubuleTracks.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_ActinNetwork",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-60ce19575fc5421eae4d46c07b39185a",
+      "payload_bytes": 49754,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_ActinNetwork.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_IntermediateFilaments",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-8d5ee46980b544c4bd807ad03908f197",
+      "payload_bytes": 39493,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_IntermediateFilaments.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_CentrosomeCentrioles",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-2a7a3fffd13d47a0b18adafac570fd8a",
+      "payload_bytes": 63682,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_CentrosomeCentrioles.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_MotorAndSpindleCues",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-923fe0f164e6471bad80b62a8174ea48",
+      "payload_bytes": 112159,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MotorAndSpindleCues.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-1b36c43a049c43ebacef56d920a8b9fb",
+      "payload_bytes": 51126,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-54240090edfa4d4a82dcb073db4fe601",
+      "payload_bytes": 4902,
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_COLLISION_CytoskeletonCentrosomeProxy.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_PlasmaMembraneBoundary",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-8caa644e1f1742d69cc0de188db8eaf9",
+      "payload_bytes": 66926,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_PlasmaMembraneBoundary.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_CytoplasmVolume",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-99a7f0698c7d4e51ab00531aee06268f",
+      "payload_bytes": 51641,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CytoplasmVolume.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_OrganellePlacementSockets",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-cf4b0e84e99441eea30797b72d807d97",
+      "payload_bytes": 76151,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_OrganellePlacementSockets.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_TraffickingRouteOverlays",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-b1bd8c6428314fbc8de1d1fd3e59dd22",
+      "payload_bytes": 42100,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_TraffickingRouteOverlays.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_CellSurfaceReceptors",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-7bac0124964346a7a282fb56c53c974a",
+      "payload_bytes": 88504,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CellSurfaceReceptors.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-7f77e19305774384889113377920afd2",
+      "payload_bytes": 57357,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_ANCHORS_MembraneCytoplasmRuntime.fbx",
+      "has_package_asset_id": false
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_COLLISION_MembraneCytoplasmProxy",
+      "content_type": "multipart/form-data; boundary=----codex-roblox-06a888bc4feb4276978b227b0bf666fd",
+      "payload_bytes": 4861,
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_COLLISION_MembraneCytoplasmProxy.fbx",
+      "has_package_asset_id": false
+    }
+  ],
+  "validation_errors": []
+}

@@ -1,0 +1,488 @@
+{
+  "schema_version": "nucleus_functional_model_studio_logged_in_upload_report_v1",
+  "created_at_utc": "2026-05-04T06:54:17Z",
+  "summary": "All 12 nucleus functional FBX export groups were imported/uploaded through the logged-in Roblox Studio importer. Studio produced mesh asset IDs, not package/model asset IDs, so the manifest records mesh IDs and preserves package_asset_id as null.",
+  "manifest": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_functional_model_roblox_asset_manifest.json",
+  "studio_import_capture": {
+    "imports": [
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://120884519897871"
+        ],
+        "name": "nucleus_01_outer_membrane_panels_lod0",
+        "workspaceIndex": 15,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_01_outer_membrane_panels_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://120884519897871",
+            "size": [
+              662.835205078125,
+              657.453857421875,
+              656.3394775390625
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          1902.9481201171875,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://116475457528450"
+        ],
+        "name": "nucleus_02_npc_assemblies_lod0",
+        "workspaceIndex": 18,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_02_npc_assemblies_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://116475457528450",
+            "size": [
+              680.1744384765625,
+              399.63165283203125,
+              679.46484375
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          1902.9481201171875,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://88755769985681"
+        ],
+        "name": "nucleus_03_inner_membrane_panels_lod0",
+        "workspaceIndex": 7,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_03_inner_membrane_panels_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://88755769985681",
+            "size": [
+              609.1212158203125,
+              598.740234375,
+              608.9429931640625
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          -81.36068725585938,
+          83.0309066772461,
+          -285.9862060546875
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://113725693331841"
+        ],
+        "name": "nucleus_04_perinuclear_lumen_lod0",
+        "workspaceIndex": 17,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_04_perinuclear_lumen_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://113725693331841",
+            "size": [
+              619.190185546875,
+              598.9891967773438,
+              609.0538330078125
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          -118.80770874023438,
+          2032.56787109375,
+          -267.54376220703125
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://107422643165153"
+        ],
+        "name": "nucleus_05_lamina_web_lod0",
+        "workspaceIndex": 14,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_05_lamina_web_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://107422643165153",
+            "size": [
+              561.485595703125,
+              556.2632446289062,
+              562.5330810546875
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          -87.49720001220703,
+          2021.7041015625,
+          -258.49761962890625
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://106259050155134"
+        ],
+        "name": "nucleus_06_nucleoplasm_volume_lod0",
+        "workspaceIndex": 13,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_06_nucleoplasm_volume_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://106259050155134",
+            "size": [
+              534.9400024414062,
+              533.741455078125,
+              534.7399291992188
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          -65.10154724121094,
+          1630.094970703125,
+          -252.0271453857422
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://84328764085806"
+        ],
+        "name": "nucleus_07_chromatin_threads_lod0",
+        "workspaceIndex": 12,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_07_chromatin_threads_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://84328764085806",
+            "size": [
+              392.22283935546875,
+              364.317626953125,
+              389.310302734375
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          1178.0526123046875,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://135115818465775"
+        ],
+        "name": "nucleus_08_nucleolus_body_lod0",
+        "workspaceIndex": 11,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_08_nucleolus_body_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://135115818465775",
+            "size": [
+              146.43246459960938,
+              146.74801635742188,
+              166.03451538085938
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          233.73623657226562,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://75343102199147"
+        ],
+        "name": "nucleus_09_er_connection_sheets_lod0",
+        "workspaceIndex": 6,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_09_er_connection_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://75343102199147",
+            "size": [
+              260.6254577636719,
+              113.1891098022461,
+              114.16567993164062
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          -69.80178833007812,
+          70.94029998779297,
+          -143.5019989013672
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://75343102199147"
+        ],
+        "name": "nucleus_09_er_connection_sheets_lod0",
+        "workspaceIndex": 10,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_09_er_connection_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://75343102199147",
+            "size": [
+              260.6254577636719,
+              113.1891098022461,
+              114.16567993164062
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          -40.47747039794922,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://72255814541883"
+        ],
+        "name": "nucleus_10_transport_cargo_reference_lod0",
+        "workspaceIndex": 8,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_10_transport_cargo_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://72255814541883",
+            "size": [
+              100,
+              100.00001525878906,
+              100.00001525878906
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          -40.47747039794922,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://117144488181049"
+        ],
+        "name": "nucleus_11_mitosis_fragments_lod0",
+        "workspaceIndex": 16,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_11_mitosis_fragments_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://117144488181049",
+            "size": [
+              35.52412414550781,
+              35.52412033081055,
+              35.52412414550781
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          116.65995788574219,
+          27.304595947265625,
+          33.705020904541016
+        ],
+        "className": "Model"
+      },
+      {
+        "parent": "Workspace",
+        "meshIds": [
+          "rbxassetid://126614230182568"
+        ],
+        "name": "nucleus_12_interaction_hotspots_collision_guide",
+        "workspaceIndex": 9,
+        "meshPartCount": 1,
+        "meshParts": [
+          {
+            "transparency": 0,
+            "name": "Nucleus_12_interaction_..._collision_RobloxPackage",
+            "material": "Enum.Material.Plastic",
+            "color": [
+              163,
+              162,
+              165
+            ],
+            "meshId": "rbxassetid://126614230182568",
+            "size": [
+              640,
+              640,
+              640
+            ],
+            "textureId": ""
+          }
+        ],
+        "pivot": [
+          -83.69341278076172,
+          714.1238403320312,
+          -286.66015625
+        ],
+        "className": "Model"
+      }
+    ],
+    "capturedAt": "2026-05-04T06:54:17Z",
+    "count": 13
+  },
+  "pass_fail": {
+    "studio_session_logged_in_import_route_used": "pass",
+    "all_12_export_groups_present_in_workspace": "pass",
+    "package_asset_ids_created": "fail_mesh_assets_only",
+    "direct_studio_asset_api_available": "fail_unavailable_in_current_studio_build",
+    "live_studio_assembly_created": "pass",
+    "raw_imports_preserved_under_mesh_library": "pass",
+    "visible_group_count_matches_manifest": "pass",
+    "live_studio_visual_review": "pass_with_visual_polish_needed"
+  },
+  "next_recommended_phase": "Tune Roblox material transparency/visibility and validate edit-mode plus play-mode framing with the player before final art approval.",
+  "assembly_result": {
+    "status": "assembled_in_live_studio_from_preserved_imports",
+    "assembler": "tools/assemble_nucleus_functional_model_in_studio.py --legacy-bridge --timeout 60",
+    "visible_model": "Workspace.Nucleus_Model",
+    "raw_container": "Workspace.MeshLibrary.Nucleus_FunctionalModel_RawPackages",
+    "raw_group_count": 12,
+    "visible_group_count": 12,
+    "duplicate_imports_moved_to_orphan": 1,
+    "previous_model_preserved_under_orphan_container": true,
+    "mesh_part_count_visible": 12,
+    "bounding_box_studs": {
+      "x": 356.62,
+      "y": 225.51,
+      "z": 263.33
+    },
+    "core_outer_scale_applied": 0.337942218986392
+  },
+  "visual_review": {
+    "reviewed_in_live_studio_viewport": true,
+    "screenshot": "/tmp/roblox_after_focus_hotkey.png",
+    "status": "technical_import_pass_visual_polish_needed",
+    "notes": "The functional mesh groups are visible in Studio. The blue nucleoplasm volume dominates from the current viewport angle; a later material/visibility polish pass should reduce opacity and tune group offsets before final art approval."
+  }
+}

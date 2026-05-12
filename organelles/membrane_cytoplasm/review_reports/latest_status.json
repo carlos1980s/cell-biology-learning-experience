@@ -1,0 +1,14 @@
+{
+  "schema_version": "membrane_cytoplasm_latest_status_v1",
+  "organelle": "membrane_cytoplasm",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "organelles/membrane_cytoplasm/exports/membrane_cytoplasm_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "organelles/membrane_cytoplasm/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_PlasmaMembraneBoundary, EXPORT_LOD0_CytoplasmVolume, EXPORT_LOD0_OrganellePlacementSockets, EXPORT_LOD0_TraffickingRouteOverlays, EXPORT_LOD0_CellSurfaceReceptors, EXPORT_ANCHORS_MembraneCytoplasmRuntime, EXPORT_COLLISION_MembraneCytoplasmProxy"
+  ],
+  "next_allowed_scope": "Upload membrane_cytoplasm Phase 04 packages and record package_asset_id for every group."
+}

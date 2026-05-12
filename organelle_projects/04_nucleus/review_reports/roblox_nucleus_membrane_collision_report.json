@@ -1,0 +1,45 @@
+{
+  "phase": "roblox_nucleus_membrane_collision",
+  "date": "2026-05-05",
+  "goal": "Make the nucleus membrane non-penetrable in Roblox by enabling the imported nucleus collision proxy.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "root_cause": [
+    "Workspace.Nucleus_Model contained 12 anchored visual parts but 0 collidable parts.",
+    "The invisible nucleus collision proxy existed under InteractionAnchors, but CanCollide was false.",
+    "The proxy was also slightly smaller than the visible outer envelope, letting the avatar overlap the membrane surface before collision."
+  ],
+  "changes": [
+    "Added configureNucleusMembraneCollision() to the main builder.",
+    "Detects visible nucleus models by name or OrganelleId.",
+    "Enables imported collision/proxy parts for the nucleus only.",
+    "Sets collision proxies anchored, invisible, queryable, non-touch, and CanCollide=true.",
+    "Fits the collision proxy to the visible outer envelope at 103% size so the membrane surface is protected.",
+    "Records NucleusMembraneCollisionEnabled, NucleusMembraneCollisionMode, and NucleusMembraneCollisionFit attributes."
+  ],
+  "studio_probe": {
+    "build_result": "CellEnvironment_Main",
+    "root_nucleus_collision_models": 2,
+    "root_nucleus_collision_parts": 2,
+    "workspace_nucleus_collision_enabled": true,
+    "workspace_nucleus_collision_parts": 1,
+    "workspace_nucleus_collision_fit": "OuterEnvelope103",
+    "workspace_nucleus_collidable_count": 1,
+    "collidable_proxy": {
+      "path": "Workspace.Nucleus_Model.InteractionAnchors.InteractionAnchors.Nucleus_12_interaction_..._collision_RobloxPackage",
+      "position": "-0.7412490844726562, 88.7930679321289, -112.624755859375",
+      "size": "230.72000122070312, 228.8468475341797, 228.45895385742188",
+      "transparency": 1.0,
+      "collision_fidelity": "PreciseConvexDecomposition"
+    }
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() and confirmed the live nucleus collision proxy is CanCollide=true."
+  ],
+  "result": "The nucleus membrane now has an invisible collision proxy aligned to the outer envelope, so the player should no longer pass through the nuclear membrane."
+}

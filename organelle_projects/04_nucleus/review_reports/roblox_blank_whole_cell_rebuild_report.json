@@ -1,0 +1,92 @@
+{
+  "phase": "roblox_blank_whole_cell_environment_rebuild",
+  "date": "2026-05-07",
+  "goal": "Reconstruct a blank Roblox place into a deterministic underwater whole-cell environment from package manifests.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "src/MainCellExperience/WholeCellOrganelleMap.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Set the main builder to GeneratedWater terrain mode for the blank-place reset.",
+    "Added deterministic Terrain water generation at center Vector3.new(0, 90, 0) with size Vector3.new(760, 240, 900).",
+    "Moved the spawn to Vector3.new(0, 90, -385.691) facing the cell center.",
+    "Removed default blank-place Baseplate and default SpawnLocation during rebuild.",
+    "Stopped depending on legacy raw environment packages for this reset and rebuilt from WholeCellOrganelleAssets.lua through WholeCellOrganelleMap.lua.",
+    "Preserved raw package loads under Workspace.MeshLibrary and assembled visible clones under Workspace.CellEnvironment_Main.ImportedOrganelles.",
+    "Scaled and spread the organelle map so the nucleus, ER, Golgi, mitochondria, vesicles, cytoskeleton, membrane, and cytoplasm read as one proportional underwater cell scene.",
+    "Kept gameplay minimal by using native Roblox water swimming and no custom buoyancy controller.",
+    "Preserved the nucleus entry portal on Workspace.Nucleus_Model with PortalControlledProxy collision.",
+    "Kept old outer-cell entry helpers removed: no CellEntryPoreGuide and no old cell wall gate."
+  ],
+  "manifest_contract": {
+    "terrainMode": "GeneratedWater",
+    "waterVolumeCenter": "Vector3.new(0, 90, 0)",
+    "waterVolumeSize": "Vector3.new(760, 240, 900)",
+    "spawnPosition": "Vector3.new(0, 90, -385.691)",
+    "movementMode": "NativeWaterSwimming",
+    "rawLibrary": "Workspace.MeshLibrary",
+    "visibleAssembly": "Workspace.CellEnvironment_Main.ImportedOrganelles",
+    "nucleusWorkspaceName": "Workspace.Nucleus_Model"
+  },
+  "studio_bridge_probe": {
+    "deployment": "pass; tools/deploy_main_cell_environment_to_studio.py --legacy-bridge --timeout 180",
+    "build_result": "CellEnvironment_Main",
+    "baseplate_exists": false,
+    "default_spawn_exists": false,
+    "spawn_position": "0, 90, -385.6910095214844",
+    "terrain_count": 2543336,
+    "terrain_mode": "GeneratedWater",
+    "water_enabled": true,
+    "water_center": "0, 90, 0",
+    "water_size": "760, 240, 900",
+    "spawn_materials": "Water=100",
+    "cell_center_materials": "Water=80",
+    "nucleus_materials": "Water=64",
+    "mesh_library_exists": true,
+    "raw_basepart_count": 1812,
+    "raw_visible_basepart_count": 0,
+    "organelle_family_count": 12,
+    "organelle_families": [
+      "CytoskeletonCentrosome",
+      "Golgi",
+      "Lysosome",
+      "MembraneCytoplasm",
+      "Mitochondrion",
+      "Nucleus",
+      "Peroxisomes",
+      "Proteasomes",
+      "Ribosomes",
+      "RoughER",
+      "SmoothER",
+      "VesiclesEndosomes"
+    ],
+    "assembled_count": 18,
+    "missing_environment_packages": [],
+    "missing_organelle_packages": [],
+    "nucleus_model_exists": true,
+    "nucleus_portal_exists": true,
+    "nucleus_portal_center": "-43.25077819824219, 90, -123.7039794921875",
+    "nucleus_collision_mode": "PortalControlledProxy",
+    "old_cell_entry_exists": false,
+    "old_wall_gate_exists": false
+  },
+  "representative_model_sizes": {
+    "MembraneCytoplasm": "size approximately 466.67, 500, 266.67 studs",
+    "Nucleus_Model": "visible mesh scale target 120; full bounding box includes portal/trail and measured approximately 120, 70.9, 194.4 studs",
+    "RoughER": "size approximately 82, 31.95, 29.42 studs",
+    "Golgi": "size approximately 60, 18.57, 28.23 studs",
+    "Mitochondrion": "size approximately 56, 26.7, 25.0 studs"
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua src/MainCellExperience/WholeCellOrganelleMap.lua tools/validate_main_cell_environment.py",
+    "Legacy Studio bridge deploy succeeded.",
+    "Studio bridge rebuild and object/material probe succeeded."
+  ],
+  "visual_review": {
+    "status": "blocked_by_computer_use_access",
+    "details": "Computer Use get_app_state for RobloxStudio timed out with Apple event error -10005. macOS screencapture attempts captured Finder instead of the Studio viewport. Current evidence is from live Studio bridge probes, not a confirmed viewport screenshot."
+  },
+  "next_recommended_phase": "Run a manual Studio edit-mode and play-mode visual pass in the open place, then tune organelle positions only if the camera/player view shows a clear scale or placement problem."
+}

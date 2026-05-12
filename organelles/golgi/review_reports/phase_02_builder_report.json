@@ -1,0 +1,1683 @@
+{
+  "schema_version": "golgi_builder_report_v1",
+  "phase": "phase_02",
+  "phase_id": "phase_02_first_real_anatomy",
+  "organelle": "golgi",
+  "status": "built",
+  "builder_scope": [
+    "First real Golgi anatomy layer",
+    "Curved organic cisternae, cis/trans faces, early budding vesicles"
+  ],
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Golgi_RootRig",
+    "Cisterna_Stack",
+    "Cis_Face",
+    "Trans_Face",
+    "Budding_Vesicles"
+  ],
+  "incomplete_components": [
+    "Cargo_ModificationSites",
+    "Dispatch_Vesicles",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "Cargo_ModificationSites",
+    "Dispatch_Vesicles",
+    "Interaction_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_anatomy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_02_wide_anatomy.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "close_cisterna",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_02_close_cisterna_edges.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/review_renders/phase_02_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/golgi_phase_02_scene.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "Golgi_RootRig",
+    "WholeCell_ContextSocket",
+    "Cisterna_Stack",
+    "Cisterna_Stack_Cisterna_01",
+    "Cisterna_Stack_Cisterna_02",
+    "Cisterna_Stack_Cisterna_03",
+    "Cisterna_Stack_Cisterna_04",
+    "Cisterna_Stack_Cisterna_05",
+    "Cisterna_SurfaceDetails",
+    "Cisterna_SurfaceDetails_UpperRidge_01",
+    "Cisterna_SurfaceDetails_LowerRidge_01",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_01_01",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_01_02",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_01_03",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_01_04",
+    "Cisterna_SurfaceDetails_LumenGlint_01",
+    "Cisterna_SurfaceDetails_UpperRidge_02",
+    "Cisterna_SurfaceDetails_LowerRidge_02",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_02_01",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_02_02",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_02_03",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_02_04",
+    "Cisterna_SurfaceDetails_LumenGlint_02",
+    "Cisterna_SurfaceDetails_UpperRidge_03",
+    "Cisterna_SurfaceDetails_LowerRidge_03",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_03_01",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_03_02",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_03_03",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_03_04",
+    "Cisterna_SurfaceDetails_LumenGlint_03",
+    "Cisterna_SurfaceDetails_UpperRidge_04",
+    "Cisterna_SurfaceDetails_LowerRidge_04",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_04_01",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_04_02",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_04_03",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_04_04",
+    "Cisterna_SurfaceDetails_LumenGlint_04",
+    "Cisterna_SurfaceDetails_UpperRidge_05",
+    "Cisterna_SurfaceDetails_LowerRidge_05",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_05_01",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_05_02",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_05_03",
+    "Cisterna_SurfaceDetails_ResidentProteinPatch_05_04",
+    "Cisterna_SurfaceDetails_LumenGlint_05",
+    "Cis_Face",
+    "Trans_Face",
+    "Budding_Vesicles",
+    "Budding_Vesicles_Bud_01",
+    "Budding_Vesicles_MembraneNeck_01",
+    "Budding_Vesicles_CoatProtein_01_01",
+    "Budding_Vesicles_CoatProtein_01_02",
+    "Budding_Vesicles_CoatProtein_01_03",
+    "Budding_Vesicles_CoatProtein_01_04",
+    "Budding_Vesicles_CoatProtein_01_05",
+    "Budding_Vesicles_Bud_02",
+    "Budding_Vesicles_MembraneNeck_02",
+    "Budding_Vesicles_CoatProtein_02_01",
+    "Budding_Vesicles_CoatProtein_02_02",
+    "Budding_Vesicles_CoatProtein_02_03",
+    "Budding_Vesicles_CoatProtein_02_04",
+    "Budding_Vesicles_CoatProtein_02_05",
+    "Budding_Vesicles_Bud_03",
+    "Budding_Vesicles_MembraneNeck_03",
+    "Budding_Vesicles_CoatProtein_03_01",
+    "Budding_Vesicles_CoatProtein_03_02",
+    "Budding_Vesicles_CoatProtein_03_03",
+    "Budding_Vesicles_CoatProtein_03_04",
+    "Budding_Vesicles_CoatProtein_03_05",
+    "Budding_Vesicles_Bud_04",
+    "Budding_Vesicles_MembraneNeck_04",
+    "Budding_Vesicles_CoatProtein_04_01",
+    "Budding_Vesicles_CoatProtein_04_02",
+    "Budding_Vesicles_CoatProtein_04_03",
+    "Budding_Vesicles_CoatProtein_04_04",
+    "Budding_Vesicles_CoatProtein_04_05"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "Golgi_KeyLight_LargeSoftbox",
+    "Golgi_WarmRimLight",
+    "Camera_Golgi_WideAnatomy",
+    "Camera_Golgi_CloseCisternaEdges",
+    "Camera_Golgi_ExportInspection"
+  ],
+  "organic_construction_violations": [],
+  "transform_status": [
+    {
+      "name": "Golgi_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_Stack",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_Stack_Cisterna_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_Stack_Cisterna_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_Stack_Cisterna_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_Stack_Cisterna_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_Stack_Cisterna_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_UpperRidge_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LowerRidge_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_01_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_01_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_01_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_01_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LumenGlint_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_UpperRidge_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LowerRidge_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_02_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_02_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_02_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_02_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LumenGlint_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_UpperRidge_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LowerRidge_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_03_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_03_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_03_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_03_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LumenGlint_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_UpperRidge_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LowerRidge_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_04_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_04_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_04_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_04_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LumenGlint_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_UpperRidge_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LowerRidge_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_05_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_05_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_05_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_ResidentProteinPatch_05_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cisterna_SurfaceDetails_LumenGlint_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Cis_Face",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Trans_Face",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_Bud_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_MembraneNeck_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_01_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_01_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_01_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_01_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_01_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_Bud_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_MembraneNeck_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_02_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_02_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_02_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_02_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_02_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_Bud_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_MembraneNeck_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_03_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_03_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_03_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_03_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_03_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_Bud_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_MembraneNeck_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_04_01",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_04_02",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_04_03",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_04_04",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "Budding_Vesicles_CoatProtein_04_05",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 81,
+      "mesh_object_count": 71,
+      "triangle_count": 32130,
+      "material_count": 8,
+      "texture_count": 0
+    },
+    "export_candidates_only": {
+      "object_count": 75,
+      "mesh_object_count": 70,
+      "triangle_count": 29922,
+      "material_count": 7,
+      "texture_count": 0
+    }
+  },
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/exports/golgi_phase_04_roblox_asset_manifest.json",
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "three_review_renders_exist_or_pending_reason_listed": true,
+    "major_components_use_manifest_names": true,
+    "review_only_excluded_from_export_candidates": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "manifest_components_complete_for_phase": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Added thickened asymmetric cisternal stack.",
+    "Added cis and trans face markers.",
+    "Added early budding vesicles but deferred dispatch and modification teaching layers."
+  ],
+  "roblox_export_risks": [
+    "Procedural Blender materials need Roblox material fallbacks or baked textures.",
+    "Nucleus Phase 08R remains the external scale-up completion gate.",
+    "Phase 5 requires real Roblox package asset IDs before Studio assembly can pass."
+  ],
+  "next_recommended_phase": "Phase 3: add cargo modification, dispatch vesicles, and interaction hotspots after Phase 2 reviews pass."
+}

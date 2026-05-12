@@ -1,0 +1,15 @@
+{
+  "schema_version": "rough_er_phase05_studio_assembly_report_v1",
+  "phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "expected_raw_packages": "Workspace.MeshLibrary/RoughER_RawPackages",
+  "expected_visible_model": "Workspace.RoughER_Model",
+  "missing_package_asset_ids": [
+    "EXPORT_LOD0_FoldedMembraneSheets",
+    "EXPORT_LOD0_RibosomeSurfaceClusters",
+    "EXPORT_LOD0_ProteinFoldingCavities",
+    "EXPORT_LOD0_GolgiHandoffVesicles",
+    "EXPORT_ANCHORS_RoughERRuntime",
+    "EXPORT_COLLISION_RoughERProxy"
+  ]
+}

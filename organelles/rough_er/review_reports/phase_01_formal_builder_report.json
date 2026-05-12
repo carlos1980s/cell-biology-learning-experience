@@ -1,0 +1,145 @@
+{
+  "schema_version": "rough_er_builder_report_v1",
+  "phase": "phase_01",
+  "phase_id": "phase_01_formal_scaffold",
+  "organelle": "rough_er",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "RoughER_RootRig"
+  ],
+  "incomplete_components": [
+    "FoldedMembrane_Sheets",
+    "Ribosome_SurfaceClusters",
+    "ProteinFolding_Cavities",
+    "Nucleus_ConnectionSocket",
+    "Golgi_HandoffVesicles",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "FoldedMembrane_Sheets",
+    "Ribosome_SurfaceClusters",
+    "ProteinFolding_Cavities",
+    "Nucleus_ConnectionSocket",
+    "Golgi_HandoffVesicles",
+    "Interaction_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/review_renders/phase_01_formal_wide_scaffold.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "close_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/review_renders/phase_01_formal_close_socket.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/review_renders/phase_01_formal_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/rough_er/rough_er_phase_01_formal_scaffold.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "RoughER_RootRig",
+    "WholeCell_ContextSocket"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "RoughER_Phase01_DirectionGuide_01",
+    "RoughER_Phase01_DirectionGuide_02",
+    "RoughER_KeyLight",
+    "Camera_RoughER_wide_scaffold",
+    "Camera_RoughER_close_scaffold",
+    "Camera_RoughER_export_inspection"
+  ],
+  "organic_construction_violations": [],
+  "transform_status": [
+    {
+      "name": "RoughER_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 9,
+      "mesh_object_count": 3,
+      "triangle_count": 960,
+      "material_count": 2,
+      "texture_count": 0
+    },
+    "export_candidates_only": {
+      "object_count": 2,
+      "mesh_object_count": 0,
+      "triangle_count": 0,
+      "material_count": 0,
+      "texture_count": 0
+    }
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated rough ER phase generated from script.",
+    "Visible biological meshes are generated organic meshes, not default primitives."
+  ],
+  "roblox_export_risks": [
+    "Many ribosome detail meshes may need merging for Roblox runtime.",
+    "Roblox package IDs are required before Studio assembly can pass."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "golgi_phase_notes_v1",
+  "phase": "phase_01_formal_scaffold",
+  "notes_on_what_changed": [
+    "Started a formal Golgi production restart while preserving previous Golgi work as reference evidence.",
+    "Created only Golgi_RootRig and WholeCell_ContextSocket as manifest components.",
+    "Added review-only placement and cis/trans direction guides; they are excluded from export.",
+    "No cisternae, faces, vesicles, cargo markers, dispatch vesicles, or interaction hotspots were built in Phase 1."
+  ],
+  "next_recommended_phase": "Phase 2: build organic gold/yellow curved Cisterna_Stack, Cis_Face, Trans_Face, and early Budding_Vesicles only after this formal Phase 1 gate passes.",
+  "do_not_advance_if": [
+    "Any formal Phase 1 render is missing without a recorded pending reason.",
+    "Review-only guides appear in export candidates.",
+    "Any manifest component name drifts from component_manifest.json.",
+    "Nucleus Phase 08R is represented as complete without real Roblox package IDs and Studio/play-mode validation."
+  ]
+}

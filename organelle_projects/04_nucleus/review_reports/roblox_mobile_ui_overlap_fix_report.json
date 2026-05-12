@@ -1,0 +1,36 @@
+{
+  "phase": "roblox_mobile_ui_overlap_fix",
+  "date": "2026-05-04",
+  "bug": "Phone screen showed two overlapping movement control sets.",
+  "root_cause": "The custom MainCellSwimTouchControls left MovePad was visible while Roblox's native mobile thumbstick was also active.",
+  "source_change": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "changes": [
+      "Added USE_ROBLOX_NATIVE_TOUCH_MOVE = true.",
+      "Custom MovePad/Knob creation is now disabled unless native touch move fallback is turned off.",
+      "Touch horizontal swim now relies on Humanoid.MoveDirection from Roblox native mobile controls.",
+      "Custom mobile UI now keeps only scuba buoyancy controls: InflateButton, VentButton, and BuoyancyGauge."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "builder_applied": "main_cell_mobile_ui_overlap_fix_build_applied CellEnvironment_Main",
+    "studio_edit_mode_confirmed": true,
+    "controller_source_length": 25198,
+    "installed_controller_checks": {
+      "native_touch_move_enabled": true,
+      "move_pad_is_fallback_only": true,
+      "has_buoyancy_buttons": true,
+      "has_buoyancy_gauge": true
+    }
+  },
+  "validation": {
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok"
+  },
+  "device_review_needed": [
+    "Android: confirm only one left movement thumbstick is visible.",
+    "Android: confirm right-side + and - buoyancy controls remain visible and usable.",
+    "Quest: confirm no extra phone-only UI appears in VR."
+  ]
+}

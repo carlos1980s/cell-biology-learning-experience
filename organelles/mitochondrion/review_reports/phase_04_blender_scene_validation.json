@@ -1,0 +1,24 @@
+{
+  "schema_version": "mitochondrion_blender_scene_validation_v1",
+  "blend_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/mitochondrion/mitochondrion_phase_04_export_packaging.blend",
+  "status": "pass",
+  "required_components": [
+    "ATP_SignalSites",
+    "InnerMembrane_Cristae",
+    "Interaction_Hotspots",
+    "Matrix_Volume",
+    "Mitochondrion_CollisionProxy",
+    "Mitochondrion_RootRig",
+    "OuterMembrane",
+    "Stress_CueLayer",
+    "WholeCell_ContextSocket"
+  ],
+  "missing_required_components": [],
+  "export_candidate_count": 56,
+  "review_only_leaks": [],
+  "biological_mesh_count": 47,
+  "organic_construction_violations": [],
+  "collision_proxy_hidden_from_visual_review": true,
+  "triangle_count_export_candidates": 7104,
+  "blocking_findings": []
+}

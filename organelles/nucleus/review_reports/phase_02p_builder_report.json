@@ -1,0 +1,82 @@
+{
+  "schema_version": "phase_02p_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "02P",
+  "builder": "Corrective Nuclear Pore Builder",
+  "status": "built_pending_independent_visual_review",
+  "base_phase": "02R double-envelope rebuild",
+  "created_manifest_components": [
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores"
+  ],
+  "carried_forward_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments"
+  ],
+  "explicitly_not_created": [
+    "NuclearLamina_Lattice",
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "CondensedChromosomes",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/02_nuclear_pores.png"
+  ],
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_02p_nuclear_pores.blend",
+  "render_paths": [
+    {
+      "type": "reference_board",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02p_reference_board.png",
+      "status": "complete"
+    },
+    {
+      "type": "pore_distribution_review",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02p_pore_distribution_review.png",
+      "status": "complete"
+    },
+    {
+      "type": "pore_complex_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02p_pore_complex_closeup.png",
+      "status": "complete"
+    }
+  ],
+  "pore_counts": {
+    "complex_objects": 18,
+    "gate_objects": 63,
+    "pore_sites": 9
+  },
+  "mesh_budget": {
+    "phase_02p_mesh_objects": 28,
+    "phase_02p_triangle_count_before_modifier_evaluation": 8678
+  },
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "reference_image_in_same_blender_scene": true,
+    "phase_scope_respected": true,
+    "lamina_and_internals_not_built": true,
+    "pore_openings_have_gate_core_geometry": true,
+    "biological_pore_components_are_custom_mesh_or_curve_objects": true,
+    "builder_did_not_self_approve_visual_gate": true
+  },
+  "organic_treatment_notes": [
+    "Pore rings are custom lobed annular meshes, not Blender torus primitives.",
+    "Each pore has a darker recessed selective opening plus cyan-violet gate filaments, so the model does not teach pores as passive open holes.",
+    "Pore site scale and placement vary across the membrane to avoid a mechanical grid."
+  ],
+  "roblox_export_risks": [
+    "Nine pore sites are suitable for Blender review but should be consolidated or LOD-reduced for Roblox.",
+    "Gate filaments may need to be represented as baked texture or simplified mesh strips at lower LODs.",
+    "Transparency/emission fallback for gate cores must be validated in Roblox before final export."
+  ],
+  "next_required_step": "Run independent visual review against the pore reference before adding lamina or internals."
+}

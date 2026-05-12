@@ -1,0 +1,167 @@
+{
+  "schema_version": "nucleus_nucleolus_chromatin_decongestion_pass_report_v1",
+  "created_at_utc": "2026-05-04T10:07:15Z",
+  "decision": "pass_blender_source_exports_and_logged_in_studio_reimport_complete",
+  "summary": "Nucleolus source geometry was enlarged, chromatin/nucleoplasm were repelled outward, affected FBXs were reimported through the logged-in Roblox Studio importer, and Workspace.Nucleus_Model was reassembled from the updated raw mesh packages.",
+  "source_changes": {
+    "generator": "tools/create_nucleus_roblox_functional_model.py",
+    "nucleolus_radius_blender_units": 1.04,
+    "previous_nucleolus_radius_blender_units": 0.72,
+    "relative_radius_increase": 0.4444,
+    "nucleolus_center": [
+      -0.25,
+      -0.82,
+      0.48
+    ],
+    "chromatin_clearance_radius_blender_units": 1.5,
+    "chromatin_interior_radius_blender_units": 2.5,
+    "chromatin_counts_changed": {
+      "main_diffuse_threads": "58 -> 48",
+      "fine_web_threads": "42 -> 34",
+      "organic_coils": "42 -> 36",
+      "compact_tangles": "18 -> 14",
+      "muted_condensed_masses": "12 -> 8",
+      "muted_ribbon_patches": "10 -> 6"
+    }
+  },
+  "geometry_audit": {
+    "nucleolus_body_bbox_blender_units": {
+      "size": [
+        2.0358,
+        2.3981,
+        2.3092
+      ]
+    },
+    "nucleolus_all_detail_bbox_blender_units": {
+      "size": [
+        2.1323,
+        2.3981,
+        2.349
+      ]
+    },
+    "chromatin_min_sample_distance_to_nucleolus_center": 1.4527,
+    "nucleoplasm_detail_min_sample_distance_to_nucleolus_center": 1.4009,
+    "chromatin_object_count": 159,
+    "nucleolus_object_count": 223,
+    "sampled_chromatin_points": 3139,
+    "sampled_nucleoplasm_points": 1007,
+    "audit_decision": "pass_clearance_shell_readable; chromatin outside enlarged nucleolus and pushed peripheral"
+  },
+  "exports": {
+    "chromatin_threads": {
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_07_chromatin_threads_lod0.fbx",
+      "triangle_count": 29533,
+      "file_size_bytes": 1032812,
+      "status": "exported_pending_studio_reimport",
+      "previous_studio_primary_mesh_asset_id": "rbxassetid://84328764085806"
+    },
+    "nucleolus_body": {
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_08_nucleolus_body_lod0.fbx",
+      "triangle_count": 16763,
+      "file_size_bytes": 549948,
+      "status": "exported_pending_studio_reimport",
+      "previous_studio_primary_mesh_asset_id": "rbxassetid://135115818465775"
+    },
+    "nucleoplasm_volume": {
+      "source_file": "organelle_projects/04_nucleus/assets/exports/nucleus_functional_model/nucleus_06_nucleoplasm_volume_lod0.fbx",
+      "triangle_count": 4334,
+      "file_size_bytes": 144012,
+      "status": "exported_pending_studio_reimport",
+      "previous_studio_primary_mesh_asset_id": "rbxassetid://106259050155134"
+    }
+  },
+  "review_renders": [
+    "organelle_projects/04_nucleus/review_renders/nucleus_nucleolus_chromatin_pass_hero.png",
+    "organelle_projects/04_nucleus/review_renders/nucleus_nucleolus_chromatin_pass_board.png",
+    "organelle_projects/04_nucleus/review_renders/nucleus_nucleolus_chromatin_clearance_closeup.png",
+    "organelle_projects/04_nucleus/review_renders/nucleus_internal_spacing_after_nucleolus_scale.png",
+    "organelle_projects/04_nucleus/review_renders/nucleus_nucleolus_chromatin_clearance_isolated.png",
+    "organelle_projects/04_nucleus/review_renders/nucleus_chromatin_lanes_no_membrane.png"
+  ],
+  "roblox_studio": {
+    "legacy_bridge_probe": "pass; Workspace.Nucleus_Model exists with 12 MeshParts",
+    "logged_in_user_id_probe": 6108806590,
+    "mcp_get_studio_mode": "timed_out_after_120s; legacy bridge used instead",
+    "automatic_reimport_status": "completed_via_Studio_importer_UI_after_user_confirmation",
+    "import_api_probe": "plugin:ImportFbxRigAsync(path) failed with Unable to cast string to bool; available Studio import routes require interactive file selection or Open Cloud credentials",
+    "affected_groups_need_reimport": [
+      "chromatin_threads",
+      "nucleolus_body",
+      "nucleoplasm_volume"
+    ],
+    "current_workspace_mesh_probe": {
+      "nucleoplasm_volume": {
+        "meshId": "rbxassetid://106259050155134",
+        "size": [
+          180.7788,
+          180.3738,
+          180.7112
+        ]
+      },
+      "chromatin_threads": {
+        "meshId": "rbxassetid://84328764085806",
+        "size": [
+          132.5487,
+          123.1183,
+          131.5644
+        ]
+      },
+      "nucleolus_body": {
+        "meshId": "rbxassetid://135115818465775",
+        "size": [
+          49.4857,
+          49.5924,
+          56.1101
+        ]
+      }
+    },
+    "logged_in_studio_importer": "completed_for_affected_groups",
+    "import_queue_note": "The importer unexpectedly queued all 12 nucleus FBXs. Remaining/extra raw imports were moved hidden into MeshLibrary.Nucleus_FunctionalModel_OrphanWorkspaceImports; only groups 06, 07, and 08 were wired into manifests and the assembled model.",
+    "staged_raw_package_update": "old raw groups archived; new raw groups moved under Workspace.MeshLibrary.Nucleus_FunctionalModel_RawPackages",
+    "studio_reimported_mesh_ids": {
+      "nucleoplasm_volume": "rbxassetid://122310423005158",
+      "chromatin_threads": "rbxassetid://83312476274506",
+      "nucleolus_body": "rbxassetid://123744975944825"
+    },
+    "assembled_workspace_validation": {
+      "nucleoplasm_volume": {
+        "target": "MeshVisuals.Nucleoplasm",
+        "size": [
+          180.7788,
+          180.3737,
+          180.7112
+        ],
+        "transparency": 0.35
+      },
+      "chromatin_threads": {
+        "target": "MeshVisuals.Chromatin",
+        "size": [
+          136.9329,
+          149.852,
+          154.776
+        ],
+        "transparency": 0.0
+      },
+      "nucleolus_body": {
+        "target": "MeshVisuals.Nucleolus",
+        "size": [
+          69.0532,
+          77.9717,
+          81.0417
+        ],
+        "transparency": 0.0
+      }
+    }
+  },
+  "test_results": {
+    "python_compile_generator": "passed",
+    "blend_regeneration": "passed",
+    "fbx_export": "passed",
+    "geometry_audit": "passed",
+    "live_blender_mcp": "blocked_addon_not_connected; non-destructive Computer Use check found active unsaved ribosome file, so it was not discarded",
+    "roblox_reimport": "passed_logged_in_studio_importer_created_replacement_mesh_ids",
+    "studio_assembly": "passed; assembler reused 12 raw groups and visible model has 12 groups",
+    "studio_visual_review": "pass_basic_viewport_check; updated Nucleus_Model visible in edit mode, raw imports hidden"
+  },
+  "next_recommended_phase": "Review the updated Nucleus_Model in play mode and tune interior lighting/player camera around the larger nucleolus if needed."
+}

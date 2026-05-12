@@ -1,0 +1,235 @@
+{
+  "schema_version": "lysosome_phase_04_roblox_asset_manifest_v1",
+  "organelle": "lysosome",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.Lysosome_Model",
+  "raw_package_target": "Workspace.MeshLibrary/Lysosome_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_LysosomeMembrane",
+    "EXPORT_LOD0_AcidicInterior",
+    "EXPORT_LOD0_DigestiveEnzymeClusters",
+    "EXPORT_LOD0_WasteCargoFragments",
+    "EXPORT_LOD0_RecycledOutputCues",
+    "EXPORT_ANCHORS_LysosomeRuntime",
+    "EXPORT_COLLISION_LysosomeProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_LysosomeMembrane",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_LysosomeMembrane.fbx",
+      "file_size_bytes": 75276,
+      "object_count": 9,
+      "triangle_count": 1776,
+      "object_names": [
+        "Lysosome_Membrane_FoldLip_08",
+        "Lysosome_Membrane_FoldLip_07",
+        "Lysosome_Membrane_FoldLip_06",
+        "Lysosome_Membrane_FoldLip_05",
+        "Lysosome_Membrane_FoldLip_04",
+        "Lysosome_Membrane_FoldLip_03",
+        "Lysosome_Membrane_FoldLip_02",
+        "Lysosome_Membrane_FoldLip_01",
+        "Lysosome_Membrane_AsymmetricShell"
+      ],
+      "roblox_placement_target": "Lysosome_Model/LysosomeMembrane",
+      "roblox_material_family": "lysosome_membrane",
+      "event_bindings": [
+        "lysosome.inspect_membrane"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "103700054022789",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/5535f410-d8d0-4e59-ab8f-6cc20b186090",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_AcidicInterior",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_AcidicInterior.fbx",
+      "file_size_bytes": 27820,
+      "object_count": 1,
+      "triangle_count": 616,
+      "object_names": [
+        "AcidicInterior_Volume_Plume"
+      ],
+      "roblox_placement_target": "Lysosome_Model/AcidicInterior",
+      "roblox_material_family": "acidic_interior",
+      "event_bindings": [
+        "lysosome.inspect_acidic_lumen"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "111063447773568",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/2ab22ed3-b2f6-47e1-9b18-8b83232967b3",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_DigestiveEnzymeClusters",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_DigestiveEnzymeClusters.fbx",
+      "file_size_bytes": 169436,
+      "object_count": 32,
+      "triangle_count": 4480,
+      "object_names": [
+        "DigestiveEnzyme_Clusters_04_Hydrolase_08",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_07",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_06",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_05",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_04",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_03",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_02",
+        "DigestiveEnzyme_Clusters_04_Hydrolase_01",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_08",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_07",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_06",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_05",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_04",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_03",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_02",
+        "DigestiveEnzyme_Clusters_03_Hydrolase_01",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_08",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_07",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_06",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_05",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_04",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_03",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_02",
+        "DigestiveEnzyme_Clusters_02_Hydrolase_01",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_08",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_07",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_06",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_05",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_04",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_03",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_02",
+        "DigestiveEnzyme_Clusters_01_Hydrolase_01"
+      ],
+      "roblox_placement_target": "Lysosome_Model/DigestiveEnzymeClusters",
+      "roblox_material_family": "enzymes",
+      "event_bindings": [
+        "lysosome.digestive_activity"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "117305269277716",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/0d147c25-8ea9-4698-8112-8b130d8c4bdf",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_WasteCargoFragments",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_WasteCargoFragments.fbx",
+      "file_size_bytes": 57676,
+      "object_count": 9,
+      "triangle_count": 1260,
+      "object_names": [
+        "WasteCargo_Fragments_Substrate_09",
+        "WasteCargo_Fragments_Substrate_08",
+        "WasteCargo_Fragments_Substrate_07",
+        "WasteCargo_Fragments_Substrate_06",
+        "WasteCargo_Fragments_Substrate_05",
+        "WasteCargo_Fragments_Substrate_04",
+        "WasteCargo_Fragments_Substrate_03",
+        "WasteCargo_Fragments_Substrate_02",
+        "WasteCargo_Fragments_Substrate_01"
+      ],
+      "roblox_placement_target": "Lysosome_Model/WasteCargoFragments",
+      "roblox_material_family": "waste_cargo",
+      "event_bindings": [
+        "lysosome.waste_processing"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "91673949275832",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/db4aaaa9-15ab-4114-836b-e56019625314",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_RecycledOutputCues",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_LOD0_RecycledOutputCues.fbx",
+      "file_size_bytes": 32332,
+      "object_count": 5,
+      "triangle_count": 480,
+      "object_names": [
+        "RecycledOutput_Cues_Product_04",
+        "RecycledOutput_Cues_Product_03",
+        "RecycledOutput_Cues_Product_02",
+        "RecycledOutput_Cues_Product_01",
+        "RecycledOutput_Cues_OutputPath"
+      ],
+      "roblox_placement_target": "Lysosome_Model/RecycledOutputCues",
+      "roblox_material_family": "recycled_outputs",
+      "event_bindings": [
+        "lysosome.recycling_output"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "80775731352612",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/36be884d-3401-4765-b829-6f3bd20bea17",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_LysosomeRuntime",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_ANCHORS_LysosomeRuntime.fbx",
+      "file_size_bytes": 30716,
+      "object_count": 4,
+      "triangle_count": 480,
+      "object_names": [
+        "Interaction_Hotspots_LysosomeAnchor_04",
+        "Interaction_Hotspots_LysosomeAnchor_03",
+        "Interaction_Hotspots_LysosomeAnchor_02",
+        "Interaction_Hotspots_LysosomeAnchor_01"
+      ],
+      "roblox_placement_target": "Lysosome_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "lysosome.inspect_digestion",
+        "lysosome.inspect_recycling"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "127635415866764",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/3dad5e7e-f086-4de9-b83d-f09c523a67bb",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_LysosomeProxy",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_COLLISION_LysosomeProxy.fbx",
+      "file_size_bytes": 19228,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "Lysosome_CollisionProxy"
+      ],
+      "roblox_placement_target": "Lysosome_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "122171898843989",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/27d807c2-9409-41b5-8310-caaecd23f37f",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

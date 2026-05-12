@@ -1,0 +1,11 @@
+check,status,evidence
+Workspace.Ball preserved,pass,"No replacement object created; float forces were added to the existing user ball."
+Full physical ball covered,pass,"Studio probe found 7 BaseParts and 7 MainCellSubmarineBuoyancy VectorForces."
+Constrained assemblies handled,pass,"Forces now use each part's GetMass() instead of only CollisionBall.AssemblyMass."
+Runtime source write guarded,pass,"Script.Source assignment is wrapped in pcall; builder-owned Heartbeat handles live float."
+Runtime float telemetry active,pass,"SubmarineFloatBodyCount reported 7 in Studio."
+Lift exceeds gravity below target,pass,"Probe measured lift ratio 2.10x neutral gravity while ball y range was 100.16..101.79 and target was 137.79."
+Old rolling controller disabled,pass,"ControlAngularVelocity and ControlAlignOrientation remain disabled."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Diff whitespace validation,pass,"git diff --check passed for touched source files."
+Play-mode observation,partial,"Studio UI showed server build messages, but legacy bridge reads edit datamodel after play transitions; visual/physics final confirmation should be checked manually in Play."

@@ -1,0 +1,36 @@
+{
+  "schema_version": "phase_06t_visual_review_v1",
+  "organelle": "nucleus",
+  "phase": "06T",
+  "reviewer": "Visual Organic Quality Reviewer",
+  "reviewer_provenance": "manual_render_inspection",
+  "visual_pass": true,
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "RoughER_Connection only",
+  "score_0_to_100": 79,
+  "similarity_scores": {
+    "pore_crossing_readability": 83,
+    "cargo_category_readability": 82,
+    "organic_non_toy_quality": 74,
+    "phase_scope_control": 96
+  },
+  "score_evidence": [
+    "The first transport render was rejected because the route cues read as heavy rods and the close-up did not prove that cargo crossed through a visible pore.",
+    "The improved close-up now frames a nuclear pore complex directly, with protein import cargo and small solute dots visible at the selective gate.",
+    "The generated scene uses the pore, chromatin, and nucleolus baseline images in the same Blender review board because no dedicated transport baseline PNG exists yet.",
+    "Cargo categories are visually distinct: green NLS protein import, pink mRNA export squiggles, paired magenta/cyan ribosomal subunit export, and subtle lilac solute dots.",
+    "The phase adds only Transport_Cargo and does not introduce rough ER, mitosis fragments, interaction hotspots, condensed chromosomes, or DNA export."
+  ],
+  "major_failures": [],
+  "minor_issues": [
+    "Some path guides still read slightly schematic compared with the organic baseline anatomy.",
+    "The green protein cargo is lumpy and tagged, but close-up silhouettes remain somewhat faceted and need final mesh smoothing or baked detail.",
+    "The reference board uses related nucleus baselines rather than a dedicated transport baseline image."
+  ],
+  "required_fixes": [
+    "Before final presentation, add or source a dedicated nucleocytoplasmic transport baseline image for review scoring.",
+    "In a final polish pass, convert the path guides into subtler particle trails or Roblox Beam/Attachment paths so they do not dominate the anatomy.",
+    "Smooth or remesh protein cargo tokens before Roblox export."
+  ],
+  "approved_to_continue": true
+}

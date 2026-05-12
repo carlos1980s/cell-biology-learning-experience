@@ -1,0 +1,18 @@
+{
+  "schema_version": "rough_er_blender_oauth_upload_report_v1",
+  "status": "pass",
+  "creator": "USER:6108806590:papanueella303",
+  "updated_exports": 0,
+  "results": [
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_LOD0_ProteinFoldingCavities",
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_LOD0_ProteinFoldingCavities.fbx",
+      "asset_name": "RoughER_EXPORT_LOD0_ProteinFoldingCavities",
+      "creator": "USER:6108806590:papanueella303",
+      "status": "dry_run_pass",
+      "file_size_bytes": 58428,
+      "elapsed_seconds": 0.0
+    }
+  ]
+}

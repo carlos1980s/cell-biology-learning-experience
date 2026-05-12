@@ -1,0 +1,10 @@
+check,status,evidence
+Nucleus collision source added,pass,"configureNucleusMembraneCollision() exists in BuildMainCellExperience.lua."
+Existing visual meshes preserved,pass,"Only invisible collision/proxy parts are made collidable."
+Workspace nucleus collision enabled,pass,"Workspace.Nucleus_Model NucleusMembraneCollisionEnabled=true."
+Collision proxy collidable,pass,"Studio probe found one live nucleus collision proxy with CanCollide=true."
+Collision aligned to membrane,pass,"Proxy fit set to OuterEnvelope103 and size became 230.72,228.85,228.46."
+Proxy remains invisible,pass,"Collision proxy transparency=1.0."
+Collision fidelity explicit,pass,"Live proxy reports PreciseConvexDecomposition."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

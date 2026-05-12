@@ -1,0 +1,64 @@
+{
+  "organelle": "lysosome",
+  "phase": 1,
+  "reviewer": "Roblox Export Reviewer",
+  "review_scope": "Phase 1 scene setup, root rig, whole-cell context socket, builder report, manifest, Roblox export rules, checklist, and review render.",
+  "inputs_reviewed": [
+    "ROBLOX_EXPORT_RULES.md",
+    "shared/review_checklists/roblox_export_checklist.csv",
+    "organelles/lysosome/component_manifest.json",
+    "organelles/lysosome/build_lysosome.py",
+    "organelles/lysosome/review_renders/phase_01_scene_socket.png",
+    "organelles/lysosome/review_reports/phase_01_builder_report.json"
+  ],
+  "export_pass": false,
+  "score_0_to_100": 68,
+  "approved_to_continue": false,
+  "checklist_results": {
+    "export_001_transforms_are_applied_before_export": {
+      "status": "fail",
+      "notes": "No export step exists in Phase 1 and the script does not explicitly apply transforms before a Roblox-bound export. The visible attach orbit has rotation set procedurally, which must be applied or exported through a controlled export-only collection in a later pass."
+    },
+    "export_002_origins_and_pivots_support_intended_animation": {
+      "status": "pass_with_phase_limits",
+      "notes": "Lysosome_RootRig and WholeCell_ContextSocket are centered at the origin and parented in a sensible hierarchy for later whole-cell attachment and movement."
+    },
+    "export_003_triangle_and_material_risks_are_listed": {
+      "status": "partial",
+      "notes": "The builder report lists general material and future detail risks, but it does not provide triangle count, object count, material count, texture count, or a concrete Roblox budget."
+    },
+    "export_004_exported_component_names_are_stable": {
+      "status": "pass_with_phase_limits",
+      "notes": "Created major components use exact manifest names: WholeCell_ContextSocket and Lysosome_RootRig. Helper visual objects also use stable descriptive names."
+    },
+    "export_005_missing_manifest_components_are_reported": {
+      "status": "pass",
+      "notes": "The builder report correctly reports Lysosome_Membrane, AcidicInterior_Volume, DigestiveEnzyme_Clusters, WasteCargo_Fragments, RecycledOutput_Cues, and Interaction_Hotspots as incomplete."
+    }
+  },
+  "major_failures": [
+    "No Roblox export artifact or export manifest is produced for Phase 1, so the phase cannot be considered an export-ready package.",
+    "No explicit transform-application or export-only collection workflow is present for the generated socket geometry.",
+    "Required export review fields from ROBLOX_EXPORT_RULES.md are incomplete: exported files and manual setup notes are not listed.",
+    "Triangle count, material count, texture count, and object count are not measured or recorded."
+  ],
+  "minor_issues": [
+    "Procedural Blender material nodes and the displacement texture on the visible socket core will not transfer directly to Roblox without baking or simplification.",
+    "The review render shows only a socket marker and attach orbit, which is acceptable for Phase 1 scope but provides no evidence for final lysosome collision, LOD, transparency, or animation behavior.",
+    "The visible socket core is a UV sphere placeholder; it should remain an integration marker and not become part of the final exported lysosome biology mesh unless documented as a debug-only component.",
+    "Future transparent acidic interior effects are already identified as a risk, but no Roblox approximation strategy is specified yet."
+  ],
+  "required_fixes": [
+    "Add a Phase 1 export-readiness section or companion report that lists exported files, component names, missing manifest components, estimated Roblox risks, and manual setup notes.",
+    "Record concrete object, material, texture, and triangle counts for all Phase 1 export-candidate geometry.",
+    "Define an export-only collection or equivalent export group for WholeCell_ContextSocket and Lysosome_RootRig support objects.",
+    "Before any Roblox-bound export, apply transforms to mesh export candidates or document why a mesh is helper-only and excluded from export.",
+    "Mark procedural node materials and displacement as bake-required, Roblox-simplified, or debug-only.",
+    "Keep the missing full lysosome components blocked until later phases create export-conscious geometry using the exact manifest names."
+  ],
+  "phase_scope_notes": [
+    "Phase 1 intentionally creates only scene infrastructure, root rig, and whole-cell socket.",
+    "The current scaffold is useful for future animation and integration planning, but it does not satisfy the required Roblox export package criteria yet.",
+    "The phase should be revised or supplemented with export documentation before continuing to Phase 2 under the project workflow rules."
+  ]
+}

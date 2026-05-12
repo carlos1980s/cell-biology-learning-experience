@@ -1,0 +1,14 @@
+{
+  "schema_version": "smooth_er_latest_status_v1",
+  "organelle": "smooth_er",
+  "latest_phase": "phase_05_roblox_assembly",
+  "status": "blocked_missing_package_asset_ids",
+  "approved_for_integration": false,
+  "scale_up_gate": "nucleus_phase_08r_upload_studio_play_mode_blocked",
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/exports/smooth_er_phase_04_roblox_asset_manifest.json",
+  "studio_assembly_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/exports/review_reports/phase05_studio_assembly_report.json",
+  "blocking_findings": [
+    "Roblox package asset IDs are missing for: EXPORT_LOD0_TubularNetwork, EXPORT_LOD0_LipidSynthesisZones, EXPORT_LOD0_DetoxReactionSites, EXPORT_LOD0_CalciumStoragePockets, EXPORT_LOD0_ERTransitionHandoffCues, EXPORT_ANCHORS_SmoothERRuntime, EXPORT_COLLISION_SmoothERProxy"
+  ],
+  "next_allowed_scope": "Upload Smooth ER Phase 04 packages and record package_asset_id for every group."
+}

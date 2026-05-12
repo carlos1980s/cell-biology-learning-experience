@@ -1,0 +1,87 @@
+{
+  "phase": "roblox_v1_gene_expression_lesson",
+  "date": "2026-05-08",
+  "goal": "Install a self-contained teacher-guided DNA to RNA to protein lesson layer into the current V1 Roblox cell scene.",
+  "source_files": [
+    "tools/install_v1_gene_expression_lesson.py"
+  ],
+  "changes": [
+    "Added a standalone lesson installer that does not rebuild water, spawn, or imported organelle meshes.",
+    "Created Workspace.V1LessonRuntime with seven non-colliding lesson stations.",
+    "Created ReplicatedStorage.V1LessonRemotes with LessonState and LessonAction RemoteEvents.",
+    "Installed ServerScriptService.V1GeneExpressionLessonController to own progression, proximity gating, micro-check validation, and overlay animations.",
+    "Installed StarterPlayer.StarterPlayerScripts.V1TeacherLessonClient to create the teacher HUD, guide marker, beam, Continue button, and answer buttons.",
+    "Added self-contained gene-expression overlays for transcription, mRNA export, translation, protein handoff, and recap.",
+    "Kept action ids aligned to existing biology concepts: transcribe_gene, export_mrna, translate_mrna, protein_handoff.",
+    "Kept V1 water and V1_WaterSpawn intact."
+  ],
+  "live_studio_result": {
+    "runtime_exists": true,
+    "runtime_version": "GeneExpressionLesson_V1",
+    "workspace_enabled": true,
+    "workspace_version": "GeneExpressionLesson_V1",
+    "remotes_exists": true,
+    "lesson_state_exists": true,
+    "lesson_action_exists": true,
+    "server_script": "ServerScriptService.V1GeneExpressionLessonController",
+    "server_source_length": 14233,
+    "server_has_proximity_gating": true,
+    "server_has_animation_overlays": true,
+    "client_script": "StarterPlayer.StarterPlayerScripts.V1TeacherLessonClient",
+    "client_source_length": 9860,
+    "client_has_teacher_hud": true,
+    "client_has_guide_marker": true,
+    "station_count": 7,
+    "prompt_count": 7,
+    "collidable_station_count": 0,
+    "bad_water_station_count": 0,
+    "spawn": "Workspace.V1_WaterSpawn",
+    "spawn_enabled": true,
+    "spawn_material_sample": "Water=8",
+    "lesson_steps": [
+      "1:welcome",
+      "2:dna_chromatin",
+      "3:transcription",
+      "4:mrna_export",
+      "5:translation",
+      "6:protein_handoff",
+      "7:recap"
+    ]
+  },
+  "deployment_output": {
+    "runtime": "Workspace.V1LessonRuntime",
+    "station_count": 7,
+    "remotes": "ReplicatedStorage.V1LessonRemotes",
+    "server_script": "ServerScriptService.V1GeneExpressionLessonController",
+    "client_script": "StarterPlayer.StarterPlayerScripts.V1TeacherLessonClient",
+    "nucleus_exists": true,
+    "ribosomes_exists": true,
+    "rough_er_exists": true,
+    "golgi_exists": true,
+    "spawn": "Workspace.V1_WaterSpawn",
+    "station_water_samples": [
+      "welcome Water=8",
+      "dna_chromatin Water=8",
+      "transcription Water=8",
+      "mrna_export Water=8",
+      "translation Water=4",
+      "protein_handoff Water=8",
+      "recap Water=8"
+    ]
+  },
+  "validation": [
+    "python3 -m py_compile tools/install_v1_gene_expression_lesson.py",
+    "git diff --check -- tools/install_v1_gene_expression_lesson.py",
+    "Legacy Studio bridge install succeeded.",
+    "Live Studio bridge contract probe passed for runtime, remotes, scripts, station count, prompt count, non-collision, water samples, and spawn invariant."
+  ],
+  "manual_play_review_needed": [
+    "Press Play and confirm V1TeacherLessonUI appears.",
+    "Confirm the local guide marker points to each station.",
+    "Confirm Continue advances only when near a station.",
+    "Confirm micro-check buttons appear only in range.",
+    "Confirm transcription, mRNA export, translation, and protein handoff overlays animate.",
+    "Confirm mobile/VR controls can tap/press lesson controls without keyboard-only dependency."
+  ],
+  "next_recommended_phase": "Run a play-mode review and tune station positions/UI scale from the actual player camera if any target is too hard to reach or see."
+}

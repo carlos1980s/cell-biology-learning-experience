@@ -1,0 +1,12 @@
+check,status,evidence
+Visible pore guide created,pass,"CellEntryPoreGuide exists under CellEnvironment_Main."
+Entry marker is non-blocking,pass,"Studio probe found 41 guide BaseParts and 0 CanCollide=true parts."
+Beacon is easier to see,pass,"Studio probe found 9 EntryPoreBeaconMarker parts and 8 EntryGuideBubble parts."
+Guide sits at allowed pore,pass,"CellEntryGuidePoreCenter matches CellWallPoreCenter: -64,78,349."
+Spawn relocated after this guide pass,info,"Current spawn is submarine-side; the front pore guide remains at -64,78,349."
+No text labels added,pass,"Guide uses glow, ring beads, bubbles, beams, light, and particles only."
+Cell wall behavior preserved,pass,"TopOpenWithPoreGate mode and existing pore blockers remain in the source."
+Studio deployment,pass,"BuildMainCellExperience deployed and require(builder).build() succeeded through the legacy bridge."
+Studio selection,pass,"Workspace.CellEnvironment_Main.CellEntryPoreGuide was selected for inspection."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."

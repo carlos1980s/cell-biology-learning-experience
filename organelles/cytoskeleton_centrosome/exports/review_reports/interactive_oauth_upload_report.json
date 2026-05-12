@@ -1,0 +1,268 @@
+{
+  "schema_version": "cytoskeleton_centrosome_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 7,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_MicrotubuleTracks",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MicrotubuleTracks.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "operationId": "cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "operationId": "cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+        "done": true,
+        "response": {
+          "path": "assets/95903370015324",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:15.757415Z",
+          "assetId": "95903370015324",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_MicrotubuleTrac",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_MicrotubuleTracks",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95903370015324"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_ActinNetwork",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_ActinNetwork.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "operationId": "ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "operationId": "ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+        "done": true,
+        "response": {
+          "path": "assets/132417208634661",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:22.285411600Z",
+          "assetId": "132417208634661",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_ActinNetwork",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_ActinNetwork",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "132417208634661"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_IntermediateFilaments",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_IntermediateFilaments.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "operationId": "7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "operationId": "7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+        "done": true,
+        "response": {
+          "path": "assets/95719273552129",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:28.723709500Z",
+          "assetId": "95719273552129",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_IntermediateFil",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_IntermediateFilaments",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "95719273552129"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_CentrosomeCentrioles",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_CentrosomeCentrioles.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "operationId": "14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "operationId": "14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+        "done": true,
+        "response": {
+          "path": "assets/124390498761836",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:37.397003200Z",
+          "assetId": "124390498761836",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_CentrosomeCentr",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_CentrosomeCentrioles",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "124390498761836"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_LOD0_MotorAndSpindleCues",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MotorAndSpindleCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "operationId": "65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "operationId": "65507da2-34ed-4014-ad27-d9c9fa477c1a",
+        "done": true,
+        "response": {
+          "path": "assets/96985826139636",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:47.980755500Z",
+          "assetId": "96985826139636",
+          "displayName": "CytoskeletonCentrosome_EXPORT_LOD0_MotorAndSpindle",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_LOD0_MotorAndSpindleCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "96985826139636"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "operationId": "333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "operationId": "333a1481-ea38-4edf-9e86-29b91ca2931e",
+        "done": true,
+        "response": {
+          "path": "assets/84197880362906",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:52.754823600Z",
+          "assetId": "84197880362906",
+          "displayName": "CytoskeletonCentrosome_EXPORT_ANCHORS_Cytoskeleton",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "84197880362906"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_COLLISION_CytoskeletonCentrosomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "operationId": "38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "operationId": "38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+        "done": true,
+        "response": {
+          "path": "assets/89957612291026",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:56.511004200Z",
+          "assetId": "89957612291026",
+          "displayName": "CytoskeletonCentrosome_EXPORT_COLLISION_Cytoskelet",
+          "description": "Cell Blender to Roblox organelle package: cytoskeleton_centrosome/EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "89957612291026"
+    }
+  ]
+}

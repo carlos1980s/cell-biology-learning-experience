@@ -1,0 +1,33 @@
+{
+  "organelle": "nucleus",
+  "current_valid_phase": "02L",
+  "status": "lamina_scope_passed",
+  "full_nucleus_phase_3_status": "blocked",
+  "reason": "The nuclear lamina phase passed scoped visual review, but internal systems still require separate gates.",
+  "base_status": "organelles/nucleus/review_reports/phase_02p_latest_status.json",
+  "builder_report": "organelles/nucleus/review_reports/phase_02l_builder_report.json",
+  "visual_review": "organelles/nucleus/integration/review_reports/phase_02l_visual_review.json",
+  "blend_path": "organelles/nucleus/integration/nucleus_phase_02l_nuclear_lamina.blend",
+  "reference_board_render": "organelles/nucleus/review_renders/phase_02l_reference_board.png",
+  "new_manifest_components": [
+    "NuclearLamina_Lattice"
+  ],
+  "validated_existing_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores"
+  ],
+  "next_allowed_scope": "Nucleoplasm_Volume only",
+  "next_blocked_scopes": [
+    "chromatin",
+    "nucleolus",
+    "transport cargo",
+    "rough ER connection",
+    "mitosis fragments",
+    "whole nucleus Phase 3"
+  ]
+}

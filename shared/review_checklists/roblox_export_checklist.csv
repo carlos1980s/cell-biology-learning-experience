@@ -1,0 +1,7 @@
+check_id,criterion,required
+export_001,Transforms are applied before export,true
+export_002,Origins and pivots support intended animation,true
+export_003,Triangle and material risks are listed,true
+export_004,Exported component names are stable,true
+export_005,Missing manifest components are reported,true
+

@@ -1,0 +1,137 @@
+{
+  "schema_version": "vesicles_endosomes_builder_report_v1",
+  "phase": "phase_03",
+  "phase_id": "phase_03_functional_teaching_layer",
+  "organelle": "vesicles_endosomes",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "VesiclesEndosomes_RootRig",
+    "TransportVesicles",
+    "EarlyEndosome_SortingBody",
+    "LateEndosome_MaturationBody",
+    "CoatedVesicle_Cues",
+    "RabSNARE_TeachingCues",
+    "CargoSorting_Routes",
+    "Interaction_Hotspots"
+  ],
+  "incomplete_components": [],
+  "manifest_components_still_missing_after_phase": [],
+  "render_paths": [
+    {
+      "type": "wide_function",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/vesicles_endosomes/review_renders/phase_03_wide_function.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "process_close",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/vesicles_endosomes/review_renders/phase_03_process_close.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "handoff_cues",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/vesicles_endosomes/review_renders/phase_03_handoff_cues.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/vesicles_endosomes/vesicles_endosomes_phase_03_functional_teaching.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "VesiclesEndosomes_RootRig",
+    "WholeCell_ContextSocket",
+    "TransportVesicles",
+    "TransportVesicles_OrganicDetail_01",
+    "TransportVesicles_OrganicDetail_02",
+    "TransportVesicles_OrganicDetail_03",
+    "TransportVesicles_OrganicDetail_04",
+    "TransportVesicles_OrganicDetail_05",
+    "TransportVesicles_OrganicDetail_06",
+    "TransportVesicles_OrganicDetail_07",
+    "TransportVesicles_OrganicDetail_08",
+    "TransportVesicles_OrganicDetail_09",
+    "EarlyEndosome_SortingBody",
+    "EarlyEndosome_SortingBody_OrganicDetail_01",
+    "EarlyEndosome_SortingBody_OrganicDetail_02",
+    "EarlyEndosome_SortingBody_OrganicDetail_03",
+    "EarlyEndosome_SortingBody_OrganicDetail_04",
+    "LateEndosome_MaturationBody",
+    "LateEndosome_MaturationBody_OrganicDetail_01",
+    "LateEndosome_MaturationBody_OrganicDetail_02",
+    "LateEndosome_MaturationBody_OrganicDetail_03",
+    "CoatedVesicle_Cues",
+    "CoatedVesicle_Cues_OrganicDetail_01",
+    "CoatedVesicle_Cues_OrganicDetail_02",
+    "CoatedVesicle_Cues_OrganicDetail_03",
+    "CoatedVesicle_Cues_OrganicDetail_04",
+    "CoatedVesicle_Cues_OrganicDetail_05",
+    "CoatedVesicle_Cues_OrganicDetail_06",
+    "CoatedVesicle_Cues_OrganicDetail_07",
+    "CoatedVesicle_Cues_OrganicDetail_08",
+    "CoatedVesicle_Cues_OrganicDetail_09",
+    "CoatedVesicle_Cues_OrganicDetail_10",
+    "CoatedVesicle_Cues_OrganicDetail_11",
+    "CoatedVesicle_Cues_OrganicDetail_12",
+    "RabSNARE_TeachingCues",
+    "RabSNARE_TeachingCues_OrganicDetail_01",
+    "RabSNARE_TeachingCues_OrganicDetail_02",
+    "RabSNARE_TeachingCues_OrganicDetail_03",
+    "RabSNARE_TeachingCues_OrganicDetail_04",
+    "RabSNARE_TeachingCues_OrganicDetail_05",
+    "RabSNARE_TeachingCues_OrganicDetail_06",
+    "RabSNARE_TeachingCues_OrganicDetail_07",
+    "RabSNARE_TeachingCues_OrganicDetail_08",
+    "RabSNARE_TeachingCues_OrganicDetail_09",
+    "RabSNARE_TeachingCues_OrganicDetail_10",
+    "CargoSorting_Routes",
+    "CargoSorting_Routes_Branch_01",
+    "CargoSorting_Routes_Branch_02",
+    "CargoSorting_Routes_Branch_03",
+    "CargoSorting_Routes_Branch_04",
+    "Interaction_Hotspots",
+    "Interaction_Hotspots_OrganicDetail_01",
+    "Interaction_Hotspots_OrganicDetail_02",
+    "Interaction_Hotspots_OrganicDetail_03",
+    "Interaction_Hotspots_OrganicDetail_04",
+    "Interaction_Hotspots_OrganicDetail_05"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "VesiclesEndosomes_KeyLight",
+    "Camera_VesiclesEndosomes_wide_function",
+    "Camera_VesiclesEndosomes_process_close",
+    "Camera_VesiclesEndosomes_handoff_cues"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 56,
+    "biological_mesh_count": 47,
+    "triangle_count": 9616
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated vesicles/endosomes generated from inception.",
+    "Visible components use generated organic meshes with function metadata."
+  ],
+  "roblox_export_risks": [
+    "Small vesicle details may need batching.",
+    "Phase 5 requires real package_asset_id values for every group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

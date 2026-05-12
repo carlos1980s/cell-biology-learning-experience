@@ -1,0 +1,141 @@
+{
+  "schema_version": "cytoskeleton_centrosome_builder_report_v1",
+  "phase": "phase_04",
+  "phase_id": "phase_04_roblox_export_packaging",
+  "organelle": "cytoskeleton_centrosome",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "CytoskeletonCentrosome_RootRig",
+    "Microtubule_Tracks",
+    "Actin_Network",
+    "IntermediateFilaments",
+    "Centrosome_Centrioles",
+    "MotorProtein_Cues",
+    "SpindleReadiness_Cues",
+    "Interaction_Hotspots"
+  ],
+  "incomplete_components": [],
+  "manifest_components_still_missing_after_phase": [],
+  "render_paths": [
+    {
+      "type": "wide_export",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/cytoskeleton_centrosome/review_renders/phase_04_export_groups_wide.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "runtime_anchors",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/cytoskeleton_centrosome/review_renders/phase_04_runtime_anchors.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "collision_proxy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/cytoskeleton_centrosome/review_renders/phase_04_collision_proxy.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/cytoskeleton_centrosome/cytoskeleton_centrosome_phase_04_export_packaging.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "CytoskeletonCentrosome_RootRig",
+    "WholeCell_ContextSocket",
+    "Microtubule_Tracks",
+    "Microtubule_Tracks_Track_01",
+    "Microtubule_Tracks_Track_02",
+    "Microtubule_Tracks_Track_03",
+    "Microtubule_Tracks_Track_04",
+    "Microtubule_Tracks_Track_05",
+    "Microtubule_Tracks_Track_06",
+    "Microtubule_Tracks_Track_07",
+    "Microtubule_Tracks_Track_08",
+    "Actin_Network",
+    "Actin_Network_Track_01",
+    "Actin_Network_Track_02",
+    "Actin_Network_Track_03",
+    "Actin_Network_Track_04",
+    "Actin_Network_Track_05",
+    "Actin_Network_Track_06",
+    "Actin_Network_Track_07",
+    "IntermediateFilaments",
+    "IntermediateFilaments_Track_01",
+    "IntermediateFilaments_Track_02",
+    "IntermediateFilaments_Track_03",
+    "IntermediateFilaments_Track_04",
+    "IntermediateFilaments_Track_05",
+    "Centrosome_Centrioles",
+    "Centrosome_Centrioles_OrganicDetail_01",
+    "Centrosome_Centrioles_OrganicDetail_02",
+    "Centrosome_Centrioles_OrganicDetail_03",
+    "Centrosome_Centrioles_OrganicDetail_04",
+    "Centrosome_Centrioles_OrganicDetail_05",
+    "Centrosome_Centrioles_OrganicDetail_06",
+    "Centrosome_Centrioles_OrganicDetail_07",
+    "Centrosome_Centrioles_OrganicDetail_08",
+    "MotorProtein_Cues",
+    "MotorProtein_Cues_OrganicDetail_01",
+    "MotorProtein_Cues_OrganicDetail_02",
+    "MotorProtein_Cues_OrganicDetail_03",
+    "MotorProtein_Cues_OrganicDetail_04",
+    "MotorProtein_Cues_OrganicDetail_05",
+    "MotorProtein_Cues_OrganicDetail_06",
+    "MotorProtein_Cues_OrganicDetail_07",
+    "MotorProtein_Cues_OrganicDetail_08",
+    "MotorProtein_Cues_OrganicDetail_09",
+    "MotorProtein_Cues_OrganicDetail_10",
+    "MotorProtein_Cues_OrganicDetail_11",
+    "MotorProtein_Cues_OrganicDetail_12",
+    "SpindleReadiness_Cues",
+    "SpindleReadiness_Cues_Branch_01",
+    "SpindleReadiness_Cues_Branch_02",
+    "SpindleReadiness_Cues_Branch_03",
+    "SpindleReadiness_Cues_Branch_04",
+    "Interaction_Hotspots",
+    "Interaction_Hotspots_OrganicDetail_01",
+    "Interaction_Hotspots_OrganicDetail_02",
+    "Interaction_Hotspots_OrganicDetail_03",
+    "Interaction_Hotspots_OrganicDetail_04",
+    "Interaction_Hotspots_OrganicDetail_05",
+    "Interaction_Hotspots_OrganicDetail_06",
+    "CytoskeletonCentrosome_CollisionProxy"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "CytoskeletonCentrosome_KeyLight",
+    "Camera_CytoskeletonCentrosome_wide_export",
+    "Camera_CytoskeletonCentrosome_runtime_anchors",
+    "Camera_CytoskeletonCentrosome_collision_proxy"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 60,
+    "biological_mesh_count": 50,
+    "triangle_count": 9080
+  },
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/cytoskeleton_centrosome/exports/cytoskeleton_centrosome_phase_04_roblox_asset_manifest.json",
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": true,
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated cytoskeleton/centrosome generated from inception.",
+    "Fiber tracks are generated wavy tubes with functional metadata."
+  ],
+  "roblox_export_risks": [
+    "Long thin tracks need Roblox collision and LOD testing.",
+    "Phase 5 requires real package_asset_id values for every group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

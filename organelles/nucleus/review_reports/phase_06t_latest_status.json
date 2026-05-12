@@ -1,0 +1,29 @@
+{
+  "schema_version": "phase_latest_status_v1",
+  "organelle": "nucleus",
+  "phase": "06T",
+  "status": "passed_scoped_transport_cargo_gate_with_export_polish_debt",
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "RoughER_Connection only",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_06t_transport_cargo.blend",
+  "builder_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_06t_builder_report.json",
+  "visual_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_06t_visual_review.json",
+  "biology_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_06t_biology_review.json",
+  "roblox_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_06t_roblox_review.json",
+  "animation_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_06t_animation_review.json",
+  "code_structure_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_06t_code_structure_review.json",
+  "review_renders": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_06t_reference_board.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_06t_transport_overview.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_06t_pore_transport_closeup.png"
+  ],
+  "remaining_blockers": [
+    "Full nucleus is still not approved; rough ER connection, mitosis fragments, and interaction hotspots remain unbuilt.",
+    "Transport source art requires Roblox Beam/Attachment conversion and final overlay tuning before export."
+  ],
+  "roblox_export_risks": [
+    "Curve paths and mRNA squiggles need conversion for Studio.",
+    "Transparent route guides need Roblox material sorting validation.",
+    "Gate pulse and cargo keyframes need runtime event mapping."
+  ]
+}

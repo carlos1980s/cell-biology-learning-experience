@@ -1,0 +1,49 @@
+{
+  "phase": "roblox_controls_lighting_membrane_polish",
+  "date": "2026-05-04",
+  "scope": [
+    "mobile and VR-friendly cytoplasm swimming controls",
+    "cooler stable interior lighting",
+    "outer nuclear membrane transparency reduction"
+  ],
+  "source_changes": {
+    "src/MainCellExperience/BuildMainCellExperience.lua": [
+      "Shifted Lighting and Atmosphere away from warm/yellow grading toward a cooler cyan-blue cytoplasm baseline.",
+      "Reduced bloom, exposure, glare, and blur so lighting remains more stable and less blown out.",
+      "Replaced warm/gold fill lights with lower-intensity cool cyan, blue, and purple fills.",
+      "Increased swim speed/acceleration response and enlarged touch controls for phone steering.",
+      "Kept gamepad and VR thumbstick input paths active for non-keyboard play."
+    ],
+    "tools/assemble_nucleus_functional_model_in_studio.py": [
+      "Reduced outer_membrane_panels transparency from 0.02 to 0.01."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "main_cell_builder_applied": true,
+    "studio_edit_mode_confirmed": true,
+    "outer_membrane_live_transparency": 0.01,
+    "controller_source_installed_in_starter_player_scripts": true,
+    "official_mcp_status": "timed out; legacy bridge used successfully"
+  },
+  "validation": {
+    "python_compile": "passed for deploy_main_cell_environment_to_studio.py and assemble_nucleus_functional_model_in_studio.py",
+    "diff_check": "passed for edited files",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok",
+    "studio_value_probe": {
+      "lighting_clock_time": 13.25,
+      "lighting_brightness": 0.98,
+      "lighting_exposure_compensation": 0.02,
+      "controller_has_large_touch_pad": true,
+      "controller_has_fast_accel": true,
+      "outer_membrane_parts_set": 1
+    },
+    "live_studio_screenshot": "review_renders/roblox_gameplay_polish/controls_lighting_membrane_studio_view.png"
+  },
+  "remaining_risks": [
+    "Phone steering still needs real device or Studio device-emulation play testing; desktop Studio cannot fully prove touch ergonomics.",
+    "The main-cell Blender package imports are still missing in the current Studio place, so the environment builder warns about missing main-cell packages. This pass focused on controls, lighting, and the current nucleus assembly.",
+    "The swim color grade is installed in the LocalScript and will appear only after Play starts."
+  ],
+  "next_recommended_phase": "Run a short device-control review on phone and VR, then tune touch pad size, acceleration, and camera behavior from observed player movement."
+}

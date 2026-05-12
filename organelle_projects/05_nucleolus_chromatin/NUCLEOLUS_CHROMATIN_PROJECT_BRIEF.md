@@ -6,8 +6,9 @@ packaging, and ribosome-production learning hooks.
 Recommended Roblox object: one `Model` named `NucleolusAndChromatin`, parented
 inside or near the `Nucleus` model during assembly.
 
-First build target: high-contrast interior details that remain readable through
-the nuclear envelope.
+First build target: high-contrast interior details that work inside a walkable
+nucleus chamber, with chromatin as readable cable routes/galleries and the
+nucleolus as a central ribosome-production core.
 
 ## Biological overview
 
@@ -116,15 +117,21 @@ large-scale rRNA production and ribosomal subunit assembly
 
 ## Roblox design concept
 
-Create a readable "genome workshop" inside the translucent nucleus. From a
-distance, players should see a dark nucleolus and colored chromatin territories.
-Up close, hotspots reveal packaging levels and a ribosome-biogenesis pipeline.
+Create a readable "genome workshop" inside the solid walkable nucleus chamber.
+The internal design should feel like functional biological infrastructure:
+chromatin becomes organized cable routes, gene districts, and gallery loops,
+while the nucleolus becomes a dense central production core rather than a
+decorative sphere.
+
+This is an educational scale model. The design enlarges nuclear structures into
+walkable features so students can understand relationships and processes; it
+does not claim that chromatin or the nucleolus are literally building-sized.
 
 The visual identity should separate three ideas:
 
-- genome storage and access: chromatin loops and territories;
-- DNA packaging: zoomable nucleosome strand;
-- ribosome production: nucleolus with rRNA processing and subunit export.
+- genome storage and access: chromatin cable galleries and territories;
+- DNA packaging: zoomable nucleosome strand on a dedicated teaching display;
+- ribosome production: nucleolus core with rRNA processing and subunit export.
 
 ## Model hierarchy
 
@@ -132,18 +139,20 @@ The visual identity should separate three ideas:
 NucleolusAndChromatin
   ChromatinTerritories
     Territory_A_OpenChromatin
-      LoopSegments
+      GalleryCableRoutes
       TranscriptionMarkers
     Territory_B_CondensedChromatin
-      DensePatches
+      DenseCableBundles
       LaminaContactHints
     Territory_C_MixedChromatin
+      WallMountedCableLoops
   PackagingDemo
     DNADoubleHelix
     NucleosomeBeads
     ChromatinFiber
     CondensedChromosomeGhost
   Nucleolus
+    ProductionCore
     FibrillarCenters
     DenseFibrillarComponent
     GranularComponent
@@ -163,29 +172,31 @@ NucleolusAndChromatin
 
 ## Materials, colors, and effects
 
-- Euchromatin: thin flexible curves in pale cyan, green, or light blue with
-  occasional glowing transcription markers.
-- Heterochromatin: thicker, darker violet or deep blue clusters; use denser
-  mesh or grouped beads to communicate compaction.
+- Euchromatin: readable wall-mounted or railing-like cables in pale cyan, green,
+  or light blue with occasional glowing transcription markers.
+- Heterochromatin: thicker, darker violet or deep blue cable bundles; use dense
+  grouped beads or braided routes to communicate compaction.
 - Nucleosome demo: DNA strand in bright blue with histone cores in warm gold or
   soft orange, making the electrostatic wrapping visually obvious.
-- Nucleolus: dense dark purple/magenta body with nested zones. The granular
-  component can use fine speckled particles; fibrillar centers can be lighter
-  internal islands.
+- Nucleolus: dense dark purple/magenta production core with nested zones and
+  irregular lobes. It should read as a hub that players can walk around and
+  inspect, not as a transparent decoration.
 - rRNA and subunit particles: rRNA as small red-orange threads; pre-40S and
   pre-60S subunits as paired but differently sized particles that remain
   separate until the ribosome model in the cytoplasm.
-- Effects should be subtle because this model sits behind the nuclear envelope.
-  Prefer high-contrast forms over heavy bloom.
+- Effects should be subtle and local. Prefer high-contrast forms and clear
+  cable routing over heavy bloom or particle clutter.
 
 ## Interactions and hotspots
 
-- Chromatin compaction hotspot: cycles one region between open loop, nucleosome
-  fiber, and condensed chromosome ghost.
+- Chromatin gallery hotspot: lights a wall-mounted cable route and explains how
+  open chromatin is more accessible than dense chromatin.
+- Chromatin compaction hotspot: cycles one display region between open loop,
+  nucleosome fiber, and condensed chromosome ghost.
 - Nucleosome hotspot: focuses camera on a short DNA segment wrapping around
   histone beads, labeling DNA, histone octamer, and histone tail concept.
-- Gene activation hotspot: toggles a local chromatin opening and releases an RNA
-  particle toward the nearest nuclear pore.
+- Gene activation hotspot: toggles a local chromatin cable opening and releases
+  an RNA particle toward the nearest nuclear pore gate.
 - Nucleolus hotspot: opens a cutaway showing rDNA, pre-rRNA, and assembly zones.
 - Ribosome biogenesis hotspot: spawns pre-40S and pre-60S particles from the
   nucleolus to a pore and hands off to the `Ribosomes` model outside the nucleus.
@@ -196,8 +207,8 @@ NucleolusAndChromatin
 ## Performance notes
 
 - Avoid modeling full DNA helices throughout the nucleus. Use detailed DNA only
-  in the `PackagingDemo`; use curves, beams, or low-part chains for general
-  chromatin.
+  in the `PackagingDemo`; use curves, beams, or low-part cable chains for
+  general chromatin galleries.
 - Limit chromatin territories to 5 to 8 large readable regions rather than many
   small tangled strands.
 - Use pooled particles for rRNA and subunit movement.

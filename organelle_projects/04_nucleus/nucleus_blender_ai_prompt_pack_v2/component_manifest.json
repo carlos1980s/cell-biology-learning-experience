@@ -1,0 +1,393 @@
+{
+  "project": "Animal eukaryotic nucleus Blender-to-Roblox functional model",
+  "scale": "1 Blender unit = 1 micrometer conceptual scale",
+  "components": [
+    {
+      "id": "C00",
+      "name": "Cell_Context_RootRig",
+      "collection": "00_CELL_CONTEXT",
+      "type": "empty + optional transparent cell boundary",
+      "purpose": "Defines the whole animal cell coordinate system so the nucleus is cohesive with the larger Roblox cell.",
+      "geometry": "Create a transparent flattened ovoid cell shell and a central origin/pivot marker. Keep it lightweight.",
+      "materials": [
+        "CellMembrane_ClearBlue",
+        "Cytoplasm_TransparentBlue"
+      ],
+      "animation": "Cell-level parent; no biological animation required except optional subtle cytoplasm drift.",
+      "pass": "Whole cell silhouette is visible and nucleus sits inside it, not as a floating unrelated model."
+    },
+    {
+      "id": "C01",
+      "name": "Cytoplasm_Volume",
+      "collection": "00_CELL_CONTEXT",
+      "type": "semi-transparent volume mesh",
+      "purpose": "Shows that the nucleus is embedded in cytoplasm and that cargo moves between nucleus and cytoplasm.",
+      "geometry": "Low-poly transparent ovoid volume with faint particle dots and flowing curves.",
+      "materials": [
+        "Cytoplasm_TransparentBlue",
+        "Cytoplasm_ParticleSpecks"
+      ],
+      "animation": "Subtle slow drift of internal particles and cytoplasmic paths.",
+      "pass": "Does not obscure the nucleus; should be readable from isometric and side camera views."
+    },
+    {
+      "id": "C02",
+      "name": "NucleusSocket_Center",
+      "collection": "00_CELL_CONTEXT",
+      "type": "empty/socket marker",
+      "purpose": "Roblox assembly anchor for placing, repositioning, or replacing the nucleus model inside the cell.",
+      "geometry": "Small non-render or optional visible ring at nucleus center; add XYZ arrow axes.",
+      "materials": [
+        "Socket_White",
+        "Axis_RedGreenBlue"
+      ],
+      "animation": "Parent point for the whole nucleus. All nucleus objects should ultimately track this pivot.",
+      "pass": "Origin is at the center of nucleus mass; rotations preserve envelope alignment."
+    },
+    {
+      "id": "N01",
+      "name": "Nucleus_RootRig",
+      "collection": "01_NUCLEUS_ROOT",
+      "type": "empty/root",
+      "purpose": "Parent object for all nucleus assets; controls placement, scaling, and high-level animation.",
+      "geometry": "Visible pivot gizmo plus optional faint sphere radius guide.",
+      "materials": [
+        "Pivot_White",
+        "Guide_Transparent"
+      ],
+      "animation": "Master parent for interphase, transport, and mitosis actions.",
+      "pass": "Every nucleus component is parented under this root; no stray unparented nucleus objects."
+    },
+    {
+      "id": "N02",
+      "name": "NE_OuterMembrane_Panels",
+      "collection": "02_NUCLEAR_ENVELOPE",
+      "type": "segmented spherical shell mesh",
+      "purpose": "Outer nuclear membrane; continuous with rough ER; splits during mitosis.",
+      "geometry": "Create 8-12 curved shell panels forming outer sphere. Leave circular holes or socket depressions for NPCs. Add small surface bumps.",
+      "materials": [
+        "Membrane_Outer_Purple",
+        "Membrane_Roughness_Bump"
+      ],
+      "animation": "Panels separate outward during nuclear envelope breakdown; reassemble during telophase.",
+      "pass": "Double membrane is clear; outer layer is distinct from inner membrane; panel seams are visible but not distracting."
+    },
+    {
+      "id": "N03",
+      "name": "NE_InnerMembrane_Panels",
+      "collection": "02_NUCLEAR_ENVELOPE",
+      "type": "inner segmented spherical shell mesh",
+      "purpose": "Inner nuclear membrane lining nucleoplasm; supports lamina attachment.",
+      "geometry": "Create matching inner shell panels with slightly smaller radius and darker purple color. Align with outer panels but keep gap visible.",
+      "materials": [
+        "Membrane_Inner_DeepPurple"
+      ],
+      "animation": "Splits with envelope but slightly delayed behind the outer membrane.",
+      "pass": "Perinuclear space visibly separates inner and outer membranes throughout the shell."
+    },
+    {
+      "id": "N04",
+      "name": "NE_PerinuclearSpace_LumenBand",
+      "collection": "02_NUCLEAR_ENVELOPE",
+      "type": "transparent gap/lumen band",
+      "purpose": "Narrow lumen between inner and outer membranes, continuous with ER lumen.",
+      "geometry": "Thin amber/cyan translucent spherical band between the two membranes. Use additive material.",
+      "materials": [
+        "Lumen_AmberGlow_Transparent"
+      ],
+      "animation": "Glows subtly; splits with envelope panels during mitosis.",
+      "pass": "Learner can see there are two membranes rather than one thick wall."
+    },
+    {
+      "id": "N05",
+      "name": "NPC_RingAssemblies",
+      "collection": "03_NUCLEAR_PORE_SYSTEM",
+      "type": "instanced torus/ring protein complexes",
+      "purpose": "Nuclear pore complexes that regulate transport; not simple holes.",
+      "geometry": "Place 24-36 pores across envelope. Each pore is a torus-like ring with 8 radial protein lobes, cytoplasmic rim, nuclear rim, and central opening.",
+      "materials": [
+        "NPC_Protein_Violet",
+        "NPC_Rim_DarkPurple"
+      ],
+      "animation": "NPC rings remain aligned to membrane; can detach/scatter in mitosis; pulse during transport.",
+      "pass": "NPCs read as protein assemblies with ring/lobes, not blank circular holes."
+    },
+    {
+      "id": "N06",
+      "name": "NPC_GateCore_Selectivity",
+      "collection": "03_NUCLEAR_PORE_SYSTEM",
+      "type": "semi-transparent central gate meshes",
+      "purpose": "Shows selective barrier inside each NPC.",
+      "geometry": "For major visible NPCs, add translucent gel-like plug or star/funnel fibers in the pore center.",
+      "materials": [
+        "NPC_Gate_Lilac_Transparent"
+      ],
+      "animation": "Gate opens/pulses for import/export cargo; small solutes can pass freely while large cargo uses marked transport.",
+      "pass": "At least six visible NPCs show gate cores clearly from the main camera."
+    },
+    {
+      "id": "N07",
+      "name": "NuclearLamina_LatticeTiles",
+      "collection": "04_LAMINA",
+      "type": "inner lattice mesh/curves",
+      "purpose": "Supportive lamin network under inner membrane; maintains nuclear shape and anchors chromatin.",
+      "geometry": "Gold/orange geodesic net just inside inner membrane. Use curves or low-poly tubes.",
+      "materials": [
+        "Lamina_Gold"
+      ],
+      "animation": "Disassembles into short fragments before envelope breakdown; reassembles in telophase.",
+      "pass": "Lamina is visually under the inner membrane, not floating in the nucleoplasm center."
+    },
+    {
+      "id": "N08",
+      "name": "Nucleoplasm_Volume",
+      "collection": "05_NUCLEOPLASM",
+      "type": "transparent inner volume",
+      "purpose": "Semi-fluid internal matrix containing enzymes, nucleotides, proteins, RNA, chromatin, and nucleolus.",
+      "geometry": "Transparent bluish sphere/ellipsoid inside inner membrane with tiny floating particles.",
+      "materials": [
+        "Nucleoplasm_BlueGlass",
+        "Nucleoplasm_Particles"
+      ],
+      "animation": "Slow fluid-like movement and gentle particle drift.",
+      "pass": "Readable as internal volume; does not hide chromatin or nucleolus."
+    },
+    {
+      "id": "N09",
+      "name": "Chromatin_DiffuseThreads",
+      "collection": "06_GENOME_SYSTEM",
+      "type": "beveled curves/threads",
+      "purpose": "DNA packaged with histones during interphase; source of transcription.",
+      "geometry": "Create layered irregular purple/cyan thread network distributed inside nucleoplasm, with denser regions near lamina and around nucleolus.",
+      "materials": [
+        "Chromatin_Purple",
+        "Chromatin_CyanHighlights"
+      ],
+      "animation": "Idle drifting; selected regions glow for transcription; condense toward chromosome meshes during mitosis.",
+      "pass": "Chromatin remains inside nucleus. It should never be animated leaving through NPCs."
+    },
+    {
+      "id": "N10",
+      "name": "Chromosomes_Condensed_MitosisSet",
+      "collection": "06_GENOME_SYSTEM",
+      "type": "hidden/optional chromosome meshes",
+      "purpose": "Condensed DNA state for mitosis animation.",
+      "geometry": "Create 6-10 stylized X/rod chromosome meshes for educational display, initially hidden inside nucleus.",
+      "materials": [
+        "Chromosome_MagentaPurple"
+      ],
+      "animation": "Fade/scale in during prophase as diffuse chromatin fades; align for metaphase demo if requested.",
+      "pass": "Chromosomes have clear condensed forms and are separate from interphase chromatin meshes."
+    },
+    {
+      "id": "N11",
+      "name": "Nucleolus_SubregionBody",
+      "collection": "07_NUCLEOLUS",
+      "type": "bumpy non-membrane spheroid with subregions",
+      "purpose": "Dense non-membrane nuclear region for rRNA synthesis and ribosomal subunit assembly.",
+      "geometry": "Create one large irregular purple spheroid with three subtle subregion textures: fibrillar center, dense fibrillar component, granular component.",
+      "materials": [
+        "Nucleolus_DeepViolet",
+        "Nucleolus_MagentaSpeckles"
+      ],
+      "animation": "Pulses during rRNA production; fades/disassembles during mitosis; reforms after envelope reassembly.",
+      "pass": "No membrane is drawn around it; label/material should communicate it is a dense region, not a separate organelle membrane."
+    },
+    {
+      "id": "N12",
+      "name": "TransportCargo_Markers",
+      "collection": "08_TRANSPORT_CARGO",
+      "type": "animated markers/curves",
+      "purpose": "Shows protein import and RNA/ribosomal export pathways through NPCs.",
+      "geometry": "Green protein cargo spheres with NLS tags move inward; pink RNA squiggle curves and magenta ribosomal subunit particles move outward.",
+      "materials": [
+        "Cargo_Protein_Green",
+        "Cargo_RNA_Pink",
+        "Cargo_Ribosome_Magenta"
+      ],
+      "animation": "Create path curves through selected NPCs. Protein moves cytoplasm->nucleoplasm; RNA moves nucleoplasm->cytoplasm.",
+      "pass": "DNA never exits; only RNA/protein/ribosomal cargo crosses NPCs."
+    },
+    {
+      "id": "N13",
+      "name": "OuterEnvelope_ERConnectionPort",
+      "collection": "09_CELL_CONNECTIONS",
+      "type": "curved membrane bridge",
+      "purpose": "Shows outer nuclear membrane continuity with rough ER.",
+      "geometry": "Add 2-3 ribosome-dotted ER sheet/tube segments attached to one side of outer membrane.",
+      "materials": [
+        "RoughER_BluePurple",
+        "Ribosome_OrangeDots"
+      ],
+      "animation": "Optional subtle ER sway; remains attached to outer membrane in interphase; separates during envelope breakdown.",
+      "pass": "Connection side is visible and clear without overwhelming nucleus."
+    },
+    {
+      "id": "N14",
+      "name": "NE_BreakdownFragments_Vesicles",
+      "collection": "10_MITOSIS_FRAGMENTS",
+      "type": "hidden fragment meshes",
+      "purpose": "Represents nuclear envelope breakdown into vesicles/fragments during mitosis.",
+      "geometry": "Small purple membrane shards and vesicle spheres, initially hidden around envelope.",
+      "materials": [
+        "Membrane_Fragment_Purple",
+        "NPC_Fragment_Violet"
+      ],
+      "animation": "Appear as outer/inner membrane panels fade/split; scatter outward, then hide/reverse for reassembly.",
+      "pass": "Fragment motion is organized enough to teach breakdown, not random visual noise."
+    },
+    {
+      "id": "N15",
+      "name": "Nucleus_InteractionHotspots",
+      "collection": "11_INTERACTION_HOTSPOTS",
+      "type": "click/tap hotspot markers",
+      "purpose": "Roblox interactions for learning, inspection, and triggering animations.",
+      "geometry": "Small low-poly icon plaques/rings: Transport, Transcription, Mitosis, Envelope, Nucleolus, Chromatin.",
+      "materials": [
+        "Hotspot_Gold",
+        "Hotspot_Emission"
+      ],
+      "animation": "Pulse gently; each hotspot triggers one educational animation group.",
+      "pass": "Hotspots are visible but do not block scientific structures."
+    }
+  ],
+  "materials": {
+    "CellMembrane_ClearBlue": {
+      "hex": "#8CCBFF",
+      "alpha": 0.22,
+      "finish": "transparent glass, soft rim highlight"
+    },
+    "Cytoplasm_TransparentBlue": {
+      "hex": "#4DA7FF",
+      "alpha": 0.12,
+      "finish": "transparent volume, very low roughness"
+    },
+    "Membrane_Outer_Purple": {
+      "hex": "#8B55D7",
+      "alpha": 1.0,
+      "finish": "stylized membrane, satin, procedural fine bump"
+    },
+    "Membrane_Inner_DeepPurple": {
+      "hex": "#5E36A6",
+      "alpha": 1.0,
+      "finish": "slightly darker satin membrane"
+    },
+    "Lumen_AmberGlow_Transparent": {
+      "hex": "#F4A03A",
+      "alpha": 0.35,
+      "finish": "transparent additive glow"
+    },
+    "NPC_Protein_Violet": {
+      "hex": "#6E35B9",
+      "alpha": 1.0,
+      "finish": "rounded protein lobes, soft bevels"
+    },
+    "NPC_Gate_Lilac_Transparent": {
+      "hex": "#C07BFF",
+      "alpha": 0.45,
+      "finish": "gel-like selective barrier"
+    },
+    "Lamina_Gold": {
+      "hex": "#DFA03A",
+      "alpha": 1.0,
+      "finish": "thin tube lattice, warm gold"
+    },
+    "Nucleoplasm_BlueGlass": {
+      "hex": "#2F78D8",
+      "alpha": 0.23,
+      "finish": "glass-like internal matrix"
+    },
+    "Chromatin_Purple": {
+      "hex": "#C65BFF",
+      "alpha": 1.0,
+      "finish": "beveled threads with slight emission"
+    },
+    "Chromatin_CyanHighlights": {
+      "hex": "#1E9CFF",
+      "alpha": 1.0,
+      "finish": "secondary thread highlights"
+    },
+    "Chromosome_MagentaPurple": {
+      "hex": "#B246FF",
+      "alpha": 1.0,
+      "finish": "smooth condensed chromosome surface"
+    },
+    "Nucleolus_DeepViolet": {
+      "hex": "#5A176A",
+      "alpha": 1.0,
+      "finish": "bumpy dense spheroid, high roughness"
+    },
+    "Nucleolus_MagentaSpeckles": {
+      "hex": "#E15BD8",
+      "alpha": 1.0,
+      "finish": "tiny speckles and bumps"
+    },
+    "Cargo_Protein_Green": {
+      "hex": "#56C96F",
+      "alpha": 1.0,
+      "finish": "small glossy spheres"
+    },
+    "Cargo_RNA_Pink": {
+      "hex": "#F05FA6",
+      "alpha": 1.0,
+      "finish": "pink RNA squiggle curves"
+    },
+    "Cargo_Ribosome_Magenta": {
+      "hex": "#C94EC8",
+      "alpha": 1.0,
+      "finish": "paired rounded subunit particles"
+    },
+    "RoughER_BluePurple": {
+      "hex": "#625BD6",
+      "alpha": 1.0,
+      "finish": "folded membrane sheets with ribosome dots"
+    },
+    "Ribosome_OrangeDots": {
+      "hex": "#F06A2B",
+      "alpha": 1.0,
+      "finish": "tiny orange dots"
+    },
+    "Membrane_Fragment_Purple": {
+      "hex": "#9B5BE0",
+      "alpha": 1.0,
+      "finish": "small broken curved membrane pieces"
+    },
+    "Hotspot_Gold": {
+      "hex": "#F4C542",
+      "alpha": 1.0,
+      "finish": "emissive rim icon markers"
+    }
+  },
+  "animation_ranges": [
+    {
+      "name": "A01_Interphase_Idle",
+      "frames": "1-120",
+      "description": "Nucleoplasm particles drift, chromatin gently wiggles, nucleolus pulses, NPC gates breathe lightly."
+    },
+    {
+      "name": "A02_Protein_Import_NLS",
+      "frames": "130-210",
+      "description": "Green NLS protein cargo moves from cytoplasm through NPC gate into nucleoplasm; gate pulses open during crossing."
+    },
+    {
+      "name": "A03_RNA_Export",
+      "frames": "220-300",
+      "description": "Pink mRNA squiggle and ribosomal subunit particles move from nucleoplasm through NPC to cytoplasm; DNA/chromatin stays inside."
+    },
+    {
+      "name": "A04_Transcription_Hotspot",
+      "frames": "310-390",
+      "description": "A chromatin region glows; small RNA curve appears and travels toward an NPC."
+    },
+    {
+      "name": "A05_Mitosis_Envelope_Breakdown",
+      "frames": "400-560",
+      "description": "Chromatin condenses; nucleolus fades; lamina fragments; NPCs detach; envelope panels separate into membrane fragments."
+    },
+    {
+      "name": "A06_Nuclear_Reassembly",
+      "frames": "570-720",
+      "description": "Fragments and panels return; lamina re-forms; NPCs reinsert; nucleolus returns; chromatin diffuses."
+    }
+  ]
+}

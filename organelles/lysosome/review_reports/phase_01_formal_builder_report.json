@@ -1,0 +1,145 @@
+{
+  "schema_version": "lysosome_builder_report_v1",
+  "phase": "phase_01",
+  "phase_id": "phase_01_formal_scaffold",
+  "organelle": "lysosome",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Lysosome_RootRig"
+  ],
+  "incomplete_components": [
+    "Lysosome_Membrane",
+    "AcidicInterior_Volume",
+    "DigestiveEnzyme_Clusters",
+    "WasteCargo_Fragments",
+    "RecycledOutput_Cues",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "Lysosome_Membrane",
+    "AcidicInterior_Volume",
+    "DigestiveEnzyme_Clusters",
+    "WasteCargo_Fragments",
+    "RecycledOutput_Cues",
+    "Interaction_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/lysosome/review_renders/phase_01_formal_wide_scaffold.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "close_scaffold",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/lysosome/review_renders/phase_01_formal_close_socket.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/lysosome/review_renders/phase_01_formal_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/lysosome/lysosome_phase_01_formal_scaffold.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "Lysosome_RootRig",
+    "WholeCell_ContextSocket"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "Lysosome_Phase01_Guide_01",
+    "Lysosome_Phase01_Guide_02",
+    "Lysosome_KeyLight",
+    "Camera_Lysosome_wide_scaffold",
+    "Camera_Lysosome_close_scaffold",
+    "Camera_Lysosome_export_inspection"
+  ],
+  "organic_construction_violations": [],
+  "transform_status": [
+    {
+      "name": "Lysosome_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 9,
+      "mesh_object_count": 3,
+      "triangle_count": 672,
+      "material_count": 2,
+      "texture_count": 0
+    },
+    "export_candidates_only": {
+      "object_count": 2,
+      "mesh_object_count": 0,
+      "triangle_count": 0,
+      "material_count": 0,
+      "texture_count": 0
+    }
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated lysosome phase generated from script.",
+    "Visible biological meshes are generated organic meshes, not default primitives."
+  ],
+  "roblox_export_risks": [
+    "Transparent acidic lumen and many enzyme particles need Roblox material/budget validation.",
+    "Roblox package IDs are required before Studio assembly can pass."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

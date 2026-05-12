@@ -1,0 +1,37 @@
+{
+  "phase": "roblox_total_mesh_cleanup",
+  "date": "2026-05-07",
+  "goal": "Remove the temporary cell entrance helper systems and recently generated Roblox Terrain now that the scene is moving to a total mesh setup.",
+  "source_files": [
+    "src/MainCellExperience/BuildMainCellExperience.lua",
+    "tools/validate_main_cell_environment.py"
+  ],
+  "changes": [
+    "Removed the generated cell wall pore collision system from the builder.",
+    "Removed the CellEntryPoreGuide visual markers, beacon spheres, bubbles, beams, light, and mist.",
+    "Removed the generated Terrain water volume creation path.",
+    "Changed clearGeneratedTerrain after play testing so each build preserves user-edited Workspace.Terrain instead of deleting manually added water.",
+    "Kept the submarine-side spawn at Vector3.new(0, 58, -385.691).",
+    "Left imported mesh packages and organelle assembly intact so the total mesh workflow can define the visible cell."
+  ],
+  "studio_probe": {
+    "model": "CellEnvironment_Main",
+    "entry_guide_exists": false,
+    "cell_wall_collision_bounds_exists": false,
+    "generated_terrain_enabled": false,
+    "generated_terrain_cleared": false,
+    "user_edited_terrain_preserved": true,
+    "native_water_volume_enabled": false,
+    "cell_entrance_systems_enabled": false,
+    "terrain_count_cells_after_preservation_fix": 83479116,
+    "root_terrain_folder_exists": false,
+    "spawn_position": "0, 58, -385.6910095214844"
+  },
+  "validation": [
+    "python3 tools/validate_main_cell_environment.py",
+    "git diff --check -- src/MainCellExperience/BuildMainCellExperience.lua tools/validate_main_cell_environment.py",
+    "Deployed BuildMainCellExperience.lua into Roblox Studio through the legacy bridge.",
+    "Ran require(builder).build() and confirmed no entrance guide, no cell wall collision bounds, and no automatic Terrain deletion."
+  ],
+  "result": "The scene builder no longer creates the temporary entry system or Terrain water volume, and it now preserves manually edited Studio water when Play starts."
+}

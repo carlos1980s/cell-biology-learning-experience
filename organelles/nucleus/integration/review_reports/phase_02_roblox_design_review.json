@@ -1,0 +1,109 @@
+{
+  "schema_version": "nucleus_roblox_design_review_v1",
+  "organelle": "nucleus",
+  "phase": 2,
+  "review_type": "roblox_design_and_reference_baseline_review",
+  "decision": "contract_added_pending_studio_import",
+  "approved_for_phase_3_modeling": true,
+  "reference_images_used": [
+    {
+      "path": "reference_images/nucleus_specs/01_nuclear_envelope.png",
+      "baseline_for": [
+        "double_envelope",
+        "perinuclear_lumen"
+      ]
+    },
+    {
+      "path": "reference_images/nucleus_specs/02_nuclear_pores.png",
+      "baseline_for": [
+        "nuclear_pores",
+        "pore_gate_cores"
+      ]
+    },
+    {
+      "path": "reference_images/nucleus_specs/06_nuclear_lamina.png",
+      "baseline_for": [
+        "nuclear_lamina"
+      ]
+    }
+  ],
+  "current_assets_reviewed": {
+    "blend": "organelles/nucleus/nucleus_phase_02_scene.blend",
+    "builder_report": "organelles/nucleus/review_reports/phase_02_builder_report.json",
+    "renders": [
+      "organelles/nucleus/review_renders/phase_02_wide_anatomy_layer.png",
+      "organelles/nucleus/review_renders/phase_02_pore_gate_detail.png",
+      "organelles/nucleus/review_renders/phase_02_export_inspection.png"
+    ]
+  },
+  "reference_alignment": {
+    "double_envelope": {
+      "baseline_image": "reference_images/nucleus_specs/01_nuclear_envelope.png",
+      "status": "partial_pass",
+      "notes": "Phase 2 has separate outer and inner membrane meshes plus readable lumen. Before Phase 3, the envelope needs a stronger reference-driven section/cutaway plan so reviewers can inspect the double layer without relying on transparency alone."
+    },
+    "perinuclear_lumen": {
+      "baseline_image": "reference_images/nucleus_specs/01_nuclear_envelope.png",
+      "status": "partial_pass",
+      "notes": "The glowing lumen exists, but Roblox may not preserve the same transparent/emissive material behavior. A Roblox-safe lumen material fallback is required."
+    },
+    "nuclear_pores": {
+      "baseline_image": "reference_images/nucleus_specs/02_nuclear_pores.png",
+      "status": "partial_pass",
+      "notes": "Raised pore complexes and gate cores are present. The next design pass should define pore density, distribution bands, and LOD variants so the pores remain readable in Roblox without excessive triangle cost."
+    },
+    "pore_gate_cores": {
+      "baseline_image": "reference_images/nucleus_specs/02_nuclear_pores.png",
+      "status": "pass",
+      "notes": "The model explicitly avoids simple open holes by including gate core geometry."
+    },
+    "nuclear_lamina": {
+      "baseline_image": "reference_images/nucleus_specs/06_nuclear_lamina.png",
+      "status": "partial_pass",
+      "notes": "Gold lamina hints are inside the envelope, which is biologically correct. The lattice is not yet dense or structured enough to be a final lamina pass."
+    }
+  },
+  "roblox_design_assessment": {
+    "naming": {
+      "status": "pass",
+      "notes": "Phase 2 export candidates use exact top-level manifest names."
+    },
+    "pivot_and_socket_mapping": {
+      "status": "partial_pass",
+      "notes": "Nucleus_RootRig and WholeCell_ContextSocket exist with export-ready transforms, but the Roblox representation must be specified as Model pivot plus Attachment/metadata before export."
+    },
+    "material_translation": {
+      "status": "changes_required",
+      "notes": "Procedural noise, bump, transparency, emission, and lumen glow need Roblox material fallback definitions. Do not rely on Blender shader nodes for Roblox fidelity."
+    },
+    "geometry_budget": {
+      "status": "conditional_pass",
+      "notes": "Current Phase 2 budget is 54,684 triangles across 7 mesh objects. Acceptable for review, but Phase 3 cannot add full chromatin/nucleolus detail until envelope LOD rules are defined."
+    },
+    "export_packaging": {
+      "status": "changes_required",
+      "notes": "No final Roblox export package or import test exists. Define export collection, excluded review objects, material fallbacks, and LOD targets before treating the asset as Roblox-ready."
+    },
+    "animation_readiness": {
+      "status": "partial_pass",
+      "notes": "Separate named pore/gate groups support future animation, but no animation event map exists for pore selectivity, inspection, envelope breakdown, or lamina highlight states."
+    }
+  },
+  "blockers": [
+    {
+      "id": "studio_import_not_verified",
+      "severity": "non_blocking_for_phase_3",
+      "summary": "A Roblox Studio import test has not been run yet. The design contract now exists, but final export approval still requires Studio verification."
+    }
+  ],
+  "recommended_design_changes": [
+    "Use organelles/nucleus/exports/nucleus_phase_02_export_manifest.json as the Phase 2 export package contract.",
+    "Run python3 tools/validate_nucleus_roblox_design.py before Phase 3 work.",
+    "Add a Roblox import smoke-test target for the nucleus once an export package exists.",
+    "Keep Phase 3 focused on improving the envelope-system parts instead of adding nucleoplasm/chromatin immediately."
+  ],
+  "phase_3_recommendation": {
+    "start_phase_3_geometry_now": true,
+    "next_step": "Proceed with Phase 3 envelope-system refinement only: improve membrane/lumen/pore/lamina quality and LOD discipline before adding interior nucleus biology."
+  }
+}

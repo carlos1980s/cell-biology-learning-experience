@@ -1,0 +1,94 @@
+{
+  "schema_version": "collision_proxy_fbx_repair_report_v1",
+  "status": "pass",
+  "results": [
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_COLLISION_RoughERProxy",
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_COLLISION_RoughERProxy.fbx",
+      "file_size_bytes": 19228,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "ribosomes",
+      "export_group": "EXPORT_COLLISION_RibosomeProxy",
+      "source_file": "organelles/ribosomes/exports/phase_04_roblox/EXPORT_COLLISION_RibosomeProxy.fbx",
+      "file_size_bytes": 19244,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "smooth_er",
+      "export_group": "EXPORT_COLLISION_SmoothERProxy",
+      "source_file": "organelles/smooth_er/exports/phase_04_roblox/EXPORT_COLLISION_SmoothERProxy.fbx",
+      "file_size_bytes": 19228,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "golgi",
+      "export_group": "EXPORT_COLLISION_GolgiProxy",
+      "source_file": "organelles/golgi/exports/phase_04_roblox/EXPORT_COLLISION_GolgiProxy.fbx",
+      "file_size_bytes": 19228,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "vesicles_endosomes",
+      "export_group": "EXPORT_COLLISION_VesiclesEndosomesProxy",
+      "source_file": "organelles/vesicles_endosomes/exports/phase_04_roblox/EXPORT_COLLISION_VesiclesEndosomesProxy.fbx",
+      "file_size_bytes": 19260,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "lysosome",
+      "export_group": "EXPORT_COLLISION_LysosomeProxy",
+      "source_file": "organelles/lysosome/exports/phase_04_roblox/EXPORT_COLLISION_LysosomeProxy.fbx",
+      "file_size_bytes": 19228,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "mitochondrion",
+      "export_group": "EXPORT_COLLISION_MitochondrionProxy",
+      "source_file": "organelles/mitochondrion/exports/phase_04_roblox/EXPORT_COLLISION_MitochondrionProxy.fbx",
+      "file_size_bytes": 19244,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "peroxisomes",
+      "export_group": "EXPORT_COLLISION_PeroxisomeProxy",
+      "source_file": "organelles/peroxisomes/exports/phase_04_roblox/EXPORT_COLLISION_PeroxisomeProxy.fbx",
+      "file_size_bytes": 19244,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_COLLISION_ProteasomeProxy",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_COLLISION_ProteasomeProxy.fbx",
+      "file_size_bytes": 19244,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "cytoskeleton_centrosome",
+      "export_group": "EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_COLLISION_CytoskeletonCentrosomeProxy.fbx",
+      "file_size_bytes": 19260,
+      "triangle_count": 224,
+      "status": "repaired"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_COLLISION_MembraneCytoplasmProxy",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_COLLISION_MembraneCytoplasmProxy.fbx",
+      "file_size_bytes": 19260,
+      "triangle_count": 224,
+      "status": "repaired"
+    }
+  ]
+}

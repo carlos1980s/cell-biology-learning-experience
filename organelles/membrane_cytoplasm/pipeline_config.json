@@ -1,0 +1,43 @@
+{
+  "slug": "membrane_cytoplasm",
+  "title_no_space": "MembraneCytoplasm",
+  "root": "WholeCellIntegration_RootRig",
+  "model_name": "MembraneCytoplasm_Model",
+  "raw_package_name": "MembraneCytoplasm_RawPackages",
+  "collision_proxy": "MembraneCytoplasm_CollisionProxy",
+  "required_components": ["WholeCell_ContextSocket", "WholeCellIntegration_RootRig", "PlasmaMembrane_Boundary", "Cytoplasm_Volume", "OrganellePlacement_Sockets", "TraffickingRoute_Overlays", "CellSurface_Receptors", "Integration_Hotspots"],
+  "guide_points": [[-1.4, -0.45, 0.0], [-0.5, 0.45, 0.08], [0.55, -0.32, -0.04], [1.38, 0.36, 0.04]],
+  "context_scale": [2.7, 1.28, 0.86],
+  "proxy_scale": [2.35, 1.2, 0.68],
+  "world_color": [0.01, 0.015, 0.018],
+  "materials": {
+    "primary": [0.1, 0.72, 0.86, 0.46],
+    "secondary": [0.2, 0.9, 0.58, 0.55],
+    "process": [1.0, 0.62, 0.16, 1.0],
+    "hotspot": [1.0, 0.94, 0.28, 0.74],
+    "socket": [0.18, 0.55, 0.75, 0.15],
+    "collision": [0.2, 0.85, 0.65, 0.14]
+  },
+  "phase2_components": [
+    {"name": "PlasmaMembrane_Boundary", "function": "Transparent organic plasma membrane boundary around the cell context.", "material": "primary", "kind": "membrane_sheet", "count": 8, "scale": [0.38, 0.22, 0.06]},
+    {"name": "Cytoplasm_Volume", "function": "Translucent cytoplasm volume supporting organelle placement.", "material": "secondary", "kind": "blob_cluster", "count": 6, "scale": [0.34, 0.22, 0.16]},
+    {"name": "OrganellePlacement_Sockets", "function": "Scoped sockets for organelle placement validation.", "material": "process", "kind": "blob_cluster", "count": 10, "scale": [0.07, 0.04, 0.032]}
+  ],
+  "phase3_components": [
+    {"name": "TraffickingRoute_Overlays", "function": "Whole-cell trafficking route overlays connecting organelles.", "material": "process", "kind": "tube_network", "count": 5, "radius": 0.024},
+    {"name": "CellSurface_Receptors", "function": "Readable cell-surface receptor cues on membrane boundary.", "material": "secondary", "kind": "blob_cluster", "count": 12, "scale": [0.055, 0.034, 0.028]},
+    {"name": "Integration_Hotspots", "function": "Whole-cell integration inspection anchors.", "material": "hotspot", "kind": "blob_cluster", "count": 7, "scale": [0.08, 0.04, 0.03]}
+  ],
+  "export_groups": [
+    {"name": "EXPORT_LOD0_PlasmaMembraneBoundary", "roots": ["PlasmaMembrane_Boundary"], "target": "MembraneCytoplasm_Model/PlasmaMembraneBoundary", "family": "plasma_membrane", "bindings": ["whole_cell.membrane"]},
+    {"name": "EXPORT_LOD0_CytoplasmVolume", "roots": ["Cytoplasm_Volume"], "target": "MembraneCytoplasm_Model/CytoplasmVolume", "family": "cytoplasm", "bindings": ["whole_cell.cytoplasm"]},
+    {"name": "EXPORT_LOD0_OrganellePlacementSockets", "roots": ["OrganellePlacement_Sockets"], "target": "MembraneCytoplasm_Model/OrganellePlacementSockets", "family": "placement_sockets", "bindings": ["whole_cell.sockets"]},
+    {"name": "EXPORT_LOD0_TraffickingRouteOverlays", "roots": ["TraffickingRoute_Overlays"], "target": "MembraneCytoplasm_Model/TraffickingRouteOverlays", "family": "route_overlays", "bindings": ["whole_cell.routes"]},
+    {"name": "EXPORT_LOD0_CellSurfaceReceptors", "roots": ["CellSurface_Receptors"], "target": "MembraneCytoplasm_Model/CellSurfaceReceptors", "family": "surface_receptors", "bindings": ["whole_cell.receptors"]},
+    {"name": "EXPORT_ANCHORS_MembraneCytoplasmRuntime", "roots": ["Integration_Hotspots"], "target": "MembraneCytoplasm_Model/RuntimeAnchors", "family": "runtime_anchors", "bindings": ["whole_cell.inspect"]},
+    {"name": "EXPORT_COLLISION_MembraneCytoplasmProxy", "roots": ["MembraneCytoplasm_CollisionProxy"], "target": "MembraneCytoplasm_Model/CollisionProxy", "family": "collision_proxy", "bindings": []}
+  ],
+  "misconceptions_avoided": ["Whole-cell context is not decorative background.", "Membrane/cytoplasm placement supports integration validation.", "Trafficking overlays indicate relationships rather than random paths."],
+  "notes": ["Formal organic-gated membrane/cytoplasm integration pass generated from inception.", "Context objects are transparent and function-bearing."],
+  "roblox_export_risks": ["Large transparent surfaces need Roblox material fallback checks.", "Phase 5 requires real package_asset_id values for every group."]
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "mitochondrion_specialist_review_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "organelle": "mitochondrion",
+  "approved_to_continue": true,
+  "review_type": "visual_organic_quality",
+  "status": "pass_for_phase_scope",
+  "major_failures": []
+}

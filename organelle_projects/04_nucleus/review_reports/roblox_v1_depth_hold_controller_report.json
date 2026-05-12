@@ -1,0 +1,34 @@
+{
+  "phase": "roblox_v1_depth_hold_controller",
+  "generated_at": "2026-05-11T01:31:40.750599+00:00",
+  "goal": "Stabilize player depth in V1 Terrain water without replacing native horizontal swimming.",
+  "implementation": {
+    "installer": "tools/install_v1_depth_hold_controller.py",
+    "client_script": "StarterPlayer.StarterPlayerScripts.V1DepthHoldController",
+    "movement_mode": "Roblox native water swimming plus damped vertical depth hold without constant lift",
+    "touch_controls": "Small right-side Up/Down buttons only; no custom movement pad.",
+    "desktop_controls": "Space/PageUp rise; Ctrl/Q/PageDown dive.",
+    "gamepad_vr_controls": "Right stick Y plus A/R1/R2 rise and B/L1/L2 dive."
+  },
+  "studio_result": {
+    "workspace_enabled": true,
+    "script": "StarterPlayer.StarterPlayerScripts.V1DepthHoldController",
+    "disabled_conflicts": "",
+    "spawn_position": "1.7079925537109375, 252.79306030273438, 58.7138671875",
+    "water_size": "680, 520, 920",
+    "workspace_version": "DepthHold_V2",
+    "script_disabled": false,
+    "version": "DepthHold_V2",
+    "source_length": 14667,
+    "status": "v1_depth_hold_installed",
+    "spawn_sample": "Water=8",
+    "water_center": "81.0643310546875, 211.35824584960938, 11.33725357055664",
+    "is_running": false
+  },
+  "acceptance_notes": [
+    "Horizontal steering remains Roblox native, so Android/VR should keep their normal movement path.",
+    "When no vertical input is active, the script captures the current Y position and applies only damped correction, not full gravity-canceling lift.",
+    "Old custom movement scripts are disabled in StarterPlayerScripts if present.",
+    "Runtime behavior must be judged in Play mode; edit-mode bridge can only confirm installation."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "smooth_er_builder_report_v1",
+  "phase": "phase_02",
+  "phase_id": "phase_02_first_real_anatomy",
+  "organelle": "smooth_er",
+  "status": "built",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "SmoothER_RootRig",
+    "TubularNetwork",
+    "CalciumStorage_Pockets"
+  ],
+  "incomplete_components": [
+    "LipidSynthesis_Zones",
+    "DetoxReaction_Sites",
+    "ERTransition_HandoffCues",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_still_missing_after_phase": [
+    "LipidSynthesis_Zones",
+    "DetoxReaction_Sites",
+    "ERTransition_HandoffCues",
+    "Interaction_Hotspots"
+  ],
+  "render_paths": [
+    {
+      "type": "wide_anatomy",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/review_renders/phase_02_wide_tubules.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "tube_close",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/review_renders/phase_02_tube_close.png",
+      "status": "created",
+      "reason": null
+    },
+    {
+      "type": "export_inspection",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/review_renders/phase_02_export_inspection.png",
+      "status": "created",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/smooth_er_phase_02_first_real_anatomy.blend",
+    "status": "created",
+    "reason": null
+  },
+  "export_candidates": [
+    "SmoothER_RootRig",
+    "WholeCell_ContextSocket",
+    "TubularNetwork",
+    "TubularNetwork_SmoothBranch_01",
+    "TubularNetwork_SmoothBranch_02",
+    "TubularNetwork_SmoothBranch_03",
+    "TubularNetwork_SmoothBranch_04",
+    "TubularNetwork_SmoothBranch_05",
+    "TubularNetwork_JunctionBulge_01",
+    "TubularNetwork_JunctionBulge_02",
+    "TubularNetwork_JunctionBulge_03",
+    "TubularNetwork_JunctionBulge_04",
+    "CalciumStorage_Pockets",
+    "CalciumStorage_Pockets_BlueReservoir_01",
+    "CalciumStorage_Pockets_BlueReservoir_02",
+    "CalciumStorage_Pockets_BlueReservoir_03"
+  ],
+  "excluded_review_only_objects": [
+    "WholeCell_ContextSocket_ReviewGhost",
+    "SmoothER_KeyLight",
+    "Camera_SmoothER_wide_anatomy",
+    "Camera_SmoothER_tube_close",
+    "Camera_SmoothER_export_inspection"
+  ],
+  "organic_construction_violations": [],
+  "scene_budget_metrics": {
+    "export_candidate_count": 16,
+    "biological_mesh_count": 12,
+    "triangle_count": 2084
+  },
+  "asset_manifest": null,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "blend_file_saved": true,
+    "review_renders_exist": true,
+    "major_components_use_manifest_names": true,
+    "organic_construction_gate": true,
+    "primitive_rejection_gate": true,
+    "roblox_export_groups_valid": "not_applicable",
+    "blocking_findings": [],
+    "approved_to_continue": true
+  },
+  "notes_on_what_changed": [
+    "Formal organic-gated Smooth ER generated from inception.",
+    "Visible biological meshes use generated organic tube/blob meshes, not default primitives."
+  ],
+  "roblox_export_risks": [
+    "Thin tubules require Roblox import scale validation.",
+    "Phase 5 requires package_asset_id values for every export group."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

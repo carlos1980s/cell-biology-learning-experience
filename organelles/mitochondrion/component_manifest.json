@@ -1,0 +1,16 @@
+{
+  "schema_version": "component_manifest_v1",
+  "organelle": "mitochondrion",
+  "root": "Mitochondrion_RootRig",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Mitochondrion_RootRig",
+    "OuterMembrane",
+    "InnerMembrane_Cristae",
+    "Matrix_Volume",
+    "ATP_SignalSites",
+    "Stress_CueLayer",
+    "Interaction_Hotspots"
+  ]
+}
+

@@ -1,0 +1,51 @@
+{
+  "phase": "roblox_direct_dive_controller_redesign",
+  "date": "2026-05-04",
+  "goal": "Replace the unreliable scuba buoyancy trim model with a direct, responsive dive controller for Android, Quest, and desktop.",
+  "root_problem": "The previous controller mixed native Roblox movement, custom touch controls, LinearVelocity, VectorForce, persistent buoyancy trim, vertical damping, and trim UI. The systems fought each other, so the player could not reliably rise through the cell.",
+  "source_changes": {
+    "file": "src/MainCellExperience/BuildMainCellExperience.lua",
+    "changes": [
+      "Removed persistent buoyancyTrim, BuoyancyGauge, trim fill/needle, trim force, and custom MovePad.",
+      "Added direct vertical dive speed with DIRECT_DIVE_SPEED = 34 and DIRECT_DIVE_RESPONSE = 11.",
+      "Reads native Roblox movement through PlayerModule:GetControls():GetMoveVector(), with Humanoid.MoveDirection as fallback.",
+      "Uses one velocity target: camera-relative horizontal swim + direct dive velocity + cytoplasm flow.",
+      "Keeps VectorForce only for neutral gravity compensation through NEUTRAL_BUOYANCY_SCALE = 1.0.",
+      "Mobile UI now only creates DiveUpButton and DiveDownButton; Roblox native thumbstick owns horizontal movement.",
+      "Scuba visual rig and bubble feedback remain decorative and respond to direct dive input."
+    ]
+  },
+  "studio_application": {
+    "method": "legacy Roblox Studio bridge",
+    "builder_applied": "main_cell_direct_dive_redesign_build_applied CellEnvironment_Main",
+    "studio_edit_mode_confirmed": true,
+    "main_controller_enabled": true,
+    "controller_source_length": 21941,
+    "installed_controller_checks": {
+      "has_get_move_vector": true,
+      "has_direct_dive_speed": true,
+      "has_direct_dive_response": true,
+      "has_dive_up_button": true,
+      "has_dive_down_button": true,
+      "has_move_pad": false,
+      "has_buoyancy_trim": false,
+      "has_scuba_rig": true,
+      "has_bubbles": true
+    },
+    "legacy_control_scripts": {
+      "CellPlayerBootstrap": "disabled",
+      "ExplorerControls": "disabled",
+      "CellCytoplasmLightingController": "disabled",
+      "MainCellSwimmingController": "enabled"
+    }
+  },
+  "validation": {
+    "python_compile": "passed for deploy_main_cell_environment_to_studio.py and roblox_plugin_bridge.py",
+    "diff_check": "passed",
+    "main_cell_environment_validator": "validate_main_cell_environment_ok"
+  },
+  "acceptance_notes": [
+    "At 34 studs/sec direct dive speed, holding rise for 3 seconds targets roughly 102 studs of upward travel before flow/bounds effects.",
+    "Physical Android and Quest retests are still required because Codex cannot operate those devices directly."
+  ]
+}

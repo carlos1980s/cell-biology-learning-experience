@@ -1,0 +1,9 @@
+{
+  "schema_version": "membrane_cytoplasm_phase_notes_v1",
+  "phase": "phase_02_first_real_anatomy",
+  "notes": [
+    "Formal organic-gated membrane/cytoplasm integration pass generated from inception.",
+    "Context objects are transparent and function-bearing."
+  ],
+  "next_recommended_phase": "Continue to next gated phase only if checklist passes."
+}

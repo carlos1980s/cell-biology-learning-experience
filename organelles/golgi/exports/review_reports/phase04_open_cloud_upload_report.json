@@ -1,0 +1,11 @@
+{
+  "schema_version": "golgi_phase04_open_cloud_upload_report_v1",
+  "phase": "phase_04_roblox_export_packaging",
+  "decision": "dry_run_complete",
+  "manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/golgi/exports/golgi_phase_04_roblox_asset_manifest.json",
+  "credentials": {
+    "ROBLOX_OPEN_CLOUD_API_KEY": false,
+    "ROBLOX_GROUP_ID": false
+  },
+  "note": "Phase 5 remains blocked until every export has a real package_asset_id."
+}

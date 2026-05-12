@@ -1,0 +1,8 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "chromatin",
+  "parent_components": ["Chromatin_Threads", "CondensedChromosomes"],
+  "required_objects": ["Chromatin_Threads", "CondensedChromosomes"],
+  "must_not_create": ["Transport_Cargo", "Nucleolus_Subregions"]
+}
+

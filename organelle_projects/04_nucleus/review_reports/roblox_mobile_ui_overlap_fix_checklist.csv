@@ -1,0 +1,10 @@
+check,status,evidence
+Root cause identified,pass,"Custom MovePad overlapped Roblox native mobile thumbstick"
+Native mobile movement chosen,pass,"USE_ROBLOX_NATIVE_TOUCH_MOVE = true"
+Custom left MovePad disabled,pass,"MovePad creation gated behind if not USE_ROBLOX_NATIVE_TOUCH_MOVE"
+Buoyancy controls preserved,pass,"InflateButton and VentButton remain in installed controller"
+Buoyancy gauge preserved,pass,"BuoyancyGauge remains in installed controller"
+Live Studio controller updated,pass,"controller_source_length 25198 and source checks true"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Android overlap retest,not_tested,"requires phone play test"
+Quest UI retest,not_tested,"requires headset play test"

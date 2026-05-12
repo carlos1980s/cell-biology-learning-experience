@@ -1,0 +1,29 @@
+{
+  "schema_version": "phase_latest_status_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "status": "passed_gene_dynamics_action_layer_gate",
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "Phase 08R Roblox mapping/export packaging for GeneDynamics",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_08g_gene_dynamics.blend",
+  "builder_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_08g_builder_report.json",
+  "visual_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08g_visual_review.json",
+  "biology_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08g_biology_review.json",
+  "roblox_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08g_roblox_review.json",
+  "animation_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08g_animation_review.json",
+  "code_structure_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08g_code_structure_review.json",
+  "review_renders": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_08g_active_gene_closeup.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_08g_transcription_growth.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_08g_mrna_pore_export.png"
+  ],
+  "remaining_blockers": [
+    "Roblox export packaging for GeneDynamics has not been created.",
+    "Studio runtime event binding for transcription_mrna_export remains a follow-up."
+  ],
+  "roblox_export_risks": [
+    "Phase 08G curves and small marker meshes need conversion to MeshParts, Beams, or Attachments before production Roblox import.",
+    "Transparent/emissive RNA and hotspot materials need Studio readability validation against the nucleoplasm.",
+    "GeneDynamics should ship as a toggleable inspection/action layer so it does not obscure base nucleus anatomy."
+  ]
+}

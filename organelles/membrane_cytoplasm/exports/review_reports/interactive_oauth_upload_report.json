@@ -1,0 +1,268 @@
+{
+  "schema_version": "membrane_cytoplasm_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 7,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_PlasmaMembraneBoundary",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_PlasmaMembraneBoundary.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "operationId": "7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "operationId": "7be07491-3a4d-49eb-94c6-c4896f67926f",
+        "done": true,
+        "response": {
+          "path": "assets/71720023370660",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:03.525179200Z",
+          "assetId": "71720023370660",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_PlasmaMembraneBounda",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_PlasmaMembraneBoundary",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "71720023370660"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_CytoplasmVolume",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CytoplasmVolume.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "operationId": "bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "operationId": "bf9992ef-a9e6-4191-92dc-bca2ab36e143",
+        "done": true,
+        "response": {
+          "path": "assets/118328570680125",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:10.270734800Z",
+          "assetId": "118328570680125",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_CytoplasmVolume",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_CytoplasmVolume",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "118328570680125"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_OrganellePlacementSockets",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_OrganellePlacementSockets.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "operationId": "3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "operationId": "3a0ccb6a-d48c-4867-a9c2-a51002570ee3",
+        "done": true,
+        "response": {
+          "path": "assets/113185079572782",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:15.423095Z",
+          "assetId": "113185079572782",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_OrganellePlacementSo",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_OrganellePlacementSockets",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "113185079572782"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_TraffickingRouteOverlays",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_TraffickingRouteOverlays.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "operationId": "21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "operationId": "21e0df60-744a-4fc8-891d-3b6b014555b3",
+        "done": true,
+        "response": {
+          "path": "assets/121684113095271",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:20.604136800Z",
+          "assetId": "121684113095271",
+          "displayName": "##################################################",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_TraffickingRouteOverlays",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "121684113095271"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_LOD0_CellSurfaceReceptors",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_LOD0_CellSurfaceReceptors.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "operationId": "8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "operationId": "8fb76071-26c4-41bb-aacc-d3cf167c84b3",
+        "done": true,
+        "response": {
+          "path": "assets/105308419999004",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:30.601585200Z",
+          "assetId": "105308419999004",
+          "displayName": "MembraneCytoplasm_EXPORT_LOD0_CellSurfaceReceptors",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_LOD0_CellSurfaceReceptors",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "105308419999004"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_ANCHORS_MembraneCytoplasmRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "operationId": "f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "operationId": "f6100c93-b3c0-4238-bf0f-81aa7394917b",
+        "done": true,
+        "response": {
+          "path": "assets/118670694618888",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:37.090643900Z",
+          "assetId": "118670694618888",
+          "displayName": "MembraneCytoplasm_EXPORT_ANCHORS_MembraneCytoplasm",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_ANCHORS_MembraneCytoplasmRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "118670694618888"
+    },
+    {
+      "organelle": "membrane_cytoplasm",
+      "export_group": "EXPORT_COLLISION_MembraneCytoplasmProxy",
+      "source_file": "organelles/membrane_cytoplasm/exports/phase_04_roblox/EXPORT_COLLISION_MembraneCytoplasmProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "operationId": "a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "operationId": "a6c35904-145e-4c4d-ac4f-6654312ae525",
+        "done": true,
+        "response": {
+          "path": "assets/134108799037835",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:59:40.381328600Z",
+          "assetId": "134108799037835",
+          "displayName": "MembraneCytoplasm_EXPORT_COLLISION_MembraneCytopla",
+          "description": "Cell Blender to Roblox organelle package: membrane_cytoplasm/EXPORT_COLLISION_MembraneCytoplasmProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "134108799037835"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Item,Status,Evidence
+"Installer deployed","pass","v1_teacher_lecture_installed"
+"Runtime created","pass","Workspace.V1TeacherLecture"
+"One active teacher","pass","active_teacher_parts=18"
+"Raw teachers preserved","pass","raw_teacher_count=2"
+"Old station runtime removed","pass","False"
+"No lecture prompts","pass","prompt_count=0"
+"No whole-object highlights","pass","highlight_count=0"
+"Sounds installed","pass","sound_count=13"
+"Neutral brightness","pass","brightness=0.7799999713897705"
+"Local audio generated","pass","13/13 local mp3s available"
+"Roblox audio IDs","pass","1/13 SoundIds filled"
+"Play-mode review","pending","Confirm teacher movement, speech bubble, subtitles, focus lights, audio fallback, and controls in Studio Play mode."

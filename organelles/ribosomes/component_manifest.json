@@ -1,0 +1,14 @@
+{
+  "organelle": "ribosomes",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Ribosome_RootRig",
+    "FreeRibosome_Cluster",
+    "BoundRibosome_Row",
+    "LargeSubunit_Forms",
+    "SmallSubunit_Forms",
+    "mRNA_Thread",
+    "PeptideExit_Cues",
+    "Interaction_Hotspots"
+  ]
+}

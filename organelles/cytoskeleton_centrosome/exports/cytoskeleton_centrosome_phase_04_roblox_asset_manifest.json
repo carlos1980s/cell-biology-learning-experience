@@ -1,0 +1,224 @@
+{
+  "schema_version": "cytoskeleton_centrosome_phase_04_roblox_asset_manifest_v1",
+  "organelle": "cytoskeleton_centrosome",
+  "phase": "phase_04_roblox_export_packaging",
+  "roblox_model_target": "Workspace.CytoskeletonCentrosome_Model",
+  "raw_package_target": "Workspace.MeshLibrary/CytoskeletonCentrosome_RawPackages",
+  "open_cloud": {
+    "create_file_limit_bytes": 20971520
+  },
+  "required_export_groups": [
+    "EXPORT_LOD0_MicrotubuleTracks",
+    "EXPORT_LOD0_ActinNetwork",
+    "EXPORT_LOD0_IntermediateFilaments",
+    "EXPORT_LOD0_CentrosomeCentrioles",
+    "EXPORT_LOD0_MotorAndSpindleCues",
+    "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+    "EXPORT_COLLISION_CytoskeletonCentrosomeProxy"
+  ],
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_MicrotubuleTracks",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MicrotubuleTracks.fbx",
+      "file_size_bytes": 54556,
+      "object_count": 8,
+      "triangle_count": 1152,
+      "object_names": [
+        "Microtubule_Tracks_Track_08",
+        "Microtubule_Tracks_Track_07",
+        "Microtubule_Tracks_Track_06",
+        "Microtubule_Tracks_Track_05",
+        "Microtubule_Tracks_Track_04",
+        "Microtubule_Tracks_Track_03",
+        "Microtubule_Tracks_Track_02",
+        "Microtubule_Tracks_Track_01"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/MicrotubuleTracks",
+      "roblox_material_family": "microtubules",
+      "event_bindings": [
+        "cytoskeleton.microtubules"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "95903370015324",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/cd983ad8-e2dd-454f-8df4-a3cf9ebbfb5b",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_ActinNetwork",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_ActinNetwork.fbx",
+      "file_size_bytes": 49132,
+      "object_count": 7,
+      "triangle_count": 1008,
+      "object_names": [
+        "Actin_Network_Track_07",
+        "Actin_Network_Track_06",
+        "Actin_Network_Track_05",
+        "Actin_Network_Track_04",
+        "Actin_Network_Track_03",
+        "Actin_Network_Track_02",
+        "Actin_Network_Track_01"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/ActinNetwork",
+      "roblox_material_family": "actin",
+      "event_bindings": [
+        "cytoskeleton.actin"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "132417208634661",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/ec1ec596-8200-4b68-bd1c-f1690d81c3ed",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_IntermediateFilaments",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_IntermediateFilaments.fbx",
+      "file_size_bytes": 38844,
+      "object_count": 5,
+      "triangle_count": 720,
+      "object_names": [
+        "IntermediateFilaments_Track_05",
+        "IntermediateFilaments_Track_04",
+        "IntermediateFilaments_Track_03",
+        "IntermediateFilaments_Track_02",
+        "IntermediateFilaments_Track_01"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/IntermediateFilaments",
+      "roblox_material_family": "intermediate_filaments",
+      "event_bindings": [
+        "cytoskeleton.intermediate"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "95719273552129",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/7b8ee17c-3932-41c1-a58c-a7f8cc470577",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_CentrosomeCentrioles",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_CentrosomeCentrioles.fbx",
+      "file_size_bytes": 63036,
+      "object_count": 8,
+      "triangle_count": 1664,
+      "object_names": [
+        "Centrosome_Centrioles_OrganicDetail_08",
+        "Centrosome_Centrioles_OrganicDetail_07",
+        "Centrosome_Centrioles_OrganicDetail_06",
+        "Centrosome_Centrioles_OrganicDetail_05",
+        "Centrosome_Centrioles_OrganicDetail_04",
+        "Centrosome_Centrioles_OrganicDetail_03",
+        "Centrosome_Centrioles_OrganicDetail_02",
+        "Centrosome_Centrioles_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/CentrosomeCentrioles",
+      "roblox_material_family": "centrosome",
+      "event_bindings": [
+        "cytoskeleton.centrosome"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "124390498761836",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/14ad3fdd-26f5-4a2f-80ca-f0e38e3f48bc",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_LOD0_MotorAndSpindleCues",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_LOD0_MotorAndSpindleCues.fbx",
+      "file_size_bytes": 111516,
+      "object_count": 16,
+      "triangle_count": 3168,
+      "object_names": [
+        "MotorProtein_Cues_OrganicDetail_12",
+        "MotorProtein_Cues_OrganicDetail_11",
+        "MotorProtein_Cues_OrganicDetail_10",
+        "MotorProtein_Cues_OrganicDetail_09",
+        "MotorProtein_Cues_OrganicDetail_08",
+        "MotorProtein_Cues_OrganicDetail_07",
+        "MotorProtein_Cues_OrganicDetail_06",
+        "MotorProtein_Cues_OrganicDetail_05",
+        "MotorProtein_Cues_OrganicDetail_04",
+        "MotorProtein_Cues_OrganicDetail_03",
+        "MotorProtein_Cues_OrganicDetail_02",
+        "MotorProtein_Cues_OrganicDetail_01",
+        "SpindleReadiness_Cues_Branch_04",
+        "SpindleReadiness_Cues_Branch_03",
+        "SpindleReadiness_Cues_Branch_02",
+        "SpindleReadiness_Cues_Branch_01"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/MotorAndSpindleCues",
+      "roblox_material_family": "transport_cues",
+      "event_bindings": [
+        "cytoskeleton.transport"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "96985826139636",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/65507da2-34ed-4014-ad27-d9c9fa477c1a",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_ANCHORS_CytoskeletonCentrosomeRuntime.fbx",
+      "file_size_bytes": 50444,
+      "object_count": 6,
+      "triangle_count": 1248,
+      "object_names": [
+        "Interaction_Hotspots_OrganicDetail_06",
+        "Interaction_Hotspots_OrganicDetail_05",
+        "Interaction_Hotspots_OrganicDetail_04",
+        "Interaction_Hotspots_OrganicDetail_03",
+        "Interaction_Hotspots_OrganicDetail_02",
+        "Interaction_Hotspots_OrganicDetail_01"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "cytoskeleton.inspect"
+      ],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "84197880362906",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/333a1481-ea38-4edf-9e86-29b91ca2931e",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_CytoskeletonCentrosomeProxy",
+      "source_file": "organelles/cytoskeleton_centrosome/exports/phase_04_roblox/EXPORT_COLLISION_CytoskeletonCentrosomeProxy.fbx",
+      "file_size_bytes": 19260,
+      "object_count": 1,
+      "triangle_count": 224,
+      "object_names": [
+        "CytoskeletonCentrosome_CollisionProxy"
+      ],
+      "roblox_placement_target": "CytoskeletonCentrosome_Model/CollisionProxy",
+      "roblox_material_family": "collision_proxy",
+      "event_bindings": [],
+      "upload_status": "uploaded",
+      "status": "uploaded_pending_studio_validation",
+      "package_asset_id": "89957612291026",
+      "upload_blocked_reason": null,
+      "upload_operation_path": "operations/38acf3fa-7c74-4df4-9ba2-183b2ca041ba",
+      "upload_route": "InteractiveRobloxOAuth",
+      "creator_type_used": "User",
+      "creator_id_used": "6108806590"
+    }
+  ]
+}

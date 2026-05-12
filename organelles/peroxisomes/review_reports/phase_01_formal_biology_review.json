@@ -1,0 +1,13 @@
+{
+  "schema_version": "peroxisomes_specialist_review_v1",
+  "phase": "phase_01_formal_scaffold",
+  "organelle": "peroxisomes",
+  "approved_to_continue": true,
+  "review_type": "biology_accuracy",
+  "status": "pass_for_phase_scope",
+  "misconceptions_avoided": [
+    "Peroxisomes are metabolic compartments, not storage bubbles.",
+    "Catalase is tied to peroxide detox.",
+    "Fatty-acid processing cues are localized to the organelle."
+  ]
+}

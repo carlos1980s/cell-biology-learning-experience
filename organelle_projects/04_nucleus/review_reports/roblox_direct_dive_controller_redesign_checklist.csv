@@ -1,0 +1,13 @@
+check,status,evidence
+Old buoyancy trim removed,pass,"Installed controller has has_buoyancy_trim false"
+Custom mobile move pad removed,pass,"Installed controller has has_move_pad false"
+Native Roblox movement used,pass,"Installed controller has GetMoveVector"
+Direct dive speed added,pass,"DIRECT_DIVE_SPEED = 34"
+Direct dive response added,pass,"DIRECT_DIVE_RESPONSE = 11"
+Mobile dive buttons added,pass,"DiveUpButton and DiveDownButton present"
+Neutral buoyancy only,pass,"NEUTRAL_BUOYANCY_SCALE = 1.0 and no trim force path"
+Legacy movement scripts disabled,pass,"CellPlayerBootstrap and ExplorerControls disabled in Studio"
+Main controller enabled,pass,"MainCellSwimmingController disabled false"
+Repo validation passed,pass,"validate_main_cell_environment_ok"
+Android physical retest,not_tested,"requires phone play test"
+Quest physical retest,not_tested,"requires headset play test"

@@ -1,0 +1,24 @@
+{
+  "schema_version": "smooth_er_blender_scene_validation_v1",
+  "blend_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/smooth_er/smooth_er_phase_04_export_packaging.blend",
+  "status": "pass",
+  "required_components": [
+    "CalciumStorage_Pockets",
+    "DetoxReaction_Sites",
+    "ERTransition_HandoffCues",
+    "Interaction_Hotspots",
+    "LipidSynthesis_Zones",
+    "SmoothER_CollisionProxy",
+    "SmoothER_RootRig",
+    "TubularNetwork",
+    "WholeCell_ContextSocket"
+  ],
+  "missing_required_components": [],
+  "export_candidate_count": 49,
+  "review_only_leaks": [],
+  "biological_mesh_count": 40,
+  "organic_construction_violations": [],
+  "collision_proxy_hidden_from_visual_review": true,
+  "triangle_count_export_candidates": 5324,
+  "blocking_findings": []
+}

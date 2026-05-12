@@ -1,0 +1,9 @@
+check,status,evidence
+Spawn moved to requested coordinate,pass,"Studio probe found MainCellSwimSpawn at 0,58,-385.691."
+Spawn faces toward cell,pass,"LookVector is approximately +Z toward the cell center."
+Spawn does not block swimming,pass,"MainCellSwimSpawn.CanCollide=false."
+Spawn aligned with submarine X/Z,pass,"Spawn-to-submarine horizontal distance is 0 studs."
+Submarine vertical mismatch recorded,warning,"Live Submarine visible bounding box is around Y=406 while requested spawn height is Y=58."
+Source validation,pass,"python3 tools/validate_main_cell_environment.py"
+Whitespace validation,pass,"git diff --check passed for touched source files."
+Studio deployment,pass,"Builder deployed and require(builder).build() succeeded through the legacy bridge."

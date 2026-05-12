@@ -1,0 +1,46 @@
+{
+  "schema_version": "rough_er_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 1,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "rough_er",
+      "export_group": "EXPORT_COLLISION_RoughERProxy",
+      "source_file": "organelles/rough_er/exports/phase_04_roblox/EXPORT_COLLISION_RoughERProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/70ae609c-86f8-4186-86f8-d61706507d7f",
+        "operationId": "70ae609c-86f8-4186-86f8-d61706507d7f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/70ae609c-86f8-4186-86f8-d61706507d7f",
+        "operationId": "70ae609c-86f8-4186-86f8-d61706507d7f",
+        "done": true,
+        "response": {
+          "path": "assets/104957367536489",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:51:23.804472200Z",
+          "assetId": "104957367536489",
+          "displayName": "RoughER_EXPORT_COLLISION_RoughERProxy",
+          "description": "Cell Blender to Roblox organelle package: rough_er/EXPORT_COLLISION_RoughERProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "104957367536489"
+    }
+  ]
+}

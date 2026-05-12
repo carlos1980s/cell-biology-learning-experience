@@ -1,0 +1,271 @@
+{
+  "schema_version": "director_summary_v1",
+  "phase": 1,
+  "created_at": "2026-05-01",
+  "scope": {
+    "builder_organelle_folders": [
+      "organelles/nucleus",
+      "organelles/mitochondrion",
+      "organelles/rough_er",
+      "organelles/golgi",
+      "organelles/lysosome"
+    ],
+    "phase_1_task": "Scene setup, shared organic material helpers, cameras, lighting, root rig, whole-cell context socket, one early review render, and builder report only.",
+    "full_organelle_geometry_allowed": false
+  },
+  "overall_status": {
+    "builders_complete": true,
+    "reviews_complete": true,
+    "visual_reviews_passed": true,
+    "code_structure_reviews_passed": true,
+    "roblox_export_reviews_passed": false,
+    "phase_2_can_begin": false,
+    "phase_2_gate_reason": "Phase 2 should not begin for the full batch until export-prep conventions are fixed. Mitochondrion, rough_er, and lysosome export reviewers explicitly did not approve continuation."
+  },
+  "organelles": {
+    "nucleus": {
+      "builder_complete": true,
+      "review_render_exists": true,
+      "builder_report": "organelles/nucleus/review_reports/phase_01_builder_report.json",
+      "visual_review": {
+        "report": "organelles/nucleus/review_reports/phase_01_visual_review.json",
+        "pass": true,
+        "score_0_to_100": 84,
+        "approved_to_continue": true
+      },
+      "roblox_export_review": {
+        "report": "organelles/nucleus/review_reports/phase_01_roblox_export_review.json",
+        "pass": false,
+        "score_0_to_100": 82,
+        "approved_to_continue": true,
+        "blockers": [
+          "WholeCell_ContextSocket has an unapplied 90-degree rotation transform.",
+          "Roblox mapping for Nucleus_RootRig and WholeCell_ContextSocket is not yet defined.",
+          "Future phases need measured triangle, material, texture, and object counts."
+        ]
+      },
+      "code_structure_review": {
+        "report": "organelles/nucleus/review_reports/phase_01_code_structure_review.json",
+        "pass": true,
+        "score_0_to_100": 91,
+        "approved_to_continue": true
+      },
+      "director_decision": "conditional_pass",
+      "director_notes": "Phase 1 scaffold is acceptable. Export-prep requirements must be fixed before any Roblox-bound export."
+    },
+    "mitochondrion": {
+      "builder_complete": true,
+      "review_render_exists": true,
+      "builder_report": "organelles/mitochondrion/review_reports/phase_01_builder_report.json",
+      "visual_review": {
+        "report": "organelles/mitochondrion/review_reports/phase_01_visual_review.json",
+        "pass": true,
+        "score_0_to_100": 82,
+        "approved_to_continue": true
+      },
+      "roblox_export_review": {
+        "report": "organelles/mitochondrion/review_reports/phase_01_roblox_export_review.json",
+        "pass": false,
+        "score_0_to_100": 62,
+        "approved_to_continue": false,
+        "blockers": [
+          "WholeCell_ContextSocket has non-default rotation and scale without an export-prep transform bake.",
+          "Organic_RoundedBevel and Organic_WeightedNormals modifiers are not applied or documented for export.",
+          "No export artifact list exists.",
+          "Triangle, material, texture, and object counts are not measured."
+        ]
+      },
+      "code_structure_review": {
+        "report": "organelles/mitochondrion/review_reports/phase_01_code_structure_review.json",
+        "pass": true,
+        "score_0_to_100": 91,
+        "approved_to_continue": true
+      },
+      "director_decision": "blocked",
+      "director_notes": "Do not start Phase 2 until export-prep and measurement reporting are added."
+    },
+    "rough_er": {
+      "builder_complete": true,
+      "review_render_exists": true,
+      "builder_report": "organelles/rough_er/review_reports/phase_01_builder_report.json",
+      "visual_review": {
+        "report": "organelles/rough_er/review_reports/phase_01_visual_review.json",
+        "pass": true,
+        "score_0_to_100": 83,
+        "approved_to_continue": true
+      },
+      "roblox_export_review": {
+        "report": "organelles/rough_er/review_reports/phase_01_roblox_export_review.json",
+        "pass": false,
+        "score_0_to_100": 66,
+        "approved_to_continue": false,
+        "blockers": [
+          "Socket review shell and orientation ring keep non-default transforms without an export-prep bake.",
+          "No Roblox-ready export artifact is produced or listed.",
+          "Triangle, material, texture, and object counts are not measured.",
+          "Roblox mapping for RoughER_RootRig and WholeCell_ContextSocket is undefined."
+        ]
+      },
+      "code_structure_review": {
+        "report": "organelles/rough_er/review_reports/phase_01_code_structure_review.json",
+        "pass": true,
+        "score_0_to_100": 90,
+        "approved_to_continue": true
+      },
+      "director_decision": "blocked",
+      "director_notes": "Do not start Phase 2 until export-prep and Roblox socket mapping are documented."
+    },
+    "golgi": {
+      "builder_complete": true,
+      "review_render_exists": true,
+      "builder_report": "organelles/golgi/review_reports/phase_01_builder_report.json",
+      "visual_review": {
+        "report": "organelles/golgi/review_reports/phase_01_visual_review.json",
+        "pass": true,
+        "score_0_to_100": 81,
+        "approved_to_continue": true
+      },
+      "roblox_export_review": {
+        "report": "organelles/golgi/review_reports/phase_01_roblox_export_review.json",
+        "pass": false,
+        "score_0_to_100": 78,
+        "approved_to_continue": true,
+        "blockers": [
+          "No FBX, OBJ, glTF, Roblox-ready asset, or export collection is produced or listed.",
+          "No explicit export-prep validation confirms transforms are applied or baked.",
+          "WholeCell_ContextSocket_ReviewGhost has non-default scale and must remain excluded from production export."
+        ]
+      },
+      "code_structure_review": {
+        "report": "organelles/golgi/review_reports/phase_01_code_structure_review.json",
+        "pass": true,
+        "score_0_to_100": 88,
+        "approved_to_continue": true
+      },
+      "director_decision": "conditional_pass",
+      "director_notes": "Phase 1 scaffold may continue after minor structural fixes, but export collection and transform bake rules should be added first."
+    },
+    "lysosome": {
+      "builder_complete": true,
+      "review_render_exists": true,
+      "builder_report": "organelles/lysosome/review_reports/phase_01_builder_report.json",
+      "visual_review": {
+        "report": "organelles/lysosome/review_reports/phase_01_visual_review.json",
+        "pass": true,
+        "score_0_to_100": 82,
+        "approved_to_continue": true
+      },
+      "roblox_export_review": {
+        "report": "organelles/lysosome/review_reports/phase_01_roblox_export_review.json",
+        "pass": false,
+        "score_0_to_100": 68,
+        "approved_to_continue": false,
+        "blockers": [
+          "No Roblox export artifact or export manifest is produced.",
+          "No explicit transform-application or export-only collection workflow exists.",
+          "Exported files and manual setup notes are missing.",
+          "Triangle, material, texture, and object counts are not measured."
+        ]
+      },
+      "code_structure_review": {
+        "report": "organelles/lysosome/review_reports/phase_01_code_structure_review.json",
+        "pass": true,
+        "score_0_to_100": 86,
+        "approved_to_continue": true
+      },
+      "director_decision": "blocked",
+      "director_notes": "Do not start Phase 2 until export manifest, export-only collection, and budget reporting are added."
+    }
+  },
+  "blockers": [
+    {
+      "id": "export_prep_missing",
+      "severity": "blocking",
+      "affected_organelles": [
+        "nucleus",
+        "mitochondrion",
+        "rough_er",
+        "golgi",
+        "lysosome"
+      ],
+      "summary": "Phase 1 scripts do not share a standard export-prep step for applying or baking transforms and excluding review-only geometry."
+    },
+    {
+      "id": "export_artifact_manifest_missing",
+      "severity": "blocking",
+      "affected_organelles": [
+        "mitochondrion",
+        "rough_er",
+        "golgi",
+        "lysosome"
+      ],
+      "summary": "Reviewers could not verify Roblox import behavior because no export artifact list, export collection, or export manifest was produced."
+    },
+    {
+      "id": "budget_metrics_missing",
+      "severity": "blocking",
+      "affected_organelles": [
+        "nucleus",
+        "mitochondrion",
+        "rough_er",
+        "golgi",
+        "lysosome"
+      ],
+      "summary": "Reports do not consistently measure triangle count, object count, material count, and texture count."
+    },
+    {
+      "id": "roblox_root_socket_mapping_undefined",
+      "severity": "blocking",
+      "affected_organelles": [
+        "nucleus",
+        "mitochondrion",
+        "rough_er",
+        "golgi",
+        "lysosome"
+      ],
+      "summary": "Root rigs and whole-cell context sockets need an explicit Roblox mapping: Model pivot, Attachment placement, metadata-only helpers, and excluded review geometry."
+    }
+  ],
+  "repeated_issues": [
+    "Export readiness was judged more strictly than Phase 1 builder scope, creating a mismatch between requested scaffold-only builds and final export review criteria.",
+    "Review-only socket or guide geometry needs a consistent naming and exclusion convention.",
+    "Every organelle needs closer Phase 2 review renders in addition to the early scene scaffold render.",
+    "Several reviewers requested manifest validation inside scripts or reports so created and incomplete component names cannot drift.",
+    "Procedural materials and Blender modifiers need explicit bake/apply/defer rules before Roblox import."
+  ],
+  "recommended_changes": {
+    "AGENTS.md": [
+      "Add a Phase 1 export-readiness minimum: even scaffold phases must list export candidates, excluded review-only objects, transform status, and budget metrics.",
+      "Define whether Phase 1 Roblox export review is a hard gate or a readiness advisory. Current reviewers interpreted it inconsistently.",
+      "Require each builder report to include object count, triangle count, material count, texture count, and transform status."
+    ],
+    "shared_helpers": [
+      "Add a shared export-prep helper that applies or reports transforms on export candidates.",
+      "Add a shared manifest validation helper that checks created and incomplete component names against component_manifest.json.",
+      "Add a shared report helper for budget metrics and export artifact lists.",
+      "Add a shared convention for export collections: exportable meshes, metadata helpers, cameras/lights, and review-only guides."
+    ],
+    "review_protocol": [
+      "Split Roblox export review into scaffold-readiness and final-export gates.",
+      "Require reviewers to distinguish blocking Phase 1 issues from Phase 2 prerequisites."
+    ]
+  },
+  "phase_2_recommendation": {
+    "can_begin_for_full_batch": false,
+    "can_begin_conditionally_for": [
+      "nucleus",
+      "golgi"
+    ],
+    "blocked_until_fixes_for": [
+      "mitochondrion",
+      "rough_er",
+      "lysosome"
+    ],
+    "required_pre_phase_2_fix_batch": [
+      "Add shared export-prep and manifest validation helpers.",
+      "Update each Phase 1 builder report with export candidates, excluded helpers, transform status, and measured budget metrics.",
+      "Define Roblox mapping for RootRig and WholeCell_ContextSocket.",
+      "Regenerate or revise export reviews after the above evidence exists."
+    ]
+  }
+}

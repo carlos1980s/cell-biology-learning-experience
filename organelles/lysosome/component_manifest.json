@@ -1,0 +1,16 @@
+{
+  "schema_version": "component_manifest_v1",
+  "organelle": "lysosome",
+  "root": "Lysosome_RootRig",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Lysosome_RootRig",
+    "Lysosome_Membrane",
+    "AcidicInterior_Volume",
+    "DigestiveEnzyme_Clusters",
+    "WasteCargo_Fragments",
+    "RecycledOutput_Cues",
+    "Interaction_Hotspots"
+  ]
+}
+

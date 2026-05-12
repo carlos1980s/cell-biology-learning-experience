@@ -1,0 +1,16 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "nuclear_pores",
+  "parent_components": [
+    "NuclearPore_Complexes"
+  ],
+  "required_objects": [
+    "NuclearPore_Complexes"
+  ],
+  "must_not_create": [
+    "NuclearPore_GateCores",
+    "Chromatin_Threads",
+    "Nucleolus_Subregions"
+  ]
+}
+

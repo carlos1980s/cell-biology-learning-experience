@@ -1,0 +1,25 @@
+{
+  "export_pass": false,
+  "score_0_to_100": 78,
+  "major_failures": [
+    "No FBX, OBJ, glTF, Roblox-ready asset, or export collection is produced or listed for Phase 1, so actual Roblox import behavior cannot be verified.",
+    "There is no explicit export-prep validation step that confirms transforms are applied or baked before export; the only visible mesh, WholeCell_ContextSocket_ReviewGhost, has non-default scale and must remain excluded from production export."
+  ],
+  "minor_issues": [
+    "The two Phase 1 manifest components, WholeCell_ContextSocket and Golgi_RootRig, use exact stable names from component_manifest.json.",
+    "The intentionally deferred manifest components are reported in phase_01_builder_report.json: Cisterna_Stack, Cis_Face, Trans_Face, Cargo_ModificationSites, Budding_Vesicles, Dispatch_Vesicles, and Interaction_Hotspots.",
+    "Golgi_RootRig and WholeCell_ContextSocket are Blender Empty objects, which are useful for hierarchy and placement but need a defined Roblox mapping such as a Model pivot, Attachment, or metadata marker.",
+    "The review render confirms the scene contains only a translucent context ghost and no exportable Golgi cisternae, faces, vesicles, cargo markers, or hotspots yet.",
+    "Procedural noise, bump, alpha transparency, and Blender material nodes are appropriate for review materials but will need baked textures or simplified Roblox material equivalents in later phases.",
+    "Triangle count, material count, texture count, and object count are listed only as future risks rather than measured export budget values for the current scene."
+  ],
+  "required_fixes": [
+    "Before any Roblox export, add an explicit export-prep path that applies or bakes transforms for every exportable mesh component.",
+    "Keep WholeCell_ContextSocket_ReviewGhost, cameras, and lights out of production exports, or place exportable objects in a dedicated export collection with exclusions documented.",
+    "Define how Golgi_RootRig and WholeCell_ContextSocket map into Roblox, including Model pivot behavior, Attachment placement, and whether the context socket is setup-only metadata.",
+    "When Phase 2 adds Cisterna_Stack geometry, record measured object count, triangle count, material count, texture count, and any LOD or simplification plan.",
+    "Continue using exact component_manifest.json names for major components and continue reporting all intentionally incomplete manifest components by phase.",
+    "Bake or replace Blender procedural material features before Roblox import validation."
+  ],
+  "approved_to_continue": true
+}

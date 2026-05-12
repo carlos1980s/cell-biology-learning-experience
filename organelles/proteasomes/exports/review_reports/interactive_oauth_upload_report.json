@@ -1,0 +1,268 @@
+{
+  "schema_version": "proteasomes_interactive_oauth_upload_report_v1",
+  "status": "pass",
+  "updated_exports": 7,
+  "creator_user_id": "6108806590",
+  "creator_group_id": "",
+  "results": [
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_CoreParticleBarrel",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_CoreParticleBarrel.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "operationId": "e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "operationId": "e98bbe32-209b-497f-8650-6b16cd4b0684",
+        "done": true,
+        "response": {
+          "path": "assets/115003555125638",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:32.327148900Z",
+          "assetId": "115003555125638",
+          "displayName": "Proteasomes_EXPORT_LOD0_CoreParticleBarrel",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_CoreParticleBarrel",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "115003555125638"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_RegulatoryCaps",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_RegulatoryCaps.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "operationId": "81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "operationId": "81fd3a2f-9cc3-4819-9db3-99b5e225a27c",
+        "done": true,
+        "response": {
+          "path": "assets/119067654402979",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:37.837255200Z",
+          "assetId": "119067654402979",
+          "displayName": "Proteasomes_EXPORT_LOD0_RegulatoryCaps",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_RegulatoryCaps",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "119067654402979"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_UbiquitinTagCues",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_UbiquitinTagCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "operationId": "e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "operationId": "e6bba2ca-d52b-4779-bf91-405f4092f291",
+        "done": true,
+        "response": {
+          "path": "assets/90962892368837",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:46.596836700Z",
+          "assetId": "90962892368837",
+          "displayName": "Proteasomes_EXPORT_LOD0_UbiquitinTagCues",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_UbiquitinTagCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "90962892368837"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_ProteinSubstrateThread",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_ProteinSubstrateThread.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "operationId": "98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "operationId": "98c7a6e0-141b-481f-8eb1-7c8ae0958b7f",
+        "done": true,
+        "response": {
+          "path": "assets/93632218983583",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:57:51.342184Z",
+          "assetId": "93632218983583",
+          "displayName": "Proteasomes_EXPORT_LOD0_ProteinSubstrateThread",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_ProteinSubstrateThread",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "93632218983583"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_LOD0_DegradationProductCues",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_LOD0_DegradationProductCues.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "operationId": "45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "operationId": "45267d8f-ae05-4e29-8335-fcc11fbff178",
+        "done": true,
+        "response": {
+          "path": "assets/104449963098050",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:01.668835400Z",
+          "assetId": "104449963098050",
+          "displayName": "Proteasomes_EXPORT_LOD0_DegradationProductCues",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_LOD0_DegradationProductCues",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "104449963098050"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_ANCHORS_ProteasomesRuntime",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_ANCHORS_ProteasomesRuntime.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "operationId": "2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "operationId": "2b7b3b72-8656-4699-aee6-133cdd2e28cc",
+        "done": true,
+        "response": {
+          "path": "assets/92715380772524",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:04.697742900Z",
+          "assetId": "92715380772524",
+          "displayName": "Proteasomes_EXPORT_ANCHORS_ProteasomesRuntime",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_ANCHORS_ProteasomesRuntime",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "92715380772524"
+    },
+    {
+      "organelle": "proteasomes",
+      "export_group": "EXPORT_COLLISION_ProteasomeProxy",
+      "source_file": "organelles/proteasomes/exports/phase_04_roblox/EXPORT_COLLISION_ProteasomeProxy.fbx",
+      "creator_user_id": "6108806590",
+      "creator_group_id": "",
+      "status": "pass",
+      "create_response": {
+        "path": "operations/9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "operationId": "9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "done": false
+      },
+      "operation_response": {
+        "path": "operations/9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "operationId": "9a093f9b-f620-4082-9cac-aab0638b09a1",
+        "done": true,
+        "response": {
+          "path": "assets/117963135206467",
+          "revisionId": "1",
+          "revisionCreateTime": "2026-05-05T11:58:08.984631600Z",
+          "assetId": "117963135206467",
+          "displayName": "Proteasomes_EXPORT_COLLISION_ProteasomeProxy",
+          "description": "Cell Blender to Roblox organelle package: proteasomes/EXPORT_COLLISION_ProteasomeProxy",
+          "assetType": "Model",
+          "creationContext": {
+            "creator": {
+              "userId": "6108806590"
+            }
+          },
+          "moderationResult": {
+            "moderationState": "Approved"
+          },
+          "state": "Active"
+        }
+      },
+      "package_asset_id": "117963135206467"
+    }
+  ]
+}
