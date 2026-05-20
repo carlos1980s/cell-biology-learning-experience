@@ -1,0 +1,24 @@
+{
+  "schema_version": "phase_07r_animation_review_v1",
+  "organelle": "nucleus",
+  "phase": "07R",
+  "reviewer": "Animation Function Reviewer",
+  "animation_function_pass": true,
+  "roblox_runtime_animation_ready": false,
+  "approved_for_next_phase": true,
+  "evidence": [
+    "The rough ER is grouped under RoughER_Connection with a hidden ER_Mitosis_Disconnect_Seam marker for future envelope-breakdown animation.",
+    "The folded sheets and ribosome dots are parented to the RoughER_Connection root so they can move as one context layer.",
+    "The bridge and lumen band provide named geometry for later sway or detach animation."
+  ],
+  "remaining_risks": [
+    "No production sway animation is authored yet.",
+    "Mitosis disconnect behavior is only represented as a hidden marker, not a complete animation.",
+    "Roblox runtime animation mapping must be added in a later pass."
+  ],
+  "required_fixes_before_export": [
+    "Add bridge sway and optional mitosis detach animation events before final export.",
+    "Map ER_Mitosis_Disconnect_Seam into the whole-cell animation event map."
+  ],
+  "approved_to_continue": true
+}

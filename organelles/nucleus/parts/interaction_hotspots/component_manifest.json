@@ -1,0 +1,7 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "interaction_hotspots",
+  "parent_components": ["Interaction_Hotspots"],
+  "required_objects": ["Interaction_Hotspots"],
+  "must_not_create": ["Chromatin_Threads", "Nucleolus_Subregions"]
+}

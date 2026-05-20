@@ -54,6 +54,7 @@ flowchart TD
     docs --> mcp["ROBLOX_MCP.md"]
     docs --> roadmap["ROADMAP.md"]
     docs --> developmentPlan["ORGANELLE_DEVELOPMENT_PLAN.md"]
+    docs --> productionSystem["MULTI_AGENT_PRODUCTION_SYSTEM.md"]
     docs --> subcharts["ORGANELLE_SUBCHARTS.md"]
 
     repo --> organelles["organelle_projects/"]

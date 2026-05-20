@@ -1,0 +1,130 @@
+{
+  "organelle": "nucleus",
+  "phase": 1,
+  "reviewer": "Roblox Export Reviewer",
+  "review_type": "roblox_export",
+  "export_pass": false,
+  "score_0_to_100": 82,
+  "approved_to_continue": true,
+  "phase_scope_assessment": "Phase 1 is Roblox-safe as a scene scaffold and naming/hierarchy setup, but it is not yet a passable Roblox export package because the visible socket mesh has an unapplied rotation transform and no actual export artifact is produced.",
+  "source_files_reviewed": [
+    "ROBLOX_EXPORT_RULES.md",
+    "shared/review_checklists/roblox_export_checklist.csv",
+    "organelles/nucleus/component_manifest.json",
+    "organelles/nucleus/build_nucleus.py",
+    "organelles/nucleus/review_renders/phase_01_scene_setup.png",
+    "organelles/nucleus/review_reports/phase_01_builder_report.json"
+  ],
+  "render_reviewed": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_01_scene_setup.png",
+    "exists": true,
+    "dimensions_px": [
+      1600,
+      1200
+    ],
+    "notes": "The render confirms a simple visible WholeCell_ContextSocket scaffold only; no full nucleus export geometry is in scope for Phase 1."
+  },
+  "exported_files": [],
+  "component_names": {
+    "manifest_root": "Nucleus_RootRig",
+    "created_manifest_components": [
+      "WholeCell_ContextSocket",
+      "Nucleus_RootRig"
+    ],
+    "missing_manifest_components": [
+      "OuterNuclearMembrane_Panels",
+      "InnerNuclearMembrane_Panels",
+      "PerinuclearLumen_Segments",
+      "NuclearPore_Complexes",
+      "NuclearPore_GateCores",
+      "NuclearLamina_Lattice",
+      "Nucleoplasm_Volume",
+      "Chromatin_Threads",
+      "CondensedChromosomes",
+      "Nucleolus_Subregions",
+      "Transport_Cargo",
+      "RoughER_Connection",
+      "Mitosis_Fragments",
+      "Interaction_Hotspots"
+    ],
+    "naming_pass": true,
+    "notes": "The two Phase 1 components use exact component_manifest.json names. Missing components are intentionally out of Phase 1 scope and are listed in the builder report."
+  },
+  "checklist_results": {
+    "export_001_transforms_are_applied_before_export": {
+      "pass": false,
+      "evidence": "build_nucleus.py rotates WholeCell_ContextSocket after torus creation with rotation_euler[0] = 90 degrees, but does not call transform_apply before a potential mesh export."
+    },
+    "export_002_origins_and_pivots_support_intended_animation": {
+      "pass": true,
+      "evidence": "Nucleus_RootRig is an empty at world origin. WholeCell_ContextSocket is parented to it and retains a centered origin suitable for an alignment locator."
+    },
+    "export_003_triangle_and_material_risks_are_listed": {
+      "pass": true,
+      "evidence": "Builder report lists future procedural material, transparency/emission, and mesh density risks. Current Phase 1 geometry is a single low-risk torus socket."
+    },
+    "export_004_exported_component_names_are_stable": {
+      "pass": true,
+      "evidence": "Component names are hard-coded and match the manifest without generated suffixes."
+    },
+    "export_005_missing_manifest_components_are_reported": {
+      "pass": true,
+      "evidence": "Builder report lists every non-Phase-1 manifest component as incomplete."
+    }
+  },
+  "transform_origin_export_readiness": {
+    "root_rig": {
+      "name": "Nucleus_RootRig",
+      "type": "EMPTY",
+      "origin_signal": "world origin parent rig",
+      "export_readiness": "Suitable as hierarchy parent/animation pivot, but empties need explicit Roblox import handling or conversion to attachments/metadata."
+    },
+    "context_socket": {
+      "name": "WholeCell_ContextSocket",
+      "type": "MESH_TORUS",
+      "origin_signal": "centered at socket location and parented to Nucleus_RootRig",
+      "export_readiness": "Object has an unapplied rotation transform and should not be exported to Roblox until transforms are applied or baked."
+    }
+  },
+  "material_count_risk": {
+    "risk_level": "low_for_phase_1_medium_for_future",
+    "observed_material_recipes": 8,
+    "observed_materials_assigned_to_phase_1_mesh": 1,
+    "notes": "Only the teal context socket material is assigned in Phase 1. The script creates eight procedural Blender material recipes; later Roblox export will need baking or simplified material mapping because procedural nodes, alpha, emission, and bump do not transfer directly."
+  },
+  "object_count_risk": {
+    "risk_level": "low",
+    "phase_1_export_relevant_objects": [
+      "Nucleus_RootRig",
+      "WholeCell_ContextSocket"
+    ],
+    "non_export_scene_helpers": [
+      "Nucleus_Phase01_KeyLight",
+      "Nucleus_Phase01_VioletRimLight",
+      "Nucleus_Phase01_ReviewCamera",
+      "Nucleus_Phase01_OrthographicContextCamera"
+    ],
+    "notes": "Object count is trivial in Phase 1. Future phases should keep repeated pores, chromatin strands, and transport cargo grouped into meaningful export components or instanced/LOD variants."
+  },
+  "major_failures": [
+    "WholeCell_ContextSocket has an unapplied 90-degree rotation transform in build_nucleus.py, so the current scene should not be treated as a final Roblox export pass."
+  ],
+  "minor_issues": [
+    "No FBX, OBJ, glTF, or Roblox-ready exported artifact is produced in Phase 1; this is acceptable for scaffold scope but prevents end-to-end import validation.",
+    "Nucleus_RootRig is an empty, which is useful in Blender but needs an explicit Roblox-side representation plan such as a Model pivot, Attachment, or metadata marker.",
+    "The script creates eight procedural material recipes even though only one is used by current geometry; this is not a performance problem yet, but future export should avoid shipping unused materials.",
+    "Procedural noise, bump, transparency, and emission are Blender-specific and will require baking or Roblox material approximation in later phases."
+  ],
+  "required_fixes": [
+    "Before any Roblox export, apply or bake transforms on WholeCell_ContextSocket and all future mesh components.",
+    "Define how Nucleus_RootRig and WholeCell_ContextSocket map into Roblox, including Model pivot, Attachment placement, and whether the socket is exported as visible geometry or setup-only metadata.",
+    "When Phase 2 introduces membrane meshes, record triangle counts, material counts, texture counts, object counts, and any LOD or simplification plan in the builder report.",
+    "Keep all future major objects named exactly from component_manifest.json and continue listing intentionally incomplete manifest components by phase."
+  ],
+  "manual_setup_notes": [
+    "If imported before a dedicated exporter exists, exclude cameras and lights from the Roblox asset payload.",
+    "Treat Phase 1 as hierarchy/socket validation only, not as a nucleus mesh asset.",
+    "Bake or replace Blender procedural material features before Roblox import."
+  ],
+  "next_recommended_phase": "Proceed to Phase 2 only as a modeling phase. Add the outer membrane, inner membrane, and perinuclear lumen as separate manifest-named components, and include transform-apply/export validation before marking Phase 2 export-ready."
+}

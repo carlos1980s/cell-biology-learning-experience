@@ -18,6 +18,8 @@ env/
 .env
 .env.*
 !.env.example
+.dev.vars
+.dev.vars.*
 *.pem
 *.key
 
@@ -32,6 +34,8 @@ cell_agents.db
 *.tar
 *.tar.gz
 *.7z
+cloudflare/**/dist/
+cloudflare/**/.wrangler/
 
 # Roblox binary/project exports
 *.rbxl
@@ -47,4 +51,3 @@ Thumbs.db
 
 # Generated Roblox spec bytecode/cache
 tools/__pycache__/
-

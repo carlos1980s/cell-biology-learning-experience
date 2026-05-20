@@ -1,0 +1,34 @@
+{
+  "schema_version": "phase_latest_status_v1",
+  "organelle": "nucleus",
+  "phase": "08R",
+  "status": "exported_dry_run_validated_upload_blocked",
+  "approved_for_next_phase": false,
+  "next_allowed_scope": "Set Open Cloud credentials, upload Phase 08R packages, assemble Workspace.Nucleus_Model/GeneDynamics, then run Studio play-mode runtime validation.",
+  "source_blend": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_08g_gene_dynamics.blend",
+  "asset_manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/nucleus_phase_08r_roblox_asset_manifest.json",
+  "export_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/review_reports/phase08r_gene_dynamics_export_report.json",
+  "upload_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/review_reports/phase08r_open_cloud_upload_report.json",
+  "roblox_export_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08r_roblox_export_readiness_review.json",
+  "studio_assembly_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08r_studio_assembly_validation_report.json",
+  "animation_runtime_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08r_animation_runtime_mapping_review.json",
+  "whole_cell_integration_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_08r_whole_cell_integration_review.json",
+  "checklist": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_08r_checklist.json",
+  "notes": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_08r_notes.json",
+  "exported_packages": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_08r_roblox/EXPORT_LOD0_GeneActivationSite.fbx",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_08r_roblox/EXPORT_LOD0_RNAProcessingCargo.fbx",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_08r_roblox/EXPORT_LOD0_MRNAExportPath.fbx",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_08r_roblox/EXPORT_ANCHORS_GeneDynamicsRuntime.fbx"
+  ],
+  "remaining_blockers": [
+    "ROBLOX_OPEN_CLOUD_API_KEY is not present in the shell environment.",
+    "ROBLOX_GROUP_ID is not present in the shell environment.",
+    "Roblox package asset IDs are missing, so Studio assembly and play-mode validation cannot run yet."
+  ],
+  "roblox_export_risks": [
+    "Transparent RNA/path materials need Studio readability validation inside the Phase 07R nucleus.",
+    "Runtime anchors should become invisible Attachments/Beams after import if visible marker geometry is too distracting.",
+    "Open Cloud upload must be rerun after credentials are set; dry-run payload validation is not a substitute for uploaded asset IDs."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "phase_08r_review_report_v1",
+  "phase": "08R",
+  "review_type": "animation_runtime_mapping",
+  "status": "implementation_ready_blocked_before_studio_play_validation",
+  "runtime_controller": "src/CellExperience/Gameplay/GeneDynamicsController.lua",
+  "build_hook": "src/CellExperience/BuildCellExperience.lua",
+  "action_event": "transcription_mrna_export",
+  "queue_signal": "queue_updates.nuclear_mrna",
+  "event_bindings": {
+    "transcribe_gene": [
+      "active gene pulse",
+      "RNA polymerase emphasis",
+      "nascent RNA growth cue"
+    ],
+    "transcription_begins": [
+      "active gene pulse",
+      "RNA polymerase emphasis",
+      "nascent RNA growth cue"
+    ],
+    "export_mrna": [
+      "mature mRNA cargo visibility",
+      "mRNA export path visibility",
+      "selective pore checkpoint pulse"
+    ],
+    "pore_selective_export": [
+      "mature mRNA cargo visibility",
+      "mRNA export path visibility",
+      "selective pore checkpoint pulse"
+    ],
+    "queue_updates.nuclear_mrna": [
+      "pending nuclear mRNA intensity and visibility"
+    ]
+  },
+  "checks": [
+    {
+      "check": "controller_installed_by_experience_builder",
+      "result": "pass",
+      "evidence": "BuildCellExperience requires Gameplay/GeneDynamicsController and creates a StarterPlayerScripts LocalScript."
+    },
+    {
+      "check": "backend_delta_mapping",
+      "result": "pass",
+      "evidence": "Controller listens for CellStateDelta and reads queue_updates.nuclear_mrna plus gene dynamics action/event metadata."
+    },
+    {
+      "check": "translation_not_inside_nucleus",
+      "result": "pass",
+      "evidence": "Controller only visualizes transcription, mRNA processing/export, and handoff cues."
+    },
+    {
+      "check": "studio_play_mode_validation",
+      "result": "blocked",
+      "evidence": "Requires assembled Nucleus_Model/GeneDynamics, which requires uploaded package asset IDs."
+    }
+  ],
+  "decision": "Runtime mapping is implemented and ready for Studio play-mode validation after package upload and assembly."
+}

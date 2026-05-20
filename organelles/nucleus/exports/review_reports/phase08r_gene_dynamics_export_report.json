@@ -1,0 +1,218 @@
+{
+  "schema_version": "phase08r_gene_dynamics_export_report_v1",
+  "phase": "08R",
+  "organelle": "nucleus",
+  "source_blend": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_08g_gene_dynamics.blend",
+  "manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/nucleus_phase_08r_roblox_asset_manifest.json",
+  "exports": [
+    {
+      "export_group": "EXPORT_LOD0_GeneActivationSite",
+      "display_name": "Nucleus Phase08R Gene Activation Site",
+      "source_gene_objects": [
+        "ActiveGene_Locus",
+        "Chromatin_OpenStatePatch",
+        "TranscriptionFactor_Markers",
+        "RNAPolymerase_Complex"
+      ],
+      "roblox_placement_target": "Nucleus_Model/GeneDynamics/GeneActivationSite",
+      "roblox_material_family": "gene_activation",
+      "event_bindings": [
+        "transcription_mrna_export.signal_targets_gene",
+        "transcription_mrna_export.chromatin_opens",
+        "transcription_mrna_export.transcription_begins"
+      ],
+      "source_file": "organelles/nucleus/exports/phase_08r_roblox/EXPORT_LOD0_GeneActivationSite.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 408188,
+      "under_open_cloud_create_limit": true,
+      "object_count": 20,
+      "triangle_count": 16860,
+      "material_count": 7,
+      "material_names": [
+        "MAT_08G_ActiveGene_RegulatoryGold",
+        "MAT_08G_ChromatinOpen_LooseMagentaCyan",
+        "MAT_08G_DNA_OpenCoding_CyanViolet",
+        "MAT_08G_DNA_OpenTemplate_MagentaViolet",
+        "MAT_08G_RNAPolymerase_DeepTealProtein",
+        "MAT_08G_RNAPolymerase_LavenderSubunit",
+        "MAT_08G_TranscriptionFactor_AmberProtein"
+      ],
+      "object_names": [
+        "ActiveGene_Locus_RegulatoryBead_04.001",
+        "ActiveGene_Locus_RegulatoryBead_03.001",
+        "ActiveGene_Locus_RegulatoryBead_02.001",
+        "ActiveGene_Locus_RegulatoryBead_01.001",
+        "ActiveGene_Locus_DNA_OpenStrand_B.001",
+        "ActiveGene_Locus_DNA_OpenStrand_A.001",
+        "Chromatin_OpenStatePatch_LoosenedLoop_03.001",
+        "Chromatin_OpenStatePatch_LoosenedLoop_02.001",
+        "Chromatin_OpenStatePatch_LoosenedLoop_01.001",
+        "TranscriptionFactor_Markers_BoundProtein_04.001",
+        "TranscriptionFactor_Markers_BoundProtein_03.001",
+        "TranscriptionFactor_Markers_BoundProtein_02.001",
+        "TranscriptionFactor_Markers_BoundProtein_01.001",
+        "RNAPolymerase_Complex_OrganicSubunit_07.001",
+        "RNAPolymerase_Complex_OrganicSubunit_06.001",
+        "RNAPolymerase_Complex_OrganicSubunit_05.001",
+        "RNAPolymerase_Complex_OrganicSubunit_04.001",
+        "RNAPolymerase_Complex_OrganicSubunit_03.001",
+        "RNAPolymerase_Complex_OrganicSubunit_02.001",
+        "RNAPolymerase_Complex_OrganicSubunit_01.001"
+      ],
+      "status": "exported_pending_upload",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "not_uploaded",
+      "studio_assembly_status": "not_assembled",
+      "import_notes": "Active gene, local open chromatin, transcription factors, and RNA polymerase marker."
+    },
+    {
+      "export_group": "EXPORT_LOD0_RNAProcessingCargo",
+      "display_name": "Nucleus Phase08R RNA Processing Cargo",
+      "source_gene_objects": [
+        "NascentRNA_Strand",
+        "PreMRNA_ProcessingMarkers",
+        "MatureMRNA_Cargo"
+      ],
+      "roblox_placement_target": "Nucleus_Model/GeneDynamics/RNAProcessingCargo",
+      "roblox_material_family": "rna_processing",
+      "event_bindings": [
+        "transcription_mrna_export.transcription_begins",
+        "transcription_mrna_export.mrna_processing"
+      ],
+      "source_file": "organelles/nucleus/exports/phase_08r_roblox/EXPORT_LOD0_RNAProcessingCargo.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 243308,
+      "under_open_cloud_create_limit": true,
+      "object_count": 7,
+      "triangle_count": 10212,
+      "material_count": 5,
+      "material_names": [
+        "MAT_08G_MatureMRNA_PinkRibbon",
+        "MAT_08G_NascentRNA_HotPink",
+        "MAT_08G_PreMRNA_Cap_Gold",
+        "MAT_08G_PreMRNA_PolyA_Lime",
+        "MAT_08G_PreMRNA_Splice_Cyan"
+      ],
+      "object_names": [
+        "NascentRNA_Strand.001",
+        "PreMRNA_ProcessingMarkers_SpliceMarkerB.001",
+        "PreMRNA_ProcessingMarkers_SpliceMarkerA.001",
+        "PreMRNA_ProcessingMarkers_PreMRNA_Backbone.001",
+        "PreMRNA_ProcessingMarkers_PolyATail.001",
+        "PreMRNA_ProcessingMarkers_FivePrimeCap.001",
+        "MatureMRNA_Cargo.001"
+      ],
+      "status": "exported_pending_upload",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "not_uploaded",
+      "studio_assembly_status": "not_assembled",
+      "import_notes": "Nascent RNA, simplified processing markers, and mature mRNA cargo."
+    },
+    {
+      "export_group": "EXPORT_LOD0_MRNAExportPath",
+      "display_name": "Nucleus Phase08R mRNA Export Path",
+      "source_gene_objects": [
+        "MRNA_ExportPath_ToPore",
+        "PoreExport_CheckpointState"
+      ],
+      "roblox_placement_target": "Nucleus_Model/GeneDynamics/MRNAExportPath",
+      "roblox_material_family": "mrna_export_path",
+      "event_bindings": [
+        "transcription_mrna_export.mrna_moves_to_pore",
+        "transcription_mrna_export.pore_selective_export"
+      ],
+      "source_file": "organelles/nucleus/exports/phase_08r_roblox/EXPORT_LOD0_MRNAExportPath.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 44908,
+      "under_open_cloud_create_limit": true,
+      "object_count": 2,
+      "triangle_count": 1356,
+      "material_count": 2,
+      "material_names": [
+        "MAT_08G_MRNAExportPath_TransparentPink",
+        "MAT_08G_PoreExport_GatePulse_CyanGold"
+      ],
+      "object_names": [
+        "MRNA_ExportPath_ToPore.001",
+        "PoreExport_CheckpointState_SelectivePulseRing.001"
+      ],
+      "status": "exported_pending_upload",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "not_uploaded",
+      "studio_assembly_status": "not_assembled",
+      "import_notes": "mRNA route to the selected pore and selective pore pulse/checkpoint."
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_GeneDynamicsRuntime",
+      "display_name": "Nucleus Phase08R Gene Dynamics Runtime Anchors",
+      "source_gene_objects": [
+        "NucleusAction_Hotspots"
+      ],
+      "roblox_placement_target": "Nucleus_Model/GeneDynamics/RuntimeAnchors",
+      "roblox_material_family": "runtime_anchors",
+      "event_bindings": [
+        "transcription_mrna_export.select_gene",
+        "transcription_mrna_export.inspect_pore",
+        "transcription_mrna_export.follow_mrna"
+      ],
+      "source_file": "organelles/nucleus/exports/phase_08r_roblox/EXPORT_ANCHORS_GeneDynamicsRuntime.fbx",
+      "content_type": "model/fbx",
+      "file_format": "fbx",
+      "file_size_bytes": 26108,
+      "under_open_cloud_create_limit": true,
+      "object_count": 5,
+      "triangle_count": 60,
+      "material_count": 1,
+      "material_names": [
+        "MAT_EXPORT_08R_RuntimeAnchor_Gold"
+      ],
+      "object_names": [
+        "EXPORT_ANCHOR_08R_ActiveGene_Locus",
+        "EXPORT_ANCHOR_08R_RNAPolymerase_Complex",
+        "EXPORT_ANCHOR_08R_MatureMRNA_Cargo",
+        "EXPORT_ANCHOR_08R_PoreExport_CheckpointState",
+        "EXPORT_ANCHOR_08R_NucleusAction_Hotspots"
+      ],
+      "status": "exported_pending_upload",
+      "package_asset_id": null,
+      "upload_operation_path": null,
+      "upload_status": "not_uploaded",
+      "studio_assembly_status": "not_assembled",
+      "import_notes": "Hotspots and runtime anchor markers for Roblox scripts and Beam/Attachment mapping."
+    }
+  ],
+  "required_action_object_status": {
+    "ActiveGene_Locus": true,
+    "Chromatin_OpenStatePatch": true,
+    "MRNA_ExportPath_ToPore": true,
+    "MatureMRNA_Cargo": true,
+    "NascentRNA_Strand": true,
+    "NucleusAction_Hotspots": true,
+    "PoreExport_CheckpointState": true,
+    "PreMRNA_ProcessingMarkers": true,
+    "RNAPolymerase_Complex": true,
+    "TranscriptionFactor_Markers": true
+  },
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "exact_action_objects_present": true,
+    "fbx_files_created": true,
+    "files_under_open_cloud_limit": true,
+    "event_bindings_recorded": true,
+    "roblox_risks_listed": true
+  },
+  "roblox_export_risks": [
+    "Curve-derived RNA/path meshes may still need Beam/Attachment replacements for lower-end Roblox devices.",
+    "Transparent/emissive fallback materials need Studio visual validation.",
+    "GeneDynamics should remain a toggleable action layer under Nucleus_Model."
+  ],
+  "blocking_errors": [],
+  "decision": "approved_for_upload",
+  "next_recommended_phase": "Upload Phase 08R packages through Open Cloud, then run Studio assembly and play-mode validation."
+}

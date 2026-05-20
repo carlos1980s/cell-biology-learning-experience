@@ -1,0 +1,12 @@
+{
+  "schema_version": "nucleus_scale_map_v1",
+  "scale_units": "relative_nucleus_units",
+  "targets": {
+    "outer_envelope_radius": 2.2,
+    "inner_envelope_radius": 1.95,
+    "perinuclear_lumen_width": 0.18,
+    "pore_complex_radius": 0.16,
+    "lamina_offset_inside_inner_membrane": 0.06,
+    "nucleolus_radius": 0.45
+  }
+}

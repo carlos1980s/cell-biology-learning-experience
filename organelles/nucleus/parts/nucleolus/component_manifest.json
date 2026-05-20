@@ -1,0 +1,7 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "nucleolus",
+  "parent_components": ["Nucleolus_Subregions"],
+  "required_objects": ["Nucleolus_Subregions"],
+  "must_not_create": ["OuterNuclearMembrane_Panels", "InnerNuclearMembrane_Panels"]
+}

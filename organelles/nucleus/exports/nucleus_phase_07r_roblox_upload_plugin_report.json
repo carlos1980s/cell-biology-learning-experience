@@ -1,0 +1,109 @@
+{
+  "creator": {
+    "type": "USER",
+    "id": "6108806590",
+    "name": "papanueella303"
+  },
+  "results": [
+    {
+      "export_group": "EXPORT_LOD0_NucleusEnvelope",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_NucleusEnvelope.fbx",
+      "file_size_bytes": 882636,
+      "status": "uploaded",
+      "operation_path": "operations/1f46556d-3756-4143-a962-b58b8171ca89",
+      "done": true,
+      "package_asset_id": 74521805450020,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_NuclearPoreComplexes",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_NuclearPoreComplexes.fbx",
+      "file_size_bytes": 867676,
+      "status": "uploaded",
+      "operation_path": "operations/dd45441f-0ec1-4b0d-a436-f04c2ba4f543",
+      "done": true,
+      "package_asset_id": 136413258380266,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Lamina",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Lamina.fbx",
+      "file_size_bytes": 3886300,
+      "status": "uploaded",
+      "operation_path": "operations/0677f016-bbb9-442c-ae03-31b1e1db2d5e",
+      "done": true,
+      "package_asset_id": 128497878660643,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Nucleoplasm",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Nucleoplasm.fbx",
+      "file_size_bytes": 2111820,
+      "status": "uploaded",
+      "operation_path": "operations/e956ae61-bc4e-4445-908e-4863623c3521",
+      "done": true,
+      "package_asset_id": 138095521209223,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Chromatin",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Chromatin.fbx",
+      "file_size_bytes": 6605628,
+      "status": "uploaded",
+      "operation_path": "operations/7c2eebd3-a347-45cd-a06f-7662944bbe18",
+      "done": true,
+      "package_asset_id": 129902571017931,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Nucleolus",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_Nucleolus.fbx",
+      "file_size_bytes": 2688524,
+      "status": "uploaded",
+      "operation_path": "operations/456b42f4-70d5-4251-accd-813ffb135ae3",
+      "done": true,
+      "package_asset_id": 98243034515620,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_TransportCargo",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_TransportCargo.fbx",
+      "file_size_bytes": 646652,
+      "status": "uploaded",
+      "operation_path": "operations/9c6004c7-8f4a-427b-932a-cfc60f845953",
+      "done": true,
+      "package_asset_id": 127837548595766,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_LOD0_RoughERConnection",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_LOD0_RoughERConnection.fbx",
+      "file_size_bytes": 1185228,
+      "status": "uploaded",
+      "operation_path": "operations/f7073431-e8c5-4be7-910c-41580020b44e",
+      "done": true,
+      "package_asset_id": 132596782924193,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_NucleusProxy",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_COLLISION_NucleusProxy.fbx",
+      "file_size_bytes": 32812,
+      "status": "uploaded",
+      "operation_path": "operations/7146401f-55bf-409c-a763-d3a56bbf74c2",
+      "done": true,
+      "package_asset_id": 125765813852265,
+      "revision_id": "1"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_NucleusSockets",
+      "source_file": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/phase_07r_roblox/EXPORT_ANCHORS_NucleusSockets.fbx",
+      "file_size_bytes": 17932,
+      "status": "uploaded",
+      "operation_path": "operations/dedac414-aa11-4fcd-8227-9b85df1990d9",
+      "done": true,
+      "package_asset_id": 87060297017895,
+      "revision_id": "1"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "phase_latest_status_v1",
+  "organelle": "nucleus",
+  "phase": "03N",
+  "status": "passed_scoped_visual_gate",
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "Chromatin_Threads only",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_03n_nucleoplasm.blend",
+  "builder_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_03n_builder_report.json",
+  "visual_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_03n_visual_review.json",
+  "review_renders": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03n_reference_board.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03n_nucleoplasm_volume_review.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03n_nucleoplasm_detail_closeup.png"
+  ],
+  "remaining_blockers": [
+    "Full nucleus is still not approved; only envelope, pores, lamina, and nucleoplasm have passed scoped corrective gates.",
+    "Chromatin, nucleolus, transport cargo, rough ER connection, mitosis fragments, and interaction hotspots remain unbuilt."
+  ],
+  "roblox_export_risks": [
+    "Transparent nucleoplasm can sort differently in Roblox.",
+    "Fine suspended particles may need to be baked into a texture or reduced to particle emitters.",
+    "Nucleoplasm should be toggleable in inspection views to prevent hiding internal educational components."
+  ]
+}

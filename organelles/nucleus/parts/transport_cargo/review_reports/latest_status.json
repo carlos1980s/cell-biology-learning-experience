@@ -1,0 +1,6 @@
+{
+  "part": "transport_cargo",
+  "status": "deferred_until_pores_and_gates_pass",
+  "approved_for_nucleus_integration": false,
+  "blocking_findings": []
+}

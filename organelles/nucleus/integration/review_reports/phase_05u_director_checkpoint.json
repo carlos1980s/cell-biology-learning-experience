@@ -1,0 +1,32 @@
+{
+  "schema_version": "nucleus_director_checkpoint_v1",
+  "organelle": "nucleus",
+  "checkpoint": "post_phase_05u",
+  "latest_blender_scene": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_05u_nucleolus.blend",
+  "passed_scoped_phases": [
+    "Phase 02R double nuclear envelope",
+    "Phase 02P nuclear pore complexes and gate cores",
+    "Phase 02L nuclear lamina",
+    "Phase 03N nucleoplasm volume",
+    "Phase 04C chromatin threads",
+    "Phase 05U nucleolus subregions"
+  ],
+  "blocked_or_deferred_components": [
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "repeated_issues": [
+    "Procedural curve components can quickly become too geometric unless inspected against the baseline render.",
+    "Source art can pass Blender visual gates while still requiring Roblox LOD, decimation, or texture baking.",
+    "Reference-board camera composition still needs a final presentation pass after all nucleus components are present."
+  ],
+  "current_quality_notes": [
+    "Membrane, pores, lamina, nucleoplasm, and chromatin are approved as corrective source-art phases.",
+    "Nucleolus improved after a lumpy-core and higher-density granule pass; it remains approved only as scoped source art, with polish debt around lobe fusion and final presentation framing.",
+    "No full-nucleus approval has been issued yet."
+  ],
+  "recommended_next_phase": "Phase 06T Transport_Cargo only: protein import particles and RNA/ribosomal subunit export cues, with DNA explicitly forbidden from leaving the nucleus.",
+  "phase_2_can_continue": true
+}

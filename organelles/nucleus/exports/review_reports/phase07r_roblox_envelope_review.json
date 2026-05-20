@@ -1,0 +1,37 @@
+{
+  "phase": "07R Roblox envelope review",
+  "reviewed_at_local": "2026-05-04T09:41:48",
+  "problem_statement": "Nucleus envelope was not reading correctly in Roblox Studio.",
+  "findings": [
+    {
+      "id": "RBLX_ENV_001",
+      "severity": "high",
+      "finding": "A duplicate raw package named EXPORT_LOD0_NucleusEnvelope was visible directly under Workspace, outside MeshLibrary and Nucleus_Model.",
+      "impact": "The viewport showed a large selected raw shell over the assembled model, making the assembly look scattered or misaligned.",
+      "fix": "Assembler now moves top-level EXPORT_* orphans into Workspace.MeshLibrary/Nucleus_Phase07R_OrphanWorkspaceImports and hides them without deleting them."
+    },
+    {
+      "id": "RBLX_ENV_002",
+      "severity": "high",
+      "finding": "Roblox assembly flattened all envelope subcomponents to the same material, color, and transparency.",
+      "impact": "Outer membrane, inner membrane, lumen, and surface wrinkles lost biological separation.",
+      "fix": "Assembler now applies name-based envelope material pass: outer purple membrane, darker inner membrane, neon magenta lumen, darker wrinkle/ridge accents."
+    }
+  ],
+  "post_fix_validation": {
+    "top_level_export_models": 0,
+    "orphan_import_parts": 35,
+    "orphan_import_visible_parts": 0,
+    "nucleus_model_children": 10,
+    "envelope_material_buckets": 4,
+    "studio_phase07r_validator": "pass"
+  },
+  "remaining_review_process": [
+    "Viewport inspect Nucleus_Model only, with MeshLibrary collapsed/hidden.",
+    "Envelope pass: check double membrane readability, cutaway edge thickness, lumen visibility, and pore seating.",
+    "Biology pass: verify lamina is inside inner membrane, pores are selective gates not open holes, and ER connects to outer membrane only.",
+    "Roblox pass: confirm transparent lumen does not sort badly from front/back camera angles and collision proxy remains invisible.",
+    "If envelope still fails visually, regenerate or re-export envelope as three separate Roblox packages: OuterMembrane, InnerMembrane, PerinuclearLumen."
+  ],
+  "screenshot": "review_renders/roblox_phase07r/nucleus_phase07r_envelope_material_fix.png"
+}

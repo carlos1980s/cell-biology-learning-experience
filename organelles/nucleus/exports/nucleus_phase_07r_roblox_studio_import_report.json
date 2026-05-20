@@ -1,0 +1,199 @@
+{
+  "phase": "07R",
+  "status": "studio_import_validated",
+  "creator_used": {
+    "type": "USER",
+    "id": "6108806590",
+    "name": "papanueella303"
+  },
+  "owner_warning": "The plugin session did not expose a Roblox group creator; package assets were uploaded under the logged-in user creator, not a Roblox group.",
+  "raw_package_container": "Workspace.MeshLibrary/Nucleus_Phase07R_RawPackages",
+  "assembled_model_container": "Workspace.Nucleus_Model",
+  "validation": {
+    "raw_package_count": 10,
+    "assembled_child_count": 10,
+    "part_count": 1179,
+    "collision_part_count": 1
+  },
+  "screenshot": "review_renders/roblox_phase07r/nucleus_phase07r_studio_import_validation.png",
+  "packages": [
+    {
+      "export_group": "EXPORT_LOD0_NucleusEnvelope",
+      "package_asset_id": 74521805450020,
+      "placement": "Nucleus_Model/NucleusEnvelope",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_NuclearPoreComplexes",
+      "package_asset_id": 136413258380266,
+      "placement": "Nucleus_Model/NuclearPoreComplexes",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Lamina",
+      "package_asset_id": 128497878660643,
+      "placement": "Nucleus_Model/NuclearLamina",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Nucleoplasm",
+      "package_asset_id": 138095521209223,
+      "placement": "Nucleus_Model/Nucleoplasm",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Chromatin",
+      "package_asset_id": 129902571017931,
+      "placement": "Nucleus_Model/Chromatin",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Nucleolus",
+      "package_asset_id": 98243034515620,
+      "placement": "Nucleus_Model/Nucleolus",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_TransportCargo",
+      "package_asset_id": 127837548595766,
+      "placement": "Nucleus_Model/TransportCargo",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_LOD0_RoughERConnection",
+      "package_asset_id": 132596782924193,
+      "placement": "Nucleus_Model/RoughERConnection",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_NucleusProxy",
+      "package_asset_id": 125765813852265,
+      "placement": "Nucleus_Model/CollisionProxy",
+      "status": "studio_assembled_validated"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_NucleusSockets",
+      "package_asset_id": 87060297017895,
+      "placement": "Nucleus_Model/AnchorSockets",
+      "status": "studio_assembled_validated"
+    }
+  ],
+  "assembly_fix": {
+    "status": "applied",
+    "applied_at_local": "2026-05-04T09:35:17",
+    "issue": "Raw imported MeshLibrary packages were visible alongside the assembled Nucleus_Model, making the scene appear scattered.",
+    "fix": "Assembler now preserves raw packages under Workspace.MeshLibrary/Nucleus_Phase07R_RawPackages but sets their BasePart descendants transparent and non-colliding before cloning visible assembly children.",
+    "validation": {
+      "raw_package_count": 10,
+      "raw_parts": 1179,
+      "raw_visible_parts": 0,
+      "assembled_children": 10,
+      "assembled_visible_parts": 1176,
+      "collision_proxy_parts": 1
+    }
+  },
+  "assembly_quality_fix": {
+    "status": "applied",
+    "applied_at_local": "2026-05-04T10:38:16",
+    "layout_pass": "studio_tuned_play_view_v1",
+    "editable_material_policy": "mostly_opaque_meshparts",
+    "final_model": {
+      "path": "Workspace.Nucleus_Model",
+      "position": [
+        -2.3,
+        49.0,
+        -115.8
+      ],
+      "size": [
+        129.4,
+        84.5,
+        75.7
+      ],
+      "top_level_duplicate_count": 0,
+      "meshlibrary_visible_parts": 0,
+      "children": 10,
+      "parts": 1179
+    },
+    "material_policy": {
+      "opaque_or_easy_edit_groups": [
+        "NucleusEnvelope outer/inner membrane",
+        "NuclearPoreComplexes",
+        "NuclearLamina",
+        "Chromatin",
+        "Nucleolus",
+        "TransportCargo",
+        "RoughERConnection"
+      ],
+      "limited_transparency_groups": [
+        "Perinuclear lumen accents",
+        "Nucleoplasm gel"
+      ],
+      "hidden_groups": [
+        "CollisionProxy",
+        "AnchorSockets",
+        "MeshLibrary raw packages"
+      ]
+    },
+    "manual_layout": {
+      "NucleusEnvelope": [
+        0,
+        49,
+        -115
+      ],
+      "NuclearPoreComplexes": [
+        31,
+        51,
+        -93
+      ],
+      "NuclearLamina": [
+        0,
+        49,
+        -115
+      ],
+      "Nucleoplasm": [
+        0,
+        49,
+        -115
+      ],
+      "Chromatin": [
+        0,
+        51,
+        -115
+      ],
+      "Nucleolus": [
+        9,
+        56,
+        -101
+      ],
+      "TransportCargo": [
+        26,
+        55,
+        -94
+      ],
+      "RoughERConnection": [
+        -45,
+        43,
+        -145
+      ],
+      "CollisionProxy": [
+        0,
+        49,
+        -115
+      ],
+      "AnchorSockets": [
+        32,
+        51,
+        -93
+      ]
+    },
+    "screenshots": {
+      "edit_tuned_layout": "review_renders/roblox_phase07r/nucleus_phase07r_edit_tuned_layout.png",
+      "play_tuned_layout": "review_renders/roblox_phase07r/nucleus_phase07r_play_tuned_layout.png"
+    },
+    "notes": [
+      "The assembler now quarantines stale top-level assembled group duplicates as well as EXPORT_* duplicates.",
+      "Manual layout is intentionally Roblox-view tuned rather than source-coordinate exact.",
+      "Most visible MeshParts are no longer locked or highly transparent, so child MeshParts can be selected and recolored in Studio."
+    ]
+  }
+}

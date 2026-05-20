@@ -1,0 +1,20 @@
+{
+  "schema_version": "phase_08g_visual_review_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "reviewer": "Visual Organic Quality Reviewer",
+  "reviewer_provenance": "scripted_phase08g_render_review",
+  "visual_pass": true,
+  "approved_for_next_phase": true,
+  "score_0_to_100": 82,
+  "score_evidence": [
+    "Active gene locus uses open paired DNA curves, regulatory beads, and protein markers instead of plain primitives.",
+    "RNA polymerase is a lumpy multi-subunit marker and nascent RNA is an organic squiggle curve.",
+    "mRNA export path remains thin and readable through a selected pore without covering the nucleus."
+  ],
+  "required_fixes": [
+    "Before final Roblox import, convert curve-based RNA/path elements into MeshParts or Beam/Attachment equivalents.",
+    "Tune emissive material intensity in Studio so the action layer stays anatomical rather than decorative."
+  ],
+  "approved_to_continue": true
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "transport_cargo",
+  "parent_components": ["Transport_Cargo"],
+  "required_objects": ["Transport_Cargo"],
+  "must_not_create": ["Chromatin_Threads"]
+}

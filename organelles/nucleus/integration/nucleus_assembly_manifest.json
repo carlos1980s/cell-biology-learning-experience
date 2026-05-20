@@ -1,0 +1,36 @@
+{
+  "schema_version": "nucleus_assembly_manifest_v1",
+  "organelle": "nucleus",
+  "root": "Nucleus_RootRig",
+  "status": "part_pipeline_initialized",
+  "part_order": [
+    "double_envelope",
+    "perinuclear_lumen",
+    "nuclear_pores",
+    "pore_gate_cores",
+    "nuclear_lamina",
+    "nucleoplasm",
+    "chromatin",
+    "nucleolus",
+    "transport_cargo",
+    "rough_er_connection",
+    "mitosis_fragments",
+    "interaction_hotspots"
+  ],
+  "active_focus": [
+    "double_envelope",
+    "perinuclear_lumen",
+    "nuclear_pores",
+    "pore_gate_cores",
+    "nuclear_lamina"
+  ],
+  "deferred_until_envelope_passes": [
+    "nucleoplasm",
+    "chromatin",
+    "nucleolus",
+    "transport_cargo",
+    "rough_er_connection",
+    "mitosis_fragments",
+    "interaction_hotspots"
+  ]
+}

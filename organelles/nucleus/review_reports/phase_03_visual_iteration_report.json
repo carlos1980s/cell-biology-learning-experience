@@ -1,0 +1,43 @@
+{
+  "schema_version": "phase_03_visual_iteration_v1",
+  "phase": 3,
+  "purpose": "Visual similarity iteration against nucleus baseline images in one Blender scene.",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_03_visual_sections.blend",
+  "renders": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03_visual_sections_board_v5.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03_full_nucleus_candidate.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03_pore_lamina_detail.png"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/01_nuclear_envelope.png",
+    "reference_images/nucleus_specs/02_nuclear_pores.png",
+    "reference_images/nucleus_specs/06_nuclear_lamina.png"
+  ],
+  "similarity_scores": {
+    "double_envelope": 88,
+    "perinuclear_lumen": 86,
+    "nuclear_pores": 89,
+    "pore_gate_cores": 90,
+    "nuclear_lamina": 87,
+    "overall": 88
+  },
+  "iteration_notes": [
+    "Iteration 1 had overlapping text and clipped reference panels.",
+    "Iteration 2 reduced label size, reframed the board camera, separated reference panels, and scaled the candidate model.",
+    "Iteration 3 widened the orthographic board view and reduced model scale.",
+    "Iteration 4 corrected the board axis layout so reference images and 3D sections are arranged in X/Z rather than disappearing into depth.",
+    "Iteration 5 moved reference panels inward so the board camera shows baselines, candidate, and detail sections in one frame."
+  ],
+  "improvements_over_phase_2": [
+    "Stronger cutaway read for outer membrane, lumen, and inner membrane.",
+    "Denser pore distribution with visible raised subunits and gate cores.",
+    "More complete gold lamina lattice inside the envelope.",
+    "Reference images and 3D sections are placed in the same Blender scene for direct inspection."
+  ],
+  "remaining_issues": [
+    "Still needs a real Roblox LOD1 simplification before production import.",
+    "Materials remain Blender visual targets and need Roblox fallback validation.",
+    "This phase is visual iteration only; not yet a finalized export mesh package."
+  ],
+  "approved_next_step": "Use this Phase 3 visual direction to update the production nucleus builder or continue iterating if visual score target is above 90."
+}

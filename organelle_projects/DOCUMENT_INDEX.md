@@ -4,6 +4,8 @@ Use this index to find the purpose of each organelle project folder.
 
 - `../docs/ORGANELLE_SUBCHARTS.md` - separate Mermaid charts grouping the
   organelles by biological system and Roblox review focus.
+- `../docs/MULTI_AGENT_PRODUCTION_SYSTEM.md` - director-led builder, reviewer,
+  and integration workflow for producing organelle assets.
 - `ORGANELLE_PROJECTS_OVERVIEW.md` - overall folder structure, shared contract,
   and model requirements.
 - `_template/TEMPLATE_USAGE.md` - definition of done for a new organelle
