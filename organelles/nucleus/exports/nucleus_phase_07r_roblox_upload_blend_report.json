@@ -1,0 +1,148 @@
+{
+  "schema_version": "nucleus_phase_07r_roblox_upload_blend_report_v1",
+  "source_blend": "organelles/nucleus/integration/nucleus_phase_07r_rough_er_connection.blend",
+  "upload_blend": "organelles/nucleus/exports/nucleus_phase_07r_roblox_upload.blend",
+  "upload_root_collection": "ROBLOX_PHASE07R_UPLOAD_GROUPS",
+  "upload_instructions": [
+    "Open this .blend with the Roblox Blender plugin logged in.",
+    "In the plugin, upload one EXPORT_* collection at a time as a Roblox package/model.",
+    "Use the collection name as the package name.",
+    "After upload, record each package asset id in nucleus_phase_07r_roblox_asset_manifest.json."
+  ],
+  "collections": [
+    {
+      "export_group": "EXPORT_LOD0_NucleusEnvelope",
+      "object_count": 35,
+      "triangle_count": 36304,
+      "material_count": 6,
+      "material_names": [
+        "MAT_02R_InnerMembrane_DeepViolet",
+        "MAT_02R_Lumen_CutawayGlow",
+        "MAT_02R_Membrane_Ridge_DarkViolet",
+        "MAT_02R_Membrane_Ridge_Lavender",
+        "MAT_02R_OuterMembrane_OrganicPurple",
+        "MAT_02R_PerinuclearLumen_Glow"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_NuclearPoreComplexes",
+      "object_count": 81,
+      "triangle_count": 33324,
+      "material_count": 4,
+      "material_names": [
+        "MAT_02P_NPC_CyanVioletGateFilaments",
+        "MAT_02P_NPC_DeformedVioletSeat",
+        "MAT_02P_NPC_LobedProteinGoldViolet",
+        "MAT_02P_NPC_RecessedDarkSelectiveOpening"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Lamina",
+      "object_count": 740,
+      "triangle_count": 74138,
+      "material_count": 3,
+      "material_names": [
+        "MAT_02L_Lamina_MutedGoldAccentFibers",
+        "MAT_02L_Lamina_SubtleProteinNodes",
+        "MAT_02L_Lamina_VioletFibers"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Nucleoplasm",
+      "object_count": 44,
+      "triangle_count": 86063,
+      "material_count": 3,
+      "material_names": [
+        "MAT_03N_Nucleoplasm_SuspendedSpeckles",
+        "MAT_03N_Nucleoplasm_SuspendedWisps",
+        "MAT_03N_Nucleoplasm_TransparentBlueVioletGel"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Chromatin",
+      "object_count": 47,
+      "triangle_count": 250916,
+      "material_count": 4,
+      "material_names": [
+        "MAT_04C_Chromatin_CyanAccessibleRegions",
+        "MAT_04C_Chromatin_DeepVioletDenseRegions",
+        "MAT_04C_Chromatin_MagentaProteinDNA",
+        "MAT_04C_Chromatin_NucleosomeBumps"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_Nucleolus",
+      "object_count": 63,
+      "triangle_count": 109309,
+      "material_count": 5,
+      "material_names": [
+        "MAT_05U_NOR_GoldRibosomalGeneContacts",
+        "MAT_05U_Nucleolus_BumpyGranules",
+        "MAT_05U_Nucleolus_DarkVioletGranularCore",
+        "MAT_05U_Nucleolus_DenseFibrillarRidges",
+        "MAT_05U_Nucleolus_FibrillarCenters"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_TransportCargo",
+      "object_count": 84,
+      "triangle_count": 20160,
+      "material_count": 11,
+      "material_names": [
+        "MAT_06T_ExportDirection_ArrowPink",
+        "MAT_06T_ImportDirection_ArrowGreen",
+        "MAT_06T_NLS_Tag_LimeGold",
+        "MAT_06T_ProteinCargo_GreenOrganic",
+        "MAT_06T_ProteinImport_GreenPath",
+        "MAT_06T_RNAExport_PinkPath",
+        "MAT_06T_RibosomalExport_MagentaCyanPath",
+        "MAT_06T_RibosomalSubunit_LargeMagenta",
+        "MAT_06T_RibosomalSubunit_SmallCyan",
+        "MAT_06T_SmallSolute_LilacDots",
+        "MAT_06T_mRNA_Cargo_PinkSquiggle"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_LOD0_RoughERConnection",
+      "object_count": 82,
+      "triangle_count": 49920,
+      "material_count": 6,
+      "material_names": [
+        "MAT_07R_ER_CisternalLumen_CyanLine",
+        "MAT_07R_ER_DarkCisternaLips",
+        "MAT_07R_ER_Lumen_Continuity_AmberCyanGlow",
+        "MAT_07R_Ribosome_OrangeVioletDots",
+        "MAT_07R_RoughER_BluePurpleFoldedMembrane",
+        "MAT_07R_RoughER_SecondaryTealVioletSheet"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_COLLISION_NucleusProxy",
+      "object_count": 1,
+      "triangle_count": 960,
+      "material_count": 1,
+      "material_names": [
+        "MAT_EXPORT_CollisionProxy_InvisibleWhite"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    },
+    {
+      "export_group": "EXPORT_ANCHORS_NucleusSockets",
+      "object_count": 2,
+      "triangle_count": 24,
+      "material_count": 1,
+      "material_names": [
+        "MAT_EXPORT_AnchorSocket_MarkerCyan"
+      ],
+      "status": "ready_for_blender_plugin_upload"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "phase_08g_biology_review_v1",
+  "organelle": "nucleus",
+  "phase": "08G",
+  "reviewer": "Biology Accuracy Reviewer",
+  "biology_pass": true,
+  "approved_for_next_phase": true,
+  "component_review": {
+    "GeneDynamics": {
+      "function_represented": "Gene activation, chromatin opening, transcription, simplified mRNA processing, and mRNA export through a selective nuclear pore.",
+      "misconceptions_avoided": [
+        "DNA does not leave the nucleus.",
+        "mRNA crosses the envelope only at a nuclear pore.",
+        "Translation is only cued outside the nucleus.",
+        "The nucleolus remains membrane-free and contextual."
+      ],
+      "remaining_accuracy_risks": [
+        "Splicing and capping are simplified visual markers, not molecular machinery.",
+        "RNA polymerase and transcription factors are stylized protein markers for teaching scale."
+      ]
+    }
+  },
+  "required_fixes": [],
+  "approved_to_continue": true
+}

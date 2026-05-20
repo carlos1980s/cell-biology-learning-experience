@@ -1,0 +1,27 @@
+{
+  "schema_version": "phase_latest_status_v1",
+  "organelle": "nucleus",
+  "phase": "05U",
+  "status": "improved_scoped_visual_and_biology_gate_with_remaining_polish_debt",
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "Transport_Cargo only",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_05u_nucleolus.blend",
+  "builder_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_05u_builder_report.json",
+  "visual_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_05u_visual_review.json",
+  "biology_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_05u_biology_review.json",
+  "roblox_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_05u_roblox_review.json",
+  "review_renders": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_05u_reference_board.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_05u_nucleolus_review.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_05u_nucleolus_detail_closeup.png"
+  ],
+  "remaining_blockers": [
+    "Full nucleus is still not approved; transport cargo, rough ER connection, mitosis fragments, and interaction hotspots remain unbuilt.",
+    "Nucleolus source art improved after the lumpy-core iteration, but still needs lobe-fusion polish and LOD work before final Roblox export."
+  ],
+  "roblox_export_risks": [
+    "Granular lobe mesh needs decimation or normal-map baking.",
+    "NOR arcs should be toggleable.",
+    "Transparency with nucleoplasm and chromatin needs Roblox Studio validation."
+  ]
+}

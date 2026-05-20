@@ -1,0 +1,23 @@
+{
+  "schema_version": "component_manifest_v1",
+  "organelle": "nucleus",
+  "root": "Nucleus_RootRig",
+  "required_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice",
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "CondensedChromosomes",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ]
+}

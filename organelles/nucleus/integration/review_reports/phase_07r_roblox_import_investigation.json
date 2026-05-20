@@ -1,0 +1,98 @@
+{
+  "schema_version": "phase_07r_roblox_import_investigation_v1",
+  "organelle": "nucleus",
+  "phase": "07R",
+  "investigation_date": "2026-05-02",
+  "reviewer": "Roblox Import Investigator",
+  "studio_connection": {
+    "status": "connected_via_legacy_plugin_bridge",
+    "probe_command": "python3 tools/roblox_plugin_bridge.py --timeout 30 'print(\"LEGACY_BRIDGE_CONNECTED\")'",
+    "probe_result": "[OUTPUT] LEGACY_BRIDGE_CONNECTED",
+    "official_mcp_status": "not_used_for_deploy_until_plugin_response_schema_matches_mcp_server",
+    "notes": [
+      "The installed official MCP path has previously timed out on tools/call while Studio still executed the command.",
+      "The repo-local legacy bridge receives the response body and is the current reliable automation path."
+    ]
+  },
+  "current_studio_imported_assets": [
+    {
+      "workspace_name": "nucleus_organic_shell_v1",
+      "class_name": "Model",
+      "mesh_count": 1,
+      "mesh_id": "rbxassetid://86555897544962",
+      "first_mesh_size": [192.251, 135.556, 112.0],
+      "mapped_manifest_field": "organicShellMeshId"
+    },
+    {
+      "workspace_name": "nuclear_pore_gate_ring_v1",
+      "class_name": "Model",
+      "mesh_count": 1,
+      "mesh_id": "rbxassetid://83582353403607",
+      "first_mesh_size": [6.8, 50.8, 50.8],
+      "mapped_manifest_field": "poreGateRingMeshId"
+    },
+    {
+      "workspace_name": "mitochondria_complete",
+      "class_name": "Model",
+      "mesh_count": 1,
+      "mesh_id": "rbxassetid://75961349399578",
+      "first_mesh_size": [234.793, 76.327, 63.396],
+      "mapped_manifest_field": null
+    }
+  ],
+  "repo_updates_made": [
+    "src/CellExperience/Data/NucleusMeshAssets.lua now records the connected Studio asset ids for the imported shell and pore gate ring.",
+    "tools/deploy_nucleus_mesh_experience.py now supports --legacy-bridge for the currently connected Studio plugin.",
+    "tools/deploy_nucleus_mesh_experience.py now fails clearly when the old OBJ source directory is missing instead of silently proceeding.",
+    "roblox_experiences/nucleus_mesh_experience/README.md documents the legacy bridge deploy option.",
+    "Phase 07R group-level FBX package exports now exist under organelles/nucleus/exports/phase_07r_roblox.",
+    "organelles/nucleus/exports/nucleus_phase_07r_roblox_asset_manifest.json now records the production Open Cloud package plan."
+  ],
+  "official_roblox_import_path": {
+    "recommended_for_production": true,
+    "summary": "Export grouped FBX/OBJ/glTF assets from Blender, import them with Roblox Studio's 3D Importer, then paste the resulting mesh asset ids into a Lua asset manifest and assemble them in Luau.",
+    "source_docs": [
+      "https://create.roblox.com/docs/art/modeling/3d-importer",
+      "https://create.roblox.com/docs/reference/engine/classes/AssetService"
+    ],
+    "why": [
+      "Roblox Studio imports third-party mesh files as Roblox mesh assets; game scripts should assemble already-imported assets rather than reading local .blend/.fbx/.obj files at runtime.",
+      "Asset ids are stable enough for scripted assembly and review, while local Blender files remain the art source."
+    ]
+  },
+  "local_automation_import_path": {
+    "recommended_for_prototype_only": true,
+    "summary": "The standalone prototype can read local OBJ files, inline vertex/face tables, and create EditableMesh MeshParts in Studio through the bridge.",
+    "current_blocker": "organelle_projects/04_nucleus/assets/mesh is currently missing, so tools/deploy_nucleus_mesh_experience.py cannot build its EditableMesh payload until those OBJ files are regenerated or the deploy path is redirected to new nucleus export files.",
+    "safe_command_after_obj_regeneration": "python3 tools/deploy_nucleus_mesh_experience.py --preserve-scene --legacy-bridge"
+  },
+  "phase_07r_export_gap": {
+    "export_ready": true,
+    "missing_items": [
+      "Open Cloud upload has not been run because ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID are not present in this shell.",
+      "No current Roblox package asset ids have been written for Phase 07R group packages.",
+      "Rough ER ribbons and lumen transparency still need Roblox Studio material fallback validation after package insertion."
+    ],
+    "recommended_next_export_chunks": [
+      "EXPORT_LOD0_NucleusEnvelope",
+      "EXPORT_LOD0_NuclearPoreComplexes",
+      "EXPORT_LOD0_Lamina",
+      "EXPORT_LOD0_Nucleoplasm",
+      "EXPORT_LOD0_Chromatin",
+      "EXPORT_LOD0_Nucleolus",
+      "EXPORT_LOD0_TransportCargo",
+      "EXPORT_LOD0_RoughERConnection",
+      "EXPORT_COLLISION_NucleusProxy",
+      "EXPORT_ANCHORS_InteractionPoints"
+    ]
+  },
+  "can_import_phase_07r_now": false,
+  "can_begin_import_preparation_now": true,
+  "next_recommended_actions": [
+    "Run tools/upload_nucleus_phase07r_open_cloud_assets.py after setting ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID.",
+    "Poll Open Cloud upload operations and write package asset ids into nucleus_phase_07r_roblox_asset_manifest.json.",
+    "Run tools/assemble_nucleus_phase07r_packages_in_studio.py --legacy-bridge after package ids are present.",
+    "Use the legacy bridge only for Studio assembly/probe scripts until the official MCP/plugin response mismatch is resolved.",
+    "Validate imported Phase 07R rough ER transparency and lumen ribbons in Studio before marking Roblox export ready."
+  ]
+}

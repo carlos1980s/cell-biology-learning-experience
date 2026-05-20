@@ -1,0 +1,31 @@
+{
+  "schema_version": "phase_latest_status_v1",
+  "organelle": "nucleus",
+  "phase": "07R",
+  "status": "passed_scoped_rough_er_connection_gate_after_lumen_lip_polish",
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "Mitosis_Fragments only",
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_07r_rough_er_connection.blend",
+  "builder_report": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_reports/phase_07r_builder_report.json",
+  "visual_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_07r_visual_review.json",
+  "biology_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_07r_biology_review.json",
+  "roblox_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_07r_roblox_review.json",
+  "roblox_import_investigation": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_07r_roblox_import_investigation.json",
+  "animation_review": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/review_reports/phase_07r_animation_review.json",
+  "review_renders": [
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_07r_reference_board.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_07r_rough_er_overview.png",
+    "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_07r_er_connection_closeup.png"
+  ],
+  "remaining_blockers": [
+    "Full nucleus is still not approved; mitosis fragments and interaction hotspots remain unbuilt.",
+    "Rough ER source art still needs export-only LOD chunks and Roblox transparency validation before final import."
+  ],
+  "roblox_export_risks": [
+    "Current Studio has imported shell and pore gate asset IDs, but no Phase 07R export package has been imported yet.",
+    "The old EditableMesh deploy path is blocked until missing OBJ sources are regenerated or redirected.",
+    "Folded sheets need simplified collision and LOD meshes.",
+    "Ribosome dots should be instanced or baked at distance.",
+    "Lumen ribbon transparency needs Studio validation."
+  ]
+}

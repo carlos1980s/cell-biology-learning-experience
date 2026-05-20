@@ -1,0 +1,11 @@
+{
+  "schema_version": "phase08r_open_cloud_upload_report_v1",
+  "phase": "08R",
+  "decision": "blocked",
+  "reason": "ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID are required for real Phase 08R uploads",
+  "manifest": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/exports/nucleus_phase_08r_roblox_asset_manifest.json",
+  "credentials": {
+    "ROBLOX_OPEN_CLOUD_API_KEY": false,
+    "ROBLOX_GROUP_ID": false
+  }
+}

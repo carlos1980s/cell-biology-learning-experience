@@ -1,0 +1,134 @@
+{
+  "schema_version": "roblox_export_manifest_v1",
+  "organelle": "nucleus",
+  "phase": 2,
+  "source_blend": "organelles/nucleus/nucleus_phase_02_scene.blend",
+  "export_status": "design_package_ready_not_import_verified",
+  "roblox_model_name": "Nucleus_Model",
+  "root_mapping": {
+    "Nucleus_RootRig": {
+      "roblox_type": "Model pivot metadata",
+      "visible": false,
+      "notes": "Use as the Roblox Model pivot or hidden root Attachment equivalent."
+    },
+    "WholeCell_ContextSocket": {
+      "roblox_type": "Attachment or hidden anchor",
+      "visible": false,
+      "notes": "Placement anchor for whole-cell integration; not biological geometry."
+    }
+  },
+  "export_candidates": [
+    {
+      "name": "OuterNuclearMembrane_Panels",
+      "roblox_type": "MeshPart",
+      "material_fallback": "NucleusMembranePurple",
+      "lod_priority": "preserve_silhouette"
+    },
+    {
+      "name": "InnerNuclearMembrane_Panels",
+      "roblox_type": "MeshPart",
+      "material_fallback": "NucleusInnerViolet",
+      "lod_priority": "preserve_double_envelope_read"
+    },
+    {
+      "name": "PerinuclearLumen_Segments",
+      "roblox_type": "MeshPart",
+      "material_fallback": "PerinuclearLumenGlow",
+      "lod_priority": "simplify_transparency_first"
+    },
+    {
+      "name": "NuclearPore_Complexes",
+      "roblox_type": "MeshPart",
+      "material_fallback": "PoreComplexViolet",
+      "lod_priority": "reduce_count_before_shape"
+    },
+    {
+      "name": "NuclearPore_GateCores",
+      "roblox_type": "MeshPart",
+      "material_fallback": "PoreGateCyan",
+      "lod_priority": "preserve_selectivity_read"
+    },
+    {
+      "name": "NuclearLamina_Lattice",
+      "roblox_type": "MeshPart or baked line texture",
+      "material_fallback": "LaminaGold",
+      "lod_priority": "convert_to_texture_if_needed"
+    }
+  ],
+  "review_only_exclusions": [
+    "Nucleus_Phase02_KeyLight",
+    "Nucleus_Phase02_VioletRimLight",
+    "Nucleus_Phase02_WideReviewCamera",
+    "Nucleus_Phase02_PoreDetailCamera",
+    "Nucleus_Phase02_ExportInspectionCamera"
+  ],
+  "material_fallbacks": {
+    "NucleusMembranePurple": {
+      "color": "#6B21B8",
+      "roblox_material": "SmoothPlastic",
+      "notes": "Use subtle baked color variation if texture budget allows."
+    },
+    "NucleusInnerViolet": {
+      "color": "#3D126F",
+      "roblox_material": "SmoothPlastic",
+      "notes": "Darker violet inner membrane."
+    },
+    "PerinuclearLumenGlow": {
+      "color": "#E680FF",
+      "roblox_material": "Neon",
+      "transparency_range": [0.25, 0.55],
+      "notes": "Fallback for Blender transparent/emissive lumen."
+    },
+    "PoreComplexViolet": {
+      "color": "#9E38F5",
+      "roblox_material": "SmoothPlastic",
+      "notes": "Raised violet pore proteins."
+    },
+    "PoreGateCyan": {
+      "color": "#40BDFF",
+      "roblox_material": "Neon",
+      "transparency_range": [0.1, 0.35],
+      "notes": "Selective gate core contrast."
+    },
+    "LaminaGold": {
+      "color": "#FAA829",
+      "roblox_material": "Metal",
+      "notes": "Internal support lattice; can become baked line texture in LOD1."
+    }
+  },
+  "budget_targets": {
+    "lod0_triangle_target": 45000,
+    "lod0_triangle_hard_cap": 65000,
+    "lod1_triangle_target": 25000,
+    "material_target": 6,
+    "texture_target": 3
+  },
+  "current_phase_02_budget": {
+    "object_count": 8,
+    "mesh_object_count": 7,
+    "triangle_count": 54684,
+    "material_count": 7,
+    "texture_count": 0
+  },
+  "animation_hooks": [
+    "InspectEnvelope",
+    "HighlightPores",
+    "PulsePerinuclearLumen",
+    "ShowSelectiveGate",
+    "HighlightLamina",
+    "EnvelopeBreakdownFuture",
+    "EnvelopeReassemblyFuture"
+  ],
+  "manual_roblox_import_notes": [
+    "Import visible mesh components as MeshParts under Nucleus_Model.",
+    "Represent Nucleus_RootRig as Model pivot or hidden Attachment metadata.",
+    "Represent WholeCell_ContextSocket as a hidden Attachment or non-rendered anchor.",
+    "Apply material fallbacks after import; do not expect Blender procedural nodes to survive.",
+    "Verify transparency sorting for PerinuclearLumen_Segments in Roblox Studio."
+  ],
+  "known_risks": [
+    "Material count is 7, above preferred target of 6.",
+    "Triangle count is within hard cap but above target; LOD1 is required before adding internal chromatin/nucleolus detail.",
+    "No Roblox Studio import verification has been run yet."
+  ]
+}

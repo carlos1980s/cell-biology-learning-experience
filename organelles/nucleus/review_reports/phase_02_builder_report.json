@@ -1,0 +1,314 @@
+{
+  "organelle": "nucleus",
+  "phase": 2,
+  "builder": "Phase 2 Builder Agent",
+  "status": "pass",
+  "created_manifest_components": [
+    "WholeCell_ContextSocket",
+    "Nucleus_RootRig",
+    "OuterNuclearMembrane_Panels",
+    "InnerNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice"
+  ],
+  "incomplete_manifest_components": [
+    "Nucleoplasm_Volume",
+    "Chromatin_Threads",
+    "CondensedChromosomes",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "manifest_components_created_as_partial": {
+    "NuclearLamina_Lattice": "Partial interior gold lamina hints only; final dense lattice and nuclear mechanics remain future work."
+  },
+  "manifest_validation": {
+    "manifest_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/component_manifest.json",
+    "root_name": "Nucleus_RootRig",
+    "created_names_are_manifest_exact": true,
+    "missing_manifest_components": [
+      "Nucleoplasm_Volume",
+      "Chromatin_Threads",
+      "CondensedChromosomes",
+      "Nucleolus_Subregions",
+      "Transport_Cargo",
+      "RoughER_Connection",
+      "Mitosis_Fragments",
+      "Interaction_Hotspots"
+    ],
+    "unexpected_created_manifest_names": []
+  },
+  "export_candidates": [
+    "Nucleus_RootRig",
+    "WholeCell_ContextSocket",
+    "OuterNuclearMembrane_Panels",
+    "PerinuclearLumen_Segments",
+    "InnerNuclearMembrane_Panels",
+    "NuclearPore_Complexes",
+    "NuclearPore_GateCores",
+    "NuclearLamina_Lattice"
+  ],
+  "excluded_review_only_objects": [
+    "Nucleus_Phase02_KeyLight",
+    "Nucleus_Phase02_VioletRimLight",
+    "Nucleus_Phase02_WideReviewCamera",
+    "Nucleus_Phase02_PoreDetailCamera",
+    "Nucleus_Phase02_ExportInspectionCamera"
+  ],
+  "transform_status": [
+    {
+      "name": "Nucleus_RootRig",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "WholeCell_ContextSocket",
+      "type": "MESH",
+      "location": [
+        0.0,
+        2.95,
+        -1.78
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "OuterNuclearMembrane_Panels",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "PerinuclearLumen_Segments",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "InnerNuclearMembrane_Panels",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "NuclearPore_Complexes",
+      "type": "MESH",
+      "location": [
+        1.87807,
+        0.487432,
+        0.705937
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "NuclearPore_GateCores",
+      "type": "MESH",
+      "location": [
+        1.702583,
+        0.43815,
+        0.632679
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    },
+    {
+      "name": "NuclearLamina_Lattice",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "export_ready_transform": true
+    }
+  ],
+  "scene_budget_metrics": {
+    "full_scene": {
+      "object_count": 13,
+      "mesh_object_count": 7,
+      "triangle_count": 54684,
+      "material_count": 7,
+      "texture_count": 0
+    },
+    "export_collection_only": {
+      "object_count": 8,
+      "mesh_object_count": 7,
+      "triangle_count": 54684,
+      "material_count": 7,
+      "texture_count": 0
+    },
+    "roblox_budget_assessment": "Phase 2 is suitable for anatomy review; pore beads and lamina hints should be consolidated or LOD-reduced before final Roblox import if later phases add many more repeated parts."
+  },
+  "render_paths": [
+    {
+      "type": "wide_review_render",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02_wide_anatomy_layer.png",
+      "status": "complete",
+      "reason": null
+    },
+    {
+      "type": "pore_detail_render",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02_pore_gate_detail.png",
+      "status": "complete",
+      "reason": null
+    },
+    {
+      "type": "export_inspection_render",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_02_export_inspection.png",
+      "status": "complete",
+      "reason": null
+    }
+  ],
+  "blend_path": {
+    "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/nucleus_phase_02_scene.blend",
+    "status": "complete"
+  },
+  "notes": [
+    "Built the double nuclear envelope as separate purple outer and deep-violet inner membrane panel meshes.",
+    "Added a translucent glowing perinuclear lumen shell between the membranes so the double-envelope gap is readable.",
+    "Added a small set of raised violet pore complexes with cyan-violet gate cores spanning the double envelope without implying simple open holes.",
+    "Added only gold lamina hints on the nuclear interior; this is not yet the final dense lamina lattice.",
+    "Kept chromatin, nucleolus, nucleoplasm, transport cargo, rough ER connection, mitosis fragments, and hotspots out of Phase 2 except as incomplete manifest entries."
+  ],
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "major_components_use_manifest_names": true,
+    "phase_scope_respected": true,
+    "visual_quality_organic_not_toy_like": true,
+    "biology_rules_respected": true,
+    "roblox_export_risks_listed": true,
+    "transforms_applied_to_mesh_export_candidates": true
+  },
+  "specialist_review_passes": {
+    "visual_organic_quality": {
+      "status": "pass",
+      "notes": "Envelope is asymmetrical, mottled, thick, layered, and bevel-finished, with raised pore details rather than smooth primitive geometry."
+    },
+    "biology_accuracy": {
+      "status": "pass",
+      "notes": "Double membrane, perinuclear lumen, selective pore gate cores, and lamina-under-envelope relationship are represented without simple open-hole pores; out-of-scope biology is not implied."
+    },
+    "animation_functionality": {
+      "status": "pass",
+      "notes": "All export candidate components are parented to Nucleus_RootRig for whole-nucleus positioning. Pore/gate groups remain separately named for future animations."
+    },
+    "roblox_export_readiness": {
+      "status": "conditional_pass",
+      "notes": "Mesh transforms are applied and review-only objects are marked, but procedural materials, transparency, and final LOD/export packaging remain future risks."
+    },
+    "whole_cell_integration": {
+      "status": "pass",
+      "notes": "WholeCell_ContextSocket is retained, transform-applied, and parented to Nucleus_RootRig."
+    }
+  },
+  "roblox_export_risks": [
+    "Blender procedural noise, bump, emission, and transparent lumen materials will need baking or Roblox material approximation.",
+    "Current pore complexes are consolidated into one mesh but still detailed; final whole-cell budget must be rechecked after nucleoplasm, chromatin, and nucleolus are added.",
+    "Perinuclear lumen transparency may sort differently in Roblox and may need a simplified opaque/emissive version.",
+    "Nucleus_RootRig is an empty and should map to a Roblox Model pivot or Attachment metadata during export.",
+    "Lamina hints are thin geometry and may need thickness exaggeration or texture-baked lines for lower-end Roblox devices."
+  ],
+  "blockers": [],
+  "next_recommended_phase": "Phase 3: add transparent blue Nucleoplasm_Volume plus first organized Chromatin_Threads, while keeping nucleolus, transport cargo, ER connection, mitosis fragments, and hotspots incomplete until later phases."
+}

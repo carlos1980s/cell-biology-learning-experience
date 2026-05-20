@@ -1,0 +1,64 @@
+{
+  "schema_version": "phase_03n_builder_report_v1",
+  "organelle": "nucleus",
+  "phase": "03N",
+  "builder": "Corrective Nucleoplasm Builder",
+  "status": "built_pending_independent_visual_review",
+  "base_phase": "02L nuclear lamina",
+  "created_manifest_components": [
+    "Nucleoplasm_Volume"
+  ],
+  "explicitly_not_created": [
+    "Chromatin_Threads",
+    "CondensedChromosomes",
+    "Nucleolus_Subregions",
+    "Transport_Cargo",
+    "RoughER_Connection",
+    "Mitosis_Fragments",
+    "Interaction_Hotspots"
+  ],
+  "reference_images_used": [
+    "reference_images/nucleus_specs/03_nucleoplasm.png"
+  ],
+  "blend_path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/integration/nucleus_phase_03n_nucleoplasm.blend",
+  "render_paths": [
+    {
+      "type": "reference_board",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03n_reference_board.png",
+      "status": "complete"
+    },
+    {
+      "type": "nucleoplasm_volume_review",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03n_nucleoplasm_volume_review.png",
+      "status": "complete"
+    },
+    {
+      "type": "nucleoplasm_detail_closeup",
+      "path": "/Users/carlosmarinronco/Documents/SG grands/AI learning experience /organelles/nucleus/review_renders/phase_03n_nucleoplasm_detail_closeup.png",
+      "status": "complete"
+    }
+  ],
+  "fluid_current_count": 42,
+  "suspended_speckle_count": 760,
+  "pass_fail_checklist": {
+    "script_runs": true,
+    "review_renders_exist": true,
+    "blend_file_saved": true,
+    "reference_image_in_same_blender_scene": true,
+    "phase_scope_respected": true,
+    "nucleoplasm_inside_nucleus": true,
+    "chromatin_and_nucleolus_not_built": true,
+    "builder_did_not_self_approve_visual_gate": true
+  },
+  "organic_treatment_notes": [
+    "Nucleoplasm is a translucent custom ellipsoid volume, not a solid default sphere.",
+    "Subtle drifting wisps and suspended speckles communicate gelatinous fluid without implying DNA strands.",
+    "The volume remains transparent enough to preserve lamina readability."
+  ],
+  "roblox_export_risks": [
+    "Transparent nucleoplasm may sort differently in Roblox.",
+    "Fluid currents may need to be baked into texture or simplified to particles.",
+    "Nucleoplasm should remain optional/toggleable for inspection views."
+  ],
+  "next_required_step": "Run independent visual review before adding chromatin."
+}

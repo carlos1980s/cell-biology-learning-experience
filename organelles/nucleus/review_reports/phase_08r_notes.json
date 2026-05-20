@@ -1,0 +1,20 @@
+{
+  "schema_version": "phase_notes_v1",
+  "organelle": "nucleus",
+  "phase": "08R",
+  "status": "exported_dry_run_validated_upload_blocked",
+  "what_changed": [
+    "Added a Phase 08R Blender-to-Roblox FBX export pipeline for the existing Phase 08G GeneDynamics blend.",
+    "Exported four logical Roblox packages for gene activation, RNA processing cargo, mRNA pore export, and runtime anchors.",
+    "Added Open Cloud upload tooling that performs a dry run and records a blocked upload status when required credentials are missing.",
+    "Added Studio assembly and validation scripts that preserve Workspace.Nucleus_Model and target only Workspace.Nucleus_Model/GeneDynamics.",
+    "Added a Roblox GeneDynamicsController bound to transcription_mrna_export, transcribe_gene, export_mrna, and queue_updates.nuclear_mrna.",
+    "Updated the nucleus and whole-cell manifests to reflect Phase 08R export readiness and the credential blocker."
+  ],
+  "what_did_not_change": [
+    "Phase 07R base nucleus anatomy was not rebuilt or replaced.",
+    "Phase 08G biology artwork was not regenerated.",
+    "Translation remains outside the nucleus; Phase 08R only visualizes transcription, mRNA processing/export, and handoff cues."
+  ],
+  "next_recommended_phase": "Provide ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID, rerun the Phase 08R uploader, assemble the uploaded packages in Roblox Studio, then run edit-mode and play-mode validation."
+}

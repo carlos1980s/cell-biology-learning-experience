@@ -1,0 +1,7 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "rough_er_connection",
+  "parent_components": ["RoughER_Connection"],
+  "required_objects": ["RoughER_Connection"],
+  "must_not_create": ["Chromatin_Threads", "Nucleolus_Subregions"]
+}

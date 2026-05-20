@@ -1,0 +1,7 @@
+{
+  "schema_version": "nucleus_part_manifest_v1",
+  "part": "nucleoplasm",
+  "parent_components": ["Nucleoplasm_Volume"],
+  "required_objects": ["Nucleoplasm_Volume"],
+  "must_not_create": ["Chromatin_Threads", "Nucleolus_Subregions"]
+}

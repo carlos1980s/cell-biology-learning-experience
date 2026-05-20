@@ -1,0 +1,36 @@
+{
+  "schema_version": "phase_07r_visual_review_v1",
+  "organelle": "nucleus",
+  "phase": "07R",
+  "reviewer": "Visual Organic Quality Reviewer",
+  "reviewer_provenance": "manual_render_inspection",
+  "visual_pass": true,
+  "approved_for_next_phase": true,
+  "next_allowed_scope": "Mitosis_Fragments only",
+  "score_0_to_100": 80,
+  "similarity_scores": {
+    "rough_er_reference_match": 80,
+    "folded_sheet_readability": 82,
+    "organic_non_toy_quality": 78,
+    "phase_scope_control": 94
+  },
+  "score_evidence": [
+    "The first rough ER render was rejected because the sheets were too large, intruded into the nucleus inspection view, and the close-up was mostly a blank sheet surface.",
+    "The approved render scales the folded sheets down, moves them outward, smooths the cisterna mesh, and keeps pore/nucleus readability intact.",
+    "A follow-up polish pass added dark cisterna edge lips, two visible lumen ribbons, and denser irregular ribosome placement, improving the biological sheet read.",
+    "The OpenStax rough ER/nuclear envelope reference and the nucleus envelope baseline are present in the Blender review board.",
+    "The final render shows blue folded sheets outside the nucleus with orange ribosome dots, lumen continuity marks, and a bridge from the outer nuclear envelope."
+  ],
+  "major_failures": [],
+  "minor_issues": [
+    "The folded sheets still read more stylized and smooth than the rougher reference membrane network.",
+    "The ER lumen ribbons are readable but still slightly bright and infographic-like compared with the source reference.",
+    "Ribosome dots are readable but remain simplified rounded markers."
+  ],
+  "required_fixes": [
+    "In a later polish pass, add more layered sheet stacking and smaller ribosome density variation.",
+    "Tone-map the lumen ribbons before final export so they remain anatomical rather than decorative.",
+    "Create Roblox LOD meshes and ribosome texture/instance variants before export."
+  ],
+  "approved_to_continue": true
+}

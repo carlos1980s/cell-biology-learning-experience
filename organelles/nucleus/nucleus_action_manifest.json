@@ -1,0 +1,412 @@
+{
+  "schema_version": "nucleus_action_manifest_v1",
+  "organelle": "nucleus",
+  "root_component": "Nucleus_RootRig",
+  "created_on": "2026-05-04",
+  "production_truth_sources": [
+    "organelles/nucleus/component_manifest.json",
+    "organelles/nucleus/parts/*/component_manifest.json",
+    "organelles/nucleus/exports/nucleus_phase_07r_roblox_asset_manifest.json",
+    "organelles/nucleus/review_reports/phase_04c_builder_report.json",
+    "organelles/nucleus/review_reports/phase_05u_builder_report.json",
+    "organelles/nucleus/review_reports/phase_06t_builder_report.json",
+    "organelles/nucleus/review_reports/phase_07r_builder_report.json",
+    "organelles/nucleus/integration/review_reports/phase_04c_biology_review.json",
+    "organelles/nucleus/integration/review_reports/phase_06t_biology_review.json",
+    "organelles/nucleus/integration/review_reports/phase_07r_biology_review.json",
+    "integration/animation_event_map.json",
+    "backend/app/schemas/actions.py",
+    "backend/app/sim/biological_rules.py"
+  ],
+  "inventory_assessment": {
+    "summary": "The nucleus now has the major anatomical systems and Phase 08G action-specific GeneDynamics layer needed to stage transcription and mRNA export as the nucleus portion of protein synthesis.",
+    "base_structure_ready_for_transcription_mrna_export": true,
+    "gene_dynamics_action_layer_status": "phase_08r_exported_dry_run_validated_upload_blocked",
+    "gene_dynamics_evidence": {
+      "blend": "organelles/nucleus/integration/nucleus_phase_08g_gene_dynamics.blend",
+      "builder_report": "organelles/nucleus/review_reports/phase_08g_builder_report.json",
+      "phase_08g_latest_status": "organelles/nucleus/review_reports/phase_08g_latest_status.json",
+      "phase_08r_latest_status": "organelles/nucleus/review_reports/phase_08r_latest_status.json",
+      "phase_08r_asset_manifest": "organelles/nucleus/exports/nucleus_phase_08r_roblox_asset_manifest.json",
+      "phase_08r_export_report": "organelles/nucleus/exports/review_reports/phase08r_gene_dynamics_export_report.json",
+      "phase_08r_upload_report": "organelles/nucleus/exports/review_reports/phase08r_open_cloud_upload_report.json",
+      "phase_gate": "tools/validate_nucleus_phase_gate.py --mode phase08g-candidate",
+      "phase_08r_export_validator": "tools/validate_nucleus_phase08r_roblox_export_manifest.py"
+    },
+    "ready_components": [
+      "WholeCell_ContextSocket",
+      "Nucleus_RootRig",
+      "OuterNuclearMembrane_Panels",
+      "InnerNuclearMembrane_Panels",
+      "PerinuclearLumen_Segments",
+      "NuclearPore_Complexes",
+      "NuclearPore_GateCores",
+      "NuclearLamina_Lattice",
+      "Nucleoplasm_Volume",
+      "Chromatin_Threads",
+      "Nucleolus_Subregions",
+      "Transport_Cargo",
+      "RoughER_Connection"
+    ],
+    "present_but_not_required_for_this_action": [
+      "CondensedChromosomes",
+      "Mitosis_Fragments"
+    ],
+    "ready_action_objects": [
+      "ActiveGene_Locus",
+      "Chromatin_OpenStatePatch",
+      "TranscriptionFactor_Markers",
+      "RNAPolymerase_Complex",
+      "NascentRNA_Strand",
+      "PreMRNA_ProcessingMarkers",
+      "MatureMRNA_Cargo",
+      "MRNA_ExportPath_ToPore",
+      "PoreExport_CheckpointState",
+      "NucleusAction_Hotspots"
+    ],
+    "missing_or_generic_for_this_action": [],
+    "remaining_followups": [
+      "Open Cloud credentials are required to upload Phase 08R GeneDynamics packages and obtain package asset IDs.",
+      "Studio assembly and play-mode runtime validation remain blocked until package asset IDs exist."
+    ],
+    "known_manifest_status_contradictions": [
+      {
+        "file": "integration/whole_cell_manifest.json",
+        "issue": "Resolved: nucleus status now references the Phase 08R exported/upload-blocked action layer.",
+        "impact": "Whole-cell orchestration can use organelles/nucleus/review_reports/phase_08r_latest_status.json as the current nucleus status."
+      }
+    ]
+  },
+  "actions": [
+    {
+      "action_id": "transcription_mrna_export",
+      "display_name": "Transcription and mRNA Export",
+      "priority": 1,
+      "teaching_goal": "Show how an active gene inside the nucleus produces RNA, processes it into mRNA, and exports it through a selective nuclear pore without implying that DNA leaves the nucleus.",
+      "biological_scope": {
+        "included": [
+          "gene activation",
+          "chromatin opening",
+          "transcription initiation",
+          "nascent RNA growth",
+          "simplified mRNA processing",
+          "mRNA export through nuclear pore complex",
+          "handoff cue toward ribosomes or rough ER"
+        ],
+        "excluded_for_first_pass": [
+          "base-pair-level molecular chemistry",
+          "full spliceosome machinery",
+          "complete transcription factor network",
+          "codon-level translation",
+          "all protein folding and Golgi processing steps"
+        ],
+        "misconceptions_to_avoid": [
+          "DNA leaves the nucleus",
+          "nuclear pores are passive open holes",
+          "mRNA exits through the envelope anywhere other than a nuclear pore",
+          "the nucleolus has a membrane",
+          "translation happens inside the nucleus"
+        ]
+      },
+      "backend_actions": [
+        {
+          "action_type": "transcribe_gene",
+          "organelle_type": "nucleus",
+          "default_consumes": {
+            "atp": 0.4,
+            "nucleotides": 0.4
+          },
+          "default_produces": {
+            "nuclear_mrna": 0.6
+          },
+          "supported_by_backend": true
+        },
+        {
+          "action_type": "export_mrna",
+          "organelle_type": "nucleus",
+          "default_consumes": {
+            "nuclear_mrna": 0.6,
+            "atp": 0.1
+          },
+          "default_produces": {
+            "mrna": 0.6
+          },
+          "supported_by_backend": true,
+          "implementation_note": "export_mrna now consumes queued nuclear_mrna and produces translation-ready mrna for ribosomes."
+        }
+      ],
+      "visual_state_sequence": [
+        {
+          "state_id": "idle_nucleus",
+          "description": "Nucleus shows stable envelope, pores, nucleoplasm, chromatin, nucleolus, and rough ER connection.",
+          "required_existing_components": [
+            "OuterNuclearMembrane_Panels",
+            "InnerNuclearMembrane_Panels",
+            "PerinuclearLumen_Segments",
+            "NuclearPore_Complexes",
+            "NuclearPore_GateCores",
+            "NuclearLamina_Lattice",
+            "Nucleoplasm_Volume",
+            "Chromatin_Threads",
+            "Nucleolus_Subregions",
+            "RoughER_Connection"
+          ],
+          "status": "supported_by_existing_assets"
+        },
+        {
+          "state_id": "signal_targets_gene",
+          "description": "A gene region is highlighted on chromatin as the chosen transcription target.",
+          "required_existing_components": [
+            "Chromatin_Threads",
+            "Nucleoplasm_Volume",
+            "Interaction_Hotspots"
+          ],
+          "required_new_action_objects": [
+            "ActiveGene_Locus",
+            "TranscriptionFactor_Markers",
+            "NucleusAction_Hotspots"
+          ],
+          "status": "supported_by_phase_08g_gene_dynamics"
+        },
+        {
+          "state_id": "chromatin_opens",
+          "description": "Local chromatin loosens while dense regions remain compact elsewhere.",
+          "required_existing_components": [
+            "Chromatin_Threads"
+          ],
+          "required_new_action_objects": [
+            "Chromatin_OpenStatePatch"
+          ],
+          "status": "supported_by_phase_08g_gene_dynamics"
+        },
+        {
+          "state_id": "transcription_begins",
+          "description": "RNA polymerase marker forms at the active gene and a nascent RNA strand starts growing.",
+          "required_existing_components": [
+            "Chromatin_Threads",
+            "Nucleoplasm_Volume"
+          ],
+          "required_new_action_objects": [
+            "RNAPolymerase_Complex",
+            "NascentRNA_Strand"
+          ],
+          "status": "supported_by_phase_08g_gene_dynamics"
+        },
+        {
+          "state_id": "mrna_processing",
+          "description": "Nascent RNA becomes a simplified mature mRNA cargo with processing markers.",
+          "required_existing_components": [
+            "Transport_Cargo",
+            "Nucleoplasm_Volume"
+          ],
+          "required_new_action_objects": [
+            "PreMRNA_ProcessingMarkers",
+            "MatureMRNA_Cargo"
+          ],
+          "status": "supported_by_phase_08g_gene_dynamics"
+        },
+        {
+          "state_id": "mrna_moves_to_pore",
+          "description": "Mature mRNA follows a visible path across nucleoplasm toward a nuclear pore.",
+          "required_existing_components": [
+            "Transport_Cargo",
+            "Nucleoplasm_Volume",
+            "NuclearPore_Complexes"
+          ],
+          "required_new_action_objects": [
+            "MRNA_ExportPath_ToPore"
+          ],
+          "status": "supported_by_phase_08g_gene_dynamics"
+        },
+        {
+          "state_id": "pore_selective_export",
+          "description": "The nuclear pore gate core shows selectivity while mRNA exits toward the cytoplasm.",
+          "required_existing_components": [
+            "NuclearPore_Complexes",
+            "NuclearPore_GateCores",
+            "Transport_Cargo"
+          ],
+          "required_new_action_objects": [
+            "PoreExport_CheckpointState"
+          ],
+          "status": "supported_by_phase_08g_gene_dynamics"
+        },
+        {
+          "state_id": "handoff_to_translation_context",
+          "description": "Exported mRNA is handed off visually toward free ribosomes or rough ER, while translation remains outside the nucleus.",
+          "required_existing_components": [
+            "RoughER_Connection"
+          ],
+          "external_organelle_dependencies": [
+            "rough_er",
+            "ribosome"
+          ],
+          "status": "supported_by_event_map_and_backend; Roblox runtime binding remains Phase 08R"
+        }
+      ],
+      "component_impact_map": [
+        {
+          "component": "Chromatin_Threads",
+          "role": "source DNA packaging and active gene region",
+          "needed_state_hooks": [
+            "compact",
+            "opening",
+            "active",
+            "reclosing"
+          ],
+          "status": "base_asset_present_action_hooks_missing"
+        },
+        {
+          "component": "Nucleoplasm_Volume",
+          "role": "transport medium and readable interior space",
+          "needed_state_hooks": [
+            "idle",
+            "active_transcription_glow",
+            "export_path_visible"
+          ],
+          "status": "base_asset_present_action_hooks_missing"
+        },
+        {
+          "component": "NuclearPore_Complexes",
+          "role": "mRNA export destination",
+          "needed_state_hooks": [
+            "idle",
+            "selected_export_pore",
+            "cargo_arrival"
+          ],
+          "status": "base_asset_present_action_hooks_missing"
+        },
+        {
+          "component": "NuclearPore_GateCores",
+          "role": "selective transport gate",
+          "needed_state_hooks": [
+            "closed_selective",
+            "checking_cargo",
+            "export_open"
+          ],
+          "status": "base_asset_present_action_hooks_missing"
+        },
+        {
+          "component": "Transport_Cargo",
+          "role": "generic transport particles and paths for RNA export/protein import/ribosomal subunit export",
+          "needed_state_hooks": [
+            "mature_mrna",
+            "pre_mrna_processing",
+            "exported_mrna"
+          ],
+          "status": "generic_asset_present_mrna_identity_missing"
+        },
+        {
+          "component": "Nucleolus_Subregions",
+          "role": "context for ribosomal subunit production; not the main transcription source in this action",
+          "needed_state_hooks": [
+            "background_ribosome_biogenesis",
+            "do_not_membrane_wrap"
+          ],
+          "status": "base_asset_present"
+        },
+        {
+          "component": "RoughER_Connection",
+          "role": "outside-nucleus continuity cue for later translation and secretory protein path",
+          "needed_state_hooks": [
+            "handoff_context",
+            "outside_nucleus_only"
+          ],
+          "status": "base_asset_present_runtime_handoff_missing"
+        },
+        {
+          "component": "Interaction_Hotspots",
+          "role": "learner interaction entry points for selecting the action and inspecting steps",
+          "needed_state_hooks": [
+            "select_gene",
+            "inspect_pore",
+            "follow_mrna"
+          ],
+          "status": "manifested_but_action_specific_hotspots_missing"
+        }
+      ],
+      "roblox_mapping": {
+        "existing_model_container": "Workspace.Nucleus_Model",
+        "existing_placement_targets": [
+          "Nucleus_Model/NucleusEnvelope",
+          "Nucleus_Model/NuclearPoreComplexes",
+          "Nucleus_Model/NuclearLamina",
+          "Nucleus_Model/Nucleoplasm",
+          "Nucleus_Model/Chromatin",
+          "Nucleus_Model/Nucleolus",
+          "Nucleus_Model/TransportCargo",
+          "Nucleus_Model/RoughERConnection",
+          "Nucleus_Model/CollisionProxy",
+          "Nucleus_Model/AnchorSockets"
+        ],
+        "required_new_runtime_targets": [
+          "Nucleus_Model/GeneDynamics",
+          "Nucleus_Model/GeneDynamics/ActiveGene_Locus",
+          "Nucleus_Model/GeneDynamics/RNAPolymerase_Complex",
+          "Nucleus_Model/GeneDynamics/NascentRNA_Strand",
+          "Nucleus_Model/GeneDynamics/MatureMRNA_Cargo",
+          "Nucleus_Model/GeneDynamics/MRNA_ExportPath_ToPore"
+        ],
+        "event_map_status": "integration/animation_event_map.json now keeps broad protein_synthesis and adds the step-level transcription_mrna_export sequence."
+      },
+      "llm_context_hooks": [
+        {
+          "hook_id": "explain_gene_activation",
+          "uses_components": [
+            "Chromatin_Threads",
+            "ActiveGene_Locus"
+          ],
+          "prompt_context": "Explain why only part of the chromatin opens and why the DNA stays inside the nucleus."
+        },
+        {
+          "hook_id": "explain_transcription",
+          "uses_components": [
+            "RNAPolymerase_Complex",
+            "NascentRNA_Strand"
+          ],
+          "prompt_context": "Explain that RNA polymerase reads DNA to create an RNA copy without translating protein in the nucleus."
+        },
+        {
+          "hook_id": "explain_mrna_export",
+          "uses_components": [
+            "MatureMRNA_Cargo",
+            "NuclearPore_Complexes",
+            "NuclearPore_GateCores"
+          ],
+          "prompt_context": "Explain selective export through nuclear pores and why mRNA, not DNA, exits."
+        }
+      ],
+      "completion_gate": {
+        "can_demonstrate_base_anatomy_today": true,
+        "can_demonstrate_full_action_today": true,
+        "passed_evidence": [
+          "Phase 08G created action-specific GeneDynamics objects using exact names from this manifest.",
+          "Review renders exist for active gene, transcription growth, and mRNA pore export.",
+          "JSON review reports exist for visual, biology, animation, Roblox, and code structure checks.",
+          "integration/animation_event_map.json includes the step-level transcription_mrna_export sequence.",
+          "Backend validation/reducer/runtime now model nuclear_mrna and export_mrna explicitly.",
+          "Phase 08R exports four Roblox FBX packages for GeneDynamics and validates the export manifest.",
+          "Open Cloud dry run completed for all four packages."
+        ],
+        "remaining_before_final_roblox_import": [
+          "Set ROBLOX_OPEN_CLOUD_API_KEY and ROBLOX_GROUP_ID.",
+          "Upload Phase 08R packages and record package asset IDs.",
+          "Assemble Workspace.Nucleus_Model/GeneDynamics in Studio and run edit/play validation."
+        ]
+      }
+    }
+  ],
+  "next_recommended_phase": {
+    "phase_id": "08r_gene_dynamics_open_cloud_upload_and_studio_validation",
+    "scope": "Upload the already-exported GeneDynamics packages, assemble them under Workspace.Nucleus_Model/GeneDynamics, and validate runtime cues without replacing Phase 07R.",
+    "expected_outputs": [
+      "Updated Open Cloud upload manifest with package asset IDs",
+      "Studio assembly validation report",
+      "Studio play-mode runtime validation report",
+      "JSON review report",
+      "Pass/fail checklist",
+      "Notes on what changed",
+      "Next recommended phase"
+    ]
+  }
+}

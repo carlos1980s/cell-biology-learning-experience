@@ -1,7 +1,29 @@
 local Geometry = require(script.Parent.Parent.Builders.OrganicGeometry)
+local NucleusMeshAssets = require(script.Parent.Parent.Data.NucleusMeshAssets)
 local NucleusSpec = require(script.Parent.Parent.Data.Generated.NucleusSpec)
 
 local Nucleus = {}
+
+local TAU = math.pi * 2
+
+local COLORS = {
+    outerWall = Color3.fromRGB(218, 83, 44),
+    outerWallDark = Color3.fromRGB(142, 47, 70),
+    innerWall = Color3.fromRGB(122, 55, 128),
+    wallHighlight = Color3.fromRGB(245, 137, 70),
+    floor = Color3.fromRGB(128, 57, 82),
+    floorTrim = Color3.fromRGB(248, 175, 82),
+    poreRing = Color3.fromRGB(54, 38, 76),
+    poreGate = Color3.fromRGB(255, 217, 91),
+    chromatinA = Color3.fromRGB(74, 143, 226),
+    chromatinB = Color3.fromRGB(86, 64, 197),
+    chromatinC = Color3.fromRGB(35, 188, 188),
+    nucleolus = Color3.fromRGB(93, 43, 164),
+    nucleolusLight = Color3.fromRGB(169, 72, 220),
+    transportMRNA = Color3.fromRGB(255, 230, 72),
+    transportSubunit = Color3.fromRGB(112, 231, 255),
+    collision = Color3.fromRGB(255, 255, 255),
+}
 
 local function addHotspot(hotspots, id, title, body, position, labelDistance)
     table.insert(hotspots, {
@@ -11,14 +33,6 @@ local function addHotspot(hotspots, id, title, body, position, labelDistance)
         position = position,
         labelDistance = labelDistance,
     })
-end
-
-local function surfacePoint(center, normal, distance, scale)
-    return center + Vector3.new(
-        normal.X * distance * scale.X,
-        normal.Y * distance * scale.Y,
-        normal.Z * distance * scale.Z
-    )
 end
 
 local function pointFromSpec(value)
@@ -33,370 +47,644 @@ local function blendColor(a, b, alpha)
     )
 end
 
-local function setMotionAttributes(instance, mode, phase, amplitude, lateral, frequency, axis)
-    instance:SetAttribute("OrganelleMotionMode", mode)
-    instance:SetAttribute("OrganelleMotionPhase", phase)
-    instance:SetAttribute("OrganelleMotionAmplitude", amplitude)
-    instance:SetAttribute("OrganelleMotionLateralAmplitude", lateral)
-    instance:SetAttribute("OrganelleMotionFrequency", frequency)
-    if axis then
-        instance:SetAttribute("OrganelleMotionAxis", axis)
-    end
+local function ellipsePoint(center, angle, radiusX, radiusZ, y)
+    return center + Vector3.new(math.cos(angle) * radiusX, y, math.sin(angle) * radiusZ)
 end
 
-local function buildPore(model, utils, center, scale, poreSpec, index, palette)
-    local normal = Vector3.new(poreSpec.n[1], poreSpec.n[2], poreSpec.n[3]).Unit
-    local tangent, bitangent = Geometry.basisFromNormal(normal, poreSpec.twist)
-    local outer = surfacePoint(center, normal, 48, scale)
-    local inner = surfacePoint(center, normal, 40, scale)
-    local poreFolder = utils.folder(model, string.format("Pore_%03d", index))
+local function makePart(utils, parent, name, props)
+    local part = utils.part(parent, name, props)
+    part.CastShadow = props.CastShadow == true
+    return part
+end
 
-    utils.cylinderBetween(poreFolder, "Channel", outer, inner, 1.2, Color3.fromRGB(254, 246, 176), 0.16, Enum.Material.Neon)
+local function normalizedMeshId(meshId)
+    if type(meshId) ~= "string" or meshId == "" then
+        return nil
+    end
+    if string.match(meshId, "^rbxassetid://") then
+        return meshId
+    end
+    return "rbxassetid://" .. meshId
+end
 
-    for ringIndex = 1, 8 do
-        local angle = (ringIndex / 8) * math.pi * 2
-        local offset = tangent * math.cos(angle) * 3.2 + bitangent * math.sin(angle) * 3.2
-        utils.sphere(poreFolder, "OuterRing_" .. ringIndex, outer + offset, 2.2, palette.nucleolus, 0.08, Enum.Material.SmoothPlastic)
-        utils.sphere(poreFolder, "InnerRing_" .. ringIndex, inner + offset * 0.92, 1.9, palette.nucleus, 0.1, Enum.Material.SmoothPlastic)
-        utils.cylinderBetween(poreFolder, "Spoke_" .. ringIndex, inner + offset * 0.85, outer + offset * 0.85, 0.24, Color3.fromRGB(226, 214, 255), 0.08, Enum.Material.SmoothPlastic)
+local function makeMeshPart(parent, name, meshId, props)
+    local assetId = normalizedMeshId(meshId)
+    if not assetId then
+        return nil
     end
 
-    local basketHubPosition = inner - normal * 6.1
-    utils.sphere(
-        poreFolder,
-        "BasketHub",
-        basketHubPosition,
-        1.1,
-        Color3.fromRGB(238, 226, 255),
-        0.12,
-        Enum.Material.SmoothPlastic
-    )
+    local mesh = Instance.new("MeshPart")
+    mesh.Name = name
+    mesh.Anchored = true
+    mesh.CanCollide = props.CanCollide == true
+    mesh.CanTouch = false
+    mesh.CanQuery = props.CanQuery ~= false
+    mesh.CastShadow = props.CastShadow == true
+    mesh.Color = props.Color or Color3.new(1, 1, 1)
+    mesh.Material = props.Material or Enum.Material.SmoothPlastic
+    mesh.Transparency = props.Transparency or 0
+    mesh.Size = props.Size
+    mesh.CFrame = props.CFrame
 
-    for filamentIndex = 1, 4 do
-        local angle = ((filamentIndex - 0.5) / 4) * math.pi * 2 + poreSpec.twist * 0.35
-        local offset = tangent * math.cos(angle) * 2.4 + bitangent * math.sin(angle) * 2.4
-        local rimPoint = inner + offset * 0.88
-        local basketPoint = inner + offset * 0.42 - normal * 4.2
-        utils.sphere(
-            poreFolder,
-            "BasketAnchor_" .. filamentIndex,
-            basketPoint,
-            0.72,
-            blendColor(palette.nucleus, Color3.fromRGB(247, 240, 255), 0.55),
-            0.08,
+    local ok = pcall(function()
+        mesh.MeshId = assetId
+    end)
+    if not ok then
+        mesh:Destroy()
+        return nil
+    end
+
+    mesh.Parent = parent
+    return mesh
+end
+
+local function makeCylinderDisk(utils, parent, name, position, radiusX, radiusZ, height, color, transparency, material, canCollide)
+    local disk = makePart(utils, parent, name, {
+        Shape = Enum.PartType.Cylinder,
+        Size = Vector3.new(radiusX * 2, height, radiusZ * 2),
+        CFrame = CFrame.new(position),
+        Color = color,
+        Transparency = transparency or 0,
+        Material = material or Enum.Material.SmoothPlastic,
+        CanCollide = canCollide == true,
+        CanTouch = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
+    return disk
+end
+
+local function makeWallSegment(utils, parent, name, center, angle, radiusX, radiusZ, y, size, color, transparency, material, canCollide)
+    local position = ellipsePoint(center, angle, radiusX, radiusZ, y)
+    local lookAt = Vector3.new(center.X, y, center.Z)
+    return makePart(utils, parent, name, {
+        Size = size,
+        CFrame = CFrame.lookAt(position, lookAt),
+        Color = color,
+        Transparency = transparency or 0,
+        Material = material or Enum.Material.SmoothPlastic,
+        CanCollide = canCollide == true,
+        CanTouch = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
+end
+
+local function makeRamp(utils, parent, name, a, b, width, thickness, color)
+    local delta = b - a
+    local flat = Vector3.new(delta.X, 0, delta.Z)
+    local length = delta.Magnitude
+    local pitch = math.atan2(delta.Y, math.max(flat.Magnitude, 0.001))
+    local yaw = math.atan2(delta.X, delta.Z)
+    return makePart(utils, parent, name, {
+        Size = Vector3.new(width, thickness, length),
+        CFrame = CFrame.new(a:Lerp(b, 0.5)) * CFrame.Angles(-pitch, yaw, 0),
+        Color = color,
+        Transparency = 0,
+        Material = Enum.Material.SmoothPlastic,
+        CanCollide = true,
+        CanTouch = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
+end
+
+local function buildOrganicEnvelope(utils, model, center, layout)
+    local envelope = utils.model(model, "OrganicEnvelope")
+    local wallSegments = utils.folder(envelope, "OuterWallSegments")
+    local wallLobes = utils.folder(envelope, "IrregularWallLobes")
+    local innerRim = utils.folder(envelope, "InnerWallRim")
+    local lamina = utils.folder(envelope, "LaminaBands")
+
+    local count = 28
+    local gateIndex = 1
+    for index = 1, count do
+        local angle = ((index - 1) / count) * TAU
+        local wobble = math.sin(index * 1.73) * 2.5 + math.cos(index * 0.91) * 1.8
+        local height = layout.wallHeight + (index % 4) * 3.0
+        local width = 17 + (index % 5) * 2.4
+        local thickness = 8 + (index % 3) * 1.8
+
+        if index ~= gateIndex and index ~= count then
+            local color = index % 3 == 0 and COLORS.outerWallDark or COLORS.outerWall
+            makeWallSegment(
+                utils,
+                wallSegments,
+                string.format("WallPanel_%02d", index),
+                center,
+                angle,
+                layout.radiusX + wobble,
+                layout.radiusZ + wobble * 0.65,
+                layout.midY + ((index % 2 == 0) and 1.5 or -1.0),
+                Vector3.new(width, height, thickness),
+                color,
+                0,
+                Enum.Material.SmoothPlastic,
+                false
+            )
+        end
+
+        local lobeY = layout.baseY + 14 + (index % 6) * 9
+        local lobePosition = ellipsePoint(center, angle + 0.035 * (index % 3), layout.radiusX + 5 + wobble, layout.radiusZ + 4, lobeY)
+        local lobeColor = index % 4 == 0 and COLORS.wallHighlight or blendColor(COLORS.outerWall, COLORS.outerWallDark, (index % 5) * 0.12)
+        local lobe = utils.ellipsoid(
+            wallLobes,
+            string.format("OrganicLobe_%02d", index),
+            lobePosition,
+            Vector3.new(18 + (index % 5) * 3, 13 + (index % 4) * 2, 12 + (index % 3) * 2.5),
+            lobeColor,
+            0,
             Enum.Material.SmoothPlastic
         )
-        utils.cylinderBetween(
-            poreFolder,
-            "BasketFilament_" .. filamentIndex,
-            rimPoint,
-            basketPoint,
-            0.11,
-            Color3.fromRGB(236, 223, 255),
-            0.1,
+        lobe.CastShadow = true
+    end
+
+    for bandIndex, y in ipairs({ layout.levels[2].y + 1.2, layout.levels[3].y + 1.2, layout.levels[4].y + 1.2 }) do
+        makeCylinderDisk(
+            utils,
+            lamina,
+            string.format("LaminaRing_%02d", bandIndex),
+            center + Vector3.new(0, y, 0),
+            layout.radiusX - 8,
+            layout.radiusZ - 8,
+            1.1,
+            blendColor(COLORS.innerWall, COLORS.floorTrim, 0.45),
+            0.18,
+            Enum.Material.Neon,
+            false
+        )
+    end
+
+    for index = 1, 18 do
+        local angle = (index / 18) * TAU + 0.07
+        makeWallSegment(
+            utils,
+            innerRim,
+            string.format("InnerRimPanel_%02d", index),
+            center,
+            angle,
+            layout.radiusX - 10,
+            layout.radiusZ - 10,
+            layout.midY + math.sin(index) * 3,
+            Vector3.new(14, layout.wallHeight - 10, 2.3),
+            COLORS.innerWall,
+            0.08,
+            Enum.Material.SmoothPlastic,
+            false
+        )
+    end
+
+    return envelope
+end
+
+local function buildMeshEnvelope(utils, model, center, layout)
+    local envelope = utils.model(model, "OrganicEnvelope")
+    local meshVisuals = utils.folder(envelope, "MeshVisuals")
+    local lamina = utils.folder(envelope, "LaminaBands")
+
+    local shell = makeMeshPart(meshVisuals, "OrganicShellMesh", NucleusMeshAssets.organicShellMeshId, {
+        Size = Vector3.new(layout.radiusX * 2.32, layout.wallHeight + 20, layout.radiusZ * 2.32),
+        CFrame = CFrame.new(center + Vector3.new(0, layout.midY, 0)),
+        Color = COLORS.outerWall,
+        Material = Enum.Material.SmoothPlastic,
+        Transparency = 0,
+        CanCollide = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
+    if not shell then
+        return buildOrganicEnvelope(utils, model, center, layout)
+    end
+
+    shell:SetAttribute("SourceAsset", "organelle_projects/04_nucleus/assets/mesh/nucleus_organic_shell_v1.obj")
+
+    for index = 1, 10 do
+        local angle = (index / 10) * TAU + 0.11
+        local accent = utils.ellipsoid(
+            meshVisuals,
+            string.format("OrganicSurfaceAccent_%02d", index),
+            ellipsePoint(center, angle, layout.radiusX + 8, layout.radiusZ + 6, layout.baseY + 18 + (index % 5) * 13),
+            Vector3.new(15 + (index % 3) * 4, 9 + (index % 4) * 2, 12 + (index % 2) * 4),
+            index % 2 == 0 and COLORS.wallHighlight or COLORS.outerWallDark,
+            0,
             Enum.Material.SmoothPlastic
         )
-        utils.cylinderBetween(
-            poreFolder,
-            "BasketSpoke_" .. filamentIndex,
-            basketPoint,
-            basketHubPosition,
-            0.08,
-            Color3.fromRGB(223, 206, 255),
+        accent.CastShadow = true
+    end
+
+    for bandIndex, y in ipairs({ layout.levels[2].y + 1.2, layout.levels[3].y + 1.2, layout.levels[4].y + 1.2 }) do
+        makeCylinderDisk(
+            utils,
+            lamina,
+            string.format("LaminaRing_%02d", bandIndex),
+            center + Vector3.new(0, y, 0),
+            layout.radiusX - 8,
+            layout.radiusZ - 8,
+            1.1,
+            blendColor(COLORS.innerWall, COLORS.floorTrim, 0.45),
+            0.18,
+            Enum.Material.Neon,
+            false
+        )
+    end
+
+    return envelope
+end
+
+local function buildNavigation(utils, model, center, layout)
+    local navigation = utils.model(model, "NavigationCollision")
+    local floors = utils.folder(navigation, "Floors")
+    local ramps = utils.folder(navigation, "Ramps")
+    local invisibleGuides = utils.folder(navigation, "InvisibleWallGuides")
+    local levelModel = utils.model(model, "InteriorLevels")
+
+    for index, level in ipairs(layout.levels) do
+        local folder = utils.folder(levelModel, level.name)
+        local radiusX = layout.radiusX - 18 - (index - 1) * 6
+        local radiusZ = layout.radiusZ - 16 - (index - 1) * 5
+        makeCylinderDisk(
+            utils,
+            floors,
+            level.name .. "_WalkableFloor",
+            center + Vector3.new(0, level.y, 0),
+            radiusX,
+            radiusZ,
+            1.8,
+            index % 2 == 0 and COLORS.floor or blendColor(COLORS.floor, COLORS.floorTrim, 0.2),
+            0,
+            Enum.Material.SmoothPlastic,
+            true
+        )
+        makeCylinderDisk(
+            utils,
+            folder,
+            level.name .. "_VisualTrim",
+            center + Vector3.new(0, level.y + 1.2, 0),
+            radiusX + 3,
+            radiusZ + 3,
+            0.7,
+            COLORS.floorTrim,
             0.12,
-            Enum.Material.SmoothPlastic
+            Enum.Material.Neon,
+            false
         )
     end
+
+    for index = 1, #layout.levels - 1 do
+        local a = center + Vector3.new(-layout.radiusX * 0.52 + index * 8, layout.levels[index].y + 2, -layout.radiusZ * 0.32)
+        local b = center + Vector3.new(-layout.radiusX * 0.2 + index * 10, layout.levels[index + 1].y + 2, layout.radiusZ * 0.3)
+        makeRamp(utils, ramps, string.format("Ramp_%d_To_%d", index, index + 1), a, b, 13, 1.6, COLORS.floorTrim)
+    end
+
+    for index = 1, 12 do
+        local angle = (index / 12) * TAU
+        if math.abs(math.cos(angle)) < 0.9 then
+            makeWallSegment(
+                utils,
+                invisibleGuides,
+                string.format("CollisionGuide_%02d", index),
+                center,
+                angle,
+                layout.radiusX - 5,
+                layout.radiusZ - 5,
+                layout.midY,
+                Vector3.new(20, layout.wallHeight + 8, 2.0),
+                COLORS.collision,
+                1,
+                Enum.Material.SmoothPlastic,
+                true
+            )
+        end
+    end
+
+    return navigation
 end
 
-local function buildEnvelopeBulges(model, utils, center, scale, palette)
-    local bulgeNormals = {
-        Vector3.new(0.88, 0.12, 0.18).Unit,
-        Vector3.new(-0.76, 0.24, -0.34).Unit,
-        Vector3.new(0.22, -0.64, 0.74).Unit,
-        Vector3.new(-0.18, 0.58, 0.8).Unit,
-        Vector3.new(0.54, -0.3, -0.78).Unit,
-        Vector3.new(-0.44, -0.26, 0.86).Unit,
-        Vector3.new(0.76, 0.44, -0.36).Unit,
-        Vector3.new(-0.68, 0.5, 0.34).Unit,
-    }
+local function buildPoreGate(utils, model, center, layout)
+    local pores = utils.model(model, "PoreGates")
+    local walkable = utils.model(pores, "WalkablePoreGate")
+    local visuals = utils.folder(pores, "VisualPores")
 
-    for index, normal in ipairs(bulgeNormals) do
-        local tangent, bitangent = Geometry.basisFromNormal(normal, index * 0.73)
-        local position = surfacePoint(center, normal, 44 + (index % 2) * 2.2, scale)
-        local bulge = utils.ellipsoid(
-            model,
-            string.format("EnvelopeBulge_%02d", index),
-            position,
-            Vector3.new(18 + index * 1.5, 13 + (index % 3) * 2.0, 15 + (index % 2) * 2.8),
-            index % 2 == 0 and Color3.fromRGB(188, 150, 248) or palette.nucleus,
-            0.34,
-            Enum.Material.Glass
-        )
-        bulge.CastShadow = false
+    local gateAngle = 0
+    local gatePosition = ellipsePoint(center, gateAngle, layout.radiusX + 2, layout.radiusZ + 2, layout.levels[1].y + 11)
+    local gateLook = Vector3.new(center.X, gatePosition.Y, center.Z)
+    local gateFrame = CFrame.lookAt(gatePosition, gateLook)
 
-        utils.ellipsoid(
-            model,
-            string.format("EnvelopeShoulder_%02d", index),
-            position - normal * 2.4 + tangent * (2.4 + (index % 3) * 0.6) + bitangent * ((index % 2 == 0 and 1 or -1) * 2.1),
-            Vector3.new(10.6 + (index % 3), 8.8 + (index % 2) * 0.8, 9.4 + index * 0.25),
-            blendColor(palette.nucleus, Color3.fromRGB(214, 190, 255), 0.42),
-            0.42,
-            Enum.Material.Glass
-        )
+    makePart(utils, walkable, "GateTunnelFloor", {
+        Size = Vector3.new(28, 2, 42),
+        CFrame = gateFrame * CFrame.new(0, -11, 8),
+        Color = COLORS.floorTrim,
+        Transparency = 0,
+        Material = Enum.Material.SmoothPlastic,
+        CanCollide = true,
+        CanTouch = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
 
-        utils.ellipsoid(
-            model,
-            string.format("EnvelopePlaque_%02d", index),
-            surfacePoint(center, normal, 40.6 + (index % 2) * 0.7, scale) + tangent * 2.1 - bitangent * 1.6,
-            Vector3.new(7.8 + (index % 2) * 0.9, 5.4, 6.6 + (index % 3) * 0.7),
-            blendColor(Color3.fromRGB(122, 88, 206), palette.nucleus, 0.35),
-            0.28,
-            Enum.Material.SmoothPlastic
-        )
-    end
-end
+    local gateMesh = makeMeshPart(walkable, "GateRingMesh", NucleusMeshAssets.poreGateRingMeshId, {
+        Size = Vector3.new(7, 54, 54),
+        CFrame = gateFrame,
+        Color = COLORS.poreGate,
+        Material = Enum.Material.Neon,
+        Transparency = 0,
+        CanCollide = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
 
-local function buildIrregularNucleolus(model, utils, center, palette)
-    local core = utils.ellipsoid(
-        model,
-        "NucleolusCore",
-        center,
-        Vector3.new(30, 24, 28),
-        palette.nucleolus,
-        0.02,
-        Enum.Material.SmoothPlastic
-    )
-    utils.addPointLight(core, palette.nucleolus, 1.1, 28)
-
-    for index, offset in ipairs({
-        Vector3.new(8, -2, 3),
-        Vector3.new(-7, 4, -4),
-        Vector3.new(2, 7, 6),
-        Vector3.new(-3, -6, 5),
-    }) do
-        utils.ellipsoid(
-            model,
-            string.format("NucleolusLobe_%02d", index),
-            center + offset,
-            Vector3.new(11 + index, 9 + (index % 2), 10 + (index % 3)),
-            index % 2 == 0 and Color3.fromRGB(246, 120, 156) or Color3.fromRGB(255, 178, 205),
-            0.04,
-            Enum.Material.SmoothPlastic
-        )
+    if gateMesh then
+        gateMesh:SetAttribute("SourceAsset", "organelle_projects/04_nucleus/assets/mesh/nuclear_pore_gate_ring_v1.obj")
     end
 
-    for index, offset in ipairs({
-        Vector3.new(10, 3, -5),
-        Vector3.new(-9, -4, 4),
-        Vector3.new(5, -8, -2),
-    }) do
-        utils.ellipsoid(
-            model,
-            string.format("NucleolusCap_%02d", index),
-            center + offset,
-            Vector3.new(12.5 - index, 8.8 + index * 0.4, 10.2 + (index % 2) * 1.1),
-            blendColor(palette.nucleolus, Color3.fromRGB(255, 225, 234), 0.38),
-            0.28,
-            Enum.Material.Glass
-        )
-    end
-end
-
-local function buildPeripheralChromatin(model, utils, center, scale, palette)
-    local anchorNormals = {
-        Vector3.new(0.68, 0.34, 0.64).Unit,
-        Vector3.new(-0.72, 0.18, 0.67).Unit,
-        Vector3.new(-0.63, -0.44, 0.64).Unit,
-        Vector3.new(0.5, -0.56, 0.66).Unit,
-        Vector3.new(0.78, 0.14, -0.6).Unit,
-        Vector3.new(-0.7, 0.34, -0.63).Unit,
-        Vector3.new(-0.2, -0.74, -0.64).Unit,
-        Vector3.new(0.34, 0.7, -0.63).Unit,
-    }
-
-    for index, normal in ipairs(anchorNormals) do
-        local tangent, bitangent = Geometry.basisFromNormal(normal, index * 0.59)
-        local clusterCenter = surfacePoint(center, normal, 67 - (index % 3) * 2.5, scale)
-        local mainColor = index % 2 == 0 and Color3.fromRGB(202, 178, 252) or Color3.fromRGB(169, 136, 235)
-        for beadIndex, offset in ipairs({
-            tangent * 2.6 + bitangent * 0.9,
-            tangent * -2.1 + bitangent * 1.4,
-            bitangent * -2.4,
-        }) do
+    for ringIndex, radius in ipairs(gateMesh and { 18 } or { 19, 25 }) do
+        for bead = 1, 12 do
+            local angle = (bead / 12) * TAU
+            local localOffset = Vector3.new(math.cos(angle) * radius, math.sin(angle) * radius, 0)
             utils.sphere(
-                model,
-                string.format("PeripheralChromatin_%02d_%02d", index, beadIndex),
-                clusterCenter + offset,
-                4.4 + (index % 2) * 0.7 - beadIndex * 0.45,
-                beadIndex == 1 and mainColor or blendColor(mainColor, Color3.fromRGB(246, 239, 255), 0.25),
-                0.08,
-                Enum.Material.SmoothPlastic
+                walkable,
+                string.format("GateRing_%02d_%02d", ringIndex, bead),
+                (gateFrame * CFrame.new(localOffset)).Position,
+                bead % 3 == 0 and 5.6 or 4.4,
+                ringIndex == 1 and COLORS.poreRing or COLORS.poreGate,
+                0,
+                ringIndex == 1 and Enum.Material.SmoothPlastic or Enum.Material.Neon
             )
         end
+    end
 
-        if index % 2 == 0 then
-            utils.cylinderBetween(
-                model,
-                string.format("PeripheralBridge_%02d", index),
-                clusterCenter + tangent * 2.2,
-                clusterCenter - bitangent * 2.0,
-                0.36,
-                blendColor(palette.nucleus, Color3.fromRGB(245, 238, 255), 0.45),
-                0.12,
+    makePart(utils, walkable, "SelectiveGatePanel", {
+        Size = Vector3.new(22, 16, 1.2),
+        CFrame = gateFrame * CFrame.new(0, 0, -1.5),
+        Color = COLORS.poreGate,
+        Transparency = 0.52,
+        Material = Enum.Material.Neon,
+        CanCollide = false,
+        CanTouch = false,
+        CanQuery = false,
+    })
+
+    for index = 1, 24 do
+        local angle = (index / 24) * TAU + 0.13
+        if math.abs(math.cos(angle)) < 0.92 then
+            local y = layout.baseY + 16 + (index % 5) * 10
+            local position = ellipsePoint(center, angle, layout.radiusX + 2, layout.radiusZ + 2, y)
+            local lookAt = Vector3.new(center.X, y, center.Z)
+            local frame = CFrame.lookAt(position, lookAt)
+            local pore = makePart(utils, visuals, string.format("VisualPore_%02d", index), {
+                Shape = Enum.PartType.Cylinder,
+                Size = Vector3.new(8 + (index % 3), 2.0, 8 + (index % 3)),
+                CFrame = frame * CFrame.Angles(math.pi / 2, 0, 0),
+                Color = COLORS.poreRing,
+                Transparency = 0,
+                Material = Enum.Material.SmoothPlastic,
+                CanCollide = false,
+                CanTouch = false,
+                CanQuery = true,
+                CastShadow = true,
+            })
+            utils.addPointLight(pore, COLORS.poreGate, 0.12, 15)
+        end
+    end
+
+    return pores
+end
+
+local function buildNucleolus(utils, model, center, layout)
+    local nucleolus = utils.model(model, "NucleolusCore")
+    local coreCenter = center + Vector3.new(5, layout.levels[3].y + 10, 0)
+
+    local core = makeMeshPart(nucleolus, "RibosomeBiogenesisHubMesh", NucleusMeshAssets.nucleolusCoreMeshId, {
+        Size = Vector3.new(42, 68, 42),
+        CFrame = CFrame.new(coreCenter),
+        Color = COLORS.nucleolus,
+        Material = Enum.Material.SmoothPlastic,
+        Transparency = 0,
+        CanCollide = false,
+        CanQuery = true,
+        CastShadow = true,
+    })
+
+    if core then
+        core:SetAttribute("SourceAsset", "organelle_projects/04_nucleus/assets/mesh/nucleolus_core_v1.obj")
+    else
+        core = utils.ellipsoid(
+            nucleolus,
+            "RibosomeBiogenesisHub",
+            coreCenter,
+            Vector3.new(28, 56, 28),
+            COLORS.nucleolus,
+            0,
+            Enum.Material.SmoothPlastic
+        )
+        core.CastShadow = true
+
+        for index, offset in ipairs({
+            Vector3.new(13, -12, 5),
+            Vector3.new(-11, 5, -8),
+            Vector3.new(7, 18, 10),
+            Vector3.new(-8, 23, 4),
+            Vector3.new(3, -25, -9),
+        }) do
+            utils.ellipsoid(
+                nucleolus,
+                string.format("NucleolusLobe_%02d", index),
+                coreCenter + offset,
+                Vector3.new(15 + index * 1.5, 12 + (index % 3) * 2, 14 + (index % 2) * 3),
+                index % 2 == 0 and COLORS.nucleolusLight or blendColor(COLORS.nucleolus, COLORS.nucleolusLight, 0.32),
+                0,
                 Enum.Material.SmoothPlastic
             )
         end
     end
+    utils.addPointLight(core, COLORS.nucleolusLight, 1.1, 72)
+
+    for index, cluster in ipairs(NucleusSpec.nucleolusClusters) do
+        if index <= 24 then
+            local angle = (index / 24) * TAU
+            local position = coreCenter + Vector3.new(math.cos(angle) * (12 + index % 4), -18 + (index % 9) * 5, math.sin(angle) * (11 + index % 3))
+            utils.sphere(
+                nucleolus,
+                string.format("SubunitAssemblyMarker_%02d", index),
+                position,
+                math.max(cluster.size, 1.8),
+                index % 2 == 0 and COLORS.transportSubunit or Color3.fromRGB(255, 150, 208),
+                0.02,
+                Enum.Material.Neon
+            )
+        end
+    end
+
+    return nucleolus, coreCenter
+end
+
+local function buildChromatinRoutes(utils, model, center, layout)
+    local routes = utils.model(model, "GenomeRoutes")
+    local cables = utils.folder(routes, "ChromatinCables")
+    local markers = utils.folder(routes, "GeneActivationMarkers")
+
+    local routeSpecs = {
+        { name = "OpenChromatinGallery_A", y = layout.levels[2].y + 7, radiusX = layout.radiusX - 26, radiusZ = layout.radiusZ - 24, color = COLORS.chromatinA, phase = 0.0 },
+        { name = "CondensedChromatinBundle_B", y = layout.levels[2].y + 18, radiusX = layout.radiusX - 34, radiusZ = layout.radiusZ - 30, color = COLORS.chromatinB, phase = 0.8 },
+        { name = "MixedChromatinRoute_C", y = layout.levels[4].y + 5, radiusX = layout.radiusX - 40, radiusZ = layout.radiusZ - 34, color = COLORS.chromatinC, phase = 1.6 },
+    }
+
+    for routeIndex, route in ipairs(routeSpecs) do
+        local points = {}
+        for step = 0, 15 do
+            local angle = (step / 15) * TAU + route.phase
+            local wave = math.sin(step * 1.2 + route.phase) * 5
+            points[#points + 1] = ellipsePoint(center, angle, route.radiusX + wave, route.radiusZ - wave * 0.35, route.y + math.sin(step * 0.9) * 3)
+        end
+        Geometry.buildPolyline(cables, utils, route.name, points, routeIndex == 2 and 1.45 or 1.0, route.color, 0, Enum.Material.SmoothPlastic)
+
+        for markerIndex = 2, #points - 1, 5 do
+            local marker = utils.sphere(
+                markers,
+                string.format("GeneMarker_%d_%02d", routeIndex, markerIndex),
+                points[markerIndex] + Vector3.new(0, 2.5, 0),
+                4.2,
+                blendColor(route.color, Color3.fromRGB(255, 245, 182), 0.42),
+                0,
+                Enum.Material.Neon
+            )
+            utils.addPointLight(marker, route.color, 0.22, 18)
+        end
+    end
+
+    return routes
+end
+
+local function buildTransportPaths(utils, model, center, layout, nucleolusCenter)
+    local transport = utils.model(model, "TransportPaths")
+    local poreExit = ellipsePoint(center, 0.08, layout.radiusX - 8, layout.radiusZ - 8, layout.levels[4].y + 8)
+    local mrnaStart = center + Vector3.new(-24, layout.levels[2].y + 12, -14)
+    local mrnaMid = center + Vector3.new(4, layout.levels[4].y + 8, 12)
+    Geometry.buildPolyline(
+        transport,
+        utils,
+        "MRNAExportPath",
+        { mrnaStart, mrnaMid, poreExit },
+        0.65,
+        COLORS.transportMRNA,
+        0,
+        Enum.Material.Neon
+    )
+    Geometry.buildPolyline(
+        transport,
+        utils,
+        "RibosomalSubunitExportPath",
+        { nucleolusCenter + Vector3.new(0, 18, 0), center + Vector3.new(28, layout.levels[4].y + 10, -10), poreExit + Vector3.new(0, 7, 0) },
+        0.85,
+        COLORS.transportSubunit,
+        0,
+        Enum.Material.Neon
+    )
+
+    for index, position in ipairs({
+        mrnaStart,
+        mrnaMid,
+        poreExit,
+        nucleolusCenter + Vector3.new(0, 18, 0),
+        center + Vector3.new(28, layout.levels[4].y + 10, -10),
+    }) do
+        utils.sphere(
+            transport,
+            string.format("TransportParticle_%02d", index),
+            position,
+            index <= 3 and 3.1 or 3.8,
+            index <= 3 and COLORS.transportMRNA or COLORS.transportSubunit,
+            0,
+            Enum.Material.Neon
+        )
+    end
+
+    return transport
 end
 
 function Nucleus.build(parent, utils, spec)
     local model = utils.model(parent, "Nucleus")
-    local palette = spec.palette
-    local scale = Vector3.new(1, 0.86, 0.95)
     local center = pointFromSpec(NucleusSpec.nucleusCenter)
     local hotspots = {}
 
-    local shellModel = utils.model(model, "Envelope")
-    local bulgeModel = utils.model(shellModel, "SurfaceBulges")
-    local poreModel = utils.model(model, "PoreComplexes")
-    local chromatinModel = utils.model(model, "Chromatin")
-    local peripheralChromatinModel = utils.model(chromatinModel, "PeripheralCondensation")
-    local nucleolusModel = utils.model(model, "Nucleolus")
+    model:SetAttribute("OrganelleId", "nucleus")
+    model:SetAttribute("DisplayName", "Nucleus")
+    model:SetAttribute("BiologyRole", "Protected genome chamber with selective nuclear pore gates")
+    model:SetAttribute("DesignMode", "FunctionalOrganicBuilding")
+    model:SetAttribute("EducationalScale", "Walkable 4-level model, not literal microscopic scale")
 
-    setMotionAttributes(model, "Pulse", 2.1, 0.58, 0.08, 0.14, Vector3.yAxis)
-    setMotionAttributes(shellModel, "Pulse", 2.5, 0.34, 0.04, 0.12, Vector3.yAxis)
-    setMotionAttributes(chromatinModel, "Drift", 5.4, 0.24, 0.11, 0.19, Vector3.new(0.18, 0.96, 0.11).Unit)
-    setMotionAttributes(nucleolusModel, "Pulse", 1.2, 0.4, 0.04, 0.22, Vector3.new(-0.14, 0.98, 0.12).Unit)
+    local layout = {
+        radiusX = 82,
+        radiusZ = 66,
+        baseY = -34,
+        wallHeight = 88,
+        midY = 10,
+        levels = {
+            { name = "Level1_EnvelopeEntry", y = -30 },
+            { name = "Level2_ChromatinGallery", y = -5 },
+            { name = "Level3_NucleolusCore", y = 20 },
+            { name = "Level4_TransportOverlook", y = 45 },
+        },
+    }
 
-    local outerShell = utils.ellipsoid(
-        shellModel,
-        "OuterEnvelope",
-        center,
-        Vector3.new(92 * scale.X, 92 * scale.Y, 92 * scale.Z),
-        Color3.fromRGB(171, 132, 243),
-        0.52,
-        Enum.Material.Glass
-    )
-    outerShell.CastShadow = false
+    local pivot = makePart(utils, model, "PivotCore", {
+        Size = Vector3.new(2, 2, 2),
+        CFrame = CFrame.new(center),
+        Color = COLORS.collision,
+        Transparency = 1,
+        Material = Enum.Material.SmoothPlastic,
+        CanCollide = false,
+        CanTouch = false,
+        CanQuery = false,
+    })
+    model.PrimaryPart = pivot
 
-    local innerShell = utils.ellipsoid(
-        shellModel,
-        "InnerEnvelope",
-        center,
-        Vector3.new(84 * scale.X, 84 * scale.Y, 84 * scale.Z),
-        palette.nucleus,
-        0.72,
-        Enum.Material.SmoothPlastic
-    )
-    innerShell.CastShadow = false
-
-    local nucleusBody = utils.ellipsoid(
-        shellModel,
-        "Nucleoplasm",
-        center,
-        Vector3.new(78 * scale.X, 78 * scale.Y, 78 * scale.Z),
-        Color3.fromRGB(108, 76, 188),
-        0.24,
-        Enum.Material.SmoothPlastic
-    )
-    nucleusBody.CastShadow = false
-    utils.addPointLight(nucleusBody, Color3.fromRGB(124, 104, 212), 1.75, 160)
-
-    buildEnvelopeBulges(bulgeModel, utils, center, scale, palette)
-    buildPeripheralChromatin(peripheralChromatinModel, utils, center, scale, palette)
-
-    for index, poreSpec in ipairs(NucleusSpec.pores) do
-        buildPore(poreModel, utils, center, scale, poreSpec, index, palette)
-    end
-
-    for index, strand in ipairs(NucleusSpec.chromatin) do
-        local points = {}
-        for _, point in ipairs(strand.points) do
-            table.insert(points, pointFromSpec(point))
-        end
-        Geometry.buildPolyline(
-            chromatinModel,
-            utils,
-            string.format("Chromatin_%02d", index),
-            points,
-            strand.radius,
-            index % 2 == 0 and Color3.fromRGB(222, 201, 255) or Color3.fromRGB(188, 160, 246),
-            0.04,
-            Enum.Material.SmoothPlastic
-        )
-
-        for pointIndex, point in ipairs(points) do
-            if pointIndex % 2 == 0 then
-                utils.sphere(
-                    chromatinModel,
-                    string.format("ChromatinBead_%02d_%02d", index, pointIndex),
-                    point,
-                    strand.bead * 2.2,
-                    Color3.fromRGB(245, 237, 255),
-                    0.1,
-                    Enum.Material.SmoothPlastic
-                )
-            end
-
-            if pointIndex > 1 and pointIndex < #points and pointIndex % 2 == 0 then
-                local tangent = (points[pointIndex + 1] - points[pointIndex - 1]).Unit
-                local orbitTangent, orbitBitangent = Geometry.basisFromNormal(tangent, index * 0.57 + pointIndex * 0.18)
-                local satellitePosition = point
-                    + orbitTangent * strand.bead * (1.3 + (index % 2) * 0.16)
-                    + orbitBitangent * strand.bead * (0.95 + (pointIndex % 3) * 0.12)
-                utils.sphere(
-                    chromatinModel,
-                    string.format("ChromatinSatellite_%02d_%02d", index, pointIndex),
-                    satellitePosition,
-                    strand.bead * 1.45,
-                    blendColor(Color3.fromRGB(228, 213, 255), Color3.fromRGB(255, 248, 255), 0.35),
-                    0.08,
-                    Enum.Material.SmoothPlastic
-                )
-                utils.cylinderBetween(
-                    chromatinModel,
-                    string.format("ChromatinLink_%02d_%02d", index, pointIndex),
-                    point,
-                    satellitePosition,
-                    strand.radius * 0.22,
-                    Color3.fromRGB(213, 192, 252),
-                    0.12,
-                    Enum.Material.SmoothPlastic
-                )
-            end
-        end
-    end
-
-    buildIrregularNucleolus(nucleolusModel, utils, pointFromSpec(NucleusSpec.nucleolusCenter), palette)
-
-    for index, cluster in ipairs(NucleusSpec.nucleolusClusters) do
-        utils.sphere(
-            nucleolusModel,
-            string.format("NucleolarGranule_%02d", index),
-            pointFromSpec(cluster.position),
-            cluster.size,
-            index % 3 == 0 and Color3.fromRGB(255, 192, 213) or Color3.fromRGB(242, 120, 158),
-            0.06,
-            Enum.Material.SmoothPlastic
-        )
-    end
+    buildNavigation(utils, model, center, layout)
+    buildMeshEnvelope(utils, model, center, layout)
+    buildPoreGate(utils, model, center, layout)
+    buildChromatinRoutes(utils, model, center, layout)
+    local _, nucleolusCenter = buildNucleolus(utils, model, center, layout)
+    buildTransportPaths(utils, model, center, layout, nucleolusCenter)
 
     addHotspot(
         hotspots,
-        "nucleus",
-        "Nucleus",
-        "The nucleus stores DNA and coordinates the cell by controlling which genes are active.",
-        center,
-        64
+        "nucleus_envelope",
+        "Nuclear Envelope",
+        "This solid wall is an educational model of the double nuclear envelope: it protects DNA but stays connected to the cell through pores.",
+        center + Vector3.new(-34, layout.levels[1].y + 8, -46),
+        74
     )
     addHotspot(
         hotspots,
-        "nucleolus",
-        "Nucleolus",
-        "Inside the nucleus, the nucleolus assembles the components that will become ribosomes.",
-        pointFromSpec(NucleusSpec.nucleolusCenter),
-        54
+        "nuclear_pore_gate",
+        "Nuclear Pore Gate",
+        "Nuclear pores are selective gates. Small molecules pass easily, but large proteins and RNA cargo need the right transport signals.",
+        ellipsePoint(center, 0, layout.radiusX, layout.radiusZ, layout.levels[1].y + 12),
+        78
+    )
+    addHotspot(
+        hotspots,
+        "chromatin_gallery",
+        "Chromatin Gallery",
+        "Chromatin is DNA plus proteins. Open cable routes represent accessible genes; dense bundles represent more compact DNA packaging.",
+        center + Vector3.new(-20, layout.levels[2].y + 10, 34),
+        76
+    )
+    addHotspot(
+        hotspots,
+        "nucleolus_core",
+        "Nucleolus Core",
+        "The nucleolus is a dense non-membrane production hub where rRNA is made and ribosomal subunits begin assembly.",
+        nucleolusCenter,
+        78
+    )
+    addHotspot(
+        hotspots,
+        "transport_overlook",
+        "Transport Overlook",
+        "mRNA and ribosomal subunits leave the nucleus through pores, while DNA stays protected inside the chamber.",
+        center + Vector3.new(20, layout.levels[4].y + 10, 22),
+        82
     )
 
     return model, hotspots
